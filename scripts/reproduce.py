@@ -25,6 +25,8 @@ def main():
         ['analysis/toy_results.py', '--out', str(out/'toy')],
         ['analysis/evaluate.py', '--ragtruth', str(data), '--output', str(out/'initial_audit.json')],
         ['analysis/expanded.py', '--ragtruth', str(data), '--out', str(out/'expanded')],
+        ['analysis/bandha_operator_check.py', '--out', str(out/'operator_exact')],
+        ['analysis/operator_comparisons.py', '--expanded', str(out/'expanded/expanded_results.json'), '--bootstrap', str(out/'expanded/bootstrap_estimates.npz'), '--out', str(out/'operators')],
         ['analysis/decision_relationships.py', '--ragtruth', str(data), '--baseline', str(out/'expanded/expanded_results.json'), '--out', str(out/'decision_relationships')],
         ['analysis/alternatives.py', '--ragtruth', str(data), '--baseline', str(out/'expanded/expanded_results.json'), '--out', str(out/'alternatives')],
         ['analysis/verify_alternatives.py', '--ragtruth', str(data), '--results', str(out/'alternatives')],

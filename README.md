@@ -1,6 +1,6 @@
 # Homer's Trip
 
-Reproduction code for **Homer's Trip: Simpson's Paradox in Token-Level Hallucination Metrics**.
+Reproduction code for **Homer's Trip: Response Risk and Token Discrimination in Hallucination Detection**.
 
 The experiments compare pooled classification, within-response ranking, and annotation recovery at matched inspection costs. They include response-constant priors, a lexical score, response offsets, response means, and retrospective label-preserving permutations.
 
@@ -116,3 +116,14 @@ python analysis/system_components.py --inputs figures/system_components_inputs.j
 ```
 
 The original sampling template is preserved at `figures/system_labels_seeded.tex`. The fixed input JSON records the native label seed and original source hash. The score generator verifies mean/deviation identities and the mean-projection/response-offset relations using exact rational arithmetic. These are synthetic diagram inputs, not trained-detector results.
+
+## Four-condition operator comparisons
+
+The canonical manuscript compares the original lexical scores, response means, metadata-offset scores, and offset means. The pipeline now runs exact operator constructions and paired empirical contrasts:
+
+```bash
+python analysis/bandha_operator_check.py --out results/operator_exact
+python analysis/operator_comparisons.py --expanded results/expanded/expanded_results.json --bootstrap results/expanded/bootstrap_estimates.npz --out results/operators
+```
+
+The generated tables and inline values report deviation gains at each response level and their interaction, with paired complete-source intervals. AUROC and AP use a common score-label functional. F1 results use separately frozen validation-selected thresholds and are labeled accordingly. Projection contrasts are reference-dependent diagnostics of prediction structure.
