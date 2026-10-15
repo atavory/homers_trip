@@ -40,6 +40,7 @@ def main():
     parser.add_argument('--out', type=Path, required=True)
     args = parser.parse_args();args.out.mkdir(parents=True, exist_ok=True)
     config = json.loads(args.config.read_text());values, fractions = compute(config)
+    assert len(config['positive_counts']) == 6, 'This diagram uses a six-response layout.'
     template = (Path(__file__).parent / 'simpson_layout.tex').read_text()
     substitutions = {'ROWS': ','.join(f'{i}/{p}/{base}' for i, (p, base) in enumerate(zip(config['positive_counts'], config['baseline_scores']), 1)), 'POS_A': fractions['positive_mean_A'], 'NEG_A': fractions['negative_mean_A'], 'POS_B': fractions['positive_mean_B'], 'NEG_B': fractions['negative_mean_B'], 'CENTER_A': str((Fraction(fractions['positive_mean_A']) + Fraction(fractions['negative_mean_A'])) / 2), 'CENTER_B': str((Fraction(fractions['positive_mean_B']) + Fraction(fractions['negative_mean_B'])) / 2)}
     for key, value in substitutions.items():template = template.replace('@@' + key + '@@', value)

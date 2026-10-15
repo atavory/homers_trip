@@ -12,7 +12,9 @@ def number(value, digits=3, signed=False, percent=False):
         raise ValueError('A manuscript value must be finite.')
     value = float(value) * (100 if percent else 1)
     text = f'{value:+.{digits}f}' if signed else f'{value:.{digits}f}'
-    return text.replace('+0.', '+.').replace('-0.', '-.').removeprefix('0.') if text.startswith('0.') is False else text[1:]
+    if text.startswith('0.'):
+        return text[1:]
+    return text.replace('+0.', '+.').replace('-0.', '-.')
 
 
 def main():
@@ -47,12 +49,19 @@ def main():
                 ci = result['confidence95'];value = result['point']
                 display = f"{number(value, digits, signed=True)} [{number(ci['low'], digits)}, {number(ci['high'], digits)}]"
                 put(f'c.{name}.{metric}' + suffix, value, display, 'alternatives', f'paired_contrasts.{name}.{metric}', ci['low'], ci['high'])
+            put(f'c.{name}.{metric}.point', result['point'], number(result['point']), 'alternatives', f'paired_contrasts.{name}.{metric}.point')
     counts = alt['models']['global']['counts'];base = expanded['models']['global']
-    fields = {'responses': counts['responses'], 'words': counts['words'], 'positives': counts['positives'], 'negatives': counts['words'] - counts['positives'], 'mixed': counts['mixed'], 'mixed_words': counts['mixed_words'], 'unmarked_responses': counts['unmarked_responses'], 'unmarked_words': counts['unmarked_words'], 'marked_responses': counts['marked_responses'], 'marked_words': counts['marked_words'], 'spans': counts['spans'], 'characters': counts['characters'], 'sources': base['sources'], 'within_pairs': base['W'], 'cross_pairs': base['C'], 'train_responses': audit['train_responses'], 'train_sources': audit['train_sources'], 'validation_responses': audit['validation_responses'], 'validation_sources': audit['validation_sources']}
-    for key, value in fields.items():
+    fields = {key: (counts[key], 'alternatives', 'models.global.counts.' + key) for key in ['responses', 'words', 'positives', 'mixed', 'mixed_words', 'unmarked_responses', 'unmarked_words', 'marked_responses', 'marked_words', 'spans', 'characters']}
+    fields['negatives'] = (counts['words'] - counts['positives'], 'alternatives', 'models.global.counts.words - models.global.counts.positives')
+    for key, field in [('sources', 'sources'), ('within_pairs', 'W'), ('cross_pairs', 'C')]:
+        fields[key] = (base[field], 'expanded', 'models.global.' + field)
+    for key in ['train_responses', 'train_sources', 'validation_responses', 'validation_sources']:
+        fields[key] = (audit[key], 'audit', 'ragtruth.' + key)
+    for key, (value, source, locator) in fields.items():
         assert int(value) == value
-        put('data.' + key, value, f'{int(value):,}', 'input_results', key)
-        put('data.' + key + '.math', value, f'{int(value):,}'.replace(',', '{,}'), 'input_results', key)
+        put('data.' + key, value, f'{int(value):,}', source, locator)
+        put('data.' + key + '.math', value, f'{int(value):,}'.replace(',', '{,}'), source, locator)
+    put('data.raw_responses', sum(audit['qualities'].values()), f"{sum(audit['qualities'].values()):,}", 'audit', 'sum(ragtruth.qualities)')
     for key, value, digits in [('pair_fraction', base['w'], 6), ('pair_fraction_pct', 100 * base['w'], 4), ('prevalence_pct', 100 * counts['positives'] / counts['words'], 2)]:
         put('data.' + key, value, f'{value:.{digits}f}', 'expanded', 'models.global counts/weight')
     for b, result in alt['models']['global']['budgets'].items():

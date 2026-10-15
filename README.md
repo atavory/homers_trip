@@ -67,4 +67,18 @@ The study's units are eligible whitespace-delimited words, marked positive by ov
 
 ## Historical summary formatting
 
-`analysis/aggregate_archive.py --summary reported_summary.csv --out results/archive_summary` formats retained archival summaries and records their input hash. Its outputs are marked `reported_summary_only`. Original prediction replay remains the separate `replay_predictions.py` workflow.
+`analysis/format_reported_archive.py --summary reported_summary.csv --out results/archive_summary` formats retained archival summaries and records their input hash. Its outputs are marked `reported_summary_only`. Original prediction replay remains the separate `replay_predictions.py` workflow.
+
+## Restored archival replay
+
+The archived detector inputs have been recovered and validated against their original manifests. They use RAGTruth revision `c103204b9ce28d6bbad859304bf30de72b8ed8fe`, distinct from the current word-level study. Internal data preparation retains all scored rows, the original eligibility masks, and the five-seed raw-logit ensemble definition.
+
+Given the reviewer input CSV and preserved bootstrap/threshold files:
+
+```bash
+python analysis/replay_predictions.py --predictions test_predictions.csv --out results/archived_replay
+python analysis/replay_bootstrap.py --predictions test_predictions.csv --bootstrap bootstrap_inputs.json --thresholds thresholds.json --out results/archived_replay
+python analysis/aggregate_archive.py --metrics results/archived_replay/results.json --bootstrap results/archived_replay/bootstrap_results.json --provenance input_provenance.json --out results/paper_aggregates
+```
+
+Run `replay_predictions.py` first to produce the point-metric `results.json`. Source seed 360035 and its 500 source draws are preserved. The source bootstrap holds the original fits and validation thresholds fixed. Reported-summary formatting is a historical record; manuscript spreads are calculated from replayed unrounded values. Historical audit notes predate this recovery.
