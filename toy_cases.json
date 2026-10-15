@@ -1,0 +1,27 @@
+{
+  "positive_counts": [
+    19,
+    16,
+    12,
+    8,
+    4,
+    1
+  ],
+  "tokens_per_response": 20,
+  "baseline_scores": [
+    0,
+    2,
+    4,
+    6,
+    8,
+    10
+  ],
+  "positive_offset": 1,
+  "constant_score_ceiling": 10,
+  "affine_example": {
+    "tokens_per_response": 10,
+    "low": 0,
+    "middle": 0.5,
+    "high": 1
+  }
+}

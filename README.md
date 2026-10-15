@@ -25,6 +25,8 @@ Under `results/`:
 - `expanded/`: eight scorers, unrounded results, bootstrap estimates, and the pooled/conditional figure.
 - `alternatives/`: conditional AP, word and annotation-span recovery, one-class alarm costs, permutation controls, bootstrap estimates, and the inspection figure.
 - `paper_aggregates/`: CSVs and generated LaTeX table fragments.
+- `toy/`: computed construction values, exact class means, and generated vector diagram.
+- `paper_values/`: inline LaTeX values and their CSV source mapping.
 - `reproduction_manifest.json`: commands and code hashes.
 
 `analysis/aggregate_paper.py` formats recorded experiment outputs. Its manifest records input hashes and every generated output hash. `all_statistics.csv` retains exact result paths and values; `table_sources.csv` maps table cells to the source results.

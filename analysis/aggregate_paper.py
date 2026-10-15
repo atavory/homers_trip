@@ -140,8 +140,26 @@ def main():
         'HTMetadataConditionalRecallPercent': f"{100*alt['task_generator']['point']['conditional_word_recall_0.1']:.1f}" + r'\%',
     }
     (tables / 'headline_stats.tex').write_text(''.join('\\newcommand{\\' + key + '}{' + value + '}\n' for key, value in headline.items()))
+    for name, _ in MODELS:
+        for key in ['pooled_ap', 'pooled_f1']:
+            mapping.append(['pooled_classification', name, key, 'expanded', f'models.{name}.{key}', base[name][key]])
+        for key in ['pooled_auc', 'within_macro_auc']:
+            for bound in ['low', 'high']:
+                mapping.append(['models', name, key+'_'+bound, 'expanded', f'models.{name}.confidence95.{key}.{bound}', base[name]['confidence95'][key][bound]])
+    for name in cost_names:
+        for key in ['unmarked_response_alarm_rate', 'unmarked_word_false_positive_rate', 'global_unmarked_cost_fraction_0.1']:
+            mapping.append(['alarm_intervals', name, key, 'alternatives', f'models.{name}.point.{key}', alt[name]['point'][key]])
+            for bound in ['low', 'high']:
+                mapping.append(['alarm_intervals', name, key+'_'+bound, 'alternatives', f'models.{name}.confidence95.{key}.{bound}', alt[name]['confidence95'][key][bound]])
+    for source in [*strata, None]:
+        item = strata[source] if source else base['task_generator']
+        prefix = f'models.task_generator.strata.{source}' if source else 'models.task_generator'
+        for key in ['responses', 'mixed', 'w', 'pooled_auc', 'pooled_ap', 'pooled_f1']:
+            mapping.append(['strata', source or 'All strata', key, 'expanded', prefix+'.'+key, item[key]])
+        mapping.append(['strata', source or 'All strata', 'prevalence', 'expanded', prefix+'.P / ('+prefix+'.P + '+prefix+'.N)', item['P']/(item['P']+item['N'])])
     save_csv(args.out / 'table_sources.csv', ['table', 'row', 'column', 'experiment', 'json_path', 'unrounded_value'], mapping)
-    outputs = {str(f.relative_to(args.out)): digest(f) for f in sorted(args.out.rglob('*')) if f.is_file() and f.name != 'manifest.json'}
+    generated = [args.out/name for name in ['all_statistics.csv', 'models.csv', 'inspection.csv', 'alarm_costs.csv', 'full_budget.csv', 'strata.csv', 'table_sources.csv']] + [tables/(name+'.tex') for name in ['models', 'budget', 'false_costs', 'alarm_intervals', 'full_budget', 'pooled_classification', 'strata', 'headline_stats']]
+    outputs = {str(f.relative_to(args.out)): digest(f) for f in generated}
     manifest = {'script_sha256': digest(Path(__file__)), 'input_sha256': inputs, 'outputs': outputs,
                 'command': ['aggregate_paper.py', '--expanded', str(args.expanded), '--alternatives', str(args.alternatives), '--out', str(args.out)],
                 'scope': 'Formatting and aggregation of recorded experiment results; no refitting or new inference.'}

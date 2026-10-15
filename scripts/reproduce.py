@@ -21,12 +21,14 @@ def main():
         commands.append(['scripts/download_data.py', '--out', str(data)])
     commands.extend([
         ['analysis/check_theory.py', '--out', str(out/'theory.json')],
+        ['analysis/toy_results.py', '--out', str(out/'toy')],
         ['analysis/evaluate.py', '--ragtruth', str(data), '--output', str(out/'initial_audit.json')],
         ['analysis/expanded.py', '--ragtruth', str(data), '--out', str(out/'expanded')],
         ['analysis/alternatives.py', '--ragtruth', str(data), '--baseline', str(out/'expanded/expanded_results.json'), '--out', str(out/'alternatives')],
         ['analysis/verify_alternatives.py', '--ragtruth', str(data), '--results', str(out/'alternatives')],
         ['analysis/plot_alternatives.py', '--results', str(out/'alternatives/results.json'), '--out', str(out/'alternatives/inspection_alternatives.pdf')],
         ['analysis/aggregate_paper.py', '--expanded', str(out/'expanded/expanded_results.json'), '--alternatives', str(out/'alternatives/results.json'), '--out', str(out/'paper_aggregates')],
+        ['analysis/paper_values.py', '--expanded', str(out/'expanded/expanded_results.json'), '--alternatives', str(out/'alternatives/results.json'), '--audit', str(out/'initial_audit.json'), '--toy', str(out/'toy/results.json'), '--out', str(out/'paper_values')],
     ])
     for command in commands:
         print('RUN', command, flush=True)
