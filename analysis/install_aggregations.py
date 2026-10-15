@@ -46,6 +46,7 @@ def main():
     main=args.paper/'main.tex';text=main.read_text();includes='\\input{generated/paper_values}\n\\input{generated/archive_values}\n'
     if '\\input{generated/paper_values}' not in text:main.write_text(text.replace('\\begin{document}',includes+'\\begin{document}'));changes.append('main.tex')
     shutil.copyfile(args.toy/'simpson_reversal.tex',args.paper/'figures/simpson_reversal.tex')
+    if (args.aggregates/'figures/inspection_alternatives.pdf').exists():shutil.copyfile(args.aggregates/'figures/inspection_alternatives.pdf',args.paper/'figures/inspection_alternatives.pdf')
     args.manifest.parent.mkdir(parents=True,exist_ok=True)
     payload={'script_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'changed_files':sorted(set(changes)),'generated_outputs':{str(p.relative_to(args.paper)):hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(generated.rglob('*')) if p.is_file()},'bindings_sha256':hashlib.sha256(args.bindings.read_bytes()).hexdigest() if args.bindings else None}
     args.manifest.write_text(json.dumps(payload,indent=2)+'\n');print(json.dumps({'installed_tables':len(TABLES),'changed_files':sorted(set(changes))}))
