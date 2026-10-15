@@ -64,3 +64,7 @@ Internal data, CSVs, private runs, and their provenance are maintained in the co
 RAGTruth: https://github.com/ParticleMedia/RAGTruth
 
 The study's units are eligible whitespace-delimited words, marked positive by overlap with supplied annotation spans. These experiments measure recovery of annotations. Retrospective label-permutation controls use test labels to diagnose an evaluation property.
+
+## Historical summary formatting
+
+`analysis/aggregate_archive.py --summary reported_summary.csv --out results/archive_summary` formats retained archival summaries and records their input hash. Its outputs are marked `reported_summary_only`. Original prediction replay remains the separate `replay_predictions.py` workflow.
