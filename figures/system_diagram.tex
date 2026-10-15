@@ -1,46 +1,423 @@
 \begingroup
-\def\DiagramSeed{20261015}
-\def\ResponseCount{12}
-\def\MinimumTokens{8}
-\def\MaximumTokens{20}
-\def\BetaShape{7}
-\def\CellSize{3.5mm}
-\def\BarGap{0.25}
-\def\BarWidth{0.35}
-\def\ColumnGap{1}
-\def\StrokeFraction{0.03}
-\def\OutlineShade{55}
-
-% N_r is discrete uniform; p_r is Beta(1,BetaShape); labels are Bernoulli(p_r).
-\pgfmathsetseed{\DiagramSeed}
-\pgfmathsetmacro{\ColumnPitch}{1+\BarGap+\BarWidth+\ColumnGap}
-\pgfmathsetlengthmacro{\StrokeWidth}{\StrokeFraction*\CellSize}
-
-\begin{tikzpicture}[x=\CellSize,y=\CellSize,line width=\StrokeWidth]
-  \foreach \Response in {1,...,\ResponseCount} {
-    \pgfmathrandominteger{\TokenCount}{\MinimumTokens}{\MaximumTokens}
-    \pgfmathsetmacro{\HallucinationRate}{1-(1-rnd)^(1/\BetaShape)}
-    \pgfmathsetmacro{\ColumnX}{(\Response-1)*\ColumnPitch}
-
-    \foreach \Token [
-      evaluate=\Token as \Hallucinated using {int(rnd<\HallucinationRate)},
-      evaluate=\Token as \BlackCount using {\PreviousCount+\Hallucinated},
-      remember=\BlackCount as \PreviousCount (initially 0)
-    ] in {1,...,\TokenCount} {
-      \ifnum\Hallucinated=1
-        \def\CellFill{black}
-      \else
-        \def\CellFill{white}
-      \fi
-      \draw[draw=black!\OutlineShade,fill=\CellFill]
-        (\ColumnX,{\Token-1}) rectangle ++(1,1);
-
-      \ifnum\Token=\TokenCount
-        \pgfmathsetmacro{\GreyPercent}{100*\BlackCount/\TokenCount}
-        \draw[draw=black!\OutlineShade,fill=black!\GreyPercent]
-          ({\ColumnX+1+\BarGap},0) rectangle ++(\BarWidth,\TokenCount);
-      \fi
-    }
-  }
+\definecolor{ResponseScore}{RGB}{32,100,170}
+\definecolor{TokenDeviation}{RGB}{180,92,15}
+\begin{tikzpicture}[x=3.5mm,y=3.5mm,line width=.11mm]
+\node[font=\small] at (22.6,23) {$\hat y_{r,t}=\textcolor{ResponseScore}{m_r}+\textcolor{TokenDeviation}{d_{r,t}}$};
+\draw[draw=black!60,fill=black] (5.6,21) rectangle ++(1,1);
+\node[anchor=west,font=\scriptsize] at (7.1,21.5) {Hallucinated};
+\draw[draw=black!60,fill=white] (18.6,21) rectangle ++(1,1);
+\node[anchor=west,font=\scriptsize] at (20.1,21.5) {Correct};
+\draw[draw=black!60,fill=black!35] (28.6,21) rectangle ++(.4,1);
+\node[anchor=west,font=\scriptsize] at (29.6,21.5) {Observed prevalence $\pi_r$};
+\node[font=\scriptsize] at (0.5,19.5) {$r=1$};
+\draw[draw=black!28,densely dotted] (2.5,0) -- (2.5,9);
+\draw[draw=black!55,fill=white] (0,0) rectangle ++(1,1);
+\fill[TokenDeviation] (2.5,0.32) rectangle (2.67667,0.68);
+\draw[draw=black!55,fill=white] (0,1) rectangle ++(1,1);
+\fill[TokenDeviation] (2.41417,1.32) rectangle (2.5,1.68);
+\draw[draw=black!55,fill=white] (0,2) rectangle ++(1,1);
+\fill[TokenDeviation] (2.39167,2.32) rectangle (2.5,2.68);
+\draw[draw=black!55,fill=white] (0,3) rectangle ++(1,1);
+\fill[TokenDeviation] (2.5,3.32) rectangle (2.62717,3.68);
+\draw[draw=black!55,fill=white] (0,4) rectangle ++(1,1);
+\fill[TokenDeviation] (2.27467,4.32) rectangle (2.5,4.68);
+\draw[draw=black!55,fill=white] (0,5) rectangle ++(1,1);
+\fill[TokenDeviation] (2.5,5.32) rectangle (2.52817,5.68);
+\draw[draw=black!55,fill=white] (0,6) rectangle ++(1,1);
+\fill[TokenDeviation] (2.5,6.32) rectangle (2.56117,6.68);
+\draw[draw=black!55,fill=white] (0,7) rectangle ++(1,1);
+\fill[TokenDeviation] (2.33167,7.32) rectangle (2.5,7.68);
+\draw[draw=black!55,fill=white] (0,8) rectangle ++(1,1);
+\fill[TokenDeviation] (2.5,8.32) rectangle (2.69467,8.68);
+\draw[draw=black!55,fill=black!0.000] (1.25,0) rectangle ++(.35,9);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (0,-5) rectangle ++(1,4);
+\fill[ResponseScore] (0,-5) rectangle ++(1,0.95289);
+\node[font=\scriptsize,text=ResponseScore] at (0.5,-5.7) {$.24$};
+\node[anchor=east,font=\tiny,text=ResponseScore] at (-.3,-5) {$0$};
+\node[anchor=east,font=\tiny,text=ResponseScore] at (-.3,-1) {$1$};
+\node[anchor=west,font=\tiny,text=TokenDeviation] at (2.5,-.55) {$d=0$};
+\node[font=\scriptsize] at (4.3,19.5) {$r=2$};
+\draw[draw=black!28,densely dotted] (6.3,0) -- (6.3,17);
+\draw[draw=black!55,fill=white] (3.8,0) rectangle ++(1,1);
+\fill[TokenDeviation] (6.21291,0.32) rectangle (6.3,0.68);
+\draw[draw=black!55,fill=white] (3.8,1) rectangle ++(1,1);
+\fill[TokenDeviation] (6.3,1.32) rectangle (6.35241,1.68);
+\draw[draw=black!55,fill=white] (3.8,2) rectangle ++(1,1);
+\fill[TokenDeviation] (6.3,2.32) rectangle (6.47691,2.68);
+\draw[draw=black!55,fill=white] (3.8,3) rectangle ++(1,1);
+\fill[TokenDeviation] (6.12591,3.32) rectangle (6.3,3.68);
+\draw[draw=black!55,fill=white] (3.8,4) rectangle ++(1,1);
+\fill[TokenDeviation] (6.09141,4.32) rectangle (6.3,4.68);
+\draw[draw=black!55,fill=white] (3.8,5) rectangle ++(1,1);
+\fill[TokenDeviation] (6.14541,5.32) rectangle (6.3,5.68);
+\draw[draw=black!55,fill=black] (3.8,6) rectangle ++(1,1);
+\fill[TokenDeviation] (6.3,6.32) rectangle (6.53841,6.68);
+\draw[draw=black!55,fill=white] (3.8,7) rectangle ++(1,1);
+\fill[TokenDeviation] (6.3,7.32) rectangle (6.42291,7.68);
+\draw[draw=black!55,fill=white] (3.8,8) rectangle ++(1,1);
+\fill[TokenDeviation] (6.28041,8.32) rectangle (6.3,8.68);
+\draw[draw=black!55,fill=white] (3.8,9) rectangle ++(1,1);
+\fill[TokenDeviation] (6.09291,9.32) rectangle (6.3,9.68);
+\draw[draw=black!55,fill=white] (3.8,10) rectangle ++(1,1);
+\fill[TokenDeviation] (6.20991,10.32) rectangle (6.3,10.68);
+\draw[draw=black!55,fill=white] (3.8,11) rectangle ++(1,1);
+\fill[TokenDeviation] (6.22341,11.32) rectangle (6.3,11.68);
+\draw[draw=black!55,fill=white] (3.8,12) rectangle ++(1,1);
+\fill[TokenDeviation] (6.16491,12.32) rectangle (6.3,12.68);
+\draw[draw=black!55,fill=white] (3.8,13) rectangle ++(1,1);
+\fill[TokenDeviation] (6.3,13.32) rectangle (6.63891,13.68);
+\draw[draw=black!55,fill=white] (3.8,14) rectangle ++(1,1);
+\fill[TokenDeviation] (6.23841,14.32) rectangle (6.3,14.68);
+\draw[draw=black!55,fill=white] (3.8,15) rectangle ++(1,1);
+\fill[TokenDeviation] (6.26841,15.32) rectangle (6.3,15.68);
+\draw[draw=black!55,fill=white] (3.8,16) rectangle ++(1,1);
+\fill[TokenDeviation] (6.3,16.32) rectangle (6.61641,16.68);
+\draw[draw=black!55,fill=black!5.882] (5.05,0) rectangle ++(.35,17);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (3.8,-5) rectangle ++(1,4);
+\fill[ResponseScore] (3.8,-5) rectangle ++(1,0.56024);
+\node[font=\scriptsize,text=ResponseScore] at (4.3,-5.7) {$.14$};
+\node[font=\scriptsize] at (8.1,19.5) {$r=3$};
+\draw[draw=black!28,densely dotted] (10.1,0) -- (10.1,15);
+\draw[draw=black!55,fill=white] (7.6,0) rectangle ++(1,1);
+\fill[TokenDeviation] (9.9915,0.32) rectangle (10.1,0.68);
+\draw[draw=black!55,fill=white] (7.6,1) rectangle ++(1,1);
+\fill[TokenDeviation] (10.1,1.32) rectangle (10.1115,1.68);
+\draw[draw=black!55,fill=white] (7.6,2) rectangle ++(1,1);
+\fill[TokenDeviation] (10.1,2.32) rectangle (10.191,2.68);
+\draw[draw=black!55,fill=white] (7.6,3) rectangle ++(1,1);
+\fill[TokenDeviation] (10.1,3.32) rectangle (10.1625,3.68);
+\draw[draw=black!55,fill=white] (7.6,4) rectangle ++(1,1);
+\fill[TokenDeviation] (10.1,4.32) rectangle (10.1895,4.68);
+\draw[draw=black!55,fill=white] (7.6,5) rectangle ++(1,1);
+\fill[TokenDeviation] (9.843,5.32) rectangle (10.1,5.68);
+\draw[draw=black!55,fill=white] (7.6,6) rectangle ++(1,1);
+\fill[TokenDeviation] (10.1,6.32) rectangle (10.317,6.68);
+\draw[draw=black!55,fill=white] (7.6,7) rectangle ++(1,1);
+\fill[TokenDeviation] (10.02,7.32) rectangle (10.1,7.68);
+\draw[draw=black!55,fill=white] (7.6,8) rectangle ++(1,1);
+\fill[TokenDeviation] (10.1,8.32) rectangle (10.2105,8.68);
+\draw[draw=black!55,fill=white] (7.6,9) rectangle ++(1,1);
+\fill[TokenDeviation] (9.8085,9.32) rectangle (10.1,9.68);
+\draw[draw=black!55,fill=white] (7.6,10) rectangle ++(1,1);
+\fill[TokenDeviation] (10.1,10.32) rectangle (10.335,10.68);
+\draw[draw=black!55,fill=white] (7.6,11) rectangle ++(1,1);
+\fill[TokenDeviation] (9.816,11.32) rectangle (10.1,11.68);
+\draw[draw=black!55,fill=white] (7.6,12) rectangle ++(1,1);
+\fill[TokenDeviation] (10.1,12.32) rectangle (10.221,12.68);
+\draw[draw=black!55,fill=white] (7.6,13) rectangle ++(1,1);
+\fill[TokenDeviation] (10.023,13.32) rectangle (10.1,13.68);
+\draw[draw=black!55,fill=white] (7.6,14) rectangle ++(1,1);
+\fill[TokenDeviation] (10.1,14.32) rectangle (10.26,14.68);
+\draw[draw=black!55,fill=black!0.000] (8.85,0) rectangle ++(.35,15);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (7.6,-5) rectangle ++(1,4);
+\fill[ResponseScore] (7.6,-5) rectangle ++(1,0.77733);
+\node[font=\scriptsize,text=ResponseScore] at (8.1,-5.7) {$.19$};
+\node[font=\scriptsize] at (11.9,19.5) {$r=4$};
+\draw[draw=black!28,densely dotted] (13.9,0) -- (13.9,18);
+\draw[draw=black!55,fill=white] (11.4,0) rectangle ++(1,1);
+\fill[TokenDeviation] (13.9,0.32) rectangle (14.15125,0.68);
+\draw[draw=black!55,fill=white] (11.4,1) rectangle ++(1,1);
+\fill[TokenDeviation] (13.67575,1.32) rectangle (13.9,1.68);
+\draw[draw=black!55,fill=white] (11.4,2) rectangle ++(1,1);
+\fill[TokenDeviation] (13.73875,2.32) rectangle (13.9,2.68);
+\draw[draw=black!55,fill=white] (11.4,3) rectangle ++(1,1);
+\fill[TokenDeviation] (13.9,3.32) rectangle (14.17225,3.68);
+\draw[draw=black!55,fill=white] (11.4,4) rectangle ++(1,1);
+\fill[TokenDeviation] (13.79425,4.32) rectangle (13.9,4.68);
+\draw[draw=black!55,fill=white] (11.4,5) rectangle ++(1,1);
+\fill[TokenDeviation] (13.82875,5.32) rectangle (13.9,5.68);
+\draw[draw=black!55,fill=white] (11.4,6) rectangle ++(1,1);
+\fill[TokenDeviation] (13.82725,6.32) rectangle (13.9,6.68);
+\draw[draw=black!55,fill=black] (11.4,7) rectangle ++(1,1);
+\fill[TokenDeviation] (13.9,7.32) rectangle (14.18275,7.68);
+\draw[draw=black!55,fill=white] (11.4,8) rectangle ++(1,1);
+\fill[TokenDeviation] (13.71025,8.32) rectangle (13.9,8.68);
+\draw[draw=black!55,fill=white] (11.4,9) rectangle ++(1,1);
+\fill[TokenDeviation] (13.81375,9.32) rectangle (13.9,9.68);
+\draw[draw=black!55,fill=white] (11.4,10) rectangle ++(1,1);
+\fill[TokenDeviation] (13.84525,10.32) rectangle (13.9,10.68);
+\draw[draw=black!55,fill=white] (11.4,11) rectangle ++(1,1);
+\fill[TokenDeviation] (13.82725,11.32) rectangle (13.9,11.68);
+\draw[draw=black!55,fill=white] (11.4,12) rectangle ++(1,1);
+\fill[TokenDeviation] (13.9,12.32) rectangle (13.91425,12.68);
+\draw[draw=black!55,fill=white] (11.4,13) rectangle ++(1,1);
+\fill[TokenDeviation] (13.9,13.32) rectangle (14.18125,13.68);
+\draw[draw=black!55,fill=white] (11.4,14) rectangle ++(1,1);
+\fill[TokenDeviation] (13.67575,14.32) rectangle (13.9,14.68);
+\draw[draw=black!55,fill=white] (11.4,15) rectangle ++(1,1);
+\fill[TokenDeviation] (13.9,15.32) rectangle (14.20225,15.68);
+\draw[draw=black!55,fill=white] (11.4,16) rectangle ++(1,1);
+\fill[TokenDeviation] (13.9,16.32) rectangle (13.98325,16.68);
+\draw[draw=black!55,fill=white] (11.4,17) rectangle ++(1,1);
+\fill[TokenDeviation] (13.67575,17.32) rectangle (13.9,17.68);
+\draw[draw=black!55,fill=black!5.556] (12.65,0) rectangle ++(.35,18);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (11.4,-5) rectangle ++(1,4);
+\fill[ResponseScore] (11.4,-5) rectangle ++(1,0.598);
+\node[font=\scriptsize,text=ResponseScore] at (11.9,-5.7) {$.15$};
+\node[font=\scriptsize] at (15.7,19.5) {$r=5$};
+\draw[draw=black!28,densely dotted] (17.7,0) -- (17.7,14);
+\draw[draw=black!55,fill=white] (15.2,0) rectangle ++(1,1);
+\fill[TokenDeviation] (17.41639,0.32) rectangle (17.7,0.68);
+\draw[draw=black!55,fill=white] (15.2,1) rectangle ++(1,1);
+\fill[TokenDeviation] (17.7,1.32) rectangle (17.72989,1.68);
+\draw[draw=black!55,fill=white] (15.2,2) rectangle ++(1,1);
+\fill[TokenDeviation] (17.7,2.32) rectangle (17.90389,2.68);
+\draw[draw=black!55,fill=white] (15.2,3) rectangle ++(1,1);
+\fill[TokenDeviation] (17.7,3.32) rectangle (17.87089,3.68);
+\draw[draw=black!55,fill=white] (15.2,4) rectangle ++(1,1);
+\fill[TokenDeviation] (17.7,4.32) rectangle (17.76889,4.68);
+\draw[draw=black!55,fill=black] (15.2,5) rectangle ++(1,1);
+\fill[TokenDeviation] (17.7,5.32) rectangle (18.28489,5.68);
+\draw[draw=black!55,fill=white] (15.2,6) rectangle ++(1,1);
+\fill[TokenDeviation] (17.7,6.32) rectangle (17.74039,6.68);
+\draw[draw=black!55,fill=white] (15.2,7) rectangle ++(1,1);
+\fill[TokenDeviation] (17.52289,7.32) rectangle (17.7,7.68);
+\draw[draw=black!55,fill=white] (15.2,8) rectangle ++(1,1);
+\fill[TokenDeviation] (17.41039,8.32) rectangle (17.7,8.68);
+\draw[draw=black!55,fill=white] (15.2,9) rectangle ++(1,1);
+\fill[TokenDeviation] (17.51839,9.32) rectangle (17.7,9.68);
+\draw[draw=black!55,fill=white] (15.2,10) rectangle ++(1,1);
+\fill[TokenDeviation] (17.7,10.32) rectangle (17.83189,10.68);
+\draw[draw=black!55,fill=white] (15.2,11) rectangle ++(1,1);
+\fill[TokenDeviation] (17.64589,11.32) rectangle (17.7,11.68);
+\draw[draw=black!55,fill=white] (15.2,12) rectangle ++(1,1);
+\fill[TokenDeviation] (17.64589,12.32) rectangle (17.7,12.68);
+\draw[draw=black!55,fill=white] (15.2,13) rectangle ++(1,1);
+\fill[TokenDeviation] (17.50939,13.32) rectangle (17.7,13.68);
+\draw[draw=black!55,fill=black!7.143] (16.45,0) rectangle ++(.35,14);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (15.2,-5) rectangle ++(1,4);
+\fill[ResponseScore] (15.2,-5) rectangle ++(1,0.77229);
+\node[font=\scriptsize,text=ResponseScore] at (15.7,-5.7) {$.19$};
+\node[font=\scriptsize] at (19.5,19.5) {$r=6$};
+\draw[draw=black!28,densely dotted] (21.5,0) -- (21.5,12);
+\draw[draw=black!55,fill=white] (19,0) rectangle ++(1,1);
+\fill[TokenDeviation] (21.17738,0.32) rectangle (21.5,0.68);
+\draw[draw=black!55,fill=white] (19,1) rectangle ++(1,1);
+\fill[TokenDeviation] (21.15788,1.32) rectangle (21.5,1.68);
+\draw[draw=black!55,fill=white] (19,2) rectangle ++(1,1);
+\fill[TokenDeviation] (21.29587,2.32) rectangle (21.5,2.68);
+\draw[draw=black!55,fill=white] (19,3) rectangle ++(1,1);
+\fill[TokenDeviation] (21.5,3.32) rectangle (21.60487,3.68);
+\draw[draw=black!55,fill=white] (19,4) rectangle ++(1,1);
+\fill[TokenDeviation] (21.5,4.32) rectangle (21.71288,4.68);
+\draw[draw=black!55,fill=white] (19,5) rectangle ++(1,1);
+\fill[TokenDeviation] (21.5,5.32) rectangle (21.52088,5.68);
+\draw[draw=black!55,fill=white] (19,6) rectangle ++(1,1);
+\fill[TokenDeviation] (21.38287,6.32) rectangle (21.5,6.68);
+\draw[draw=black!55,fill=white] (19,7) rectangle ++(1,1);
+\fill[TokenDeviation] (21.5,7.32) rectangle (21.57337,7.68);
+\draw[draw=black!55,fill=white] (19,8) rectangle ++(1,1);
+\fill[TokenDeviation] (21.5,8.32) rectangle (21.53738,8.68);
+\draw[draw=black!55,fill=white] (19,9) rectangle ++(1,1);
+\fill[TokenDeviation] (21.5,9.32) rectangle (21.70538,9.68);
+\draw[draw=black!55,fill=black] (19,10) rectangle ++(1,1);
+\fill[TokenDeviation] (21.5,10.32) rectangle (21.91688,10.68);
+\draw[draw=black!55,fill=white] (19,11) rectangle ++(1,1);
+\fill[TokenDeviation] (21.41437,11.32) rectangle (21.5,11.68);
+\draw[draw=black!55,fill=black!8.333] (20.25,0) rectangle ++(.35,12);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (19,-5) rectangle ++(1,4);
+\fill[ResponseScore] (19,-5) rectangle ++(1,0.91233);
+\node[font=\scriptsize,text=ResponseScore] at (19.5,-5.7) {$.23$};
+\node[font=\scriptsize] at (23.3,19.5) {$r=7$};
+\draw[draw=black!28,densely dotted] (25.3,0) -- (25.3,13);
+\draw[draw=black!55,fill=white] (22.8,0) rectangle ++(1,1);
+\fill[TokenDeviation] (25.06865,0.32) rectangle (25.3,0.68);
+\draw[draw=black!55,fill=white] (22.8,1) rectangle ++(1,1);
+\fill[TokenDeviation] (25.12565,1.32) rectangle (25.3,1.68);
+\draw[draw=black!55,fill=white] (22.8,2) rectangle ++(1,1);
+\fill[TokenDeviation] (25.03715,2.32) rectangle (25.3,2.68);
+\draw[draw=black!55,fill=black] (22.8,3) rectangle ++(1,1);
+\fill[TokenDeviation] (25.3,3.32) rectangle (25.89665,3.68);
+\draw[draw=black!55,fill=white] (22.8,4) rectangle ++(1,1);
+\fill[TokenDeviation] (25.27715,4.32) rectangle (25.3,4.68);
+\draw[draw=black!55,fill=white] (22.8,5) rectangle ++(1,1);
+\fill[TokenDeviation] (25.3,5.32) rectangle (25.34315,5.68);
+\draw[draw=black!55,fill=white] (22.8,6) rectangle ++(1,1);
+\fill[TokenDeviation] (25.05515,6.32) rectangle (25.3,6.68);
+\draw[draw=black!55,fill=white] (22.8,7) rectangle ++(1,1);
+\fill[TokenDeviation] (25.3,7.32) rectangle (25.45865,7.68);
+\draw[draw=black!55,fill=white] (22.8,8) rectangle ++(1,1);
+\fill[TokenDeviation] (25.14365,8.32) rectangle (25.3,8.68);
+\draw[draw=black!55,fill=black] (22.8,9) rectangle ++(1,1);
+\fill[TokenDeviation] (25.3,9.32) rectangle (25.39115,9.68);
+\draw[draw=black!55,fill=white] (22.8,10) rectangle ++(1,1);
+\fill[TokenDeviation] (25.3,10.32) rectangle (25.32065,10.68);
+\draw[draw=black!55,fill=white] (22.8,11) rectangle ++(1,1);
+\fill[TokenDeviation] (25.00415,11.32) rectangle (25.3,11.68);
+\draw[draw=black!55,fill=black] (22.8,12) rectangle ++(1,1);
+\fill[TokenDeviation] (25.3,12.32) rectangle (25.77815,12.68);
+\draw[draw=black!55,fill=black!23.077] (24.05,0) rectangle ++(.35,13);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (22.8,-5) rectangle ++(1,4);
+\fill[ResponseScore] (22.8,-5) rectangle ++(1,1.08892);
+\node[font=\scriptsize,text=ResponseScore] at (23.3,-5.7) {$.27$};
+\node[font=\scriptsize] at (27.1,19.5) {$r=8$};
+\draw[draw=black!28,densely dotted] (29.1,0) -- (29.1,10);
+\draw[draw=black!55,fill=white] (26.6,0) rectangle ++(1,1);
+\fill[TokenDeviation] (29.0751,0.32) rectangle (29.1,0.68);
+\draw[draw=black!55,fill=white] (26.6,1) rectangle ++(1,1);
+\fill[TokenDeviation] (29.1,1.32) rectangle (29.2401,1.68);
+\draw[draw=black!55,fill=white] (26.6,2) rectangle ++(1,1);
+\fill[TokenDeviation] (29.1,2.32) rectangle (29.1891,2.68);
+\draw[draw=black!55,fill=white] (26.6,3) rectangle ++(1,1);
+\fill[TokenDeviation] (29.1,3.32) rectangle (29.2266,3.68);
+\draw[draw=black!55,fill=white] (26.6,4) rectangle ++(1,1);
+\fill[TokenDeviation] (29.1,4.32) rectangle (29.2881,4.68);
+\draw[draw=black!55,fill=white] (26.6,5) rectangle ++(1,1);
+\fill[TokenDeviation] (28.8756,5.32) rectangle (29.1,5.68);
+\draw[draw=black!55,fill=white] (26.6,6) rectangle ++(1,1);
+\fill[TokenDeviation] (29.1,6.32) rectangle (29.2341,6.68);
+\draw[draw=black!55,fill=white] (26.6,7) rectangle ++(1,1);
+\fill[TokenDeviation] (29.1,7.32) rectangle (29.1051,7.68);
+\draw[draw=black!55,fill=white] (26.6,8) rectangle ++(1,1);
+\fill[TokenDeviation] (28.9926,8.32) rectangle (29.1,8.68);
+\draw[draw=black!55,fill=white] (26.6,9) rectangle ++(1,1);
+\fill[TokenDeviation] (28.7736,9.32) rectangle (29.1,9.68);
+\draw[draw=black!55,fill=black!0.000] (27.85,0) rectangle ++(.35,10);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (26.6,-5) rectangle ++(1,4);
+\fill[ResponseScore] (26.6,-5) rectangle ++(1,0.8704);
+\node[font=\scriptsize,text=ResponseScore] at (27.1,-5.7) {$.22$};
+\node[font=\scriptsize] at (30.9,19.5) {$r=9$};
+\draw[draw=black!28,densely dotted] (32.9,0) -- (32.9,17);
+\draw[draw=black!55,fill=white] (30.4,0) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,0.32) rectangle (32.918,0.68);
+\draw[draw=black!55,fill=white] (30.4,1) rectangle ++(1,1);
+\fill[TokenDeviation] (32.744,1.32) rectangle (32.9,1.68);
+\draw[draw=black!55,fill=white] (30.4,2) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,2.32) rectangle (32.9315,2.68);
+\draw[draw=black!55,fill=black] (30.4,3) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,3.32) rectangle (33.068,3.68);
+\draw[draw=black!55,fill=white] (30.4,4) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,4.32) rectangle (33.1115,4.68);
+\draw[draw=black!55,fill=white] (30.4,5) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,5.32) rectangle (32.909,5.68);
+\draw[draw=black!55,fill=white] (30.4,6) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,6.32) rectangle (32.9345,6.68);
+\draw[draw=black!55,fill=white] (30.4,7) rectangle ++(1,1);
+\fill[TokenDeviation] (32.87,7.32) rectangle (32.9,7.68);
+\draw[draw=black!55,fill=white] (30.4,8) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,8.32) rectangle (33.083,8.68);
+\draw[draw=black!55,fill=white] (30.4,9) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,9.32) rectangle (32.9015,9.68);
+\draw[draw=black!55,fill=white] (30.4,10) rectangle ++(1,1);
+\fill[TokenDeviation] (32.765,10.32) rectangle (32.9,10.68);
+\draw[draw=black!55,fill=white] (30.4,11) rectangle ++(1,1);
+\fill[TokenDeviation] (32.789,11.32) rectangle (32.9,11.68);
+\draw[draw=black!55,fill=white] (30.4,12) rectangle ++(1,1);
+\fill[TokenDeviation] (32.675,12.32) rectangle (32.9,12.68);
+\draw[draw=black!55,fill=white] (30.4,13) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,13.32) rectangle (33.113,13.68);
+\draw[draw=black!55,fill=white] (30.4,14) rectangle ++(1,1);
+\fill[TokenDeviation] (32.6015,14.32) rectangle (32.9,14.68);
+\draw[draw=black!55,fill=white] (30.4,15) rectangle ++(1,1);
+\fill[TokenDeviation] (32.9,15.32) rectangle (33.023,15.68);
+\draw[draw=black!55,fill=white] (30.4,16) rectangle ++(1,1);
+\fill[TokenDeviation] (32.8625,16.32) rectangle (32.9,16.68);
+\draw[draw=black!55,fill=black!5.882] (31.65,0) rectangle ++(.35,17);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (30.4,-5) rectangle ++(1,4);
+\fill[ResponseScore] (30.4,-5) rectangle ++(1,0.796);
+\node[font=\scriptsize,text=ResponseScore] at (30.9,-5.7) {$.20$};
+\node[font=\scriptsize] at (34.7,19.5) {$r=10$};
+\draw[draw=black!28,densely dotted] (36.7,0) -- (36.7,10);
+\draw[draw=black!55,fill=white] (34.2,0) rectangle ++(1,1);
+\fill[TokenDeviation] (36.62575,0.32) rectangle (36.7,0.68);
+\draw[draw=black!55,fill=white] (34.2,1) rectangle ++(1,1);
+\fill[TokenDeviation] (36.50725,1.32) rectangle (36.7,1.68);
+\draw[draw=black!55,fill=white] (34.2,2) rectangle ++(1,1);
+\fill[TokenDeviation] (36.38275,2.32) rectangle (36.7,2.68);
+\draw[draw=black!55,fill=black] (34.2,3) rectangle ++(1,1);
+\fill[TokenDeviation] (36.7,3.32) rectangle (36.74425,3.68);
+\draw[draw=black!55,fill=white] (34.2,4) rectangle ++(1,1);
+\fill[TokenDeviation] (36.7,4.32) rectangle (36.77275,4.68);
+\draw[draw=black!55,fill=black] (34.2,5) rectangle ++(1,1);
+\fill[TokenDeviation] (36.7,5.32) rectangle (37.19725,5.68);
+\draw[draw=black!55,fill=white] (34.2,6) rectangle ++(1,1);
+\fill[TokenDeviation] (36.52975,6.32) rectangle (36.7,6.68);
+\draw[draw=black!55,fill=white] (34.2,7) rectangle ++(1,1);
+\fill[TokenDeviation] (36.7,7.32) rectangle (36.88825,7.68);
+\draw[draw=black!55,fill=white] (34.2,8) rectangle ++(1,1);
+\fill[TokenDeviation] (36.62575,8.32) rectangle (36.7,8.68);
+\draw[draw=black!55,fill=white] (34.2,9) rectangle ++(1,1);
+\fill[TokenDeviation] (36.7,9.32) rectangle (36.72625,9.68);
+\draw[draw=black!55,fill=black!20.000] (35.45,0) rectangle ++(.35,10);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (34.2,-5) rectangle ++(1,4);
+\fill[ResponseScore] (34.2,-5) rectangle ++(1,0.846);
+\node[font=\scriptsize,text=ResponseScore] at (34.7,-5.7) {$.21$};
+\node[font=\scriptsize] at (38.5,19.5) {$r=11$};
+\draw[draw=black!28,densely dotted] (40.5,0) -- (40.5,19);
+\draw[draw=black!55,fill=white] (38,0) rectangle ++(1,1);
+\fill[TokenDeviation] (40.21768,0.32) rectangle (40.5,0.68);
+\draw[draw=black!55,fill=white] (38,1) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,1.32) rectangle (40.70668,1.68);
+\draw[draw=black!55,fill=white] (38,2) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,2.32) rectangle (40.54918,2.68);
+\draw[draw=black!55,fill=white] (38,3) rectangle ++(1,1);
+\fill[TokenDeviation] (40.25068,3.32) rectangle (40.5,3.68);
+\draw[draw=black!55,fill=white] (38,4) rectangle ++(1,1);
+\fill[TokenDeviation] (40.35868,4.32) rectangle (40.5,4.68);
+\draw[draw=black!55,fill=white] (38,5) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,5.32) rectangle (40.57618,5.68);
+\draw[draw=black!55,fill=white] (38,6) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,6.32) rectangle (40.60918,6.68);
+\draw[draw=black!55,fill=white] (38,7) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,7.32) rectangle (40.59868,7.68);
+\draw[draw=black!55,fill=white] (38,8) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,8.32) rectangle (40.66468,8.68);
+\draw[draw=black!55,fill=white] (38,9) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,9.32) rectangle (40.61668,9.68);
+\draw[draw=black!55,fill=white] (38,10) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,10.32) rectangle (40.66018,10.68);
+\draw[draw=black!55,fill=white] (38,11) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,11.32) rectangle (40.52368,11.68);
+\draw[draw=black!55,fill=white] (38,12) rectangle ++(1,1);
+\fill[TokenDeviation] (40.31068,12.32) rectangle (40.5,12.68);
+\draw[draw=black!55,fill=white] (38,13) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,13.32) rectangle (40.53568,13.68);
+\draw[draw=black!55,fill=white] (38,14) rectangle ++(1,1);
+\fill[TokenDeviation] (40.36018,14.32) rectangle (40.5,14.68);
+\draw[draw=black!55,fill=white] (38,15) rectangle ++(1,1);
+\fill[TokenDeviation] (40.35268,15.32) rectangle (40.5,15.68);
+\draw[draw=black!55,fill=white] (38,16) rectangle ++(1,1);
+\fill[TokenDeviation] (40.36018,16.32) rectangle (40.5,16.68);
+\draw[draw=black!55,fill=white] (38,17) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,17.32) rectangle (40.60318,17.68);
+\draw[draw=black!55,fill=black] (38,18) rectangle ++(1,1);
+\fill[TokenDeviation] (40.5,18.32) rectangle (40.64518,18.68);
+\draw[draw=black!55,fill=black!5.263] (39.25,0) rectangle ++(.35,19);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (38,-5) rectangle ++(1,4);
+\fill[ResponseScore] (38,-5) rectangle ++(1,0.75284);
+\node[font=\scriptsize,text=ResponseScore] at (38.5,-5.7) {$.19$};
+\node[font=\scriptsize] at (42.3,19.5) {$r=12$};
+\draw[draw=black!28,densely dotted] (44.3,0) -- (44.3,12);
+\draw[draw=black!55,fill=white] (41.8,0) rectangle ++(1,1);
+\fill[TokenDeviation] (44.26812,0.32) rectangle (44.3,0.68);
+\draw[draw=black!55,fill=white] (41.8,1) rectangle ++(1,1);
+\fill[TokenDeviation] (44.05062,1.32) rectangle (44.3,1.68);
+\draw[draw=black!55,fill=black] (41.8,2) rectangle ++(1,1);
+\fill[TokenDeviation] (44.3,2.32) rectangle (44.65062,2.68);
+\draw[draw=black!55,fill=white] (41.8,3) rectangle ++(1,1);
+\fill[TokenDeviation] (44.13612,3.32) rectangle (44.3,3.68);
+\draw[draw=black!55,fill=white] (41.8,4) rectangle ++(1,1);
+\fill[TokenDeviation] (44.24862,4.32) rectangle (44.3,4.68);
+\draw[draw=black!55,fill=white] (41.8,5) rectangle ++(1,1);
+\fill[TokenDeviation] (44.01313,5.32) rectangle (44.3,5.68);
+\draw[draw=black!55,fill=white] (41.8,6) rectangle ++(1,1);
+\fill[TokenDeviation] (44.3,6.32) rectangle (44.46012,6.68);
+\draw[draw=black!55,fill=white] (41.8,7) rectangle ++(1,1);
+\fill[TokenDeviation] (44.3,7.32) rectangle (44.43462,7.68);
+\draw[draw=black!55,fill=white] (41.8,8) rectangle ++(1,1);
+\fill[TokenDeviation] (44.27562,8.32) rectangle (44.3,8.68);
+\draw[draw=black!55,fill=white] (41.8,9) rectangle ++(1,1);
+\fill[TokenDeviation] (44.3,9.32) rectangle (44.52163,9.68);
+\draw[draw=black!55,fill=white] (41.8,10) rectangle ++(1,1);
+\fill[TokenDeviation] (44.10762,10.32) rectangle (44.3,10.68);
+\draw[draw=black!55,fill=white] (41.8,11) rectangle ++(1,1);
+\fill[TokenDeviation] (44.3,11.32) rectangle (44.43312,11.68);
+\draw[draw=black!55,fill=black!8.333] (43.05,0) rectangle ++(.35,12);
+\draw[draw=ResponseScore!45,fill=ResponseScore!4] (41.8,-5) rectangle ++(1,4);
+\fill[ResponseScore] (41.8,-5) rectangle ++(1,1.033);
+\node[font=\scriptsize,text=ResponseScore] at (42.3,-5.7) {$.26$};
+\node[font=\scriptsize,text=ResponseScore] at (22.6,-6.9) {Response means $m_r$ (common scale $0$ to $1$)};
+\node[font=\scriptsize,text=TokenDeviation] at (22.6,-8.0) {Orange bars: token deviations $d_{r,t}$; left is negative, right is positive};
+\node[font=\small] at (22.6,-9.5) {$T:\ \textcolor{ResponseScore}{m_r}\mapsto\textcolor{ResponseScore}{m_r},\ \textcolor{TokenDeviation}{d_{r,t}}\mapsto0\qquad O_c:\ \textcolor{ResponseScore}{m_r}\mapsto\textcolor{ResponseScore}{m_r+c_r},\ \textcolor{TokenDeviation}{d_{r,t}}\mapsto\textcolor{TokenDeviation}{d_{r,t}}$};
 \end{tikzpicture}
 \endgroup

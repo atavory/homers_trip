@@ -1,0 +1,259 @@
+{
+  "label_seed": 20261015,
+  "score_seed": 2026101502,
+  "source_diagram_sha256": "25af8bfcdf9ea21b2f7dd3820efc6732cfa30598ecfb1f98a09f937f9207f6e9",
+  "source_commit": "caf270a",
+  "label_distribution": "native PGF discrete uniform lengths 8 to 20; Beta(1,7) response rates; Bernoulli token labels",
+  "responses": [
+    {
+      "response_id": 1,
+      "token_count": 9,
+      "latent_prevalence": "0.07239",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "response_id": 2,
+      "token_count": 17,
+      "latent_prevalence": "0.08089",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "response_id": 3,
+      "token_count": 15,
+      "latent_prevalence": "0.04088",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "response_id": 4,
+      "token_count": 18,
+      "latent_prevalence": "0.04497",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "response_id": 5,
+      "token_count": 14,
+      "latent_prevalence": "0.04558",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "response_id": 6,
+      "token_count": 12,
+      "latent_prevalence": "0.07599",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "response_id": 7,
+      "token_count": 13,
+      "latent_prevalence": "0.26042",
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "response_id": 8,
+      "token_count": 10,
+      "latent_prevalence": "0.01147",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "response_id": 9,
+      "token_count": 17,
+      "latent_prevalence": "0.04947",
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "response_id": 10,
+      "token_count": 10,
+      "latent_prevalence": "0.05948",
+      "labels": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "response_id": 11,
+      "token_count": 19,
+      "latent_prevalence": "0.06978",
+      "labels": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "response_id": 12,
+      "token_count": 12,
+      "latent_prevalence": "0.23112",
+      "labels": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

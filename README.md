@@ -106,3 +106,13 @@ python analysis/aggregate_shadow.py --expanded results/expanded/expanded_results
 ```
 
 The main reproduction pipeline produces the expanded, alternative and relationship results. The shadow aggregation writes four LaTeX tables, inline values and a CSV mapping every new display to its unrounded source. Its manifest records dataset, fitting and source-bootstrap consistency checks and input/output hashes.
+
+## Response and token score components
+
+The system diagram preserves the original native-PGF seeded lengths and labels and adds a separate, seeded illustrative score realization. Blue indicators show each response mean, orange bars show signed token deviations, and grey bars retain observed label prevalence. Regenerate its TikZ source and exact CSVs with:
+
+```bash
+python analysis/system_components.py --inputs figures/system_components_inputs.json --out results/system_components
+```
+
+The original sampling template is preserved at `figures/system_labels_seeded.tex`. The fixed input JSON records the native label seed and original source hash. The score generator verifies mean/deviation identities and the mean-projection/response-offset relations using exact rational arithmetic. These are synthetic diagram inputs, not trained-detector results.
