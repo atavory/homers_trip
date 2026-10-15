@@ -154,11 +154,11 @@ def main():
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / 'results.json').write_text(json.dumps(result, indent=2, allow_nan=False) + '\n')
     with (args.out / 'relationships.csv').open('w', newline='') as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator='\n')
         writer.writerow(['model', 'weighting', 'quantity', 'point', 'ci95_low', 'ci95_high', 'valid_draws'])
         writer.writerows(result_rows)
     with (args.out / 'response_atoms.csv').open('w', newline='') as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator='\n')
         writer.writerow(['model', 'response_id', 'source_id', 'words', 'prevalence', 'mean_logit', 'variance_logit', 'covariance_logit_label', 'mean_probability', 'probability_squared_error', 'mean_probability_error', 'centered_probability_error'])
         writer.writerows(response_rows)
     tex = [r'\providecommand{\HomerDecisionValue}[1]{\csname hd@#1\endcsname}']

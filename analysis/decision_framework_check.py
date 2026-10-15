@@ -213,7 +213,7 @@ def main():
     record = {"kind": "analytic_fixtures", "script_sha256": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(), "fixture_count": len(values), "all_checks_passed": True, "results": serialize(values)}
     (args.output / "verification.json").write_text(json.dumps(record, indent=2) + "\n")
     with (args.output / "values.csv").open("w", newline="") as handle:
-        writer = csv.writer(handle)
+        writer = csv.writer(handle, lineterminator='\n')
         writer.writerow(["quantity", "exact", "decimal"])
         writer.writerows(rows(values))
     print(json.dumps({key: record[key] for key in ["kind", "script_sha256", "fixture_count", "all_checks_passed"]}))
