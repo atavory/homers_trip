@@ -1,0 +1,77 @@
+\begingroup
+\definecolor{HDpositive}{HTML}{D55E00}
+\definecolor{HDnegative}{HTML}{0072B2}
+\definecolor{HDguide}{HTML}{DCE2E7}
+\newcommand{\HDpos}[3]{%
+  \pgfmathsetmacro{\HDRadius}{.08*sqrt((#3)/pi)}%
+  \fill[HDpositive] ({#1},{#2}) circle[radius=\HDRadius cm];}
+\newcommand{\HDneg}[3]{%
+  \pgfmathsetmacro{\HDHalf}{.08*sqrt((#3)/4)}%
+  \fill[HDnegative] ({#1-\HDHalf},{#2-\HDHalf})
+    rectangle ({#1+\HDHalf},{#2+\HDHalf});}
+\begin{tikzpicture}[x=1cm,y=1cm,font=\footnotesize,line cap=round]
+  \HDpos{4.65}{6.72}{3}
+  \node[anchor=west,font=\small] at (4.80,6.72) {Hallucinated $(+)$};
+  \HDneg{7.75}{6.72}{3}
+  \node[anchor=west,font=\small] at (7.90,6.72) {Correct $(-)$};
+  \node[anchor=west,font=\scriptsize] at (10.60,6.72) {Marker area represents token count.};
+
+  \node[font=\small\bfseries,align=center,text width=7.6cm]
+    at (3.95,6.12) {(a) Each response has\\a positive score gap.};
+  \node[font=\small\bfseries,align=center,text width=7.6cm]
+    at (12.25,6.12) {(b) Each response has\\constant scores.};
+  \draw[HDguide,line width=.4pt] (7.95,-.97) -- (7.95,5.80);
+
+  \foreach \HDoffset in {0,8.3} {
+    \fill[HDguide!28] ({\HDoffset+1.93},.08)
+      rectangle ({\HDoffset+6.86},1.06);
+    \foreach \HDscore in {0,2,4,6,8,10} {
+      \draw[HDguide,densely dotted,line width=.3pt]
+        ({\HDoffset+2.05+.42*\HDscore},.10)
+        -- ({\HDoffset+2.05+.42*\HDscore},5.82);
+      \draw[black!60,line width=.4pt]
+        ({\HDoffset+2.05+.42*\HDscore},.00)
+        -- ({\HDoffset+2.05+.42*\HDscore},-.08);
+      \node[font=\scriptsize,anchor=north]
+        at ({\HDoffset+2.05+.42*\HDscore},-.17) {$\HDscore$};
+    }
+    \foreach \HDrow in {1,...,6} {
+      \pgfmathsetmacro{\HDy}{5.35-.70*(\HDrow-1)}
+      \draw[HDguide,line width=.3pt]
+        ({\HDoffset+1.93},\HDy) -- ({\HDoffset+6.86},\HDy);
+      \node[anchor=west,font=\small] at ({\HDoffset+.55},\HDy) {$r=\HDrow$};
+    }
+    \draw[->,>=stealth,black!65,line width=.5pt]
+      ({\HDoffset+1.98},-.04) -- ({\HDoffset+7.00},-.04);
+    \node[anchor=west,font=\small] at ({\HDoffset+7.12},-.04) {$\hat y_{r,t}$};
+    \node[anchor=west,align=left,font=\small]
+      at ({\HDoffset+.15},.62) {Pooled};
+  }
+
+  \foreach \HDrow/\HDcount/\HDbase in
+    {@@ROWS@@} {
+    \pgfmathsetmacro{\HDy}{5.35-.70*(\HDrow-1)}
+    \HDneg{2.05+.42*\HDbase}{\HDy}{20-\HDcount}
+    \HDpos{2.05+.42*(\HDbase+1)}{\HDy}{\HDcount}
+    \HDneg{2.05+.42*\HDbase}{.62}{20-\HDcount}
+    \HDpos{2.05+.42*(\HDbase+1)}{.62}{\HDcount}
+    \HDpos{10.35+.42*(10-\HDbase)}{\HDy+.14}{\HDcount}
+    \HDneg{10.35+.42*(10-\HDbase)}{\HDy-.14}{20-\HDcount}
+    \HDpos{10.35+.42*(10-\HDbase)}{.76}{\HDcount}
+    \HDneg{10.35+.42*(10-\HDbase)}{.48}{20-\HDcount}
+  }
+
+  \draw[->,>=stealth,black!70,line width=.6pt,
+    shorten <=2.5pt,shorten >=2.5pt]
+    ({2.05+.42*@@NEG_A@@},-.72) -- ({2.05+.42*@@POS_A@@},-.72);
+  \draw[HDnegative,line width=1pt] ({2.05+.42*@@NEG_A@@},-.81) -- ({2.05+.42*@@NEG_A@@},-.63);
+  \draw[HDpositive,line width=1pt] ({2.05+.42*@@POS_A@@},-.81) -- ({2.05+.42*@@POS_A@@},-.63);
+  \node[font=\small] at ({2.05+.42*@@CENTER_A@@},-1.08) {$\Delta_{\mathrm{pool}}<0$};
+  \draw[->,>=stealth,black!70,line width=.6pt,
+    shorten <=2.5pt,shorten >=2.5pt]
+    ({10.35+.42*@@NEG_B@@},-.72) -- ({10.35+.42*@@POS_B@@},-.72);
+  \draw[HDnegative,line width=1pt] ({10.35+.42*@@NEG_B@@},-.81) -- ({10.35+.42*@@NEG_B@@},-.63);
+  \draw[HDpositive,line width=1pt] ({10.35+.42*@@POS_B@@},-.81) -- ({10.35+.42*@@POS_B@@},-.63);
+  \node[font=\small] at ({10.35+.42*@@CENTER_B@@},-1.08) {$\Delta_{\mathrm{pool}}>0$};
+\end{tikzpicture}
+\endgroup

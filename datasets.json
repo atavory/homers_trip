@@ -1,0 +1,10 @@
+{
+  "RAGTruth": {
+    "repository": "https://github.com/ParticleMedia/RAGTruth",
+    "revision": "a34631fcf138f4311957c066f0942bfe053c61b3",
+    "files": {
+      "dataset/response.jsonl": "4c8944d244c02fbf5da7c1f5d8c5b1065c74e46add23780b0c01de9f0d03bbd8",
+      "dataset/source_info.jsonl": "70a7decf2fdac48bb64db3607632607ddd1d3785abe61585b918592a934b8c76"
+    }
+  }
+}
