@@ -1,0 +1,46 @@
+\begingroup
+\def\DiagramSeed{20261015}
+\def\ResponseCount{12}
+\def\MinimumTokens{8}
+\def\MaximumTokens{20}
+\def\BetaShape{7}
+\def\CellSize{3.5mm}
+\def\BarGap{0.25}
+\def\BarWidth{0.35}
+\def\ColumnGap{1}
+\def\StrokeFraction{0.03}
+\def\OutlineShade{55}
+
+% N_r is discrete uniform; p_r is Beta(1,BetaShape); labels are Bernoulli(p_r).
+\pgfmathsetseed{\DiagramSeed}
+\pgfmathsetmacro{\ColumnPitch}{1+\BarGap+\BarWidth+\ColumnGap}
+\pgfmathsetlengthmacro{\StrokeWidth}{\StrokeFraction*\CellSize}
+
+\begin{tikzpicture}[x=\CellSize,y=\CellSize,line width=\StrokeWidth]
+  \foreach \Response in {1,...,\ResponseCount} {
+    \pgfmathrandominteger{\TokenCount}{\MinimumTokens}{\MaximumTokens}
+    \pgfmathsetmacro{\HallucinationRate}{1-(1-rnd)^(1/\BetaShape)}
+    \pgfmathsetmacro{\ColumnX}{(\Response-1)*\ColumnPitch}
+
+    \foreach \Token [
+      evaluate=\Token as \Hallucinated using {int(rnd<\HallucinationRate)},
+      evaluate=\Token as \BlackCount using {\PreviousCount+\Hallucinated},
+      remember=\BlackCount as \PreviousCount (initially 0)
+    ] in {1,...,\TokenCount} {
+      \ifnum\Hallucinated=1
+        \def\CellFill{black}
+      \else
+        \def\CellFill{white}
+      \fi
+      \draw[draw=black!\OutlineShade,fill=\CellFill]
+        (\ColumnX,{\Token-1}) rectangle ++(1,1);
+
+      \ifnum\Token=\TokenCount
+        \pgfmathsetmacro{\GreyPercent}{100*\BlackCount/\TokenCount}
+        \draw[draw=black!\OutlineShade,fill=black!\GreyPercent]
+          ({\ColumnX+1+\BarGap},0) rectangle ++(\BarWidth,\TokenCount);
+      \fi
+    }
+  }
+\end{tikzpicture}
+\endgroup
