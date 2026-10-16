@@ -127,3 +127,22 @@ python analysis/operator_comparisons.py --expanded results/expanded/expanded_res
 ```
 
 The generated tables and inline values report deviation gains at each response level and their interaction, with paired complete-source intervals. AUROC and AP use a common score-label functional. F1 results use separately frozen validation-selected thresholds and are labeled accordingly. Projection contrasts are reference-dependent diagnostics of prediction structure.
+
+## Joint recovery
+
+The reproduction pipeline includes exact projection/offset and joint-loss
+checks, an autoregressive feedback construction, and replay of the original
+frequency scorers under uniform-span and span-length recovery weights.
+It retains score vectors, exact cutoff-tie recovery laws, point severity
+curves, source-group intervals and script-generated manuscript tables.
+
+```bash
+python scripts/reproduce.py --data data/RAGTruth --out results
+```
+
+The new outputs are `joint_operator`, `joint_math`, `sequential`,
+`joint_replay`, and `joint_aggregates`. The replay reconstructs the sorted
+source order used by the original inspection code and verifies the source
+weights, fitting and original metrics. Annotation coverage and constructed
+generator outcomes are separate from measured factual editing outcomes.
+Point-curve roots carry no simultaneous confidence claim.
