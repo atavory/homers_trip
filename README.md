@@ -146,3 +146,44 @@ source order used by the original inspection code and verifies the source
 weights, fitting and original metrics. Annotation coverage and constructed
 generator outcomes are separate from measured factual editing outcomes.
 Point-curve roots carry no simultaneous confidence claim.
+
+## Sub-response evaluation and complete recovery
+
+The revised paper separates classification, conditional selection and the
+success of the resulting response. Its six-response construction preserves
+pooled scores, response means, the complete average recovery curve and several
+conditional summaries while changing complete support under an assumed editor.
+
+```bash
+python analysis/optional_fixed_budget_check.py
+python analysis/bandha_ais_bridge_check.py --out results/ais_bridge
+python analysis/bandha_downstream_loss_check.py --out results/downstream_loss
+python analysis/bandha_downstream_aggregate.py --input results/downstream_loss/verification.json --out results/downstream_values
+```
+
+The first command writes `analysis/optional_fixed_budget_results.json`.
+All these examples are finite constructions, not executed neural repair systems.
+
+For the released character evaluator, obtain the author repositories at their
+pinned revisions:
+
+```bash
+git clone https://github.com/KRLabsOrg/LettuceDetect external/LettuceDetect
+git -C external/LettuceDetect checkout 7947f415b9e1fbecb0b97fee9e2e9e80305cb196
+git clone https://github.com/Helsinki-NLP/mu-shroom external/mu-shroom
+git -C external/mu-shroom checkout 7fea78a0e5af887d196931721147ace5b4c4d9a8
+python analysis/bandha_span_evaluator_control.py --ragtruth data/RAGTruth --lettuce-evaluator external/LettuceDetect/lettucedetect/models/evaluator.py --mu-root external/mu-shroom --out results/span_evaluator
+python analysis/bandha_manuscript_aggregate.py --control results/span_evaluator/results.json --fixture analysis/optional_fixed_budget_results.json --out results/revised_paper
+```
+
+This runs unchanged evaluator function bodies with whole-response marking
+controls, using the supplied pinned RAGTruth inputs and the existing NumPy/SciPy
+environment. It runs no LettuceDetect model. Raw gold-span overlaps follow the
+released character evaluator; the word-level analysis uses its separate merged
+binary mask. The metadata control's character F1 is about .108 on the main panel;
+a label-informed screening ceiling is about .363. These do not reproduce a
+published neural-detector score.
+
+The final aggregation produces TeX tables, values, CSV provenance and input/output
+hashes. Existing `scripts/reproduce.py` results remain the inputs for the original
+word-level study. The new checks are additional commands with their own outcomes.
