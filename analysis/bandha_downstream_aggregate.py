@@ -37,7 +37,7 @@ def main():
     assert values['fixture.offset.feedback.edits'] == values['fixture.detector.feedback.edits']
     args.out.mkdir(parents=True, exist_ok=True)
     with (args.out / 'values.csv').open('w', newline='') as stream:
-        writer = csv.writer(stream)
+        writer = csv.writer(stream, lineterminator="\n")
         writer.writerow(['key', 'exact', 'decimal'])
         writer.writerows((key, str(value), float(value)) for key, value in values.items())
     lines = [r'\providecommand{\HomerDownstreamValue}[1]{\csname hd@#1\endcsname}']
