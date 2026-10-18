@@ -1,0 +1,127 @@
+{
+  "source_url": "https://arxiv.org/html/2507.20930v2",
+  "fred_html_sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+  "adequacy_csv_sha256": "12dead73a20cd61eff6062cde84bad909459066442b37ef46c40520a1e2ec0d8",
+  "script_sha256": "379cadebac0c5336a5a017b1ff44532ca31c17e656e1b18aeb9bb8869500dbf7",
+  "source_tables": [
+    {
+      "id": "S3.T2.2",
+      "rows": [
+        [
+          "Editor",
+          "Ent.",
+          "Rel.",
+          "Con.",
+          "Inv.",
+          "Sub.",
+          "Unv.",
+          "Ov.",
+          "Bi."
+        ],
+        [
+          "GPT-4.1 mini",
+          "34.3",
+          "39.7",
+          "53.1",
+          "50.0",
+          "71.7",
+          "37.1",
+          "54.6",
+          "82.3"
+        ],
+        [
+          "o3",
+          "67.2",
+          "40.0",
+          "65.5",
+          "72.5",
+          "59.6",
+          "69.4",
+          "69.8",
+          "89.7"
+        ],
+        [
+          "Phi4-mini\u2217",
+          "42.4",
+          "37.8",
+          "52.5",
+          "52.2",
+          "61.8",
+          "44.8",
+          "57.8",
+          "88.6"
+        ],
+        [
+          "Phi4\u2217",
+          "54.9",
+          "62.9",
+          "81.8",
+          "93.6",
+          "85.1",
+          "90.3",
+          "79.8",
+          "92.1"
+        ]
+      ]
+    },
+    {
+      "id": "S3.T4.2",
+      "rows": [
+        [
+          "",
+          "Model"
+        ],
+        [
+          "Editor",
+          "gpt-4-turbo",
+          "o3-mini",
+          "Llama-scout"
+        ],
+        [
+          "No Edit",
+          "34.4",
+          "34.5",
+          "41.2"
+        ],
+        [
+          "GPT-4.1 mini",
+          "66.9",
+          "64.2",
+          "69.6"
+        ],
+        [
+          "o3",
+          "92.6",
+          "95.3",
+          "89.9"
+        ],
+        [
+          "Phi4-mini\u2217",
+          "68.2",
+          "68.2",
+          "73.7"
+        ],
+        [
+          "Phi4\u2217",
+          "85.1",
+          "81.1",
+          "82.4"
+        ]
+      ]
+    }
+  ],
+  "values": {
+    "fred.detection.phi4": "79.8",
+    "fred.editing.gpt-4-turbo.phi4": "85.1",
+    "fred.editing.o3-mini.phi4": "81.1",
+    "fred.editing.Llama-scout.phi4": "82.4",
+    "fred.detection.o3": "69.8",
+    "fred.editing.gpt-4-turbo.o3": "92.6",
+    "fred.editing.o3-mini.o3": "95.3",
+    "fred.editing.Llama-scout.o3": "89.9"
+  },
+  "all_three_editing_judges_prefer_o3": true,
+  "authors_state_detection_editing_disagreement": true,
+  "adequacy_kind": "Derived requirements under declared action/loss assumptions, not empirical findings",
+  "scope": "Published task-ordering disagreement; not a matched-item or common-editor pooling ablation"
+}

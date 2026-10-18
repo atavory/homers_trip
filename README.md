@@ -238,3 +238,13 @@ are held equal. They are not trials of human or neural repair systems.
 The metric-general theorem assumes strict preference for balanced label
 separation and continuity under vanishing finite-support contamination.
 The existing RAGTruth pipeline remains a fixed-policy annotation/work study.
+
+## Published case evidence and adequacy map
+
+The declared-use ledger is in research/subresponse_adequacy.
+Its records are derived requirements, not measured failures.
+FRED's published detection/editing values are transcribed from its v2 FAVA
+tables by analysis/bandha_published_case_values.py. Run it with --fred-html,
+--adequacy-csv research/subresponse_adequacy/adequacy.csv and --out.
+The script records source hashes, validates the captions/columns and checks
+the editing ordering under all three judges. No model inference is required.

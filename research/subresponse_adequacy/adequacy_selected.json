@@ -1,0 +1,42 @@
+[
+  {
+    "id": "point_highlighting",
+    "action": "Independent fixed common-threshold decisions",
+    "loss": "homogeneous additive misses/false highlights/work",
+    "sufficient_retained_information": "[\"TP\", \"FP\", \"FN\", \"threshold\", \"common_costs\", \"population_weights\"]",
+    "insufficient_in_general": "[\"single_AUROC\", \"single_F1_for_arbitrary_costs\"]",
+    "source_ids": "[\"lettuce\", \"genaudit\"]",
+    "status": "proved_under_assumptions",
+    "qualification": "Pooled confusion counts suffice for this declared loss."
+  },
+  {
+    "id": "actual_editing",
+    "action": "Revise localized factual errors",
+    "loss": "residual support error, preservation and work",
+    "sufficient_retained_information": "[\"changed_output\", \"evidence\", \"preservation\", \"actions\", \"work\"]",
+    "insufficient_in_general": "[\"original_detection_counts\", \"original_span_localization\"]",
+    "source_ids": "[\"rarr\", \"fred\"]",
+    "status": "requires_downstream_measurement",
+    "qualification": "An independent editor can compensate for coarse scores or damage correct content."
+  },
+  {
+    "id": "generation_retrieval",
+    "action": "Gate retrieval/recompute/regenerate/select continuations",
+    "loss": "final task loss plus full trajectory work",
+    "sufficient_retained_information": "[\"visited_histories\", \"changed_final_outputs\", \"actual_actions\", \"work\"]",
+    "insufficient_in_general": "[\"original_gate_TP_FP\", \"original_token_labels_only\"]",
+    "source_ids": "[\"aarf\", \"flare\", \"lookback\"]",
+    "status": "requires_downstream_measurement",
+    "qualification": "Transition effects matter even under additive final error counts."
+  },
+  {
+    "id": "structured_matching",
+    "action": "Match anchored spans/claims and types",
+    "loss": "exact/overlap matched-unit errors under explicit matching",
+    "sufficient_retained_information": "[\"boundaries\", \"types\", \"matching\", \"duplicates\", \"weights\"]",
+    "insufficient_in_general": "[\"unordered_conditional_token_law\", \"pooled_character_counts\"]",
+    "source_ids": "[\"mushroom\"]",
+    "status": "conditional_structure_required",
+    "qualification": "Token/character overlap is not exact span match; no universal evaluator accusation."
+  }
+]

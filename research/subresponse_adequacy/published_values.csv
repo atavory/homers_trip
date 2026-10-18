@@ -1,0 +1,9 @@
+assessment,model,reported_value,source_table
+detection_overall_f1,Phi4*,79.8,S3.T2.2
+edited_factuality_gpt-4-turbo,Phi4*,85.1,S3.T4.2
+edited_factuality_o3-mini,Phi4*,81.1,S3.T4.2
+edited_factuality_Llama-scout,Phi4*,82.4,S3.T4.2
+detection_overall_f1,o3,69.8,S3.T2.2
+edited_factuality_gpt-4-turbo,o3,92.6,S3.T4.2
+edited_factuality_o3-mini,o3,95.3,S3.T4.2
+edited_factuality_Llama-scout,o3,89.9,S3.T4.2
