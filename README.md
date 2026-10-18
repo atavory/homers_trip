@@ -150,7 +150,7 @@ Point-curve roots carry no simultaneous confidence claim.
 ## Sub-response evaluation and complete recovery
 
 The revised paper separates classification, conditional selection and the
-success of the resulting response. Its six-response construction preserves
+success of the resulting response. Its supporting six-response construction preserves
 pooled scores, response means, the complete average recovery curve and several
 conditional summaries while changing complete support under an assumed editor.
 
@@ -187,3 +187,29 @@ published neural-detector score.
 The final aggregation produces TeX tables, values, CSV provenance and input/output
 hashes. Existing `scripts/reproduce.py` results remain the inputs for the original
 word-level study. The new checks are additional commands with their own outcomes.
+
+## Response loss and shared review cost
+
+The main counterexample uses a common threshold. A response offset increases
+true detections and decreases false alarms while preserving conditional order.
+A graded remaining-error loss and shared review setup can nevertheless give
+the offset a higher downstream risk. The exact checker covers the risk identity,
+an interval of thresholds and rational loss/cost cases.
+
+Run the original reproduction pipeline first, then the added readouts:
+
+```bash
+python analysis/bandha_response_loss_check.py --out results/response_loss_exact
+python analysis/bandha_response_loss_benchmark.py --ragtruth data/RAGTruth --baseline results/expanded/expanded_results.json --weights results/alternatives/source_weights.npy --source-ids results/alternatives/source_ids.json --out results/response_loss_benchmark
+python analysis/bandha_response_loss_aggregate.py --theory results/response_loss_exact/results.json --benchmark results/response_loss_benchmark/results.json --out results/response_loss_values
+```
+
+The benchmark fixes the original classifier thresholds and paired source draws.
+It reports remaining annotated words, review invocation, context volume and
+flagged units, with illustrative loss curves at a=1/4, 1/2 and 3/4.
+These are coverage and volume proxies. They are not measured human times,
+coding usefulness, or factual quality after a real repair.
+
+The new CSV/TeX bindings and hash manifest record each manuscript value's source.
+Older AIS, equal-summary, severity and sequential constructions remain supporting
+checks.
