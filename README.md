@@ -48,3 +48,16 @@ The explicit review experiment and proper-score qualifications accompany the pap
 Earlier complete campaigns, archived prediction replay and source controls
 remain available. Their commands and provenance are in docs/legacy_reproduction.md.
 The current pipeline selects the results used by the short paper.
+
+## Pooled Detection Counts
+
+The introduction's exact illustration verifies identical pooled precision, recall
+and F1 with different response-completion and checking patterns. The policy
+checks only flagged units and repairs them perfectly; it is distinct from the
+optimal-review theorem.
+
+```bash
+python analysis/sleek_detection_credit_example.py --out results/sleek_detection_credit_example
+```
+
+The output records input arrays, exact counts, checks, script and output hashes.
