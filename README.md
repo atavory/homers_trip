@@ -213,3 +213,28 @@ coding usefulness, or factual quality after a real repair.
 The new CSV/TeX bindings and hash manifest record each manuscript value's source.
 Older AIS, equal-summary, severity and sequential constructions remain supporting
 checks.
+
+## Adaptive review and metric-general ordering
+
+The current paper compares the best paid review supported by score information.
+The reviewer can choose units, adapt to feedback, switch responses and stop.
+Projection can remove useful location information; a controlled known offset
+preserves information and optimal review value.
+
+```bash
+python analysis/bandha_marginal_response_check.py --out analysis/bandha_marginal_response_results
+python analysis/bandha_adaptive_review_check.py --out results/adaptive_review
+python analysis/bandha_adaptive_metric_family.py --out results/adaptive_metric_family
+```
+
+The first command produces the preserved reference files checked by the adaptive
+script. The second verifies the small optimal-stopping example and all four
+operator conditions. The third checks the general construction over response
+lengths 8 through 24, including the search bound and a constant positive risk gap.
+
+These are analytic models with exact initial error counts, anonymous permuted
+units, known score/label laws and paid verification. Numerical scoring costs
+are held equal. They are not trials of human or neural repair systems.
+The metric-general theorem assumes strict preference for balanced label
+separation and continuity under vanishing finite-support contamination.
+The existing RAGTruth pipeline remains a fixed-policy annotation/work study.
