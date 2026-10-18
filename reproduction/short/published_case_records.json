@@ -1,0 +1,275 @@
+{
+  "record_version": 1,
+  "scope": "Retained published numbers and examples; no model execution or new evaluation",
+  "FRED": {
+    "cells": [
+      {
+        "model_label": "Phi4∗",
+        "cohort_label": "FAVA",
+        "metric": "overall_detection_F1",
+        "judge_label": null,
+        "value": 79.8,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T2",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T2"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      },
+      {
+        "model_label": "Phi4∗",
+        "cohort_label": "FAVA",
+        "metric": "binary_detection_F1",
+        "judge_label": null,
+        "value": 92.1,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T2",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T2"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      },
+      {
+        "model_label": "Phi4∗",
+        "cohort_label": "FAVA",
+        "metric": "edited_factuality",
+        "judge_label": "gpt-4-turbo",
+        "value": 85.1,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T4",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T4"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      },
+      {
+        "model_label": "Phi4∗",
+        "cohort_label": "FAVA",
+        "metric": "edited_factuality",
+        "judge_label": "o3-mini",
+        "value": 81.1,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T4",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T4"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      },
+      {
+        "model_label": "Phi4∗",
+        "cohort_label": "FAVA",
+        "metric": "edited_factuality",
+        "judge_label": "Llama-scout",
+        "value": 82.4,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T4",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T4"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      },
+      {
+        "model_label": "o3",
+        "cohort_label": "FAVA",
+        "metric": "overall_detection_F1",
+        "judge_label": null,
+        "value": 69.8,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T2",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T2"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      },
+      {
+        "model_label": "o3",
+        "cohort_label": "FAVA",
+        "metric": "binary_detection_F1",
+        "judge_label": null,
+        "value": 89.7,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T2",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T2"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      },
+      {
+        "model_label": "o3",
+        "cohort_label": "FAVA",
+        "metric": "edited_factuality",
+        "judge_label": "gpt-4-turbo",
+        "value": 92.6,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T4",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T4"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      },
+      {
+        "model_label": "o3",
+        "cohort_label": "FAVA",
+        "metric": "edited_factuality",
+        "judge_label": "o3-mini",
+        "value": 95.3,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T4",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T4"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      },
+      {
+        "model_label": "o3",
+        "cohort_label": "FAVA",
+        "metric": "edited_factuality",
+        "judge_label": "Llama-scout",
+        "value": 89.9,
+        "scale": "published 0–100 scale",
+        "table_id": "S3.T4",
+        "source": {
+          "url": "https://arxiv.org/html/2507.20930v2",
+          "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+          "file": "fred_v2.html",
+          "cell_anchor": "S3.T4"
+        },
+        "verification": "mechanically extracted HTML table cell"
+      }
+    ],
+    "identity_qualification": "Phi4* and o3 are paper labels, without release checkpoint/API snapshot identifiers. Appendix Tables 9/10 add -8k labels absent from Tables 2/4. Appendix D also describes FAVA training.",
+    "cohort_qualification": "The paper labels both assessments FAVA, but does not publish aligned item IDs, explicit test sizes, or a checkpoint binding across them.",
+    "evaluator_qualification": "Paper uses only the FactScorer component of a modified FActScoreLite with three judge backends; exact input segmentation, reducer, prompt versions, and release revision unresolved.",
+    "interpretation": "Authors’ reported task-ranking disagreement; no controlled evidence that pooling, offsets, utility curvature, or detection causes the editing difference."
+  },
+  "RARR": {
+    "comparisons": [
+      {
+        "metric": "auto_AIS",
+        "before": 37.6,
+        "after": 45.1,
+        "table": 1,
+        "pdf_page": 6,
+        "model_label": "RARR",
+        "cohort_label": "PaLM outputs on SQA",
+        "source": {
+          "url": "https://arxiv.org/pdf/2210.08726v3",
+          "sha256": "0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce",
+          "file": "rarr_v3.pdf"
+        },
+        "verification": "retained layout text, Table 1 row"
+      },
+      {
+        "metric": "human_AIS",
+        "before": 24.5,
+        "after": 31.5,
+        "table": 1,
+        "pdf_page": 6,
+        "model_label": "RARR",
+        "cohort_label": "PaLM outputs on SQA",
+        "source": {
+          "url": "https://arxiv.org/pdf/2210.08726v3",
+          "sha256": "0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce",
+          "file": "rarr_v3.pdf"
+        },
+        "verification": "retained layout text, Table 1 row"
+      },
+      {
+        "metric": "downstream_answer_accuracy",
+        "before": 78.6,
+        "after": 76.0,
+        "figure": 9,
+        "pdf_page": 9,
+        "model_label": "Original / RARR",
+        "cohort_label": "StrategyQA",
+        "source": {
+          "url": "https://arxiv.org/pdf/2210.08726v3",
+          "sha256": "0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce",
+          "file": "rarr_v3.pdf"
+        },
+        "verification": "manual reading of labeled plot bars in retained PDF page rendering",
+        "render_file": "rarr_page9.png",
+        "cohort_qualification": "Figure names StrategyQA; Section 6 decodes revised reasoning with PaLM. Main experiments use PaLM passages for SQA, but Figure 9 does not itself repeat the generator or item IDs."
+      },
+      {
+        "metric": "downstream_answer_accuracy",
+        "before": 34.3,
+        "after": 39.0,
+        "figure": 9,
+        "pdf_page": 9,
+        "model_label": "Original / RARR",
+        "cohort_label": "NQ",
+        "source": {
+          "url": "https://arxiv.org/pdf/2210.08726v3",
+          "sha256": "0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce",
+          "file": "rarr_v3.pdf"
+        },
+        "verification": "manual reading of labeled plot bars in retained PDF page rendering",
+        "render_file": "rarr_page9.png",
+        "cohort_qualification": "Section 6 decodes a short answer from revised long-form output using PaLM; this is the beneficial comparison reported beside StrategyQA."
+      }
+    ],
+    "examples": [
+      {
+        "case": "RARR Figure 7d",
+        "pdf_page": 8,
+        "source": {
+          "url": "https://arxiv.org/pdf/2210.08726v3",
+          "sha256": "0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce",
+          "file": "rarr_v3.pdf"
+        },
+        "classification": "published example of harmful change to a historical claim",
+        "before_span": "It aired on NBC from September 8, 1988 to May 3, 1992.",
+        "retrieved_evidence": "[metv.com] Watch In the Heat of the Night on MeTV.",
+        "after_span": "It aired on MeTV from September 8, 1988 to May 3, 1992.",
+        "author_interpretation": "The show did actually air on NBC in the 1980s, but the model fails to realize that MeTV is a re-run much later in time.",
+        "causal_scope": "Illustrative observed edit and author interpretation, without a score pooling ablation."
+      },
+      {
+        "case": "RARR Figure 7e",
+        "pdf_page": 8,
+        "source": {
+          "url": "https://arxiv.org/pdf/2210.08726v3",
+          "sha256": "0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce",
+          "file": "rarr_v3.pdf"
+        },
+        "classification": "published failure to update reasoning after a factual correction",
+        "before_span": "Homer Simpson has 5 fingers and 2 hands.",
+        "after_span": "Homer Simpson has 4 fingers and 2 hands.",
+        "unchanged_conclusion": "Therefore, he does not need two hands worth of fingers to count to 5. He only need one hand to count to 5.",
+        "causal_scope": "The original conclusion was already incorrect under the authors’ interpretation. This example does not establish destruction of a previously correct answer."
+      }
+    ],
+    "model_qualification": "Paper RARR uses PaLM 540B for queries/agreement/editing and Google Search; current public implementation instead uses OpenAI/Bing.",
+    "sample_qualification": "Section 5.1/Appendix E generate 150 development and 150 test passages per generation-model/source-dataset combination, including PaLM/SQA. No paired answer transitions or uncertainty intervals are released in the inspected repository.",
+    "attribution_qualification": "Human attribution is averaged binary sentence attribution to the retrieved report, not independently established real-world truth.",
+    "interpretation": "Authors’ measured attribution/downstream-accuracy disagreement and example mechanisms. Aggregate data do not identify noisy retrieval or dependent-reasoning failures as the quantitative cause of the accuracy change."
+  }
+}

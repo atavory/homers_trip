@@ -131,7 +131,7 @@ def main():
         adequacy = {row["id"]: row for row in csv.DictReader(f)}
     render = [
         ("point_highlighting", "Independent highlights",
-         "Confusion counts, cutoff and common unit costs",
+         "Weighted confusion counts, cutoff and common unit costs",
          "AUROC or F1 for unspecified costs"),
         ("actual_editing", "Targeted revision",
          "Changed output, support, preservation and work",

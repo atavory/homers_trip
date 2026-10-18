@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/KRLabsOrg/LettuceDetect",
+  "revision": "7947f415b9e1fbecb0b97fee9e2e9e80305cb196",
+  "source_url": "https://raw.githubusercontent.com/KRLabsOrg/LettuceDetect/7947f415b9e1fbecb0b97fee9e2e9e80305cb196/lettucedetect/models/evaluator.py",
+  "source_sha256": "d50806c439b3f461305edd5de082c13d9b05eebad421dcdcc7987fb5c11c44e9",
+  "function_name": "evaluate_detector_char_level",
+  "function_ast_sha256": "bca5f7154bb96b906503411ac0d868982f1f2af02719acf703ee169206ad91c9",
+  "extract_sha256": "8789d7e6c2f1179a877919890f619ff7b432ccd3656d26d5cfa4874b7f7891d7",
+  "license": "MIT; Copyright (c) 2025 KR Labs",
+  "license_sha256": "c19341bdd059245b994d6984da1a24d40a52535e7bb1c93d4a2829d66c272e68",
+  "public_control_sha256": "373563144e926306b68b0cb41dfb0c31ef4cbf18c692d8bc686f59ead696631f",
+  "extraction": "Verbatim source segment for one function, preceded only by attribution and postponed annotations; body/AST unchanged. Loader supplies a progress-iterator stub. Neural dependencies/imports are not executed."
+}

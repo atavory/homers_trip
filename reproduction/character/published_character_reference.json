@@ -1,0 +1,141 @@
+{
+  "input_sha256": {
+    "response_sha256": "4c8944d244c02fbf5da7c1f5d8c5b1065c74e46add23780b0c01de9f0d03bbd8",
+    "source_sha256": "70a7decf2fdac48bb64db3607632607ddd1d3785abe61585b918592a934b8c76"
+  },
+  "fit": {
+    "train_responses": 11965,
+    "train_sources": 2012,
+    "char_smoothing": 1000,
+    "response_smoothing": 10,
+    "char_prevalence": 0.047139317659186955,
+    "response_any_rate": 0.4169661512745508
+  },
+  "validation_responses": 3014,
+  "validation_selected_thresholds": {
+    "metadata_char": 0.06849903952592253,
+    "metadata_any": 0.32469579483369704
+  },
+  "populations": [
+    {
+      "population": "test_good",
+      "responses": 2675,
+      "sources": 450,
+      "characters": 2094056,
+      "gold_span_length_sum": 78515,
+      "gold_union_characters": 78180,
+      "responses_with_overlapping_gold": 10
+    },
+    {
+      "population": "test_all_qualities",
+      "responses": 2700,
+      "sources": 450,
+      "characters": 2095661,
+      "gold_span_length_sum": 78515,
+      "gold_union_characters": 78180,
+      "responses_with_overlapping_gold": 10
+    }
+  ],
+  "ragtruth_results": [
+    {
+      "population": "test_good",
+      "control": "mark_none",
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "flagged_responses": 0,
+      "flagged_characters": 0,
+      "covered_gold_characters": 0
+    },
+    {
+      "population": "test_good",
+      "control": "mark_all",
+      "precision": 0.037494221740010776,
+      "recall": 1.0,
+      "f1": 0.07227842036002506,
+      "flagged_responses": 2675,
+      "flagged_characters": 2094056,
+      "covered_gold_characters": 78515
+    },
+    {
+      "population": "test_good",
+      "control": "metadata_char",
+      "precision": 0.06048844321677369,
+      "recall": 0.5204355855569,
+      "f1": 0.10838022462731202,
+      "flagged_responses": 884,
+      "flagged_characters": 675534,
+      "covered_gold_characters": 40862
+    },
+    {
+      "population": "test_good",
+      "control": "metadata_any",
+      "precision": 0.053711426747472854,
+      "recall": 0.8165573457301153,
+      "f1": 0.10079290777131367,
+      "flagged_responses": 1485,
+      "flagged_characters": 1193638,
+      "covered_gold_characters": 64112
+    },
+    {
+      "population": "test_good",
+      "control": "label_informed_whole_response_ceiling",
+      "precision": 0.3258473547969584,
+      "recall": 0.4104311278099726,
+      "f1": 0.3632807435841069,
+      "flagged_responses": 126,
+      "flagged_characters": 98896,
+      "covered_gold_characters": 32225
+    },
+    {
+      "population": "test_all_qualities",
+      "control": "mark_none",
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0,
+      "flagged_responses": 0,
+      "flagged_characters": 0,
+      "covered_gold_characters": 0
+    },
+    {
+      "population": "test_all_qualities",
+      "control": "mark_all",
+      "precision": 0.03746550611000539,
+      "recall": 1.0,
+      "f1": 0.07222506365630015,
+      "flagged_responses": 2700,
+      "flagged_characters": 2095661,
+      "covered_gold_characters": 78515
+    },
+    {
+      "population": "test_all_qualities",
+      "control": "metadata_char",
+      "precision": 0.06038234368373377,
+      "recall": 0.5204355855569,
+      "f1": 0.10820988406273008,
+      "flagged_responses": 900,
+      "flagged_characters": 676721,
+      "covered_gold_characters": 40862
+    },
+    {
+      "population": "test_all_qualities",
+      "control": "metadata_any",
+      "precision": 0.053666601095732167,
+      "recall": 0.8165573457301153,
+      "f1": 0.10071397714330597,
+      "flagged_responses": 1500,
+      "flagged_characters": 1194635,
+      "covered_gold_characters": 64112
+    },
+    {
+      "population": "test_all_qualities",
+      "control": "label_informed_whole_response_ceiling",
+      "precision": 0.3258473547969584,
+      "recall": 0.4104311278099726,
+      "f1": 0.3632807435841069,
+      "flagged_responses": 126,
+      "flagged_characters": 98896,
+      "covered_gold_characters": 32225
+    }
+  ]
+}

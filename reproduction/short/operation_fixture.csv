@@ -1,0 +1,5 @@
+method,response_id,source_id,utility,cost,weight
+A,r1,s1,1,0.2,1
+A,r2,s2,0,0.1,3
+B,r1,s1,0.5,0.1,1
+B,r2,s2,0.5,0.1,3

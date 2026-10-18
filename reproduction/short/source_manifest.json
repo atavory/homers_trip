@@ -1,0 +1,249 @@
+[
+  {
+    "file": "fred_v2.html",
+    "url": "https://arxiv.org/html/2507.20930v2",
+    "sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+    "bytes": 238249,
+    "transport": "Byte-verified reuse of primary source fetched through Mr. Gitties",
+    "version": "v2"
+  },
+  {
+    "file": "fred_v2.txt",
+    "url": "https://arxiv.org/html/2507.20930v2",
+    "sha256": "55fdd82803f0626ca2ccfb49166979c0f33bf07e790214eed630cdc18bbfdec2",
+    "bytes": 47944,
+    "transport": "Byte-verified reuse of primary source fetched through Mr. Gitties",
+    "version": "v2"
+  },
+  {
+    "file": "rarr_v3.pdf",
+    "url": "https://arxiv.org/pdf/2210.08726v3",
+    "sha256": "0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce",
+    "bytes": 1417251,
+    "transport": "Byte-verified reuse of primary source fetched through Mr. Gitties",
+    "version": "v3"
+  },
+  {
+    "file": "rarr_v3_layout.txt",
+    "url": "https://arxiv.org/pdf/2210.08726v3",
+    "sha256": "3c377143a8dc23eb4f0c9733d8f60bb040ce69c7e52914b6c4fa6090fe9066ed",
+    "bytes": 167051,
+    "transport": "Byte-verified reuse of primary source fetched through Mr. Gitties",
+    "version": "v3"
+  },
+  {
+    "file": "rarr_v3_reading_order.txt",
+    "url": "https://arxiv.org/pdf/2210.08726v3",
+    "sha256": "2692928fbec118489ae5f08a885fd290288585b757b60594522349064f57ca20",
+    "bytes": 123366,
+    "transport": "Byte-verified reuse of primary source fetched through Mr. Gitties",
+    "version": "v3"
+  },
+  {
+    "file": "rarr_release_tree.json",
+    "url": "https://api.github.com/repos/anthonywchen/RARR/git/trees/51a1a10fe5bada837a368f98cb55288ac5168c9e?recursive=1",
+    "sha256": "13c4532d6cf5df4f8a682ddf4dd58aa16fe8ad142270470cbd0f489f2f5c1dd8",
+    "bytes": 3764,
+    "transport": "Byte-verified reuse of primary source fetched through Mr. Gitties",
+    "version": null
+  },
+  {
+    "file": "rarr_release_branch.json",
+    "url": "https://api.github.com/repos/anthonywchen/RARR/branches/main",
+    "sha256": "dd6e534c229fd3e645b11693fe5ee80eed5a9fa7f8a5426637618dab382d8c1f",
+    "bytes": 4003,
+    "transport": "Byte-verified reuse of primary source fetched through Mr. Gitties",
+    "version": null
+  },
+  {
+    "file": "rarr_release_README.md",
+    "url": "https://raw.githubusercontent.com/anthonywchen/RARR/51a1a10fe5bada837a368f98cb55288ac5168c9e/README.md",
+    "sha256": "cc47027a147b1d71f1ef0ffb1563f6b7f3241bb881faaafd72c9aaad9e0a469e",
+    "bytes": 5697,
+    "transport": "Byte-verified reuse of primary source fetched through Mr. Gitties",
+    "version": null
+  },
+  {
+    "file": "fred_README_current.md",
+    "url": "https://raw.githubusercontent.com/pegasi-ai/shield/main/README.md",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:04.175728+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 0.303,
+      "ts": "2026-10-18T20:07:04.175374+00:00"
+    },
+    "sha256": "14bf1c443f71af3b73d788312161501ca3bf71e7f72d47f962454bfc8631b419",
+    "bytes": 3383
+  },
+  {
+    "file": "fred_tree_current.json",
+    "url": "https://api.github.com/repos/pegasi-ai/shield/git/trees/main?recursive=1",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:04.406665+00:00",
+    "result": {
+      "ok": false,
+      "exit_code": 22,
+      "stdout": "",
+      "stderr": "curl: (22) The requested URL returned error: 403\n",
+      "duration_s": 0.23,
+      "ts": "2026-10-18T20:07:04.406332+00:00"
+    }
+  },
+  {
+    "file": "fred_repo_current.json",
+    "url": "https://api.github.com/repos/pegasi-ai/shield",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:05.118911+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 0.711,
+      "ts": "2026-10-18T20:07:05.118586+00:00"
+    },
+    "sha256": "698f81be67a3bc393beb4b9bfc45a9e577f98ca481d59fd2fa57ca9251985ded",
+    "bytes": 7037
+  },
+  {
+    "file": "factscorelite_README_current.md",
+    "url": "https://raw.githubusercontent.com/armingh2000/FactScoreLite/main/README.md",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:05.460372+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 0.34,
+      "ts": "2026-10-18T20:07:05.460058+00:00"
+    },
+    "sha256": "a98a7af33506e1fcae9d8f6b1b196c247167da8693eb26c29a305a0a543ffe9d",
+    "bytes": 6947
+  },
+  {
+    "file": "fred_historical_commits.json",
+    "url": "https://api.github.com/repos/pegasi-ai/reins/commits?until=2025-08-01T00:00:00Z&per_page=5",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:32.595363+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 0.424,
+      "ts": "2026-10-18T20:07:32.595013+00:00"
+    },
+    "sha256": "2ba33ca0557f1bb5b7ba88d67f9d0093c7185a36ec51fe2b7bd9372d3e001d6d",
+    "bytes": 5
+  },
+  {
+    "file": "fred_tree_reins.json",
+    "url": "https://api.github.com/repos/pegasi-ai/reins/git/trees/main?recursive=1",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:33.116477+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 0.52,
+      "ts": "2026-10-18T20:07:33.116113+00:00"
+    },
+    "sha256": "c58d33c979b93b5ba12ce5be4e35f1fdb4d29fc987ddeea554db6c42e8aaeab7",
+    "bytes": 55328
+  },
+  {
+    "file": "fred_original_github.html",
+    "url": "https://github.com/pegasi-ai/shield",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:34.244777+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 1.127,
+      "ts": "2026-10-18T20:07:34.244490+00:00"
+    },
+    "sha256": "137558cb9ab6f0a32501107360ac4a1f2c5bb4a8adcf3adf14965127e6ac86a0",
+    "bytes": 319409
+  },
+  {
+    "file": "rarr_README_current.md",
+    "url": "https://raw.githubusercontent.com/anthonywchen/RARR/HEAD/README.md",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:34.547374+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 0.301,
+      "ts": "2026-10-18T20:07:34.547042+00:00"
+    },
+    "sha256": "cc47027a147b1d71f1ef0ffb1563f6b7f3241bb881faaafd72c9aaad9e0a469e",
+    "bytes": 5697,
+    "snapshot_qualification": "Fetched HEAD, not a commit pin"
+  },
+  {
+    "file": "fred_branches_current.json",
+    "url": "https://api.github.com/repos/pegasi-ai/reins/branches?per_page=100",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:51.693524+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 0.447,
+      "ts": "2026-10-18T20:07:51.693214+00:00"
+    },
+    "sha256": "1bd63d505a4ce2add38df65f61d85d53b49211f4c3e542d23470487ea9225d09",
+    "bytes": 5498
+  },
+  {
+    "file": "fred_hf_models.json",
+    "url": "https://huggingface.co/api/models?author=pegasi-ai",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:51.959345+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 0.264,
+      "ts": "2026-10-18T20:07:51.959029+00:00"
+    },
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2
+  },
+  {
+    "file": "fred_hf_datasets.json",
+    "url": "https://huggingface.co/api/datasets?author=pegasi-ai",
+    "transport": "Mr. Gitties Unix socket and curl",
+    "retrieved_utc": "2026-10-18T20:07:52.413070+00:00",
+    "result": {
+      "ok": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "duration_s": 0.453,
+      "ts": "2026-10-18T20:07:52.412769+00:00"
+    },
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+    "bytes": 2
+  },
+  {
+    "file": "rarr_page9.png",
+    "sha256": "4756c53a7800e5fe550448ecd87f71bc47cfba70663d1086d4f5d409b4e0d54c",
+    "bytes": 329193,
+    "transport": "Local Poppler rendering of retained PDF, page 9 at 100 DPI",
+    "source_file": "rarr_v3.pdf",
+    "source_sha256": "0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce"
+  }
+]

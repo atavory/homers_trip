@@ -1,0 +1,62 @@
+{
+  "scope": "Current short-paper main tables and adaptive checks; copied public functions remain unmodified.",
+  "public_source_paths": {
+    "expanded.py": "analysis/expanded.py",
+    "provenance.py": "analysis/provenance.py",
+    "operator_comparisons.py": "analysis/operator_comparisons.py",
+    "bandha_response_loss_benchmark.py": "analysis/bandha_response_loss_benchmark.py",
+    "bandha_response_loss_check.py": "analysis/bandha_response_loss_check.py",
+    "bandha_response_loss_aggregate.py": "analysis/bandha_response_loss_aggregate.py",
+    "bandha_marginal_response_check.py": "analysis/bandha_marginal_response_check.py",
+    "bandha_adaptive_review_check.py": "analysis/bandha_adaptive_review_check.py",
+    "bandha_adaptive_metric_family.py": "analysis/bandha_adaptive_metric_family.py",
+    "bandha_published_case_values.py": "analysis/bandha_published_case_values.py"
+  },
+  "code_sha256": {
+    "expanded.py": "975a3662d5a42a72d651c8c7e5ca3ac87d907c9819a3a4305664b9f0e57bef17",
+    "provenance.py": "049cd23fc4fcd31449e924ceb2dd715676b0c19b6e1dbe95e521c77ecc33ad1d",
+    "operator_comparisons.py": "4d6a414f7585e1eb9ccdca83e7e1e56c5a96425fae605e134d94b2351077c43a",
+    "bandha_response_loss_benchmark.py": "886aec26348bf73a22f739bbfc60e40f8d951262a8776b70bfeb2ebaa2f859b9",
+    "bandha_response_loss_check.py": "2409aa9b4e44d5a16823d3474629441556b5f623dcf85acf434e3d347e612bb1",
+    "bandha_response_loss_aggregate.py": "77a504de3dc7290ef16e189aaa59df54555fd5e382ed871089685181a69f8e71",
+    "bandha_marginal_response_check.py": "39dd90e06f5e2b217956fbc1cf1a58709467fda1393edc9e0f400eade20384e3",
+    "bandha_adaptive_review_check.py": "a15527399107a8c7856f245b7fb11d399c57d0511b96e21f3ba27537b068d698",
+    "bandha_adaptive_metric_family.py": "991f9cabc3e096ec366c6259d34c3b3ff79f61066a58222e19bd1691bb39b9c0",
+    "bandha_published_case_values.py": "f2d252e2317990577f1cb7ee87e798d24942e3257a7aa6f21dbf4a9e5a74c037",
+    "bandha_affine_review_check.py": "0537481c9b16be2e066d429739d8264179b1cf5613dcae6dcb45e56f6edbc58e",
+    "bandha_source_case_values.py": "90c10fee9b0ad14635d2a5233bf64bacd7b9facf15e154a76a1e88d980a8cf9f",
+    "evaluate_operations.py": "826bdd3bf398e317f6c1ea96f1a0484ef3c59998145311ca0e32f6ac6f94cc8f"
+  },
+  "fred": {
+    "url": "https://arxiv.org/html/2507.20930v2",
+    "raw_sha256": "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+    "provenance": "Previously fetched primary HTML through Mr. Gitties, copied as read-only source input.",
+    "accepted_input_sha256": [
+      "ba86e2dad14befaeee68def11609a40761bca60863a4ef1d191760424ab5be02",
+      "391b44f391729fdf9b7552e30b3e31f3334152419b315e5aa2f85f916b4af39e"
+    ],
+    "excerpt_sha256": "391b44f391729fdf9b7552e30b3e31f3334152419b315e5aa2f85f916b4af39e",
+    "excerpt_derivation": "Tables/captions and author statement transcribed from the retained primary v2 HTML; original raw source hash retained. Not full article HTML."
+  },
+  "reference_sources": {
+    "expanded": "data/analysis/expanded_results/expanded_results.json",
+    "work": "data/analysis/bandha_response_loss_benchmark_results/results.json",
+    "adaptive": "data/analysis/bandha_adaptive_review_results/verification.json",
+    "fred": "data/analysis/bandha_published_case_results/verification.json"
+  },
+  "reference_sha256": {
+    "data/analysis/expanded_results/expanded_results.json": "32f021004beb64e42475758f9720338b636910217f9b33b686375d9ca48edf2f",
+    "data/analysis/bandha_response_loss_benchmark_results/results.json": "b9cd58abec2e33bb80581c0c5498b5518a04250d503c71993f902522d903186e",
+    "data/analysis/bandha_adaptive_review_results/verification.json": "c82fc42bac10cc4383eedef83a4534970a2905b076f82918d4a3b5882a03b4f4",
+    "data/analysis/bandha_published_case_results/verification.json": "7b4a005484d29659c18e8e218f77e433af52de0c0ae0590305ad1ae509459974"
+  },
+  "table_reference_sources": {
+    "operators/models.tex": "paper/generated/shadow_tables/operator_models.tex",
+    "response_loss_values/benchmark_table.tex": "paper/generated/response_loss/benchmark_table.tex",
+    "response_loss_values/values.tex": "paper/generated/response_loss/values.tex",
+    "adaptive/values.tex": "paper/generated/bandha_adaptive_review_values.tex",
+    "published_cases/values.tex": "paper/generated/published_cases/values.tex",
+    "published_cases/fred_ordering.tex": "paper/generated/published_cases/fred_ordering.tex",
+    "published_cases/adequacy_table.tex": "paper/generated/published_cases/adequacy_table.tex"
+  }
+}

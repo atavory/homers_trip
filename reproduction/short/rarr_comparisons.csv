@@ -1,0 +1,5 @@
+metric,before,after,difference_percentage_points,model_label,cohort_label,table_or_figure,pdf_page,source_url,source_sha256,verification
+auto_AIS,37.6,45.1,7.5,RARR,PaLM outputs on SQA,Table 1,6,https://arxiv.org/pdf/2210.08726v3,0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce,"retained layout text, Table 1 row"
+human_AIS,24.5,31.5,7.0,RARR,PaLM outputs on SQA,Table 1,6,https://arxiv.org/pdf/2210.08726v3,0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce,"retained layout text, Table 1 row"
+downstream_answer_accuracy,78.6,76.0,-2.6,Original / RARR,StrategyQA,Figure 9,9,https://arxiv.org/pdf/2210.08726v3,0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce,manual reading of labeled plot bars in retained PDF page rendering
+downstream_answer_accuracy,34.3,39.0,4.7,Original / RARR,NQ,Figure 9,9,https://arxiv.org/pdf/2210.08726v3,0db512bdca989685404c96cf18608e8bc998787037c85bbd473c10b3d4c011ce,manual reading of labeled plot bars in retained PDF page rendering

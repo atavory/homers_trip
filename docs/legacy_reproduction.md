@@ -1,0 +1,250 @@
+# Homer's Trip
+
+Reproduction code for **Homer's Trip: Response Risk and Token Discrimination in Hallucination Detection**.
+
+The experiments compare pooled classification, within-response ranking, and annotation recovery at matched inspection costs. They include response-constant priors, a lexical score, response offsets, response means, and retrospective label-preserving permutations.
+
+## Reproduction
+
+Create the recorded scientific Python environment:
+
+```bash
+conda env create -f environment.yml
+conda activate homers-trip
+python scripts/reproduce.py
+```
+
+The pipeline downloads the two RAGTruth input files at the revision in `datasets.json` and verifies their SHA256 hashes. It then runs the finite theory checks, fitting and validation, all 2,000 source-group bootstrap draws, the alternative-evaluation experiments, independent selection checks, plotting, and paper aggregation.
+
+The frozen source-disjoint split uses salt `homers-dream-dev-v1`; its name is retained to reproduce the original partitions. The bootstrap seed is 20261014. The two retrospective permutation seeds are 20261015 and 20261016. Fitting and validation-selected thresholds are held fixed during test uncertainty estimation.
+
+## Outputs
+
+Under `results/`:
+
+- `expanded/`: eight scorers, unrounded results, bootstrap estimates, and the pooled/conditional figure.
+- `alternatives/`: conditional AP, word and annotation-span recovery, one-class alarm costs, permutation controls, bootstrap estimates, and the inspection figure.
+- `paper_aggregates/`: CSVs and generated LaTeX table fragments.
+- `toy/`: computed construction values, exact class means, and generated vector diagram.
+- `paper_values/`: inline LaTeX values and their CSV source mapping.
+- `reproduction_manifest.json`: commands and code hashes.
+
+`analysis/aggregate_paper.py` formats recorded experiment outputs. Its manifest records input hashes and every generated output hash. `all_statistics.csv` retains exact result paths and values; `table_sources.csv` maps table cells to the source results.
+
+For a saved run:
+
+```bash
+python analysis/aggregate_paper.py \
+  --expanded results/expanded/expanded_results.json \
+  --alternatives results/alternatives/results.json \
+  --out results/paper_aggregates
+```
+
+## Saved-prediction replay
+
+`analysis/replay_predictions.py` evaluates original token predictions and distinguishes response means taken over eligible rows from means taken over all scored rows.
+
+Supply a CSV with columns:
+
+```text
+scorer,response_id,source_id,token_index,label,score,eligible
+```
+
+Labels and eligibility use 0/1. Each row retains its original token index, response and source identity. The script computes pooled, cross-response, and conditional ranking and writes unrounded JSON and CSV outputs with input and code hashes.
+
+```bash
+python analysis/replay_predictions.py \
+  --predictions predictions.csv --out results/archived_replay
+```
+
+Internal data, CSVs, private runs, and their provenance are maintained in the companion data project. This repository contains the public code and pinned public-dataset specification.
+
+## Data source
+
+RAGTruth: https://github.com/ParticleMedia/RAGTruth
+
+The study's units are eligible whitespace-delimited words, marked positive by overlap with supplied annotation spans. These experiments measure recovery of annotations. Retrospective label-permutation controls use test labels to diagnose an evaluation property.
+
+## Historical summary formatting
+
+`analysis/format_reported_archive.py --summary reported_summary.csv --out results/archive_summary` formats retained archival summaries and records their input hash. Its outputs are marked `reported_summary_only`. Original prediction replay remains the separate `replay_predictions.py` workflow.
+
+## Restored archival replay
+
+The archived detector inputs have been recovered and validated against their original manifests. They use RAGTruth revision `c103204b9ce28d6bbad859304bf30de72b8ed8fe`, distinct from the current word-level study. Internal data preparation retains all scored rows, the original eligibility masks, and the five-seed raw-logit ensemble definition.
+
+Given the reviewer input CSV and preserved bootstrap/threshold files:
+
+```bash
+python analysis/replay_predictions.py --predictions test_predictions.csv --out results/archived_replay
+python analysis/replay_bootstrap.py --predictions test_predictions.csv --bootstrap bootstrap_inputs.json --thresholds thresholds.json --out results/archived_replay
+python analysis/aggregate_archive.py --metrics results/archived_replay/results.json --bootstrap results/archived_replay/bootstrap_results.json --provenance input_provenance.json --out results/paper_aggregates
+```
+
+Run `replay_predictions.py` first to produce the point-metric `results.json`. Source seed 360035 and its 500 source draws are preserved. The source bootstrap holds the original fits and validation thresholds fixed. Reported-summary formatting is a historical record; manuscript spreads are calculated from replayed unrounded values. Historical audit notes predate this recovery.
+
+## Decisions and score relationships
+
+The decision framework distinguishes global token decisions, response screening, and token inspection inside a selected response. A policy specifies its feasible actions, costs and outcome. The public pipeline now also runs:
+
+```bash
+python analysis/decision_framework_check.py --output results/decision_framework
+python analysis/decision_relationships.py --ragtruth data/RAGTruth --baseline results/expanded/expanded_results.json --out results/decision_relationships
+```
+
+The first command generates exact rational checks and counterexamples. The second measures pooled score-label covariance, its within-response and between-response components, association of response means with hallucination prevalence, and probability prediction-error components. It uses the eight frozen scorers and the original paired source-bootstrap draws, under both token and uniform-response weighting. Its CSV and TeX outputs are generated by the script.
+
+These quantities describe specified statistical relationships. The same-response pair fraction is not an information fraction, and covariance does not determine every action utility. Actual editing or decoding utility requires evaluating the resulting outputs.
+
+## Shadow manuscript aggregation
+
+The parallel shadow manuscript uses the same frozen RAGTruth study and a metric-general analysis of response risk and token discrimination. Generate its construction and table sources with:
+
+```bash
+python analysis/bandha_intervention_check.py --out results/intervention
+python analysis/aggregate_shadow.py --expanded results/expanded/expanded_results.json --alternatives results/alternatives/results.json --relationships results/decision_relationships/results.json --fixtures results/intervention/verification.json --out results/shadow
+```
+
+The main reproduction pipeline produces the expanded, alternative and relationship results. The shadow aggregation writes four LaTeX tables, inline values and a CSV mapping every new display to its unrounded source. Its manifest records dataset, fitting and source-bootstrap consistency checks and input/output hashes.
+
+## Response and token score components
+
+The system diagram preserves the original native-PGF seeded lengths and labels and adds a separate, seeded illustrative score realization. Blue indicators show each response mean, orange bars show signed token deviations, and grey bars retain observed label prevalence. Regenerate its TikZ source and exact CSVs with:
+
+```bash
+python analysis/system_components.py --inputs figures/system_components_inputs.json --out results/system_components
+```
+
+The original sampling template is preserved at `figures/system_labels_seeded.tex`. The fixed input JSON records the native label seed and original source hash. The score generator verifies mean/deviation identities and the mean-projection/response-offset relations using exact rational arithmetic. These are synthetic diagram inputs, not trained-detector results.
+
+## Four-condition operator comparisons
+
+The canonical manuscript compares the original lexical scores, response means, metadata-offset scores, and offset means. The pipeline now runs exact operator constructions and paired empirical contrasts:
+
+```bash
+python analysis/bandha_operator_check.py --out results/operator_exact
+python analysis/operator_comparisons.py --expanded results/expanded/expanded_results.json --bootstrap results/expanded/bootstrap_estimates.npz --out results/operators
+```
+
+The generated tables and inline values report deviation gains at each response level and their interaction, with paired complete-source intervals. AUROC and AP use a common score-label functional. F1 results use separately frozen validation-selected thresholds and are labeled accordingly. Projection contrasts are reference-dependent diagnostics of prediction structure.
+
+## Joint recovery
+
+The reproduction pipeline includes exact projection/offset and joint-loss
+checks, an autoregressive feedback construction, and replay of the original
+frequency scorers under uniform-span and span-length recovery weights.
+It retains score vectors, exact cutoff-tie recovery laws, point severity
+curves, source-group intervals and script-generated manuscript tables.
+
+```bash
+python scripts/reproduce.py --data data/RAGTruth --out results
+```
+
+The new outputs are `joint_operator`, `joint_math`, `sequential`,
+`joint_replay`, and `joint_aggregates`. The replay reconstructs the sorted
+source order used by the original inspection code and verifies the source
+weights, fitting and original metrics. Annotation coverage and constructed
+generator outcomes are separate from measured factual editing outcomes.
+Point-curve roots carry no simultaneous confidence claim.
+
+## Sub-response evaluation and complete recovery
+
+The revised paper separates classification, conditional selection and the
+success of the resulting response. Its supporting six-response construction preserves
+pooled scores, response means, the complete average recovery curve and several
+conditional summaries while changing complete support under an assumed editor.
+
+```bash
+python analysis/optional_fixed_budget_check.py
+python analysis/bandha_ais_bridge_check.py --out results/ais_bridge
+python analysis/bandha_downstream_loss_check.py --out results/downstream_loss
+python analysis/bandha_downstream_aggregate.py --input results/downstream_loss/verification.json --out results/downstream_values
+```
+
+The first command writes `analysis/optional_fixed_budget_results.json`.
+All these examples are finite constructions, not executed neural repair systems.
+
+For the released character evaluator, obtain the author repositories at their
+pinned revisions:
+
+```bash
+git clone https://github.com/KRLabsOrg/LettuceDetect external/LettuceDetect
+git -C external/LettuceDetect checkout 7947f415b9e1fbecb0b97fee9e2e9e80305cb196
+git clone https://github.com/Helsinki-NLP/mu-shroom external/mu-shroom
+git -C external/mu-shroom checkout 7fea78a0e5af887d196931721147ace5b4c4d9a8
+python analysis/bandha_span_evaluator_control.py --ragtruth data/RAGTruth --lettuce-evaluator external/LettuceDetect/lettucedetect/models/evaluator.py --mu-root external/mu-shroom --out results/span_evaluator
+python analysis/bandha_manuscript_aggregate.py --control results/span_evaluator/results.json --fixture analysis/optional_fixed_budget_results.json --out results/revised_paper
+```
+
+This runs unchanged evaluator function bodies with whole-response marking
+controls, using the supplied pinned RAGTruth inputs and the existing NumPy/SciPy
+environment. It runs no LettuceDetect model. Raw gold-span overlaps follow the
+released character evaluator; the word-level analysis uses its separate merged
+binary mask. The metadata control's character F1 is about .108 on the main panel;
+a label-informed screening ceiling is about .363. These do not reproduce a
+published neural-detector score.
+
+The final aggregation produces TeX tables, values, CSV provenance and input/output
+hashes. Existing `scripts/reproduce.py` results remain the inputs for the original
+word-level study. The new checks are additional commands with their own outcomes.
+
+## Response loss and shared review cost
+
+The main counterexample uses a common threshold. A response offset increases
+true detections and decreases false alarms while preserving conditional order.
+A graded remaining-error loss and shared review setup can nevertheless give
+the offset a higher downstream risk. The exact checker covers the risk identity,
+an interval of thresholds and rational loss/cost cases.
+
+Run the original reproduction pipeline first, then the added readouts:
+
+```bash
+python analysis/bandha_response_loss_check.py --out results/response_loss_exact
+python analysis/bandha_response_loss_benchmark.py --ragtruth data/RAGTruth --baseline results/expanded/expanded_results.json --weights results/alternatives/source_weights.npy --source-ids results/alternatives/source_ids.json --out results/response_loss_benchmark
+python analysis/bandha_response_loss_aggregate.py --theory results/response_loss_exact/results.json --benchmark results/response_loss_benchmark/results.json --out results/response_loss_values
+```
+
+The benchmark fixes the original classifier thresholds and paired source draws.
+It reports remaining annotated words, review invocation, context volume and
+flagged units, with illustrative loss curves at a=1/4, 1/2 and 3/4.
+These are coverage and volume proxies. They are not measured human times,
+coding usefulness, or factual quality after a real repair.
+
+The new CSV/TeX bindings and hash manifest record each manuscript value's source.
+Older AIS, equal-summary, severity and sequential constructions remain supporting
+checks.
+
+## Adaptive review and metric-general ordering
+
+The current paper compares the best paid review supported by score information.
+The reviewer can choose units, adapt to feedback, switch responses and stop.
+Projection can remove useful location information; a controlled known offset
+preserves information and optimal review value.
+
+```bash
+python analysis/bandha_marginal_response_check.py --out analysis/bandha_marginal_response_results
+python analysis/bandha_adaptive_review_check.py --out results/adaptive_review
+python analysis/bandha_adaptive_metric_family.py --out results/adaptive_metric_family
+```
+
+The first command produces the preserved reference files checked by the adaptive
+script. The second verifies the small optimal-stopping example and all four
+operator conditions. The third checks the general construction over response
+lengths 8 through 24, including the search bound and a constant positive risk gap.
+
+These are analytic models with exact initial error counts, anonymous permuted
+units, known score/label laws and paid verification. Numerical scoring costs
+are held equal. They are not trials of human or neural repair systems.
+The metric-general theorem assumes strict preference for balanced label
+separation and continuity under vanishing finite-support contamination.
+The existing RAGTruth pipeline remains a fixed-policy annotation/work study.
+
+## Published case evidence and adequacy map
+
+The declared-use ledger is in research/subresponse_adequacy.
+Its records are derived requirements, not measured failures.
+FRED's published detection/editing values are transcribed from its v2 FAVA
+tables by analysis/bandha_published_case_values.py. Run it with --fred-html,
+--adequacy-csv research/subresponse_adequacy/adequacy.csv and --out.
+The script records source hashes, validates the captions/columns and checks
+the editing ordering under all three judges. No model inference is required.
