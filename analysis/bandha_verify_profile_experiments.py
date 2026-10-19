@@ -21,7 +21,13 @@ def main():
     spec = importlib.util.spec_from_file_location('checked_profiles', Path(__file__).with_name('bandha_profile_experiments.py'))
     api = importlib.util.module_from_spec(spec); spec.loader.exec_module(api)
     result = json.loads((args.results / 'results.json').read_text())
-    original = np.load(args.inputs / 'source_weights.npy'); weights = np.load(args.results / 'source_weights.npy')
+    original = np.load(args.inputs / 'source_weights.npy')
+    weights_path = args.results / 'source_weights.npy'
+    if weights_path.exists():
+        weights = np.load(weights_path)
+    else:
+        with np.load(args.results / 'source_weights.npz') as stored:
+            weights = stored['weights']
     assert np.array_equal(weights[:2000], original)
     expected = np.random.default_rng(result['bootstrap']['additional_seed']).multinomial(450, np.full(450, 1 / 450), len(weights) - 2000)
     assert np.array_equal(weights[2000:], expected)

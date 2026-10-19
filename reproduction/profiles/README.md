@@ -24,3 +24,7 @@ The count logs explicitly distinguish original annotation misses, flags, and mod
 Intervals are jointly adjusted across the declared profile, correction, tuning and transport comparisons. Root summaries retain absent and multiple crossings rather than selecting only successful unique-root draws. A printed grid region is not a unique population-root confidence interval.
 
 All sixty value-tuning and forty-eight ideal-policy transport comparisons are reported, including negative results and no-check policies. Counts, outcomes, source weights and all manuscript aggregates accompany the private reviewer artifacts.
+
+The verifier accepts both the pipeline's `source_weights.npy` and the compressed
+`source_weights.npz` supplied with saved results. It verifies the hash of the
+uncompressed draw matrix in either case.
