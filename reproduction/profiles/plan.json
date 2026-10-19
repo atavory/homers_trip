@@ -1,0 +1,130 @@
+{
+  "status": "specified_before_execution",
+  "primary_contrast": [
+    "lexical_metadata",
+    "lexical"
+  ],
+  "additional_contrasts": [
+    [
+      "task_generator",
+      "lexical"
+    ],
+    [
+      "generator",
+      "lexical_metadata"
+    ],
+    [
+      "lexical_mean",
+      "lexical"
+    ],
+    [
+      "lexical_metadata_mean",
+      "lexical_metadata"
+    ]
+  ],
+  "population": "All 2675 good-quality held-out responses, 450 complete source groups; uniform response weights; original labels/flags and fitting fixed.",
+  "uncertainty": "10000 paired complete-source draws: preserve original 2000, append 8000 multinomial draws with seed 20261019. Joint max-standardized bootstrap bands over all capped error/work contrast coordinates, modeled-correction sensitivity coordinates and validation-tuning contrasts. Propagate bands through nonnegative concave basis coefficients to all common geometric utility/cost parameters.",
+  "pgf_grid_points": 501,
+  "corrector_grid": {
+    "fix_probability": [
+      0,
+      0.5,
+      0.75,
+      0.9,
+      1
+    ],
+    "harm_probability": [
+      0,
+      0.005,
+      0.01,
+      0.05,
+      0.1,
+      0.2
+    ],
+    "dependence": [
+      "independent_units",
+      "response_coupled"
+    ]
+  },
+  "corrector_inference_cases": [
+    [
+      0.9,
+      0.01
+    ],
+    [
+      0.75,
+      0.05
+    ]
+  ],
+  "correction_assumptions": "Each flagged erroneous unit is fixed with p; each flagged correct unit is corrupted with h. Fixed flags; unflagged units unchanged. Unit-independent and response-coupled outcomes have identical marginal rates and expected error counts. Parameters are sensitivity assumptions, not fitted repair rates.",
+  "validation_tuning": {
+    "models": [
+      "lexical",
+      "lexical_metadata",
+      "task_generator"
+    ],
+    "objectives": [
+      [
+        0.5,
+        0.5,
+        0.01,
+        0.001
+      ],
+      [
+        0.5,
+        0.5,
+        0.05,
+        0.001
+      ],
+      [
+        0.5,
+        0.5,
+        0.01,
+        0.005
+      ],
+      [
+        0.9,
+        0.5,
+        0.01,
+        0.001
+      ]
+    ],
+    "candidate_rules": "101 validation-score quantiles plus original F1 threshold plus no-action option; choose maximum validation value, break ties by fewer flags then higher threshold. Evaluate only after choosing cutoff. No test labels used for selection."
+  },
+  "kill_criteria": [
+    "Mismatched response/source identity or count bounds",
+    "Failure to reproduce frozen means and three geometric losses",
+    "Incorrect source-weight hash or incomplete source resampling",
+    "Failure of exact correction moments or profile reconstruction",
+    "Invalid validation/test split or fitted scorer mismatch"
+  ],
+  "scope": "Conditional inference for frozen score/flag policies and declared correction/work proxies. No neural or human correction experiment; no population interpretation of a unique crossing when bands allow absence/multiplicity.",
+  "inputs": {
+    "records.csv": "58abd8e591017ac7ff52ae08797ba0ae6642c4bde80842f1412496e7e2033c0d",
+    "source_weights.npy": "6d917c1ef53d2bf542779d4f85a05dbe24b0321976b6c538768d1d655150a0e9",
+    "source_ids.json": "388b6d6a00a9cede08908ea06cd9537daae70f2caef1ba63cd4742e107697d88",
+    "reference.json": "2aa2d862c226c8f66d2854bcb3b388314392dc8921fae97ef85328420998eb99"
+  },
+  "sensitivity_quality_parameters": [
+    0,
+    0.05,
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    0.9,
+    0.95,
+    0.99,
+    1
+  ],
+  "tuning_robustness_extension": {
+    "reason": "Resolve the concrete dependence of aggressive ideal-correction policies on assumed repair success and harm.",
+    "settings": "Apply both already declared inference p/h cases and both dependence models to validation tuning; assess transported ideal policies too.",
+    "report_all": true,
+    "comparisons": {
+      "tuning": 60,
+      "transport": 48
+    },
+    "selection": "All correction settings and utility prices remain those specified before execution; no cases chosen by observed sign."
+  }
+}

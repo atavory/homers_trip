@@ -1,0 +1,8 @@
+name: response-profile-review
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - numpy=2.5.4
+  - scipy=1.18.1
+  - matplotlib=3.11.2
