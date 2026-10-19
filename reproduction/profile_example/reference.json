@@ -1,0 +1,35 @@
+{
+  "kind": "exact_analytic_fixture",
+  "all_checks_passed": true,
+  "parameter_cases": 81,
+  "rows": {
+    "A": [
+      {
+        "errors": 0,
+        "checks": 2
+      },
+      {
+        "errors": 2,
+        "checks": 0
+      }
+    ],
+    "B": [
+      {
+        "errors": 1,
+        "checks": 1
+      },
+      {
+        "errors": 1,
+        "checks": 1
+      }
+    ]
+  },
+  "difference_coefficients": {
+    "0": "1/2",
+    "1": "-1",
+    "2": "1/2"
+  },
+  "difference_formula": "((1-a)^2+F*(1-b)^2)/2",
+  "same_mean_and_zero_endpoint_do_not_determine_profile": true,
+  "script_sha256": "aafd84f1845faaf71dc7bcb50ab67123015b276ce4fa7a2a770ac4b60126e8af"
+}
