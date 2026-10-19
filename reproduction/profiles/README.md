@@ -28,3 +28,7 @@ All sixty value-tuning and forty-eight ideal-policy transport comparisons are re
 The verifier accepts both the pipeline's `source_weights.npy` and the compressed
 `source_weights.npz` supplied with saved results. It verifies the hash of the
 uncompressed draw matrix in either case.
+
+The count-parameterized pooling example can be checked independently with
+`python -I analysis/bandha_parametric_pooling.py --out parametric_results`.
+It uses exact fractions and only the Python standard library.
