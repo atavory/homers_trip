@@ -1,0 +1,12 @@
+{
+  "fit": {
+    "pi": 0.04803390464918071,
+    "train_responses": 11965,
+    "train_sources": 2012,
+    "metadata_smoothing": 1000,
+    "lexical_smoothing": 20,
+    "lexical_min_count": 20,
+    "lexical_vocabulary": 6288
+  },
+  "cache_sha256": "c9096cc7c161c9c73084a98d172741ef8563861f8531774173635fffe817a679"
+}
