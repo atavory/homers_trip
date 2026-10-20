@@ -1,0 +1,15 @@
+{
+  "all_checks_passed": true,
+  "checked_values": 529,
+  "maximum_rational_curve_error": 3.1086244689504383e-15,
+  "maximum_batch_score_difference": 0,
+  "trained_responses": 2675,
+  "comparison_set": [
+    "generator",
+    "lexical",
+    "lexical_metadata",
+    "lettuce",
+    "lettuce_mean"
+  ],
+  "scores_sha256": "1dbd7768c4c7ad8f51f3dd000e552dc1f57adc817c308abf2b629b6143536f61"
+}
