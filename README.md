@@ -1,3 +1,7 @@
+## Latest capped-error experiment
+
+[Trained-detector evidence and reproduction](bandha_cap_evidence.md): released LettuceDetect predictions on 2,675 RAGTruth responses, capped remaining-error curves, worst-case regret and 5,000 paired source-bootstrap draws. The error outcomes assume ideal correction of selected words.
+
 # Sub-Response Hallucination Detection Evaluation
 
 Code for **Evaluating Sub-Response Hallucination Detection Metrics:
