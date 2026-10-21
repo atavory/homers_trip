@@ -1,3 +1,5 @@
+**Current paper revision:** [Fixed-reference error evaluation with separate work](bandha_fixed_reference.md). The joint maximum is retained as a diagnostic, not the proposed benchmark ranking.
+
 ## Current unified error/work experiment
 
 See [bandha_joint_work.md](bandha_joint_work.md) for the capped-work extension, normalized joint regret, paired source bounds and zero-work sensitivity check. Both detection and correction use the same framework, with work included according to the objective.

@@ -1,8 +1,10 @@
 # Unified error and optional-work evaluation
 
-## User-approved paper hierarchy — 2026-10-21
+**Current revision:** see [bandha_fixed_reference.md](bandha_fixed_reference.md). The normalized joint maximum is retained below as a diagnostic of scale dependence; it is no longer the proposed benchmark ranking.
 
-The user explicitly approved the hierarchical outline below: **“i am absolutely loving the fuck out of this! Mark this in the md file.”** This records approval of the current narrative and structure. Use this outline as the current writing reference when consulting older notes; the earlier aggregation-only, generating-function and fixed-local-budget narratives do not define the present paper.
+## Recorded narrative approval — 2026-10-21
+
+The user explicitly approved the hierarchical outline below: **“i am absolutely loving the fuck out of this! Mark this in the md file.”** This records enthusiasm for the outline and structure, not independent validation or approval of numerical tables. The joint-scalar recommendation below is superseded by the fixed-reference revision in `bandha_fixed_reference.md`; preserve this outline as a historical record when consulting older notes; the earlier aggregation-only, generating-function and fixed-local-budget narratives do not define the present paper.
 
 **Central question:** How should we compare hallucination procedures when we know the shape of error damage and checking cost, but not their exact values?
 
@@ -50,13 +52,13 @@ The user explicitly approved the hierarchical outline below: **“i am absolutel
 
 Detection-assisted and direct correction use one outcome framework: assessed remaining errors E and work K when work is part of the objective. Ignoring work does not require equal work. The procedure type changes how outcomes are obtained, not the worst-case comparison principle.
 
-## Criterion
+## Archived joint criterion
 
 Report L_j(t)=E[min(E_j,t)] and W_j(u)=E[min(K_j,u)]. Common increasing concave component shapes have zero loss at zero and unit first increments. The combined benchmark convention is (1-theta)*error loss + theta*work cost, theta in [0,1]. Its first increments sum to one. Worst normalized joint regret is max(error regret,work regret), with both regrets measured against the same fixed comparison set. This is finite but changes the yardstick across physical prices; it does not recover unknown dollar costs.
 
 For a specified work price lambda in first-error units, regret is max_i[D_E(j,i)+lambda D_K(j,i)]. Unrestricted physical prices can give infinite regret. The normalized convention, a bounded price range, or a declared resource constraint are distinct choices.
 
-## Executed comparison
+## Archived joint comparison
 
 Same frozen predictions, 2,675 RAGTruth test/good responses, 450 sources, 68,195 selected words per procedure. No new model inference or fitting. One flag incurs one modeled check. Selected errors are perfectly corrected without damage: ideal annotation coverage, not edited-output quality or measured human time.
 

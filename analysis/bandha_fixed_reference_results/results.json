@@ -1,0 +1,207 @@
+{
+  "reference": "lettuce_mean",
+  "reference_scope": "One frozen checkpoint mean control shared by all procedures; at each declared check budget, the same selection rule is applied to this reference.",
+  "methods": [
+    "generator",
+    "lexical",
+    "lexical_metadata",
+    "lettuce",
+    "lettuce_mean"
+  ],
+  "responses": 2675,
+  "sources": 450,
+  "primary_budget": 0.2,
+  "summaries": {
+    "generator": {
+      "threshold": -2.479449396217304,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 59082,
+      "selected_ties": 17422,
+      "word_f1": 0.10700303220022098,
+      "error_containing_fraction": 0.24490321058411457,
+      "mean_remaining": 3.265235055856331,
+      "expected_opened_responses": 884.9990633205683,
+      "expected_read_response_words": 109854.98103754639,
+      "mean_checks": 25.493457943925232,
+      "error_bounds": [
+        0.5687080906989831,
+        2.235958690015767
+      ],
+      "work_bounds": [
+        4.206234664836745,
+        6.31306992973477
+      ],
+      "error_disadvantage": 1.2706091852687926,
+      "work_disadvantage": 5.181978781677579
+    },
+    "lexical": {
+      "threshold": -2.7866577047121917,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 8555,
+      "selected_ties": 7956,
+      "word_f1": 0.11831941197580227,
+      "error_containing_fraction": 0.30389765496880217,
+      "mean_remaining": 3.0933149221364915,
+      "expected_opened_responses": 2673.6499123319695,
+      "expected_read_response_words": 340958.72893045004,
+      "mean_checks": 25.493457943925232,
+      "error_bounds": [
+        0.43772129381315517,
+        2.0968788668433254
+      ],
+      "work_bounds": [
+        15.205215859502342,
+        17.69325618112812
+      ],
+      "error_disadvantage": 1.0986890515489698,
+      "work_disadvantage": 16.438596856261405
+    },
+    "lexical_metadata": {
+      "threshold": -2.521973465301886,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 10,
+      "selected_ties": 5,
+      "word_f1": 0.14578360688009057,
+      "error_containing_fraction": 0.30168224299065416,
+      "mean_remaining": 2.676074766355145,
+      "expected_opened_responses": 1848.0000000000002,
+      "expected_read_response_words": 249566.0,
+      "mean_checks": 25.493457943925232,
+      "error_bounds": [
+        0.28972807009472856,
+        1.408310719248071
+      ],
+      "work_bounds": [
+        7.648554219773308,
+        10.554301599755911
+      ],
+      "error_disadvantage": 0.6814488957676068,
+      "work_disadvantage": 9.070280373831784
+    },
+    "lettuce": {
+      "threshold": 0.0022886123042553663,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 1,
+      "selected_ties": 1,
+      "word_f1": 0.26413051502251533,
+      "error_containing_fraction": 0.08897196261682239,
+      "mean_remaining": 0.8781308411214968,
+      "expected_opened_responses": 2338.0,
+      "expected_read_response_words": 310730.0,
+      "mean_checks": 25.493457943925232,
+      "error_bounds": [
+        -0.14742055754677025,
+        -0.0675229232107794
+      ],
+      "work_bounds": [
+        11.60674959490975,
+        13.985386443259666
+      ],
+      "error_disadvantage": -0.10747174037877483,
+      "work_disadvantage": 12.78803738317757
+    },
+    "lettuce_mean": {
+      "threshold": 0.06982887378200461,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 157,
+      "selected_ties": 143,
+      "word_f1": 0.19063893787195413,
+      "error_containing_fraction": 0.1964437029955972,
+      "mean_remaining": 1.9946258705875382,
+      "expected_opened_responses": 483.9999999999999,
+      "expected_read_response_words": 68209.0,
+      "mean_checks": 25.493457943925232,
+      "error_bounds": [
+        0.0,
+        0.0
+      ],
+      "work_bounds": [
+        0.0,
+        0.0
+      ],
+      "error_disadvantage": 0.0,
+      "work_disadvantage": 0.0
+    }
+  },
+  "budget_sweep": {
+    "0.1": {
+      "selected_words": 34097,
+      "mean_checks": 12.746542056074766,
+      "error_disadvantages": {
+        "generator": 1.1367884800058223,
+        "lexical": 0.7791904943891539,
+        "lexical_metadata": 0.5649844236760155,
+        "lettuce": -0.14280373831775695,
+        "lettuce_mean": 0.0
+      },
+      "full_error_dominance": true
+    },
+    "0.2": {
+      "selected_words": 68195,
+      "mean_checks": 25.493457943925232,
+      "error_disadvantages": {
+        "generator": 1.2706091852687926,
+        "lexical": 1.0986890515489698,
+        "lexical_metadata": 0.6814488957676068,
+        "lettuce": -0.10747174037877483,
+        "lettuce_mean": 0.0
+      },
+      "full_error_dominance": true
+    },
+    "0.3": {
+      "selected_words": 102292,
+      "mean_checks": 38.24,
+      "error_disadvantages": {
+        "generator": 1.0958888243834175,
+        "lexical": 1.130447021860145,
+        "lexical_metadata": 0.5265502621381367,
+        "lettuce": -0.0665345932204916,
+        "lettuce_mean": 0.0
+      },
+      "full_error_dominance": true
+    }
+  },
+  "scaled_joint_sensitivity": {
+    "1.0": {
+      "generator": 5.181978781677579,
+      "lexical": 16.438596856261405,
+      "lexical_metadata": 9.070280373831784,
+      "lettuce": 12.78803738317757,
+      "lettuce_mean": 1.1164950294660414
+    },
+    "0.01": {
+      "generator": 2.3871042147348343,
+      "lexical": 2.2151840810150114,
+      "lexical_metadata": 1.7979439252336482,
+      "lettuce": 0.1278803738317757,
+      "lettuce_mean": 1.1164950294660414
+    }
+  },
+  "zero_work_check": {
+    "scope": "Fixed-benchmark point comparison after adding the unchanged-response, zero-check procedure; no population assertion.",
+    "initial_mean_errors": 4.890841121495328,
+    "no_work_error_and_joint_regret": 4.012710280373742,
+    "positive_work_joint_regrets": {
+      "generator": 25.493457943925232,
+      "lexical": 25.493457943925232,
+      "lexical_metadata": 25.493457943925232,
+      "lettuce": 25.493457943925232,
+      "lettuce_mean": 25.493457943925232
+    },
+    "no_work_minimizes_joint_regret": true,
+    "reason": "With a zero-work comparator, worst normalized work regret is mean checks. The full theta range includes cost-only loss and linear work cost."
+  },
+  "uncertainty": "20% point: maxima of existing simultaneous source-bootstrap pairwise bounds. 10% and 30%: benchmark points only, no population interval.",
+  "work_axis": "Mean selected-word checks; not measured review time and not equal concave preparation cost.",
+  "source_results_sha256": "417b3dcae0755d7ec78fc3c27d3f2ba75aba14bb24e4bba1851a7a2625c8365f",
+  "curves_sha256": "6b6b3d1ba391d85998c3df97c94499e5076c80486ae81f5dc0920b19b064ff40",
+  "verification": {
+    "checks_passed": 470,
+    "saved_primary_curves_reproduced": true
+  }
+}
