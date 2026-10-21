@@ -1,0 +1,181 @@
+{
+  "reference": "Original unedited responses, not the paper mean control",
+  "model": "Item-local correction; unselected-item correctness preserved; homogeneous repair p and harm q. Independent-binomial curve is one model. Jensen sufficient bounds do not require independence when the stated marginal repair/harm bounds hold per flagged item.",
+  "policies": {
+    "budget_20pct": {
+      "FN_TP_FP": [
+        2349,
+        10734,
+        57461
+      ],
+      "flags": 68195,
+      "precision": 0.15740156902998753,
+      "maximum_residual_support": 264,
+      "point_p09_q001": {
+        "B": 0.011563815664564103,
+        "cap": 1,
+        "first": 0.011563815664564103,
+        "mean_change": -3.396631775700212
+      },
+      "upper_disadvantage_p09_q001": 0.0712971962616854,
+      "linear_q_at_p09": 0.16812446702981154,
+      "frontier": {
+        "0.0": {
+          "independent_lower": 0.0,
+          "independent_upper": 5.960464477539063e-08,
+          "sufficient_lower": 0.0,
+          "sufficient_upper": 2.3283064365386963e-10
+        },
+        "0.1": {
+          "independent_lower": 0.00013339519500732422,
+          "independent_upper": 0.0001334547996520996,
+          "sufficient_lower": 0.0001103344839066267,
+          "sufficient_upper": 0.00011033471673727036
+        },
+        "0.2": {
+          "independent_lower": 0.00031447410583496094,
+          "independent_upper": 0.00031453371047973633,
+          "sufficient_lower": 0.00022066920064389706,
+          "sufficient_upper": 0.0002206694334745407
+        },
+        "0.3": {
+          "independent_lower": 0.0005621910095214844,
+          "independent_upper": 0.0005622506141662598,
+          "sufficient_lower": 0.0003310039173811674,
+          "sufficient_upper": 0.00033100415021181107
+        },
+        "0.4": {
+          "independent_lower": 0.0009068846702575684,
+          "independent_upper": 0.0009069442749023438,
+          "sufficient_lower": 0.00044133863411843777,
+          "sufficient_upper": 0.0004413388669490814
+        },
+        "0.5": {
+          "independent_lower": 0.0013992786407470703,
+          "independent_upper": 0.0013993382453918457,
+          "sufficient_lower": 0.0005516733508557081,
+          "sufficient_upper": 0.0005516735836863518
+        },
+        "0.6": {
+          "independent_lower": 0.0021288394927978516,
+          "independent_upper": 0.002128899097442627,
+          "sufficient_lower": 0.0009502992033958435,
+          "sufficient_upper": 0.0009502994362264872
+        },
+        "0.7": {
+          "independent_lower": 0.0032666921615600586,
+          "independent_upper": 0.003266751766204834,
+          "sufficient_lower": 0.001462041400372982,
+          "sufficient_upper": 0.0014620416332036257
+        },
+        "0.8": {
+          "independent_lower": 0.0051844120025634766,
+          "independent_upper": 0.005184471607208252,
+          "sufficient_lower": 0.0024596774019300938,
+          "sufficient_upper": 0.0024596776347607374
+        },
+        "0.9": {
+          "independent_lower": 0.00885850191116333,
+          "independent_upper": 0.008858561515808105,
+          "sufficient_lower": 0.00489001302048564,
+          "sufficient_upper": 0.004890013253316283
+        },
+        "1.0": {
+          "independent_lower": 0.018055498600006104,
+          "independent_upper": 0.01805555820465088,
+          "sufficient_lower": 0.01337319053709507,
+          "sufficient_upper": 0.013373190769925714
+        }
+      }
+    },
+    "word_score_0.5": {
+      "FN_TP_FP": [
+        6362,
+        6721,
+        5586
+      ],
+      "flags": 12307,
+      "precision": 0.5461119687982449,
+      "maximum_residual_support": 256,
+      "point_p09_q001": {
+        "B": -0.04426843997480645,
+        "cap": 1,
+        "first": -0.04426843997480645,
+        "mean_change": -2.2403887850464317
+      },
+      "upper_disadvantage_p09_q001": -0.03112523364485764,
+      "linear_q_at_p09": 1.0,
+      "frontier": {
+        "0.0": {
+          "independent_lower": 0.0,
+          "independent_upper": 5.960464477539063e-08,
+          "sufficient_lower": 0.0,
+          "sufficient_upper": 2.3283064365386963e-10
+        },
+        "0.1": {
+          "independent_lower": 0.0012723207473754883,
+          "independent_upper": 0.0012723803520202637,
+          "sufficient_lower": 0.0010918674524873495,
+          "sufficient_upper": 0.0010918676853179932
+        },
+        "0.2": {
+          "independent_lower": 0.002920985221862793,
+          "independent_upper": 0.0029210448265075684,
+          "sufficient_lower": 0.002183734904974699,
+          "sufficient_upper": 0.0021837351378053427
+        },
+        "0.3": {
+          "independent_lower": 0.005109965801239014,
+          "independent_upper": 0.005110025405883789,
+          "sufficient_lower": 0.0032756023574620485,
+          "sufficient_upper": 0.003275602590292692
+        },
+        "0.4": {
+          "independent_lower": 0.008116066455841064,
+          "independent_upper": 0.00811612606048584,
+          "sufficient_lower": 0.004367469809949398,
+          "sufficient_upper": 0.004367470042780042
+        },
+        "0.5": {
+          "independent_lower": 0.012421369552612305,
+          "independent_upper": 0.01242142915725708,
+          "sufficient_lower": 0.0054593372624367476,
+          "sufficient_upper": 0.005459337495267391
+        },
+        "0.6": {
+          "independent_lower": 0.01890355348587036,
+          "independent_upper": 0.018903613090515137,
+          "sufficient_lower": 0.008567314594984055,
+          "sufficient_upper": 0.008567314827814698
+        },
+        "0.7": {
+          "independent_lower": 0.029292941093444824,
+          "independent_upper": 0.0292930006980896,
+          "sufficient_lower": 0.01249092211946845,
+          "sufficient_upper": 0.012490922352299094
+        },
+        "0.8": {
+          "independent_lower": 0.0475081205368042,
+          "independent_upper": 0.047508180141448975,
+          "sufficient_lower": 0.020046801771968603,
+          "sufficient_upper": 0.020046802004799247
+        },
+        "0.9": {
+          "independent_lower": 0.08508461713790894,
+          "independent_upper": 0.08508467674255371,
+          "sufficient_lower": 0.041056910529732704,
+          "sufficient_upper": 0.04105691076256335
+        },
+        "1.0": {
+          "independent_lower": 0.21456831693649292,
+          "independent_upper": 0.2145683765411377,
+          "sufficient_lower": 0.14197530853562057,
+          "sufficient_upper": 0.1419753087684512
+        }
+      }
+    }
+  },
+  "verification_checks": 212,
+  "uncertainty": "Numerical fixed-benchmark frontier estimates, not population intervals or measured editor performance. Bisection brackets are numerical crossing brackets, not confidence intervals.",
+  "scores_sha256": "1dbd7768c4c7ad8f51f3dd000e552dc1f57adc817c308abf2b629b6143536f61"
+}
