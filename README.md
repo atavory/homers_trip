@@ -1,3 +1,7 @@
+## Current unified error/work experiment
+
+See [bandha_joint_work.md](bandha_joint_work.md) for the capped-work extension, normalized joint regret, paired source bounds and zero-work sensitivity check. Both detection and correction use the same framework, with work included according to the objective.
+
 ## Latest capped-error experiment
 
 [Trained-detector evidence and reproduction](bandha_cap_evidence.md): released LettuceDetect predictions on 2,675 RAGTruth responses, capped remaining-error curves, worst-case regret and 5,000 paired source-bootstrap draws. The error outcomes assume ideal correction of selected words.

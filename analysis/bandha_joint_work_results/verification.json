@@ -1,0 +1,7 @@
+{
+  "all_checks_passed": true,
+  "checks": 1282,
+  "exhaustive_allocation_fixtures": 9,
+  "source_bootstrap_error_replay_maximum": 0.0,
+  "zero_work_sanity_verified": true
+}

@@ -1,0 +1,188 @@
+{
+  "methods": [
+    "generator",
+    "lexical",
+    "lexical_metadata",
+    "lettuce",
+    "lettuce_mean"
+  ],
+  "responses": 2675,
+  "sources": 450,
+  "draws": 5000,
+  "primary_budget": 0.2,
+  "maximum_error_cap": 256,
+  "maximum_work_cap": 359,
+  "critical_max_t": 3.895053762223476,
+  "summaries": {
+    "generator": {
+      "threshold": -2.479449396217304,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 59082,
+      "selected_ties": 17422,
+      "word_f1": 0.10700303220022098,
+      "error_containing_fraction": 0.24490321058411457,
+      "mean_remaining": 3.265235055856331,
+      "expected_opened_responses": 884.9990633205683,
+      "expected_read_response_words": 109854.98103754639,
+      "mean_checks": 25.493457943925232,
+      "error_regret": 2.3871042147348343,
+      "work_regret": 5.181978781677579,
+      "joint_regret": 5.181978781677579,
+      "error_bounds": [
+        1.5570747344797597,
+        3.408099114488471
+      ],
+      "work_bounds": [
+        4.206234664836745,
+        6.31306992973477
+      ],
+      "joint_bounds": [
+        4.206234664836745,
+        6.31306992973477
+      ]
+    },
+    "lexical": {
+      "threshold": -2.7866577047121917,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 8555,
+      "selected_ties": 7956,
+      "word_f1": 0.11831941197580227,
+      "error_containing_fraction": 0.30389765496880217,
+      "mean_remaining": 3.0933149221364915,
+      "expected_opened_responses": 2673.6499123319695,
+      "expected_read_response_words": 340958.72893045004,
+      "mean_checks": 25.493457943925232,
+      "error_regret": 2.2151840810150114,
+      "work_regret": 16.438596856261405,
+      "joint_regret": 16.438596856261405,
+      "error_bounds": [
+        1.497029884721856,
+        3.2184094797942575
+      ],
+      "work_bounds": [
+        15.205215859502342,
+        17.69325618112812
+      ],
+      "joint_bounds": [
+        15.205215859502342,
+        17.69325618112812
+      ]
+    },
+    "lexical_metadata": {
+      "threshold": -2.521973465301886,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 10,
+      "selected_ties": 5,
+      "word_f1": 0.14578360688009057,
+      "error_containing_fraction": 0.30168224299065416,
+      "mean_remaining": 2.676074766355145,
+      "expected_opened_responses": 1848.0000000000002,
+      "expected_read_response_words": 249566.0,
+      "mean_checks": 25.493457943925232,
+      "error_regret": 1.7979439252336482,
+      "work_regret": 9.070280373831784,
+      "joint_regret": 9.070280373831784,
+      "error_bounds": [
+        1.2295838282335483,
+        2.510419371902383
+      ],
+      "work_bounds": [
+        7.648554219773308,
+        10.554301599755911
+      ],
+      "joint_bounds": [
+        7.648554219773308,
+        10.554301599755911
+      ]
+    },
+    "lettuce": {
+      "threshold": 0.0022886123042553663,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 1,
+      "selected_ties": 1,
+      "word_f1": 0.26413051502251533,
+      "error_containing_fraction": 0.08897196261682239,
+      "mean_remaining": 0.8781308411214968,
+      "expected_opened_responses": 2338.0,
+      "expected_read_response_words": 310730.0,
+      "mean_checks": 25.493457943925232,
+      "error_regret": 0.0,
+      "work_regret": 12.78803738317757,
+      "joint_regret": 12.78803738317757,
+      "error_bounds": [
+        0.0,
+        0.0
+      ],
+      "work_bounds": [
+        11.60674959490975,
+        13.985386443259666
+      ],
+      "joint_bounds": [
+        11.60674959490975,
+        13.985386443259666
+      ]
+    },
+    "lettuce_mean": {
+      "threshold": 0.06982887378200461,
+      "selected_units": 68195,
+      "responses": 2675,
+      "tie_population": 157,
+      "selected_ties": 143,
+      "word_f1": 0.19063893787195413,
+      "error_containing_fraction": 0.1964437029955972,
+      "mean_remaining": 1.9946258705875382,
+      "expected_opened_responses": 483.9999999999999,
+      "expected_read_response_words": 68209.0,
+      "mean_checks": 25.493457943925232,
+      "error_regret": 1.1164950294660414,
+      "work_regret": 0.0,
+      "joint_regret": 1.1164950294660414,
+      "error_bounds": [
+        0.7159836516694846,
+        1.5170064072625997
+      ],
+      "work_bounds": [
+        0.0,
+        0.11716863026274699
+      ],
+      "joint_bounds": [
+        0.7159836516694846,
+        1.5170064072625997
+      ]
+    }
+  },
+  "minimum_error_regret_methods": [
+    "lettuce"
+  ],
+  "minimum_joint_regret_methods": [
+    "lettuce_mean"
+  ],
+  "maximum_prior_error_regret_replay_error": 0.0,
+  "zero_work_sanity_check": {
+    "scope": "Fixed-benchmark point comparison after adding the unchanged-response, zero-check procedure; no population assertion.",
+    "initial_mean_errors": 4.890841121495328,
+    "no_work_error_and_joint_regret": 4.012710280373742,
+    "positive_work_joint_regrets": {
+      "generator": 25.493457943925232,
+      "lexical": 25.493457943925232,
+      "lexical_metadata": 25.493457943925232,
+      "lettuce": 25.493457943925232,
+      "lettuce_mean": 25.493457943925232
+    },
+    "no_work_minimizes_joint_regret": true,
+    "reason": "With a zero-work comparator, worst normalized work regret is mean checks. The full theta range includes cost-only loss and linear work cost."
+  },
+  "normalization": "Independent concave error/work shapes each have unit first increment; combined loss is (1-theta)*error + theta*work, theta in [0,1]. Joint regret is max(error regret,work regret).",
+  "scope": "Fixed five-procedure set; ideal annotation coverage, one check per selected word; common count-based concave losses/costs. Human review time is not measured.",
+  "sampling": "Paired source draws from the prior experiment; recompute global allocation and integrate cutoff ties before error and work losses. Scores remain fixed.",
+  "uncertainty": "Approximate simultaneous 95% source-bootstrap max-t bands over both outcome components, all listed pairs and all integer caps.",
+  "scores_sha256": "1dbd7768c4c7ad8f51f3dd000e552dc1f57adc817c308abf2b629b6143536f61",
+  "index_sha256": "46daec19b5cf6eead6ef27cffe1fd31ca37b31ca7d63721d800c36d03ba23960",
+  "source_weights_sha256": "fa9e4bf8f2c0dad1c8c39eed2c515211b46ffa3aa0622187ba9d9b0c471aeaa2",
+  "script_sha256": "6180f1e74530a0d076da0bdfc7e0a6f7c6e0577d4df8ad5c857175948b710c6c",
+  "elapsed_seconds": 256.01637022104114
+}
