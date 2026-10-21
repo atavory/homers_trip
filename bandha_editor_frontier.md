@@ -83,3 +83,5 @@ python analysis/bandha_editor_frontier.py --scores analysis/bandha_cap_inputs/tr
 The script checks 212 identities/inequalities, including independent direct convolution on small fixtures, a two-response counterexample, Jensen bounds, and frontier ordering. The plotted frontier points are numerical estimates with crossing brackets; those brackets are not confidence intervals, and line interpolation is not a continuum certificate. Source/population uncertainty and editor calibration uncertainty have not been estimated.
 
 [Frontier figure](analysis/bandha_editor_frontier_results/frontiers.pdf)
+
+Further checked results: [operating-point and dependence audit](bandha_editor_operating_points.md), including source intervals for the conservative frontier at repair probability at least 0.9. The independent-edit frontier curves above remain fixed-benchmark points.

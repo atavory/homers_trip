@@ -1,0 +1,121 @@
+{
+  "repair_lower_bound": 0.9,
+  "reference": "Unchanged response",
+  "budgets": {
+    "0.01": {
+      "q_sufficient": 0.0640677958726883,
+      "source_interval": [
+        0.0325043760240078,
+        0.21160284653305994
+      ],
+      "precision": 0.7577712609970675,
+      "selected_words": 3410
+    },
+    "0.02": {
+      "q_sufficient": 0.07658450305461884,
+      "source_interval": [
+        0.04238459691405296,
+        0.14059415645897386
+      ],
+      "precision": 0.6744390673119226,
+      "selected_words": 6819
+    },
+    "0.05": {
+      "q_sufficient": 0.027285084128379822,
+      "source_interval": [
+        0.021402504295110703,
+        0.03470126055181026
+      ],
+      "precision": 0.4552173147985219,
+      "selected_words": 17049
+    },
+    "0.1": {
+      "q_sufficient": 0.01110251247882843,
+      "source_interval": [
+        0.009366949275135993,
+        0.013057605922222135
+      ],
+      "precision": 0.276739889139807,
+      "selected_words": 34097
+    },
+    "0.2": {
+      "q_sufficient": 0.004890009760856628,
+      "source_interval": [
+        0.0042481496930122375,
+        0.005583449825644492
+      ],
+      "precision": 0.15740156902998753,
+      "selected_words": 68195
+    },
+    "0.3": {
+      "q_sufficient": 0.0031599998474121094,
+      "source_interval": [
+        0.0027472648769617082,
+        0.0035803057253360744
+      ],
+      "precision": 0.11100574825010753,
+      "selected_words": 102292
+    },
+    "0.5": {
+      "q_sufficient": 0.0018084198236465454,
+      "source_interval": [
+        0.0015865184366703033,
+        0.002044697105884552
+      ],
+      "precision": 0.07070961838508734,
+      "selected_words": 170486
+    }
+  },
+  "sources": 450,
+  "responses": 2675,
+  "draws": 5000,
+  "maximum_cap": 359,
+  "one_percent_minus_two_percent": {
+    "point": -0.012516707181930542,
+    "source_interval": [
+      -0.03934048414230347,
+      0.08958858698606477
+    ]
+  },
+  "scope": "Numerical sufficient frontier for benchmark-average concave error loss under local editing and marginal repair/harm bounds; no independence model and no measured editor. Approximate pointwise source-bootstrap intervals conditional on frozen detector and specified repair lower bound.",
+  "tie_handling": "Expected confusion counts under uniform cutoff-tie allocation, including source clones; no hypergeometric distribution is needed for this Jensen bound.",
+  "direct_capping_checks": 30,
+  "source_draws_sha256": "fa9e4bf8f2c0dad1c8c39eed2c515211b46ffa3aa0622187ba9d9b0c471aeaa2",
+  "seconds": 18.001864698715508,
+  "coupling_comparison": {
+    "budget_20pct": {
+      "independent_p09_q002": {
+        "B": 0.09660448638373076,
+        "cap": 1,
+        "first": 0.09660448638373076,
+        "mean_change": -3.1818242990651484
+      },
+      "grouped_p09_q002_B": -0.2091469158878529,
+      "grouped_frontier_p09": 0.16142111364752054,
+      "grouped_frontier_limiting_cap": 88,
+      "checks": 18,
+      "model": "All TP repair together; all FP corrupt together; the two group events are independent. Matched marginal p,q; benchmark points, not measured editor behavior."
+    },
+    "word_score_0.5": {
+      "independent_p09_q002": {
+        "B": -0.03539512056545646,
+        "cap": 1,
+        "first": -0.03539512056545646,
+        "mean_change": -2.2195065420559885
+      },
+      "grouped_p09_q002_B": -0.09121794392523455,
+      "grouped_frontier_p09": 0.6306306305341423,
+      "grouped_frontier_limiting_cap": 1,
+      "checks": 18,
+      "model": "All TP repair together; all FP corrupt together; the two group events are independent. Matched marginal p,q; benchmark points, not measured editor behavior."
+    }
+  },
+  "scores_sha256": "1dbd7768c4c7ad8f51f3dd000e552dc1f57adc817c308abf2b629b6143536f61",
+  "five_percent_minus_twenty_percent": {
+    "point": 0.022395074367523193,
+    "source_interval": [
+      0.01706022098660469,
+      0.02918735444545744
+    ]
+  }
+}
