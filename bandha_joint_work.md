@@ -1,5 +1,53 @@
 # Unified error and optional-work evaluation
 
+## User-approved paper hierarchy — 2026-10-21
+
+The user explicitly approved the hierarchical outline below: **“i am absolutely loving the fuck out of this! Mark this in the md file.”** This records approval of the current narrative and structure. Use this outline as the current writing reference when consulting older notes; the earlier aggregation-only, generating-function and fixed-local-budget narratives do not define the present paper.
+
+**Central question:** How should we compare hallucination procedures when we know the shape of error damage and checking cost, but not their exact values?
+
+### 1. Introduction
+
+- **1.1. Response setting.** There are R responses, each containing n_r assessed items: words, spans, sentences or claims. A procedure leaves E_r errors and, when checking work matters, incurs K_r units of work.
+- **1.2. Practical rationale.** One remaining error can substantially compromise an answer; additional errors may cause less incremental damage. This motivates increasing concave error loss, equivalently decreasing convex usefulness. Checking can share preparation, motivating increasing concave checking cost. These are assumptions about particular uses, not universal laws.
+- **1.3. Existing evaluations and their limits.** Distinguish pooled item metrics, response-conditioned metrics, mean remaining errors, error-free response rate, and particular correction/review outcomes. Each can answer a legitimate question; none alone determines performance across the proposed damage and cost classes.
+- **1.4. Contribution.** Report capped-error and capped-work curves, identify robust dominance, and calculate worst-case regret. Detection and correction use one framework; work is included when the objective requires it.
+
+### 2. Capped Outcomes and Robust Comparison
+
+#### 2.1. What we propose
+
+- **2.1.1. Evaluated outcomes.** Correctors supply assessed returned-output errors. Detectors require a declared selection/correction policy. Perfect targeted correction without collateral damage or changes to unselected-item correctness gives residual errors equal to false negatives. Actual editors require actual output assessment.
+- **2.1.2. Two curves.** Report L_j(t)=E[min(E_j,t)] and W_j(u)=E[min(K_j,u)]. Apply caps within responses, then average. Cap one gives the error-containing or checked-response fraction; sufficiently large caps give mean errors or mean work. Caps describe saturation of damage or cost, not inspection budgets.
+- **2.1.3. Normalization.** Normalize the first error's damage and first work unit's cost to one. When both matter, use (1-theta)*ell(E)+theta*c(K), theta in [0,1]. This is an explicit benchmark convention for unknown relative importance.
+
+#### 2.2. Why these reports are useful
+
+- **2.2.1. Coverage of the declared shape class.** Every normalized increasing concave count function is a convex combination of capped counts. The curves determine all expected losses and costs in that class. Credit the established representation; the evaluation application is our contribution.
+- **2.2.2. Dominance.** An error curve everywhere below another establishes preference under every admissible error-loss function. Crossings expose dependence on error valuation.
+- **2.2.3. Scalar comparison.** Against a named finite set S, R_j^E=max_t[L_j(t)-min_{i in S}L_i(t)]. This measures the worst disadvantage under uncertain error damage. Lower regret gives a minimax-regret ranking.
+- **2.2.4. Optional work.** Define R_j^K analogously. Under complete uncertainty in the normalized combined objective, R_j^joint=max(R_j^E,R_j^K). The scalar depends on alternatives, operating points and normalization; it does not preserve every application's preferred ranking.
+
+### 3. Experiments
+
+- **3.1. Five fixed procedures on RAGTruth.** Evaluate 2,675 responses from 450 sources using a trained LettuceDetect checkpoint, its response-mean control, and three simpler scorers. Each selects exactly 20% of words. Correction is idealized annotation coverage; checking work is modeled.
+- **3.2. Equal checks do not mean equal concave costs.** The trained detector leaves 0.878 errors per response, versus 1.995 for its mean control. Both select 68,195 words, but open 2,338 versus 484 responses.
+- **3.3. Changed preference.** The trained detector wins the error-only comparison. Its mean control minimizes normalized joint regret among the five fixed procedures. Source-clustered uncertainty supports the distinctions.
+- **3.4. Conservatism and alternatives.** Adding an unchanged-output, zero-work alternative changes the joint recommendation to doing nothing on this benchmark. Unrestricted uncertainty includes work-dominated objectives. State relevant alternatives and constraints; do not suppress this sensitivity result.
+
+### 4. Discussion
+
+- **4.1. Takeaway.** Report curves showing dependence on diminishing damage and shared checking costs. When a scalar is needed, declare the uncertainty class and use explicit worst-case regret.
+- **4.2. Benchmark declarations.** Specify assessed targets, error/work units, correction assumptions, response weights, operating points, alternatives and normalization.
+- **4.3. Limits.** One benchmark and trained checkpoint; ideal correction rather than measured edited-output quality; modeled checking rather than measured review time; common concave count functions rather than every application's objective.
+
+### Appendices
+
+- **A.** Reproduction, tie averaging, source-clustered uncertainty, physical prices and resource constraints.
+- **B.** The parametric Simpson reversal: pooled AUROC can reverse within-response localization rankings. This supports the distinction between evaluation targets; it is not the central contribution.
+
+---
+
 Detection-assisted and direct correction use one outcome framework: assessed remaining errors E and work K when work is part of the objective. Ignoring work does not require equal work. The procedure type changes how outcomes are obtained, not the worst-case comparison principle.
 
 ## Criterion
