@@ -1,0 +1,22 @@
+{
+  "responses": 48,
+  "sources": 48,
+  "strata": [
+    "Data2txt_clean",
+    "Data2txt_erroneous",
+    "QA_clean",
+    "QA_erroneous",
+    "Summary_clean",
+    "Summary_erroneous"
+  ],
+  "editor": "gpt-4.1",
+  "assessor": "claude-sonnet-4.6",
+  "detector": "Frozen LettuceDetect checkpoint",
+  "selection": "Hash-selected distinct sources, balanced task and original gold-error strata",
+  "eligibility": "At most 220 response words and 14000 evidence characters; no source truncation",
+  "operating_points": "Corpus-wide exact top 20% word flags and word score >= .5",
+  "top20_threshold": 0.0022886123042553663,
+  "score_sha256": "1dbd7768c4c7ad8f51f3dd000e552dc1f57adc817c308abf2b629b6143536f61",
+  "assessment": "Independent model enumerates unsupported atomic propositions and omitted supported original targets; uncertainty recorded separately",
+  "scope": "Executed constrained editor; automated assessment proxy, not human post-edit gold labels. No claim that p/q are homogeneous or independent."
+}
