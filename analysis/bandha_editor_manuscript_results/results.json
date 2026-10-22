@@ -1,0 +1,33 @@
+{
+  "model": "Independent item-local editing for the policy table; marginal repair/harm bounds without independence for the sufficient frontier",
+  "p": 0.9,
+  "q": 0.02,
+  "baseline": "Unedited responses for conditional editing; mean control for ideal score diagnostics",
+  "policies": {
+    "budget_20pct": {
+      "flags": 68195,
+      "word_f1": 0.26413051502251533,
+      "B": 0.09660448638373076,
+      "cap": 1,
+      "first": 0.09660448638373076,
+      "mean_change": -3.1818242990651484,
+      "upper_B": 0.18120373831776104
+    },
+    "word_score_0.5": {
+      "flags": 12307,
+      "word_f1": 0.5294210319023237,
+      "B": -0.03539512056545646,
+      "cap": 1,
+      "first": -0.03539512056545646,
+      "mean_change": -2.2195065420559885,
+      "upper_B": -0.01929719626168014
+    }
+  },
+  "source_draws": 5000,
+  "scope": "Conditional calculations, no executed editor or measured review time. Detection F1 already favors the cutoff policy in this case.",
+  "input_hashes": {
+    "ideal_results": "417b3dcae0755d7ec78fc3c27d3f2ba75aba14bb24e4bba1851a7a2625c8365f",
+    "editor_triplets": "43495f4113572e32b5c16b949f62d3a35c795edd7d18b32fb69a84e065ab5bce",
+    "operating_results": "fa021a3ac4e904e65fbd901e6802ce72adaa8096f916c70d7b1f028518bb316e"
+  }
+}
