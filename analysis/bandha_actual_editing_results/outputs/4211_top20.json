@@ -1,0 +1,12 @@
+{
+  "id": "4211",
+  "policy": "top20",
+  "response": "The US Citizenship and Immigration Services (USCIS) will continue processing work permits for migrants even if the federal government shuts down. The agency has taken steps to expedite the process, including offering education education sessions for immigrants at libraries, issuing alerts, and providing mobile biometric services. However, additional funding from Congress is needed to process more applications and reduce the current 30-day processing time.",
+  "replacements": [
+    {
+      "replacement": "education sessions for immigrants at libraries,",
+      "span_id": "s1"
+    }
+  ],
+  "model_called": true
+}

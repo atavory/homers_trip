@@ -1,0 +1,12 @@
+{
+  "id": "585",
+  "policy": "top20",
+  "response": "Actress Sofia Vergara is embroiled in a legal battle with her ex-fiance Nick Loeb over two frozen embryos from their relationship, both female, conceived through in vitro fertilization in November 2013. Loeb is suing Vergara to prevent her from destroying the embryos, which he wants to implant in a surrogate and raise as his own. The couple split in May 2014 and Loeb filed the lawsuit anonymously citing privacy concerns. Vergara's representatives have refused to comment on the matter. The lawsuit raises questions about who has the right to embryos and whether they are considered life or property. Experts say this is a gray area of law and a California court will have to decide to whom the embryos belong. This case is similar to the Planned Parenthood of Central Missouri vs. Danforth case, where the US Supreme Court declared a statute requiring parental and spousal consent for abortions unconstitutional.",
+  "replacements": [
+    {
+      "replacement": "over two frozen embryos from their relationship, both female, conceived through in vitro fertilization in November 2013.",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

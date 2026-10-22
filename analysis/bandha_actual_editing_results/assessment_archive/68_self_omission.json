@@ -1,0 +1,204 @@
+{
+  "id": "68",
+  "source_id": "15604",
+  "stratum": "Summary_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "original",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "The author was elected to the Kentucky State Senate in 1967 and became the first woman and first person of color to serve in the body."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Rand Paul declared he is running for president of the United States."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The author finds it 'almost unfathomable' that a politician from her own state is attempting to launch his presidential campaign on a record that includes questioning landmark voting rights and civil rights legislation."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Paul's campaign team told reporters his campaign announcement message would be about 'expanding the Republican Party' — a message of inclusion."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The author criticized Paul's campaign team's message of inclusion as hype."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Paul has questioned the Civil Rights Act and claimed that private business owners have a right to discriminate."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Paul thinks the Department of Education 'should be done away with.'"
+    },
+    {
+      "target_id": "T8",
+      "claim": "Paul seeks to limit women's choices/rights in Washington."
+    },
+    {
+      "target_id": "T9",
+      "claim": "Paul currently opposes protections for DREAMers from deportation."
+    },
+    {
+      "target_id": "T10",
+      "claim": "When asked about the need for a more robust Voting Rights Act following the Supreme Court's dismantling of the law, Paul dismissively remarked, 'We have an African-American President.'"
+    },
+    {
+      "target_id": "T11",
+      "claim": "The author urged the GOP to have a real commitment to the issues facing minority communities."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 2,
+      "errors": 3,
+      "claims": [
+        {
+          "quote": "The first woman and person of color elected to the Kentucky State Senate has responded to Rand Paul's decision to run for president",
+          "status": "supported",
+          "reason": "The evidence states the author was elected to the Kentucky State Senate in 1967 and became the first woman and first person of color to serve in the body, and she is responding to Rand Paul's presidential run.",
+          "evidence_quote": "When I was elected to the Kentucky State Senate in 1967, I became the first woman and the first person of color to serve in the body."
+        },
+        {
+          "quote": "by stating that she finds it \"almost unfathomable\" that a politician from her own state is attempting to launch his campaign on a record that includes questioning landmark voting rights and civil rights legislation",
+          "status": "supported",
+          "reason": "The evidence directly contains this language and sentiment.",
+          "evidence_quote": "I find it almost unfathomable that a politician from my own state is attempting to launch his presidential campaign on a record that includes questioning landmark voting rights and civil rights legislation."
+        },
+        {
+          "quote": "She criticized his campaign team's message of inclusion as hype",
+          "status": "supported",
+          "reason": "The evidence states the author heard 'nothing more than hype' from Paul's message of inclusion.",
+          "evidence_quote": "His campaign team told reporters last week that his campaign announcement message would be about \"expanding the Republican Party\" -- a message of inclusion. But those of us listening today who he is hoping to include, heard nothing more than hype."
+        },
+        {
+          "quote": "highlighted his past actions that have undermined the rights of marginalized communities",
+          "status": "supported",
+          "reason": "The evidence details multiple actions by Paul that the author argues undermine rights of marginalized communities (Civil Rights Act, Voting Rights Act, DREAMers, women's rights).",
+          "evidence_quote": "Paul has also questioned the Civil Rights Act, and even claimed that private business owners have a right to discriminate."
+        },
+        {
+          "quote": "Warren urged the GOP to have a real commitment to the issues facing minority communities",
+          "status": "unsupported",
+          "reason": "The candidate attributes this statement to 'Warren,' but the evidence does not identify the author as Senator Elizabeth Warren. The evidence is written in first person with no name given. Attributing the name 'Warren' is not supported by the evidence. The underlying urging of the GOP is supported, but the name attribution is not.",
+          "evidence_quote": "But they can't actually appeal to the community unless they have a real commitment to the issues facing minority communities."
+        },
+        {
+          "quote": "reminded Paul's supporters of his previous comments on the Civil Rights Act, the Department of Education, women's rights, and DREAMers' protection",
+          "status": "supported",
+          "reason": "The evidence discusses Paul's positions on all four of these topics.",
+          "evidence_quote": "when we were debating the Civil Rights Act -- which Paul has done since landing on the national stage; when there was no Department of Education -- a department he thinks \"should be done away with;\" when women didn't have choices -- choices Paul seeks to limit in Washington; when DREAMers weren't protected from deportation -- protections Paul currently opposes."
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T4",
+        "T10"
+      ]
+    },
+    "original": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 3,
+      "errors": 5,
+      "claims": [
+        {
+          "quote": "Senator Elizabeth Warren has responded to Rand Paul's decision to run for president",
+          "status": "unsupported",
+          "reason": "The evidence does not identify the author as Senator Elizabeth Warren. The piece is written in first person and no name is given. Attributing it to Elizabeth Warren is not supported by the evidence.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "by stating that she finds it \"almost unfathomable\" that a politician from her own state is attempting to launch his campaign on a record that includes questioning landmark voting rights and civil rights legislation",
+          "status": "supported",
+          "reason": "The evidence directly contains this language.",
+          "evidence_quote": "I find it almost unfathomable that a politician from my own state is attempting to launch his presidential campaign on a record that includes questioning landmark voting rights and civil rights legislation."
+        },
+        {
+          "quote": "She criticized his campaign team's message of inclusion as hype",
+          "status": "supported",
+          "reason": "The evidence states the author heard 'nothing more than hype' from Paul's message of inclusion.",
+          "evidence_quote": "His campaign team told reporters last week that his campaign announcement message would be about \"expanding the Republican Party\" -- a message of inclusion. But those of us listening today who he is hoping to include, heard nothing more than hype."
+        },
+        {
+          "quote": "highlighted his past actions that have undermined the rights of marginalized communities",
+          "status": "supported",
+          "reason": "The evidence details multiple actions by Paul that the author argues undermine rights of marginalized communities.",
+          "evidence_quote": "Paul has also questioned the Civil Rights Act, and even claimed that private business owners have a right to discriminate."
+        },
+        {
+          "quote": "Warren urged the GOP to have a real commitment to the issues facing minority communities",
+          "status": "unsupported",
+          "reason": "The underlying urging of the GOP is supported by the evidence, but the attribution to 'Warren' specifically is not supported, as the evidence does not name the author.",
+          "evidence_quote": "But they can't actually appeal to the community unless they have a real commitment to the issues facing minority communities."
+        },
+        {
+          "quote": "reminded Paul's supporters of his previous comments on the Civil Rights Act, the Department of Education, women's rights, and DREAMers' protection",
+          "status": "supported",
+          "reason": "The evidence discusses Paul's positions on all four of these topics.",
+          "evidence_quote": "when we were debating the Civil Rights Act -- which Paul has done since landing on the national stage; when there was no Department of Education -- a department he thinks \"should be done away with;\" when women didn't have choices -- choices Paul seeks to limit in Washington; when DREAMers weren't protected from deportation -- protections Paul currently opposes."
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T1",
+        "T4",
+        "T10"
+      ]
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 2,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "When I was elected to the Kentucky State Senate in 1967, I became the first woman and the first person of color to serve in the body has responded to Rand Paul's decision to run for president",
+          "status": "supported",
+          "reason": "The evidence confirms the author was elected to the Kentucky State Senate in 1967 as the first woman and first person of color, and she is responding to Rand Paul's presidential run. The sentence construction is awkward but the factual content is supported.",
+          "evidence_quote": "When I was elected to the Kentucky State Senate in 1967, I became the first woman and the first person of color to serve in the body."
+        },
+        {
+          "quote": "by stating that she finds it \"almost unfathomable\" that a politician from her own state is attempting to launch his campaign on a record that includes questioning landmark voting rights and civil rights legislation",
+          "status": "supported",
+          "reason": "The evidence directly contains this language.",
+          "evidence_quote": "I find it almost unfathomable that a politician from my own state is attempting to launch his presidential campaign on a record that includes questioning landmark voting rights and civil rights legislation."
+        },
+        {
+          "quote": "She noted that those listening to his message of inclusion heard nothing more than hype",
+          "status": "supported",
+          "reason": "The evidence directly states this.",
+          "evidence_quote": "But those of us listening today who he is hoping to include, heard nothing more than hype."
+        },
+        {
+          "quote": "pointed out his past actions that have undermined the rights of marginalized communities",
+          "status": "supported",
+          "reason": "The evidence details multiple actions by Paul that the author argues undermine rights of marginalized communities.",
+          "evidence_quote": "Paul has also questioned the Civil Rights Act, and even claimed that private business owners have a right to discriminate."
+        },
+        {
+          "quote": "She urged Republicans to have real real commitment to the issues facing minority communities",
+          "status": "supported",
+          "reason": "The evidence supports this urging, despite the duplicate word 'real real' being a typo.",
+          "evidence_quote": "But they can't actually appeal to the community unless they have a real commitment to the issues facing minority communities."
+        },
+        {
+          "quote": "made clear his previous comments on the Civil Rights Act, the Department of Education, women's rights, and DREAMers' protection",
+          "status": "supported",
+          "reason": "The evidence discusses Paul's positions on all four of these topics.",
+          "evidence_quote": "when we were debating the Civil Rights Act -- which Paul has done since landing on the national stage; when there was no Department of Education -- a department he thinks \"should be done away with;\" when women didn't have choices -- choices Paul seeks to limit in Washington; when DREAMers weren't protected from deportation -- protections Paul currently opposes."
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T4",
+        "T10"
+      ]
+    }
+  }
+}

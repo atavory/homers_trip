@@ -1,0 +1,94 @@
+{
+  "id": "16612",
+  "source_id": "15388",
+  "stratum": "QA_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "cutoff05",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "NO_SUPPORTED_TARGETS",
+      "claim": "There are no informative atomic factual claims in the original response that are supported by the evidence. The specific temperature (22°C/72°F), humidity (82%), and wind speed (6 mph/9 km/h) figures cited are not present in any of the provided passages."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 5,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 5,
+      "claims": [
+        {
+          "quote": "Passage 1 provides the current weather conditions for Bucharest, including the temperature",
+          "status": "unsupported",
+          "reason": "Passage 1 only states it provides 'weather forecast, weather conditions and Doppler radar' for Bucharest but does not actually contain any specific temperature or weather data in the evidence supplied.",
+          "evidence_quote": "Today's and tonight's Bucharest, Romania weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com"
+        },
+        {
+          "quote": "Today's temperature in Bucharest is 22°C (72°F)",
+          "status": "unsupported",
+          "reason": "No specific current temperature figure appears anywhere in the provided evidence passages.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "humidity is 82%",
+          "status": "unsupported",
+          "reason": "No humidity figure appears anywhere in the provided evidence passages.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "wind speed is 6 mph (9 km/h)",
+          "status": "unsupported",
+          "reason": "No wind speed figure appears anywhere in the provided evidence passages.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "the current temperature in Bucharest is 22°C (72°F)",
+          "status": "unsupported",
+          "reason": "No specific current temperature figure appears anywhere in the provided evidence passages.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Passage 1 provides the current weather conditions for Bucharest, including the temperature",
+          "status": "unsupported",
+          "reason": "Passage 1 only states it provides 'weather forecast, weather conditions and Doppler radar' for Bucharest but does not actually contain any specific temperature or weather data in the evidence supplied.",
+          "evidence_quote": "Today's and tonight's Bucharest, Romania weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com"
+        },
+        {
+          "quote": "Unable to answer based on given passages.",
+          "status": "supported",
+          "reason": "The passages do not contain any specific current temperature data for Bucharest, so the conclusion that the question cannot be answered from the given passages is correct.",
+          "evidence_quote": "Today's and tonight's Bucharest, Romania weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Unable to answer based on given passages.",
+          "status": "supported",
+          "reason": "The passages do not contain any specific current temperature data for Bucharest, so the conclusion that the question cannot be answered from the given passages is correct.",
+          "evidence_quote": "Today's and tonight's Bucharest, Romania weather forecast, weather conditions and Doppler radar from The Weather Channel and Weather.com"
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

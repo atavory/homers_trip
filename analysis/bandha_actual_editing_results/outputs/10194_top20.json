@@ -1,0 +1,24 @@
+{
+  "id": "10194",
+  "policy": "top20",
+  "response": "Kogilicious, located at 956 Embarcadero Del Norte in Isla Vista, California, is a restaurant specializing in Korean Korean food. restaurant is open daily from 10:00 to 23:00. While it does not offer WiFi or validated parking, it does provide street parking and outdoor seating. Catering to groups, it offers a casual ambience and is noted for its take-out service. The restaurant has a 4.0 star rating. According to customer reviews, the half and half beef ribs and pork are described as the best some customers have ever had. The Kogilicious spicy chicken burrito is also a crowd favorite, along with the beef, spicy pork, and tofu options. Customers have praised the restaurant for its reasonable prices, especially when paying cash. However, it is noted that the use of a card may attract additional charges.",
+  "replacements": [
+    {
+      "replacement": "a restaurant specializing in",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "Korean food.",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "is open daily from 10:00 to 23:00.",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "4.0 star",
+      "span_id": "s3"
+    }
+  ],
+  "model_called": true
+}

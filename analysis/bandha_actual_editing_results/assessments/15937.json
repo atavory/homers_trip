@@ -1,0 +1,162 @@
+{
+  "id": "15937",
+  "source_id": "15275",
+  "stratum": "QA_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "original",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "An airplane in flight is an example of kinetic energy."
+    },
+    {
+      "target_id": "T2",
+      "claim": "A baseball thrown by a pitcher is an example of kinetic energy."
+    },
+    {
+      "target_id": "T3",
+      "claim": "An athlete running is an example of kinetic energy."
+    },
+    {
+      "target_id": "T4",
+      "claim": "A satellite in orbit is an example of potential energy."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "gravitational potential energy, such as energy stored in an object due to its height",
+          "status": "supported",
+          "reason": "Passage 3 explicitly states that gravitational potential energy is 'the energy stored in an object as the result of its vertical position or height.'",
+          "evidence_quote": "Gravitational potential energy is the energy stored in an object as the result of its vertical position or height."
+        },
+        {
+          "quote": "elastic potential energy",
+          "status": "supported",
+          "reason": "Passage 3 mentions elastic potential energy as one of the two forms of potential energy discussed.",
+          "evidence_quote": "The two examples above illustrate the two forms of potential energy to be discussed in this course-gravitational potential energy and elastic potential energy."
+        },
+        {
+          "quote": "an airplane in flight",
+          "status": "supported",
+          "reason": "Passage 1 explicitly lists an airplane in flight as an example of kinetic energy.",
+          "evidence_quote": "An airplane has a large amount of kinetic energy in flight due to its large mass and fast velocity."
+        },
+        {
+          "quote": "a baseball thrown by a pitcher",
+          "status": "supported",
+          "reason": "Passage 1 explicitly lists a baseball thrown by a pitcher as an example of kinetic energy.",
+          "evidence_quote": "A baseball thrown by a pitcher, although having a small mass, can have a large amount of kinetic energy due to its fast velocity."
+        },
+        {
+          "quote": "an athlete running",
+          "status": "supported",
+          "reason": "Passage 2 mentions 'an athlete runs' among examples of activities involving energy.",
+          "evidence_quote": "We see many a activities across us like a car moves,a ball rolls, river flows, an athlete runs, rides in amusement park, a satellite in orbit etc."
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T4"
+      ]
+    },
+    "original": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "a car parked on a hill",
+          "status": "unsupported",
+          "reason": "No evidence passage mentions a car parked on a hill as an example of potential energy. Passage 2 mentions a car moving, which relates to kinetic energy, not a parked car on a hill.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "a ball at the top of a ramp",
+          "status": "unsupported",
+          "reason": "No evidence passage mentions a ball at the top of a ramp as an example of potential energy.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "a satellite in orbit",
+          "status": "supported",
+          "reason": "Passage 2 lists 'a satellite in orbit' among examples of energy-related activities.",
+          "evidence_quote": "We see many a activities across us like a car moves,a ball rolls, river flows, an athlete runs, rides in amusement park, a satellite in orbit etc."
+        },
+        {
+          "quote": "an airplane in flight",
+          "status": "supported",
+          "reason": "Passage 1 explicitly lists an airplane in flight as an example of kinetic energy.",
+          "evidence_quote": "An airplane has a large amount of kinetic energy in flight due to its large mass and fast velocity."
+        },
+        {
+          "quote": "a baseball thrown by a pitcher",
+          "status": "supported",
+          "reason": "Passage 1 explicitly lists a baseball thrown by a pitcher as an example of kinetic energy.",
+          "evidence_quote": "A baseball thrown by a pitcher, although having a small mass, can have a large amount of kinetic energy due to its fast velocity."
+        },
+        {
+          "quote": "an athlete running",
+          "status": "supported",
+          "reason": "Passage 2 mentions 'an athlete runs' among examples of activities involving energy.",
+          "evidence_quote": "We see many a activities across us like a car moves,a ball rolls, river flows, an athlete runs, rides in amusement park, a satellite in orbit etc."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "gravitational potential energy, such as energy stored in an object due to its height",
+          "status": "supported",
+          "reason": "Passage 3 explicitly states that gravitational potential energy is 'the energy stored in an object as the result of its vertical position or height.'",
+          "evidence_quote": "Gravitational potential energy is the energy stored in an object as the result of its vertical position or height."
+        },
+        {
+          "quote": "elastic potential energy",
+          "status": "supported",
+          "reason": "Passage 3 mentions elastic potential energy as one of the two forms of potential energy discussed.",
+          "evidence_quote": "The two examples above illustrate the two forms of potential energy to be discussed in this course-gravitational potential energy and elastic potential energy."
+        },
+        {
+          "quote": "a satellite in orbit",
+          "status": "supported",
+          "reason": "Passage 2 lists 'a satellite in orbit' among examples of energy-related activities.",
+          "evidence_quote": "We see many a activities across us like a car moves,a ball rolls, river flows, an athlete runs, rides in amusement park, a satellite in orbit etc."
+        },
+        {
+          "quote": "an airplane in flight",
+          "status": "supported",
+          "reason": "Passage 1 explicitly lists an airplane in flight as an example of kinetic energy.",
+          "evidence_quote": "An airplane has a large amount of kinetic energy in flight due to its large mass and fast velocity."
+        },
+        {
+          "quote": "a baseball thrown by a pitcher",
+          "status": "supported",
+          "reason": "Passage 1 explicitly lists a baseball thrown by a pitcher as an example of kinetic energy.",
+          "evidence_quote": "A baseball thrown by a pitcher, although having a small mass, can have a large amount of kinetic energy due to its fast velocity."
+        },
+        {
+          "quote": "an athlete running",
+          "status": "supported",
+          "reason": "Passage 2 mentions 'an athlete runs' among examples of activities involving energy.",
+          "evidence_quote": "We see many a activities across us like a car moves,a ball rolls, river flows, an athlete runs, rides in amusement park, a satellite in orbit etc."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "id": "12485",
+  "source_id": "14394",
+  "stratum": "QA_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Indiana summers are long, warm, humid, and wet."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Indiana winters are chilly and windy."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Indiana is partly cloudy year round."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The temperature range in Indiana typically varies from 22°F to 85°F."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The temperature is rarely below 3°F or above 92°F."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The wettest year recorded at Indianapolis was 57.65 inches in 1876."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The driest year recorded at Indianapolis was 24.97 inches in 1934."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The most snowfall recorded was 74.5 inches in one season in 1979 at Rockford."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 3,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 4,
+      "claims": [
+        {
+          "quote": "Summer: Long, warm, humid, and wet",
+          "status": "supported",
+          "reason": "Passage 2 directly states Indianapolis summers are long, warm, humid, and wet.",
+          "evidence_quote": "the summers are long, warm, humid, and wet"
+        },
+        {
+          "quote": "Winter: Chilly and windy",
+          "status": "supported",
+          "reason": "Passage 2 directly states winters are chilly and windy.",
+          "evidence_quote": "the winters are chilly and windy"
+        },
+        {
+          "quote": "Year-round: Partly cloudy",
+          "status": "supported",
+          "reason": "Passage 2 states it is partly cloudy year round.",
+          "evidence_quote": "it is partly cloudy year round"
+        },
+        {
+          "quote": "Temperature range: 22°F to 85°F (rarely below 3°F or above 92°F)",
+          "status": "supported",
+          "reason": "Passage 2 states the temperature typically varies from 22°F to 85°F and is rarely below 3°F or above 92°F.",
+          "evidence_quote": "the temperature typically varies from 22°F to 85°F and is rarely below 3°F or above 92°F"
+        },
+        {
+          "quote": "Precipitation: Averages around 50-60 inches per year",
+          "status": "unsupported",
+          "reason": "No evidence in the passages states an average annual precipitation of 50-60 inches. The passages only give record high and low values.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "record high of 57.65 inches in 1876",
+          "status": "supported",
+          "reason": "Passage 3 states the wettest year was recorded in 1876 at Indianapolis at 57.65 inches.",
+          "evidence_quote": "Wettest year was recorded in 1876 at Indianapolis : 57.65 inches of measured rain."
+        },
+        {
+          "quote": "record low of 24.97 inches in 1934",
+          "status": "supported",
+          "reason": "Passage 3 states the driest year was recorded in 1934 at Indianapolis at 24.97 inches.",
+          "evidence_quote": "Driest year was recorded in 1934 at Indianapolis : 24.97 inches of measured rain."
+        },
+        {
+          "quote": "Snowfall: Averages around 20-30 inches per year",
+          "status": "unsupported",
+          "reason": "No evidence in the passages states an average annual snowfall of 20-30 inches.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "record high of 74.5 inches in 1979",
+          "status": "supported",
+          "reason": "Passage 3 states the most snowfall recorded was 74.5 inches in one season in 1979 in Rockford.",
+          "evidence_quote": "Most snow fall recorded in 1979 in Rockford : 74.5 inches in one season."
+        },
+        {
+          "quote": "typical weather in Indiana is characterized by mild summers, cold winters, and moderate precipitation throughout the year, with occasional heavy snowfall",
+          "status": "unsupported",
+          "reason": "The evidence describes summers as 'long, warm, humid, and wet' (not mild) and winters as 'chilly and windy' (not explicitly 'cold'). 'Moderate precipitation' and 'occasional heavy snowfall' are not stated in the evidence.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T8"
+      ]
+    },
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Summer: Long, warm, humid, and wet",
+          "status": "supported",
+          "reason": "Passage 2 directly states Indianapolis summers are long, warm, humid, and wet.",
+          "evidence_quote": "the summers are long, warm, humid, and wet"
+        },
+        {
+          "quote": "Winter: Chilly and windy",
+          "status": "supported",
+          "reason": "Passage 2 directly states winters are chilly and windy.",
+          "evidence_quote": "the winters are chilly and windy"
+        },
+        {
+          "quote": "Year-round: Partly cloudy",
+          "status": "supported",
+          "reason": "Passage 2 states it is partly cloudy year round.",
+          "evidence_quote": "it is partly cloudy year round"
+        },
+        {
+          "quote": "Temperature range: 22°F to 85°F (rarely below 3°F or above 92°F)",
+          "status": "supported",
+          "reason": "Passage 2 states the temperature typically varies from 22°F to 85°F and is rarely below 3°F or above 92°F.",
+          "evidence_quote": "the temperature typically varies from 22°F to 85°F and is rarely below 3°F or above 92°F"
+        },
+        {
+          "quote": "The wettest year recorded was 57.65 inches in 1876",
+          "status": "supported",
+          "reason": "Passage 3 confirms the wettest year was 57.65 inches in 1876 at Indianapolis.",
+          "evidence_quote": "Wettest year was recorded in 1876 at Indianapolis : 57.65 inches of measured rain."
+        },
+        {
+          "quote": "the driest year was 24.97 inches in 1934 at Indianapolis",
+          "status": "supported",
+          "reason": "Passage 3 confirms the driest year was 24.97 inches in 1934 at Indianapolis.",
+          "evidence_quote": "Driest year was recorded in 1934 at Indianapolis : 24.97 inches of measured rain."
+        },
+        {
+          "quote": "Most snowfall recorded was 74.5 inches in one season in 1979 at Rockford",
+          "status": "supported",
+          "reason": "Passage 3 states the most snowfall recorded was 74.5 inches in one season in 1979 in Rockford.",
+          "evidence_quote": "Most snow fall recorded in 1979 in Rockford : 74.5 inches in one season."
+        },
+        {
+          "quote": "typical weather in Indiana is characterized by mild summers, cold winters, and moderate precipitation throughout the year the year, with occasional heavy snowfall",
+          "status": "unsupported",
+          "reason": "The evidence describes summers as 'long, warm, humid, and wet' (not mild) and winters as 'chilly and windy' (not explicitly 'cold'). 'Moderate precipitation' and 'occasional heavy snowfall' are not stated in the evidence.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 3,
+      "claims": [
+        {
+          "quote": "Summer: Long, warm, humid, and wet",
+          "status": "supported",
+          "reason": "Passage 2 directly states Indianapolis summers are long, warm, humid, and wet.",
+          "evidence_quote": "the summers are long, warm, humid, and wet"
+        },
+        {
+          "quote": "Winter: Chilly and windy",
+          "status": "supported",
+          "reason": "Passage 2 directly states winters are chilly and windy.",
+          "evidence_quote": "the winters are chilly and windy"
+        },
+        {
+          "quote": "Year-round: Partly cloudy",
+          "status": "supported",
+          "reason": "Passage 2 states it is partly cloudy year round.",
+          "evidence_quote": "it is partly cloudy year round"
+        },
+        {
+          "quote": "Temperature range: 22°F to 85°F (rarely below 3°F or above 92°F)",
+          "status": "supported",
+          "reason": "Passage 2 states the temperature typically varies from 22°F to 85°F and is rarely below 3°F or above 92°F.",
+          "evidence_quote": "the temperature typically varies from 22°F to 85°F and is rarely below 3°F or above 92°F"
+        },
+        {
+          "quote": "Record high of 57.65 inches in 1876",
+          "status": "supported",
+          "reason": "Passage 3 confirms the wettest year was 57.65 inches in 1876 at Indianapolis.",
+          "evidence_quote": "Wettest year was recorded in 1876 at Indianapolis : 57.65 inches of measured rain."
+        },
+        {
+          "quote": "a record low of 24.97 inches in 1934",
+          "status": "supported",
+          "reason": "Passage 3 confirms the driest year was 24.97 inches in 1934 at Indianapolis.",
+          "evidence_quote": "Driest year was recorded in 1934 at Indianapolis : 24.97 inches of measured rain."
+        },
+        {
+          "quote": "Snowfall: Averages around 20-30 inches per year",
+          "status": "unsupported",
+          "reason": "No evidence in the passages states an average annual snowfall of 20-30 inches.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "record high of 74.5 inches in 1979",
+          "status": "supported",
+          "reason": "Passage 3 states the most snowfall recorded was 74.5 inches in one season in 1979 in Rockford.",
+          "evidence_quote": "Most snow fall recorded in 1979 in Rockford : 74.5 inches in one season."
+        },
+        {
+          "quote": "typical weather in Indiana is characterized by mild summers, cold winters, and moderate precipitation throughout the year, with occasional heavy snowfall",
+          "status": "unsupported",
+          "reason": "The evidence describes summers as 'long, warm, humid, and wet' (not mild) and winters as 'chilly and windy' (not explicitly 'cold'). 'Moderate precipitation' and 'occasional heavy snowfall' are not stated in the evidence.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T8"
+      ]
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [
+        "the typical weather in Indiana is characterized by mild summers, cold winters, and moderate precipitation throughout the year, with occasional heavy snowfall"
+      ]
+    },
+    {
+      "attempt": 1,
+      "nonverbatim_quotes": [
+        "mild summers, cold winters, and moderate precipitation throughout the year, with occasional heavy snowfall"
+      ]
+    }
+  ]
+}

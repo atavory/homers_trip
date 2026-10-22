@@ -1,0 +1,64 @@
+{
+  "id": "14941",
+  "source_id": "15108",
+  "stratum": "QA_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Passage 1 provides the necessary information on how to change the sleep time on a computer."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Passage 1 provides the necessary information on how to change the sleep time on a computer.",
+          "status": "supported",
+          "reason": "Passage 1 contains step-by-step instructions for changing the sleep time on a computer (e.g., 'Change the Put the computer to sleep entry with the desired amount of time'), confirming it provides the necessary information.",
+          "evidence_quote": "Step 5: Change the Put the computer to sleep entry with the desired amount of time you will allow the computer to sit idle before it sleeps, or automatically turn off its option to enter into Sleep mode."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Passage 1 provides the necessary information on how to change the sleep time on a computer.",
+          "status": "supported",
+          "reason": "Passage 1 contains step-by-step instructions for changing the sleep time on a computer (e.g., 'Change the Put the computer to sleep entry with the desired amount of time'), confirming it provides the necessary information.",
+          "evidence_quote": "Step 5: Change the Put the computer to sleep entry with the desired amount of time you will allow the computer to sit idle before it sleeps, or automatically turn off its option to enter into Sleep mode."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Passage 1 provides the necessary information on how to change the sleep time on a computer.",
+          "status": "supported",
+          "reason": "Passage 1 contains step-by-step instructions for changing the sleep time on a computer (e.g., 'Change the Put the computer to sleep entry with the desired amount of time'), confirming it provides the necessary information.",
+          "evidence_quote": "Step 5: Change the Put the computer to sleep entry with the desired amount of time you will allow the computer to sit idle before it sleeps, or automatically turn off its option to enter into Sleep mode."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

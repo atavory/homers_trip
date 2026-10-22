@@ -1,0 +1,12 @@
+{
+  "id": "5835",
+  "policy": "cutoff05",
+  "response": "Viva Modern Mexican is a popular restaurant located in Santa Barbara, California, offering a unique blend of Peruvian and Mexican cuisine. With a rating of 3.5 stars, the business provides a warm and classy atmosphere, including outdoor seating and free WiFi. While some customers have praised the restaurant's margaritas and salads, others have had negative experiences with food poisoning and poor service. Despite these issues, Viva Modern Mexican remains a popular spot for both locals and visitors, particularly for private events such as rehearsal dinners and welcome parties.",
+  "replacements": [
+    {
+      "replacement": "classy atmosphere,",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

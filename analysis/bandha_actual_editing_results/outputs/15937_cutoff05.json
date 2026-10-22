@@ -1,0 +1,16 @@
+{
+  "id": "15937",
+  "policy": "cutoff05",
+  "response": "Examples of of potential energy include gravitational potential energy, such as energy stored in an object due to its height, and elastic potential energy. and a satellite in orbit. Examples of kinetic energy include an airplane in flight, a baseball thrown by a pitcher, and an athlete running.",
+  "replacements": [
+    {
+      "replacement": "Examples of",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "potential energy include gravitational potential energy, such as energy stored in an object due to its height, and elastic potential energy.",
+      "span_id": "s1"
+    }
+  ],
+  "model_called": true
+}

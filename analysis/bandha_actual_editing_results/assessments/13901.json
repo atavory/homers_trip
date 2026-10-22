@@ -1,0 +1,182 @@
+{
+  "id": "13901",
+  "source_id": "12300",
+  "stratum": "QA_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "original",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Red blood cells are responsible for delivering oxygen from the lungs to the body's tissues."
+    },
+    {
+      "target_id": "T2",
+      "claim": "White blood cells are part of the immune system and help combat diseases and infections."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Both red and white blood cells are formed from pluripotent stem cells in the red bone marrow."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Both red and white blood cells are found in the circulatory system and can be carried by blood from one part of the body to another."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Both red and white blood cells have a cell membrane and cytoplasm."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Red blood cells are responsible for delivering oxygen from the lungs to the body's tissues",
+          "status": "supported",
+          "reason": "Passage 1 states 'Red blood cells are responsible for the oxygen delivery from the lungs to the tissue in the body.'",
+          "evidence_quote": "Red blood cells are responsible for the oxygen delivery from the lungs to the tissue in the body."
+        },
+        {
+          "quote": "white blood cells are part of the immune system and help combat diseases and Unable to answer based on given passages.",
+          "status": "supported",
+          "reason": "The factual content ('white blood cells are part of the immune system and help combat diseases') is supported by the evidence. The trailing 'Unable to answer based on given passages' is a non-factual editorial insertion and does not introduce a false claim. Passage 2 states 'White blood cells are part of the Immune System and help the body combat disease, viruses, etc.'",
+          "evidence_quote": "White blood cells are part of the Immune System and help the body combat disease, viruses, etc."
+        },
+        {
+          "quote": "Both red and white blood cells are formed from pluripotent stem cells in the red bone marrow.",
+          "status": "supported",
+          "reason": "Passage 3 states 'RBCs, WBCs are formed from pluripotent stem cells in red bone marrow.'",
+          "evidence_quote": "RBCs, WBCs are formed from pluripotent stem cells in red bone marrow."
+        },
+        {
+          "quote": "Both red and white blood cells are found in the circulatory system and can be carried by blood from one part of the body to another.",
+          "status": "supported",
+          "reason": "Passage 2 states 'The red blood cells and the White Blood Cells can are found in the circulatory system' and 'Both red blood cells and white blood cells can be carried by blood from one part to other part of our body.'",
+          "evidence_quote": "The red blood cells and the White Blood Cells can are found in the circulatory system. ... Both red blood cells and white blood cells can be carried by blood from one part to other part of our body."
+        },
+        {
+          "quote": "Both red and white blood cells have a cell membrane and cytoplasm.",
+          "status": "supported",
+          "reason": "Passage 2 states 'It both have cell membrane and cytoplasm.'",
+          "evidence_quote": "It both have cell membrane and cytoplasm."
+        },
+        {
+          "quote": "they differ in their function and structure",
+          "status": "unsupported",
+          "reason": "The claim about differing in structure is unsupported because the structural difference (biconcave vs. amoeba-like shape) is not stated in the evidence. The functional difference is supported, but the structural difference claim is not evidenced.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 3,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 3,
+      "claims": [
+        {
+          "quote": "Red blood cells are responsible for delivering oxygen from the lungs to the body's tissues",
+          "status": "supported",
+          "reason": "Passage 1 directly supports this claim.",
+          "evidence_quote": "Red blood cells are responsible for the oxygen delivery from the lungs to the tissue in the body."
+        },
+        {
+          "quote": "white blood cells are part of the immune system and help combat diseases and infections.",
+          "status": "supported",
+          "reason": "Passage 1 and Passage 2 support that white blood cells are part of the immune system and help combat disease. 'Infections' is a reasonable paraphrase of 'disease, viruses, etc.' and is supported.",
+          "evidence_quote": "White blood cells are part of the Immune System and help the body combat disease, viruses, etc."
+        },
+        {
+          "quote": "Red blood cells have a unique biconcave disk shape that allows them to maximize their surface area for gas exchange",
+          "status": "unsupported",
+          "reason": "None of the provided passages mention the biconcave disk shape of red blood cells or the surface area for gas exchange.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "white blood cells have a irregular, amoeba-like shape",
+          "status": "unsupported",
+          "reason": "None of the provided passages describe the shape of white blood cells.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Both red and white blood cells are formed from pluripotent stem cells in the red bone marrow.",
+          "status": "supported",
+          "reason": "Passage 3 directly supports this claim.",
+          "evidence_quote": "RBCs, WBCs are formed from pluripotent stem cells in red bone marrow."
+        },
+        {
+          "quote": "Both red and white blood cells are found in the circulatory system and can be carried by blood from one part of the body to another.",
+          "status": "supported",
+          "reason": "Passage 2 directly supports this claim.",
+          "evidence_quote": "The red blood cells and the White Blood Cells can are found in the circulatory system. ... Both red blood cells and white blood cells can be carried by blood from one part to other part of our body."
+        },
+        {
+          "quote": "Both red and white blood cells have a cell membrane and cytoplasm.",
+          "status": "supported",
+          "reason": "Passage 2 directly supports this claim.",
+          "evidence_quote": "It both have cell membrane and cytoplasm."
+        },
+        {
+          "quote": "they differ in their function and structure",
+          "status": "unsupported",
+          "reason": "While functional differences are supported, structural differences (shape) are not mentioned in the evidence, making the claim about structural differences unsupported.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Red blood cells are responsible for delivering oxygen from the lungs to the body's tissues",
+          "status": "supported",
+          "reason": "Passage 1 directly supports this claim.",
+          "evidence_quote": "Red blood cells are responsible for the oxygen delivery from the lungs to the tissue in the body."
+        },
+        {
+          "quote": "white blood cells are part of the immune system and help combat diseases and infections.",
+          "status": "supported",
+          "reason": "Passages 1 and 2 support that white blood cells are part of the immune system and help combat disease/viruses.",
+          "evidence_quote": "White blood cells are part of the Immune System and help the body combat disease, viruses, etc."
+        },
+        {
+          "quote": "Both red and white blood cells are formed from pluripotent stem cells in the red bone marrow.",
+          "status": "supported",
+          "reason": "Passage 3 directly supports this claim.",
+          "evidence_quote": "RBCs, WBCs are formed from pluripotent stem cells in red bone marrow."
+        },
+        {
+          "quote": "Both red and white blood cells are found in the circulatory system and can be carried by blood from one part of the body to another.",
+          "status": "supported",
+          "reason": "Passage 2 directly supports this claim.",
+          "evidence_quote": "The red blood cells and the White Blood Cells can are found in the circulatory system. ... Both red blood cells and white blood cells can be carried by blood from one part to other part of our body."
+        },
+        {
+          "quote": "Both red and white blood cells have a cell membrane and cytoplasm.",
+          "status": "supported",
+          "reason": "Passage 2 directly supports this claim.",
+          "evidence_quote": "It both have cell membrane and cytoplasm."
+        },
+        {
+          "quote": "they differ in their function and structure",
+          "status": "unsupported",
+          "reason": "While functional differences are supported, structural differences (shape) are not mentioned in the evidence, making the claim about structural differences unsupported.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

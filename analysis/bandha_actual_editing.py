@@ -46,8 +46,11 @@ def mrg(command, timeout=180):
 def complete(model, prompt, schema, output, max_tokens):
     if output.exists():
         saved = json.loads(output.read_text())
-        if saved.get("success"):
+        if saved.get("success") and saved.get("prompt") == prompt and saved.get("model_requested") == model:
             return saved["parsed"]
+        archive = output.with_name(output.stem + "_previous_" + digest(output.read_bytes())[:12] + ".json")
+        if not archive.exists():
+            archive.write_bytes(output.read_bytes())
     command = " ".join(shlex.quote(x) for x in [
         "meta", "spend.metamate", "llm", "--model=" + model,
         "--prompt=" + prompt, "--temperature=0", "--max-tokens=" + str(max_tokens),
@@ -205,7 +208,11 @@ def edit_case(case, policy, out):
 def assess_case(case, out):
     path = out / "assessments" / (case["id"] + ".json")
     if path.exists():
-        return json.loads(path.read_text())
+        cached = json.loads(path.read_text())
+        if not cached["outcomes"]["original"]["missing_supported_target_ids"]:
+            return cached
+        write_json(out / "assessment_archive" / (case["id"] + "_self_omission.json"), cached)
+        path.unlink()
     candidates = {"original": case["original"]}
     for policy in POLICIES:
         candidates[policy] = json.loads((out / "outputs" / (case["id"] + "_" + policy + ".json")).read_text())["response"]
@@ -225,7 +232,54 @@ def assess_case(case, out):
               "without choosing a preferred candidate.\n" + json.dumps({
                   "evidence": case["evidence"], "original_response_for_preservation_targets": case["original"],
                   "candidates": [{"candidate_id": k, "text": candidates[v]} for k, v in mapping.items()]}, ensure_ascii=False))
-    parsed = complete(ASSESSOR, prompt, ASSESS_SCHEMA, out / "requests" / (case["id"] + "_assessment.json"), 8000)
+    override_path = out / "source_audit" / (case["id"] + "_target_override.json")
+    if override_path.exists():
+        override = json.loads(override_path.read_text())
+        prompt += ("\nSource inspection supplied these supported original targets. Use exactly this list; "
+                   "continue assessing every candidate's factual claims independently: " +
+                   json.dumps(override["supported_original_targets"]))
+    parsed = None
+    failures = []
+    for attempt in range(3):
+        suffix = "_assessment" + ("" if attempt == 0 else "_retry" + str(attempt))
+        try:
+            parsed = complete(ASSESSOR, prompt, ASSESS_SCHEMA,
+                              out / "requests" / (case["id"] + suffix + ".json"), 8000)
+        except (RuntimeError, ValueError, KeyError) as error:
+            failures.append({"attempt": attempt, "error_type": type(error).__name__})
+            continue
+        invalid = []
+        issues = []
+        target_ids = [t["target_id"] for t in parsed["original_supported_targets"]]
+        if len(set(target_ids)) != len(target_ids):
+            issues.append("Use unique target IDs.")
+        if {c["candidate_id"] for c in parsed["candidates"]} != set(mapping):
+            issues.append("Return exactly the candidate IDs supplied in the input.")
+        for candidate in parsed["candidates"]:
+            if candidate["candidate_id"] not in mapping:
+                issues.append("An unknown candidate ID was returned.")
+                continue
+            policy = mapping[candidate["candidate_id"]]
+            text = candidates[policy]
+            invalid.extend(claim["quote"] for claim in candidate["claims"] if claim["quote"] not in text)
+            missing = candidate["missing_supported_target_ids"]
+            if len(set(missing)) != len(missing) or not set(missing) <= set(target_ids):
+                issues.append("Missing-target IDs must be unique and come from original_supported_targets.")
+            if policy == "original" and missing:
+                issues.append("The original response cannot omit its own supported targets. "
+                              "Every target must actually be expressed in the original response and supported by the evidence; "
+                              "do not create targets only from source information absent from the original. "
+                              "Recheck targets and retention for every candidate. This does not require the original's factual claims to be supported.")
+        if not invalid and not issues:
+            break
+        failures.append({"attempt": attempt, "nonverbatim_quotes": invalid, "other_issues": issues})
+        prompt += ("\nAssessment validation failed: " + json.dumps(issues) +
+                   ". Nonverbatim quotations: " + json.dumps(invalid) +
+                   ". Reassess with the same factuality criteria. Use exact contiguous candidate substrings "
+                   "for every quote, preserving case and punctuation. Do not introduce quotations or claims absent from candidate text.")
+    else:
+        write_json(out / "assessment_failures" / (case["id"] + ".json"), failures)
+        raise RuntimeError("Assessment validation failed after three attempts: " + case["id"])
     targets = [t["target_id"] for t in parsed["original_supported_targets"]]
     assert len(set(targets)) == len(targets)
     assert {c["candidate_id"] for c in parsed["candidates"]} == set(mapping)
@@ -243,7 +297,8 @@ def assess_case(case, out):
     result = {"id": case["id"], "source_id": case["source_id"], "stratum": case["stratum"],
               "gold_original_has_error": case["gold_original_has_error"],
               "candidate_mapping": mapping, "targets": parsed["original_supported_targets"],
-              "outcomes": results}
+              "outcomes": results, "validation_retries": failures,
+              "source_audited_target_override": override_path.exists()}
     write_json(path, result)
     return result
 

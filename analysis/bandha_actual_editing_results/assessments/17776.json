@@ -1,0 +1,152 @@
+{
+  "id": "17776",
+  "source_id": "15583",
+  "stratum": "QA_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "original",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "The recommended time to bake bratwurst in the oven is approximately 30 minutes."
+    },
+    {
+      "target_id": "T2",
+      "claim": "According to passage 1, the brats should be cooked for about 30 minutes in the oven with the top removed."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Cooking allows the beer to evaporate and the brats to take on some of the flavor of the beer."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Passage 3 involves cooking bratwurst in a preheated toaster oven and turning the links about every 4 minutes."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Passage 3 does not provide a specific total time for the entire cooking process."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "the recommended time to bake bratwurst in the oven is approximately 30 minutes",
+          "status": "supported",
+          "reason": "Passage 1 explicitly states brats should cook for approximately 30 minutes in the oven.",
+          "evidence_quote": "Allow the brats to cook for approximately 30 minutes."
+        },
+        {
+          "quote": "the brats should be cooked for about 30 minutes in the oven with the top removed",
+          "status": "supported",
+          "reason": "Passage 1 confirms both the 30-minute duration and that the top is removed.",
+          "evidence_quote": "Heat the oven to 350 F and place the casserole dish into the oven with the top removed. Allow the brats to cook for approximately 30 minutes."
+        },
+        {
+          "quote": "allowing the beer to evaporate and the brats to take on some of the flavor of the beer",
+          "status": "supported",
+          "reason": "Passage 1 confirms beer evaporation and flavor absorption from the beer.",
+          "evidence_quote": "This should allow much of the beer to evaporate as it cooks... the onions in the beer will soften them and allow them to take on a slight bit of the flavor of the beer."
+        },
+        {
+          "quote": "passage 3 recommends cooking the bratwurst in the preheated toaster oven for about 4 minutes",
+          "status": "unsupported",
+          "reason": "Passage 3 says to turn the links every 4 minutes, not that the total cooking time is 4 minutes. The claim misrepresents the 4-minute interval as a total cooking duration.",
+          "evidence_quote": "Turn the links about every 4 minutes."
+        },
+        {
+          "quote": "does not provide a specific time for the entire cooking process",
+          "status": "supported",
+          "reason": "Passage 3 only specifies a turning interval and a target internal temperature, not a total elapsed cooking time.",
+          "evidence_quote": "The bratwurst is done once the internal temperature with a meat thermometer reaches 160F."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "the recommended time to bake bratwurst in the oven is approximately 30 minutes",
+          "status": "supported",
+          "reason": "Passage 1 explicitly states brats should cook for approximately 30 minutes in the oven.",
+          "evidence_quote": "Allow the brats to cook for approximately 30 minutes."
+        },
+        {
+          "quote": "the brats should be cooked for about 30 minutes in the oven with the top removed",
+          "status": "supported",
+          "reason": "Passage 1 confirms both the 30-minute duration and that the top is removed.",
+          "evidence_quote": "Heat the oven to 350 F and place the casserole dish into the oven with the top removed. Allow the brats to cook for approximately 30 minutes."
+        },
+        {
+          "quote": "allowing the beer to evaporate and the brats to take on some of the flavor of the beer",
+          "status": "supported",
+          "reason": "Passage 1 confirms beer evaporation and flavor absorption from the beer.",
+          "evidence_quote": "This should allow much of the beer to evaporate as it cooks... the onions in the beer will soften them and allow them to take on a slight bit of the flavor of the beer."
+        },
+        {
+          "quote": "passage 3 recommends cooking the bratwurst in the preheated toaster oven for about 4 minutes",
+          "status": "unsupported",
+          "reason": "Passage 3 says to turn the links every 4 minutes, not that the total cooking time is 4 minutes. The claim misrepresents the 4-minute interval as a total cooking duration.",
+          "evidence_quote": "Turn the links about every 4 minutes."
+        },
+        {
+          "quote": "does not provide a specific time for the entire cooking process",
+          "status": "supported",
+          "reason": "Passage 3 only specifies a turning interval and a target internal temperature, not a total elapsed cooking time.",
+          "evidence_quote": "The bratwurst is done once the internal temperature with a meat thermometer reaches 160F."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "the recommended time to bake bratwurst in the oven is approximately 30 minutes",
+          "status": "supported",
+          "reason": "Passage 1 explicitly states brats should cook for approximately 30 minutes in the oven.",
+          "evidence_quote": "Allow the brats to cook for approximately 30 minutes."
+        },
+        {
+          "quote": "the brats should be cooked for about 30 minutes in the oven with the top removed",
+          "status": "supported",
+          "reason": "Passage 1 confirms both the 30-minute duration and that the top is removed.",
+          "evidence_quote": "Heat the oven to 350 F and place the casserole dish into the oven with the top removed. Allow the brats to cook for approximately 30 minutes."
+        },
+        {
+          "quote": "allowing the beer to evaporate and the brats to take on some of the flavor of the beer",
+          "status": "supported",
+          "reason": "Passage 1 confirms beer evaporation and flavor absorption from the beer.",
+          "evidence_quote": "This should allow much of the beer to evaporate as it cooks... the onions in the beer will soften them and allow them to take on a slight bit of the flavor of the beer."
+        },
+        {
+          "quote": "passage 3 suggests turning the bratwurst every 4 minutes in the toaster oven",
+          "status": "supported",
+          "reason": "Passage 3 explicitly states to turn the links about every 4 minutes, and this candidate correctly characterizes it as a turning interval rather than a total cooking time.",
+          "evidence_quote": "Turn the links about every 4 minutes."
+        },
+        {
+          "quote": "does not specify a total cooking time for baking in the oven",
+          "status": "supported",
+          "reason": "Passage 3 only specifies a turning interval and a target internal temperature, not a total elapsed cooking time.",
+          "evidence_quote": "The bratwurst is done once the internal temperature with a meat thermometer reaches 160F."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

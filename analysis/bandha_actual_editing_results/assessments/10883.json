@@ -1,0 +1,250 @@
+{
+  "id": "10883",
+  "source_id": "14113",
+  "stratum": "Data2txt_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "top20",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Fernando's Churros is located in Santa Barbara, CA."
+    },
+    {
+      "target_id": "T2",
+      "claim": "The food truck is located behind Rosale's Mexican Restaurant and Auto Zone."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The food truck is bright orange."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The menu includes toppings such as chocolate and caramel sauce."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Fernando's Churros offers catering options for large events."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The business is family-owned."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The owner's name is Fernando and he is known for being friendly."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Customers describe the churros as the best they've ever had."
+    },
+    {
+      "target_id": "T9",
+      "claim": "Customers praise the generous portion sizes of the churros."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Fernando's Churros is a popular dessert spot in Santa Barbara, CA",
+          "status": "supported",
+          "reason": "The evidence confirms the business is named Fernando's Churros and is located in Santa Barbara, CA.",
+          "evidence_quote": "\"name\": \"Fernando's Churros\", \"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "Located behind Rosale's Mexican Restaurant and Auto Zone",
+          "status": "supported",
+          "reason": "A review explicitly states the truck is located behind Rosale's Mexican Restaurant and Auto Zone.",
+          "evidence_quote": "behind Rosale's Mexican Restaurant and Auto Zone"
+        },
+        {
+          "quote": "the bright orange food truck",
+          "status": "supported",
+          "reason": "A review describes the truck as 'the bright orange Fernando's Churros truck.'",
+          "evidence_quote": "sits the bright orange Fernando's Churros truck"
+        },
+        {
+          "quote": "toppings such as chocolate and caramel sauce",
+          "status": "supported",
+          "reason": "A review mentions toppings including chocolate and caramel sauce.",
+          "evidence_quote": "with the toppings (chocolate and caramel sauce)"
+        },
+        {
+          "quote": "catering options for large events",
+          "status": "supported",
+          "reason": "A review states Fernando does catering for large events such as quinceañeras and weddings.",
+          "evidence_quote": "Fernando also does catering for large events (quinceañeras, weddings, etc)"
+        },
+        {
+          "quote": "The business is family-owned and operated",
+          "status": "supported",
+          "reason": "A review describes it as 'a super friendly and family owned business.'",
+          "evidence_quote": "A super friendly and family owned business"
+        },
+        {
+          "quote": "the owner, Fernando, is known for being friendly and accommodating",
+          "status": "supported",
+          "reason": "Reviews describe Fernando as 'super sweet and easy going' and the business as 'super friendly.'",
+          "evidence_quote": "Fernando is super sweet and easy going"
+        },
+        {
+          "quote": "Customers rave about the quality and generous portion sizes of the churros, with many stating that they are the best they've ever had",
+          "status": "supported",
+          "reason": "Reviews state 'Best churros I've ever had' and 'Portion size was quite generous for the price.'",
+          "evidence_quote": "Best churros I've ever had so far! Hot, fluffy, and crispy... Portion size was quite generous for the price."
+        },
+        {
+          "quote": "The truck is open Monday and Thursday in Santa Barbara, and Tuesday, Wednesday, Friday, and Sunday in Lompoc, Vandenberg, and Lompoc.",
+          "status": "unsupported",
+          "reason": "The evidence (hours data) shows the truck is open Tuesday, Wednesday, Thursday, Friday, and Sunday — not Monday. The review says they are in Santa Barbara 'only on Mondays and Thursdays,' but the hours data contradicts Monday being an operating day. The claim about which days are in Santa Barbara vs. Lompoc/Vandenberg is also contradicted by the hours data which shows Tuesday–Friday and Sunday as operating days with no Monday listed.",
+          "evidence_quote": "\"Tuesday\": \"16:0-19:0\", \"Wednesday\": \"16:0-19:0\", \"Thursday\": \"16:0-19:0\", \"Friday\": \"16:0-19:0\", \"Sunday\": \"8:0-19:0\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Fernando's Churros is a popular dessert business in Santa Barbara, CA",
+          "status": "supported",
+          "reason": "The evidence confirms the business is named Fernando's Churros and is located in Santa Barbara, CA.",
+          "evidence_quote": "\"name\": \"Fernando's Churros\", \"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "praised for its hot, fluffy, and crispy churros, which customers describe as the best they've ever had",
+          "status": "supported",
+          "reason": "A review states 'Best churros I've ever had so far! Hot, fluffy, and crispy.'",
+          "evidence_quote": "Best churros I've ever had so far! Hot, fluffy, and crispy."
+        },
+        {
+          "quote": "the bright orange food truck is located in a vacant parking lot behind Rosale's Mexican Restaurant and Auto Zone",
+          "status": "supported",
+          "reason": "A review describes the truck as bright orange, located in a vacant parking lot, behind Rosale's Mexican Restaurant and Auto Zone.",
+          "evidence_quote": "behind Rosale's Mexican Restaurant and Auto Zone...in a vacant parking lot...sits the bright orange Fernando's Churros truck."
+        },
+        {
+          "quote": "churros with toppings such as chocolate and caramel sauce, and offers catering churros with a variety of toppings such as chocolate and caramel sauce, as well as catering options for large events",
+          "status": "supported",
+          "reason": "The evidence supports both the toppings (chocolate and caramel sauce) and catering for large events, despite the awkward repetitive phrasing in the candidate.",
+          "evidence_quote": "with the toppings (chocolate and caramel sauce)... Fernando also does catering for large events"
+        },
+        {
+          "quote": "The business is described as family-owned",
+          "status": "supported",
+          "reason": "A review describes it as 'a super friendly and family owned business.'",
+          "evidence_quote": "A super friendly and family owned business"
+        },
+        {
+          "quote": "the owner, Fernando, is described as friendly and easy going for being friendly and easy going",
+          "status": "supported",
+          "reason": "A review states 'Fernando is super sweet and easy going,' supporting the claim of friendliness and easy-going nature.",
+          "evidence_quote": "Fernando is super sweet and easy going"
+        },
+        {
+          "quote": "Customers rave about the quality and generous portion sizes of the churros, with many stating that they are the best they've ever had",
+          "status": "supported",
+          "reason": "Reviews state 'Best churros I've ever had' and 'Portion size was quite generous for the price.'",
+          "evidence_quote": "Best churros I've ever had so far!... Portion size was quite generous for the price."
+        },
+        {
+          "quote": "Fernando's Churros is in Santa Barbara on Sundays, Tuesday, Wednesday, Thursday, and Friday from 16:00 to 19:00 (8:00 to 19:00 on Sundays), based on posted hours",
+          "status": "supported",
+          "reason": "The hours data confirms Tuesday–Friday 16:00–19:00 and Sunday 8:00–19:00. The claim that these are Santa Barbara hours is consistent with the business address being in Santa Barbara, though the evidence does not explicitly confirm all days are in Santa Barbara.",
+          "evidence_quote": "\"Tuesday\": \"16:0-19:0\", \"Wednesday\": \"16:0-19:0\", \"Thursday\": \"16:0-19:0\", \"Friday\": \"16:0-19:0\", \"Sunday\": \"8:0-19:0\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Fernando's Churros is a popular dessert spot in Santa Barbara, CA",
+          "status": "supported",
+          "reason": "The evidence confirms the business is named Fernando's Churros and is located in Santa Barbara, CA.",
+          "evidence_quote": "\"name\": \"Fernando's Churros\", \"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "Located behind Rosale's Mexican Restaurant and Auto Zone",
+          "status": "supported",
+          "reason": "A review explicitly states the truck is located behind Rosale's Mexican Restaurant and Auto Zone.",
+          "evidence_quote": "behind Rosale's Mexican Restaurant and Auto Zone"
+        },
+        {
+          "quote": "the bright orange food truck",
+          "status": "supported",
+          "reason": "A review describes the truck as 'the bright orange Fernando's Churros truck.'",
+          "evidence_quote": "sits the bright orange Fernando's Churros truck"
+        },
+        {
+          "quote": "toppings such as chocolate and caramel sauce",
+          "status": "supported",
+          "reason": "A review mentions toppings including chocolate and caramel sauce.",
+          "evidence_quote": "with the toppings (chocolate and caramel sauce)"
+        },
+        {
+          "quote": "catering options for large events",
+          "status": "supported",
+          "reason": "A review states Fernando does catering for large events such as quinceañeras and weddings.",
+          "evidence_quote": "Fernando also does catering for large events (quinceañeras, weddings, etc)"
+        },
+        {
+          "quote": "The business is family-owned and operated",
+          "status": "supported",
+          "reason": "A review describes it as 'a super friendly and family owned business.'",
+          "evidence_quote": "A super friendly and family owned business"
+        },
+        {
+          "quote": "the owner, Fernando, is known for being friendly and accommodating",
+          "status": "supported",
+          "reason": "Reviews describe Fernando as 'super sweet and easy going.'",
+          "evidence_quote": "Fernando is super sweet and easy going"
+        },
+        {
+          "quote": "Customers rave about the quality and generous portion sizes of the churros, with many stating that they are the best they've ever had",
+          "status": "supported",
+          "reason": "Reviews state 'Best churros I've ever had' and 'Portion size was quite generous for the price.'",
+          "evidence_quote": "Best churros I've ever had so far! Hot, fluffy, and crispy... Portion size was quite generous for the price."
+        },
+        {
+          "quote": "The truck is open Monday and Thursday in Santa Barbara, and Tuesday, Wednesday, Friday, and Sunday in Lompoc, Vandenberg, and Lompoc.",
+          "status": "unsupported",
+          "reason": "The hours data shows no Monday hours listed. The review's claim about Monday/Thursday in Santa Barbara is contradicted by the structured hours data. The day-to-location mapping is not reliably supported.",
+          "evidence_quote": "\"Tuesday\": \"16:0-19:0\", \"Wednesday\": \"16:0-19:0\", \"Thursday\": \"16:0-19:0\", \"Friday\": \"16:0-19:0\", \"Sunday\": \"8:0-19:0\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [],
+      "other_issues": [
+        "The original response cannot omit its own supported targets. Every target must actually be expressed in the original response and supported by the evidence; do not create targets only from source information absent from the original. Recheck targets and retention for every candidate. This does not require the original's factual claims to be supported."
+      ]
+    },
+    {
+      "attempt": 1,
+      "nonverbatim_quotes": [],
+      "other_issues": [
+        "The original response cannot omit its own supported targets. Every target must actually be expressed in the original response and supported by the evidence; do not create targets only from source information absent from the original. Recheck targets and retention for every candidate. This does not require the original's factual claims to be supported."
+      ]
+    }
+  ]
+}

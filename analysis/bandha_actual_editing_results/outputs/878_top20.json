@@ -1,0 +1,12 @@
+{
+  "id": "878",
+  "policy": "top20",
+  "response": "A gastrointestinal illness has affected about 100 people on the Celebrity Infinity cruise ship, including both passengers and crew members. The Centers for Disease Control and Prevention (CDC) has yet to determine the cause of the illness, but two CDC staffers will meet the ship in San Diego on Monday to investigate further. This is the third time the Celebrity Infinity has experienced such an outbreak, which has led to increased cleaning and disinfection procedures and specimens being taken from those afflicted for CDC testing.",
+  "replacements": [
+    {
+      "replacement": "specimens being taken from those afflicted for CDC testing.",
+      "span_id": "s1"
+    }
+  ],
+  "model_called": true
+}

@@ -1,0 +1,350 @@
+{
+  "id": "5766",
+  "source_id": "13619",
+  "stratum": "Data2txt_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "original",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Goodland Kitchen is located at 231 S Magnolia Ave in Goleta, CA."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Goodland Kitchen is a local business offering a range of services including food, shopping, and professional services."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The restaurant specializes in new American cuisine."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Goodland Kitchen operates Monday through Friday from 7:00 am to 2:00 pm."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The establishment does not offer WiFi."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Validated parking is not available, but street parking is available."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The establishment features outdoor seating."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The establishment is suitable for groups."
+    },
+    {
+      "target_id": "T9",
+      "claim": "The ambience is casual and classy."
+    },
+    {
+      "target_id": "T10",
+      "claim": "The establishment does not accept reservations."
+    },
+    {
+      "target_id": "T11",
+      "claim": "The business has an overall rating of 3.5 stars."
+    },
+    {
+      "target_id": "T12",
+      "claim": "A review praises the friendly service, great lunch menu, and quality of the takeout food, particularly the chorizo, chips, and salads."
+    },
+    {
+      "target_id": "T13",
+      "claim": "Another reviewer commended their service and food, urging people to support this small business."
+    },
+    {
+      "target_id": "T14",
+      "claim": "A less favorable review noted a decline in the quality and variety of food, dissatisfaction with the bread and soup options, and the absence of the lunch specials previously advertised on their website."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Goodland Kitchen, located at 231 S Magnolia Ave in Goleta, CA",
+          "status": "supported",
+          "reason": "The evidence explicitly states the address as 231 S Magnolia Ave, Goleta, CA.",
+          "evidence_quote": "\"address\": \"231 S Magnolia Ave\", \"city\": \"Goleta\", \"state\": \"CA\""
+        },
+        {
+          "quote": "a local business offering a range of services including food, shopping, and professional services",
+          "status": "supported",
+          "reason": "The evidence lists categories including Food, Local Services, Professional Services, and Shopping.",
+          "evidence_quote": "\"categories\": \"Food, Local Services, Farmers Market, Professional Services, American (New), Restaurants, Shopping\""
+        },
+        {
+          "quote": "specializes in new American cuisine",
+          "status": "supported",
+          "reason": "The evidence lists 'American (New)' as a category.",
+          "evidence_quote": "\"categories\": \"Food, Local Services, Farmers Market, Professional Services, American (New), Restaurants, Shopping\""
+        },
+        {
+          "quote": "open Monday through Friday from 7:00 am to 2:00 pm",
+          "status": "supported",
+          "reason": "The evidence shows hours of 7:0-14:0 for Monday through Friday, which corresponds to 7:00 am to 2:00 pm.",
+          "evidence_quote": "\"Monday\": \"7:0-14:0\", \"Tuesday\": \"7:0-14:0\", \"Wednesday\": \"7:0-14:0\", \"Thursday\": \"7:0-14:0\", \"Friday\": \"7:0-14:0\""
+        },
+        {
+          "quote": "does not offer WiFi",
+          "status": "supported",
+          "reason": "The evidence states WiFi is 'no'.",
+          "evidence_quote": "\"WiFi\": \"no\""
+        },
+        {
+          "quote": "validated parking, street parking is available",
+          "status": "supported",
+          "reason": "The evidence confirms validated parking is false and street parking is true.",
+          "evidence_quote": "\"BusinessParking\": {\"garage\": false, \"street\": true, \"validated\": false, \"lot\": false, \"valet\": false}"
+        },
+        {
+          "quote": "features outdoor seating",
+          "status": "supported",
+          "reason": "The evidence confirms OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "suitable for groups",
+          "status": "supported",
+          "reason": "The evidence confirms RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "casual yet classy ambience",
+          "status": "supported",
+          "reason": "The evidence confirms both classy and casual are true in the Ambience attributes.",
+          "evidence_quote": "\"Ambience\": {\"classy\": true, \"casual\": true}"
+        },
+        {
+          "quote": "does not accept reservations",
+          "status": "supported",
+          "reason": "The evidence confirms RestaurantsReservations is false.",
+          "evidence_quote": "\"RestaurantsReservations\": false"
+        },
+        {
+          "quote": "overall rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence states business_stars is 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "A recent review praises the friendly service, great lunch menu, and quality of the takeout food, particularly the chorizo, chips, and salads",
+          "status": "supported",
+          "reason": "The 4-star review mentions friendly service, great lunch menu, chorizo, chips, and huge salads.",
+          "evidence_quote": "\"They are open for takeout, great lunch menu, good chorizo good chips, huge salads. Very friendly service!\""
+        },
+        {
+          "quote": "Another reviewer commended their service and food, urging people to support this small business",
+          "status": "supported",
+          "reason": "The 5-star review praises service and food and urges support for the small business.",
+          "evidence_quote": "\"Please come here and the market next door because I know this small business needs it! Amazing service and wonderful food :)\""
+        },
+        {
+          "quote": "a less favorable review noted a decline in the quality and variety of food, dissatisfaction with the bread and soup options, and the absence of the lunch specials previously advertised on their website",
+          "status": "supported",
+          "reason": "The 3-star review mentions decline in food quality/variety, issues with bread and soup, and missing lunch specials from the website.",
+          "evidence_quote": "\"This place used to serve interesting well-prepared food. Not any more... The great lunch specials, still listed on the website, are gone. The bread on my BLT seemed old... There was only one choice for soup and it was done for the day.\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Goodland Kitchen, located at 231 S Magnolia Ave in Goleta, CA",
+          "status": "supported",
+          "reason": "The evidence explicitly states the address as 231 S Magnolia Ave, Goleta, CA.",
+          "evidence_quote": "\"address\": \"231 S Magnolia Ave\", \"city\": \"Goleta\", \"state\": \"CA\""
+        },
+        {
+          "quote": "a local business offering a range of services including food, shopping, and professional services",
+          "status": "supported",
+          "reason": "The evidence lists categories including Food, Local Services, Professional Services, and Shopping.",
+          "evidence_quote": "\"categories\": \"Food, Local Services, Farmers Market, Professional Services, American (New), Restaurants, Shopping\""
+        },
+        {
+          "quote": "specializes in new American cuisine",
+          "status": "supported",
+          "reason": "The evidence lists 'American (New)' as a category.",
+          "evidence_quote": "\"categories\": \"Food, Local Services, Farmers Market, Professional Services, American (New), Restaurants, Shopping\""
+        },
+        {
+          "quote": "operates Monday through Friday from 7:00 am to 2:00 pm",
+          "status": "supported",
+          "reason": "The evidence shows hours of 7:0-14:0 for Monday through Friday.",
+          "evidence_quote": "\"Monday\": \"7:0-14:0\", \"Tuesday\": \"7:0-14:0\", \"Wednesday\": \"7:0-14:0\", \"Thursday\": \"7:0-14:0\", \"Friday\": \"7:0-14:0\""
+        },
+        {
+          "quote": "does not offer WiFi",
+          "status": "supported",
+          "reason": "The evidence states WiFi is 'no'.",
+          "evidence_quote": "\"WiFi\": \"no\""
+        },
+        {
+          "quote": "validated parking, street parking is available",
+          "status": "supported",
+          "reason": "The evidence confirms validated parking is false and street parking is true.",
+          "evidence_quote": "\"BusinessParking\": {\"garage\": false, \"street\": true, \"validated\": false, \"lot\": false, \"valet\": false}"
+        },
+        {
+          "quote": "features outdoor seating",
+          "status": "supported",
+          "reason": "The evidence confirms OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "suitable for groups",
+          "status": "supported",
+          "reason": "The evidence confirms RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "casual yet classy ambience",
+          "status": "supported",
+          "reason": "The evidence confirms both classy and casual are true in the Ambience attributes.",
+          "evidence_quote": "\"Ambience\": {\"classy\": true, \"casual\": true}"
+        },
+        {
+          "quote": "does not accept reservations",
+          "status": "supported",
+          "reason": "The evidence confirms RestaurantsReservations is false.",
+          "evidence_quote": "\"RestaurantsReservations\": false"
+        },
+        {
+          "quote": "overall rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence states business_stars is 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "A recent review praises the friendly service, great lunch menu, and quality of the takeout food, particularly the chorizo, chips, and salads",
+          "status": "supported",
+          "reason": "The 4-star review mentions friendly service, great lunch menu, chorizo, chips, and huge salads.",
+          "evidence_quote": "\"They are open for takeout, great lunch menu, good chorizo good chips, huge salads. Very friendly service!\""
+        },
+        {
+          "quote": "Another reviewer commended their service and food, urging people to support this small business",
+          "status": "supported",
+          "reason": "The 5-star review praises service and food and urges support for the small business.",
+          "evidence_quote": "\"Please come here and the market next door because I know this small business needs it! Amazing service and wonderful food :)\""
+        },
+        {
+          "quote": "a less favorable review noted a decline in the quality and variety of food, dissatisfaction with the bread and soup options, and the absence of the lunch specials previously advertised on their website",
+          "status": "supported",
+          "reason": "The 3-star review mentions decline in food quality/variety, issues with bread and soup, and missing lunch specials from the website.",
+          "evidence_quote": "\"This place used to serve interesting well-prepared food. Not any more... The great lunch specials, still listed on the website, are gone. The bread on my BLT seemed old... There was only one choice for soup and it was done for the day.\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Goodland Kitchen, located at 231 S Magnolia Ave in Goleta, CA",
+          "status": "supported",
+          "reason": "The evidence explicitly states the address as 231 S Magnolia Ave, Goleta, CA.",
+          "evidence_quote": "\"address\": \"231 S Magnolia Ave\", \"city\": \"Goleta\", \"state\": \"CA\""
+        },
+        {
+          "quote": "a local business offering a range of services including food, shopping, and professional services",
+          "status": "supported",
+          "reason": "The evidence lists categories including Food, Local Services, Professional Services, and Shopping.",
+          "evidence_quote": "\"categories\": \"Food, Local Services, Farmers Market, Professional Services, American (New), Restaurants, Shopping\""
+        },
+        {
+          "quote": "specializes in new American cuisine",
+          "status": "supported",
+          "reason": "The evidence lists 'American (New)' as a category.",
+          "evidence_quote": "\"categories\": \"Food, Local Services, Farmers Market, Professional Services, American (New), Restaurants, Shopping\""
+        },
+        {
+          "quote": "operates Monday through Friday from 7:00 am to 2:00 pm",
+          "status": "supported",
+          "reason": "The evidence shows hours of 7:0-14:0 for Monday through Friday.",
+          "evidence_quote": "\"Monday\": \"7:0-14:0\", \"Tuesday\": \"7:0-14:0\", \"Wednesday\": \"7:0-14:0\", \"Thursday\": \"7:0-14:0\", \"Friday\": \"7:0-14:0\""
+        },
+        {
+          "quote": "does not offer WiFi",
+          "status": "supported",
+          "reason": "The evidence states WiFi is 'no'.",
+          "evidence_quote": "\"WiFi\": \"no\""
+        },
+        {
+          "quote": "validated parking, street parking is available",
+          "status": "supported",
+          "reason": "The evidence confirms validated parking is false and street parking is true.",
+          "evidence_quote": "\"BusinessParking\": {\"garage\": false, \"street\": true, \"validated\": false, \"lot\": false, \"valet\": false}"
+        },
+        {
+          "quote": "features outdoor seating",
+          "status": "supported",
+          "reason": "The evidence confirms OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "suitable for groups",
+          "status": "supported",
+          "reason": "The evidence confirms RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "casual yet classy ambience",
+          "status": "supported",
+          "reason": "The evidence confirms both classy and casual are true in the Ambience attributes.",
+          "evidence_quote": "\"Ambience\": {\"classy\": true, \"casual\": true}"
+        },
+        {
+          "quote": "does not accept reservations",
+          "status": "supported",
+          "reason": "The evidence confirms RestaurantsReservations is false.",
+          "evidence_quote": "\"RestaurantsReservations\": false"
+        },
+        {
+          "quote": "overall rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence states business_stars is 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "A recent review praises the friendly service, great lunch menu, and quality of the takeout food, particularly the chorizo, chips, and salads",
+          "status": "supported",
+          "reason": "The 4-star review mentions friendly service, great lunch menu, chorizo, chips, and huge salads.",
+          "evidence_quote": "\"They are open for takeout, great lunch menu, good chorizo good chips, huge salads. Very friendly service!\""
+        },
+        {
+          "quote": "Another reviewer commended their service and food, urging people to support this small business",
+          "status": "supported",
+          "reason": "The 5-star review praises service and food and urges support for the small business.",
+          "evidence_quote": "\"Please come here and the market next door because I know this small business needs it! Amazing service and wonderful food :)\""
+        },
+        {
+          "quote": "a less favorable review noted a decline in the quality and variety of food, dissatisfaction with the bread and soup options, and the absence of the lunch specials previously advertised on their website",
+          "status": "supported",
+          "reason": "The 3-star review mentions decline in food quality/variety, issues with bread and soup, and missing lunch specials from the website.",
+          "evidence_quote": "\"This place used to serve interesting well-prepared food. Not any more... The great lunch specials, still listed on the website, are gone. The bread on my BLT seemed old... There was only one choice for soup and it was done for the day.\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

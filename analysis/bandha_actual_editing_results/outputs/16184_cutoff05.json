@@ -1,0 +1,12 @@
+{
+  "id": "16184",
+  "policy": "cutoff05",
+  "response": " To make ribs, you can follow these steps:\n\n1. Preheat a gas or charcoal grill to medium temperature (350°F to 450°F).\n2. Remove the ribs from their foil wrap, and place them meaty-side up on the grill. Brush the ribs with some sauce and cover the grill. Cook for 5 minutes, then flip and brush again before cooking for an additional 5 minutes. Continue this process until the sauce has thickened and the ribs have grill marks. The total grilling time will be 20 minutes.\n3. If you prefer to cook the ribs in an oven, remove the membrane from the bottom of the ribs using a knife. Start at the narrow end and pull off the membrane in one piece. Place the ribs in a resealable bag and add enough BBQ sauce to cover them. Line a baking pan with heavy-duty foil, making sure there is plenty of overlapping foil to create a tent around the ribs. Unable to answer based on given passages.",
+  "replacements": [
+    {
+      "replacement": "Unable to answer based on given passages.",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

@@ -1,0 +1,12 @@
+{
+  "id": "843",
+  "policy": "top20",
+  "response": "Sure! Here's a summary of the article in 64 words:\n\nJohn Travolta has dismissed HBO's documentary \"Going Clear: Scientology and the Prison of Belief\" as negative, saying he has not seen it and does not care to watch it, despite being one of the Church of Scientology's most high-profile members. He claims he's had a positive experience with the organization and hasn't experienced any of the abuse alleged in the documentary.",
+  "replacements": [
+    {
+      "replacement": "negative, saying he has not seen it and does not care to watch it,",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

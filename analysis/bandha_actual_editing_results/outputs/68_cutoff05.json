@@ -1,0 +1,12 @@
+{
+  "id": "68",
+  "policy": "cutoff05",
+  "response": "The first woman and person of color elected to the Kentucky State Senate has responded to Rand Paul's decision to run for president by stating that she finds it \"almost unfathomable\" that a politician from her own state is attempting to launch his campaign on a record that includes questioning landmark voting rights and civil rights legislation. She criticized his campaign team's message of inclusion as hype and highlighted his past actions that have undermined the rights of marginalized communities. Warren urged the GOP to have a real commitment to the issues facing minority communities and reminded Paul's supporters of his previous comments on the Civil Rights Act, the Department of Education, women's rights, and DREAMers' protection.",
+  "replacements": [
+    {
+      "replacement": "The first woman and person of color elected to the Kentucky State Senate",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

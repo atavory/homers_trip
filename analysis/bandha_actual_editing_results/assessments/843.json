@@ -1,0 +1,136 @@
+{
+  "id": "843",
+  "source_id": "15733",
+  "stratum": "Summary_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "cutoff05",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "John Travolta dismissed HBO's documentary 'Going Clear: Scientology and the Prison of Belief' as negative."
+    },
+    {
+      "target_id": "T2",
+      "claim": "John Travolta is one of the Church of Scientology's most high-profile members."
+    },
+    {
+      "target_id": "T3",
+      "claim": "John Travolta claims he has had a positive experience with Scientology."
+    },
+    {
+      "target_id": "T4",
+      "claim": "John Travolta says he hasn't experienced what the documentary/hearsay has claimed (i.e., the negative allegations)."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 1,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "John Travolta has dismissed HBO's documentary \"Going Clear: Scientology and the Prison of Belief\" as negative and untrue",
+          "status": "supported",
+          "reason": "The evidence supports that Travolta called the documentary 'decidedly negative' and said he hasn't experienced anything the 'hearsay has claimed,' implying he views it as untrue. 'Negative' is directly supported; 'untrue' is a reasonable characterization of his statements.",
+          "evidence_quote": "I've been so happy with my (Scientology) experience in the last 40 years that I really don't have anything to say that would shed light on (a documentary) so decidedly negative"
+        },
+        {
+          "quote": "despite being one of the Church of Scientology's most high-profile members",
+          "status": "supported",
+          "reason": "The evidence explicitly identifies Travolta as one of the Church of Scientology's most high-profile members.",
+          "evidence_quote": "The actor, one of the Church of Scientology's most high-profile members along with stars like Tom Cruise and Kirstie Alley"
+        },
+        {
+          "quote": "He claims he's had a positive experience with the organization",
+          "status": "supported",
+          "reason": "Travolta explicitly states he has been happy with his Scientology experience and called it 'brilliant.'",
+          "evidence_quote": "I've been so happy with my (Scientology) experience in the last 40 years"
+        },
+        {
+          "quote": "hasn't experienced any of the abuse alleged in the documentary",
+          "status": "uncertain",
+          "reason": "Travolta says he hasn't experienced what 'the hearsay has claimed,' but the evidence does not specifically use the word 'abuse' to describe the documentary's allegations. The nature of the allegations is described only as things 'disgruntled' former members experienced. 'Abuse' is an inference not directly confirmed by the evidence.",
+          "evidence_quote": "I haven't experienced anything that the hearsay has (claimed), so why would I communicate something that wasn't true for me?"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 1,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "John Travolta has dismissed HBO's documentary \"Going Clear: Scientology and the Prison of Belief\" as negative and untrue",
+          "status": "supported",
+          "reason": "The evidence supports that Travolta called the documentary 'decidedly negative' and implied its claims were not true for him.",
+          "evidence_quote": "I've been so happy with my (Scientology) experience in the last 40 years that I really don't have anything to say that would shed light on (a documentary) so decidedly negative"
+        },
+        {
+          "quote": "despite being one of the Church of Scientology's most high-profile members",
+          "status": "supported",
+          "reason": "The evidence explicitly identifies Travolta as one of the Church of Scientology's most high-profile members.",
+          "evidence_quote": "The actor, one of the Church of Scientology's most high-profile members along with stars like Tom Cruise and Kirstie Alley"
+        },
+        {
+          "quote": "He claims he's had a positive experience with the organization",
+          "status": "supported",
+          "reason": "Travolta explicitly states he has been happy with his Scientology experience.",
+          "evidence_quote": "I've been so happy with my (Scientology) experience in the last 40 years"
+        },
+        {
+          "quote": "hasn't experienced any of the abuse alleged in the documentary",
+          "status": "uncertain",
+          "reason": "Travolta says he hasn't experienced what 'the hearsay has claimed,' but the evidence does not specifically characterize the allegations as 'abuse.' This is an inference not directly confirmed by the evidence.",
+          "evidence_quote": "I haven't experienced anything that the hearsay has (claimed), so why would I communicate something that wasn't true for me?"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 1,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "John Travolta has dismissed HBO's documentary \"Going Clear: Scientology and the Prison of Belief\" as negative",
+          "status": "supported",
+          "reason": "The evidence directly supports Travolta calling the documentary 'decidedly negative.'",
+          "evidence_quote": "I've been so happy with my (Scientology) experience in the last 40 years that I really don't have anything to say that would shed light on (a documentary) so decidedly negative"
+        },
+        {
+          "quote": "saying he has not seen it and does not care to watch it",
+          "status": "supported",
+          "reason": "The evidence explicitly states Travolta said he has not seen the documentary and 'don't really care to.'",
+          "evidence_quote": "Travolta told the Tampa Bay Times that he has not seen the documentary, \"and I don't really care to.\""
+        },
+        {
+          "quote": "despite being one of the Church of Scientology's most high-profile members",
+          "status": "supported",
+          "reason": "The evidence explicitly identifies Travolta as one of the Church of Scientology's most high-profile members.",
+          "evidence_quote": "The actor, one of the Church of Scientology's most high-profile members along with stars like Tom Cruise and Kirstie Alley"
+        },
+        {
+          "quote": "He claims he's had a positive experience with the organization",
+          "status": "supported",
+          "reason": "Travolta explicitly states he has been happy with his Scientology experience.",
+          "evidence_quote": "I've been so happy with my (Scientology) experience in the last 40 years"
+        },
+        {
+          "quote": "hasn't experienced any of the abuse alleged in the documentary",
+          "status": "uncertain",
+          "reason": "Travolta says he hasn't experienced what 'the hearsay has claimed,' but the evidence does not specifically characterize the allegations as 'abuse.' This is an inference not directly confirmed by the evidence.",
+          "evidence_quote": "I haven't experienced anything that the hearsay has (claimed), so why would I communicate something that wasn't true for me?"
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

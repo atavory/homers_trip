@@ -1,0 +1,16 @@
+{
+  "id": "10748",
+  "policy": "top20",
+  "response": "Brasilia Arts Cafe is a restaurant located in Santa Barbara, CA that serves juice bars, smoothies, breakfast and brunch, Brazilian, salads, and acai bowls. The restaurant has varying hours: it is open Monday, Thursday, and Friday from 5:00pm to 8:30pm, Saturday from 10:00am to 9:00pm, and Sunday from 10:00am to 4:00pm. and has free WiFi. Customers can park on the street; valet parking is not available, and reservations are accepted. The restaurant is known for its hospitality and great cooking skills. Some customers have highly recommended the restaurant for its Brazilian cuisine, ambiance, and friendly service.",
+  "replacements": [
+    {
+      "replacement": "bowls. The restaurant has varying hours: it is open Monday, Thursday, and Friday from 5:00pm to 8:30pm, Saturday from 10:00am to 9:00pm, and Sunday from 10:00am to 4:00pm.",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "Customers can park on the street; valet parking is not available,",
+      "span_id": "s1"
+    }
+  ],
+  "model_called": true
+}

@@ -1,0 +1,12 @@
+{
+  "id": "12284",
+  "policy": "top20",
+  "response": " To set Mozilla Firefox as your default Windows browser, follow these steps:\n\n1. Open your Firefox browser.\n2. Click on the Firefox menu button, represented by three horizontal lines and located in the upper right hand corner of the browser window.\n3. When the pop-out menu appears, select Options.\n4. When the Options menu opens, look for the Default browser section.\n5. Scroll down to the Default browser section.\n6. Select Firefox from the list of installed browsers.\n7. Click the Set as default button.",
+  "replacements": [
+    {
+      "replacement": "4. When the Options menu opens, look for the Default browser section.",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

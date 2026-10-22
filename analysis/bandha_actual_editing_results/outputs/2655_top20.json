@@ -1,0 +1,20 @@
+{
+  "id": "2655",
+  "policy": "top20",
+  "response": "Sure! Here's a summary of the article in 77 words:\n\nNew Belgium Brewery and Ben & Jerry's are collaborating on a beer inspired on a beer inspired by Ben & Jerry's salted caramel brownie ice cream. Both conscious companies, both have a history of to sustainability, will announce the details of their campaign later this year. The beer is set to hit shelves in the fall, with proceeds going towards various social and environmental initiatives.",
+  "replacements": [
+    {
+      "replacement": "on a beer inspired by Ben & Jerry's salted caramel brownie ice cream. Both",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "both have",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "history of",
+      "span_id": "s2"
+    }
+  ],
+  "model_called": true
+}

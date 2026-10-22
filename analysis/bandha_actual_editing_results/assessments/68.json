@@ -1,0 +1,175 @@
+{
+  "id": "68",
+  "source_id": "15604",
+  "stratum": "Summary_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "original",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "The author finds it 'almost unfathomable' that a politician from her own state is attempting to launch his presidential campaign on a record that includes questioning landmark voting rights and civil rights legislation."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Paul's campaign team's message of inclusion was criticized as hype."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Paul has made previous comments on the Civil Rights Act, the Department of Education, women's rights, and DREAMers' protection."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The author urged the GOP to have a real commitment to the issues facing minority communities."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "The first woman and person of color elected to the Kentucky State Senate has responded to Rand Paul's decision to run for president",
+          "status": "supported",
+          "reason": "The evidence states: 'When I was elected to the Kentucky State Senate in 1967, I became the first woman and the first person of color to serve in the body.' The author is indeed the first woman and person of color elected to the Kentucky State Senate, and she is responding to Paul's presidential run.",
+          "evidence_quote": "When I was elected to the Kentucky State Senate in 1967, I became the first woman and the first person of color to serve in the body."
+        },
+        {
+          "quote": "she finds it \"almost unfathomable\" that a politician from her own state is attempting to launch his campaign on a record that includes questioning landmark voting rights and civil rights legislation",
+          "status": "supported",
+          "reason": "The evidence directly contains this language: 'I find it almost unfathomable that a politician from my own state is attempting to launch his presidential campaign on a record that includes questioning landmark voting rights and civil rights legislation.'",
+          "evidence_quote": "I find it almost unfathomable that a politician from my own state is attempting to launch his presidential campaign on a record that includes questioning landmark voting rights and civil rights legislation."
+        },
+        {
+          "quote": "She criticized his campaign team's message of inclusion as hype",
+          "status": "supported",
+          "reason": "The evidence states Paul's campaign team said the message would be about 'expanding the Republican Party' — a message of inclusion — and the author called it 'nothing more than hype.'",
+          "evidence_quote": "His campaign team told reporters last week that his campaign announcement message would be about \"expanding the Republican Party\" -- a message of inclusion. But those of us listening today who he is hoping to include, heard nothing more than hype."
+        },
+        {
+          "quote": "highlighted his past actions that have undermined the rights of marginalized communities",
+          "status": "supported",
+          "reason": "The evidence details Paul's positions on the Civil Rights Act, voting rights, DREAMers, women's rights, and the Department of Education, which the author frames as undermining marginalized communities.",
+          "evidence_quote": "Paul has also questioned the Civil Rights Act, and even claimed that private business owners have a right to discriminate."
+        },
+        {
+          "quote": "Warren urged the GOP to have a real commitment to the issues facing minority communities",
+          "status": "unsupported",
+          "reason": "The candidate attributes this statement to 'Warren,' but the evidence does not identify the author as Senator Elizabeth Warren. The evidence identifies the author only as the first woman and first person of color elected to the Kentucky State Senate in 1967. Attributing the statement to Warren is an unsupported identification.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "reminded Paul's supporters of his previous comments on the Civil Rights Act, the Department of Education, women's rights, and DREAMers' protection",
+          "status": "supported",
+          "reason": "The evidence discusses Paul's positions on all four of these topics.",
+          "evidence_quote": "when we were debating the Civil Rights Act -- which Paul has done since landing on the national stage; when there was no Department of Education -- a department he thinks \"should be done away with;\" when women didn't have choices -- choices Paul seeks to limit in Washington; when DREAMers weren't protected from deportation -- protections Paul currently opposes."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Senator Elizabeth Warren has responded to Rand Paul's decision to run for president",
+          "status": "unsupported",
+          "reason": "The evidence does not identify the author as Senator Elizabeth Warren. The author is identified only as the first woman and first person of color elected to the Kentucky State Senate in 1967. Attributing the response to Elizabeth Warren is unsupported.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "she finds it \"almost unfathomable\" that a politician from her own state is attempting to launch his campaign on a record that includes questioning landmark voting rights and civil rights legislation",
+          "status": "supported",
+          "reason": "The evidence directly contains this language.",
+          "evidence_quote": "I find it almost unfathomable that a politician from my own state is attempting to launch his presidential campaign on a record that includes questioning landmark voting rights and civil rights legislation."
+        },
+        {
+          "quote": "She criticized his campaign team's message of inclusion as hype",
+          "status": "supported",
+          "reason": "The evidence states the author called the message of inclusion 'nothing more than hype.'",
+          "evidence_quote": "His campaign team told reporters last week that his campaign announcement message would be about \"expanding the Republican Party\" -- a message of inclusion. But those of us listening today who he is hoping to include, heard nothing more than hype."
+        },
+        {
+          "quote": "highlighted his past actions that have undermined the rights of marginalized communities",
+          "status": "supported",
+          "reason": "The evidence details Paul's positions on the Civil Rights Act, voting rights, DREAMers, women's rights, and the Department of Education, framed as undermining marginalized communities.",
+          "evidence_quote": "Paul has also questioned the Civil Rights Act, and even claimed that private business owners have a right to discriminate."
+        },
+        {
+          "quote": "Warren urged the GOP to have a real commitment to the issues facing minority communities",
+          "status": "unsupported",
+          "reason": "The candidate attributes this to 'Warren,' but the evidence does not identify the author as Elizabeth Warren. The urging itself is supported by the evidence, but the attribution to Warren is not.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "reminded Paul's supporters of his previous comments on the Civil Rights Act, the Department of Education, women's rights, and DREAMers' protection",
+          "status": "supported",
+          "reason": "The evidence discusses Paul's positions on all four of these topics.",
+          "evidence_quote": "when we were debating the Civil Rights Act -- which Paul has done since landing on the national stage; when there was no Department of Education -- a department he thinks \"should be done away with;\" when women didn't have choices -- choices Paul seeks to limit in Washington; when DREAMers weren't protected from deportation -- protections Paul currently opposes."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "When I was elected to the Kentucky State Senate in 1967, I became the first woman and the first person of color to serve in the body has responded to Rand Paul's decision to run for president",
+          "status": "supported",
+          "reason": "The evidence confirms the author was elected to the Kentucky State Senate in 1967 as the first woman and first person of color, and she is responding to Paul's presidential run. The sentence is grammatically awkward but the factual content is supported.",
+          "evidence_quote": "When I was elected to the Kentucky State Senate in 1967, I became the first woman and the first person of color to serve in the body."
+        },
+        {
+          "quote": "she finds it \"almost unfathomable\" that a politician from her own state is attempting to launch his campaign on a record that includes questioning landmark voting rights and civil rights legislation",
+          "status": "supported",
+          "reason": "The evidence directly contains this language.",
+          "evidence_quote": "I find it almost unfathomable that a politician from my own state is attempting to launch his presidential campaign on a record that includes questioning landmark voting rights and civil rights legislation."
+        },
+        {
+          "quote": "those listening to his message of inclusion heard nothing more than hype",
+          "status": "supported",
+          "reason": "The evidence states: 'those of us listening today who he is hoping to include, heard nothing more than hype.'",
+          "evidence_quote": "those of us listening today who he is hoping to include, heard nothing more than hype."
+        },
+        {
+          "quote": "pointed out his past actions that have undermined the rights of marginalized communities",
+          "status": "supported",
+          "reason": "The evidence details Paul's positions on the Civil Rights Act, voting rights, DREAMers, women's rights, and the Department of Education, framed as undermining marginalized communities.",
+          "evidence_quote": "Paul has also questioned the Civil Rights Act, and even claimed that private business owners have a right to discriminate."
+        },
+        {
+          "quote": "She urged Republicans to have real real commitment to the issues facing minority communities",
+          "status": "supported",
+          "reason": "The evidence states: 'they can't actually appeal to the community unless they have a real commitment to the issues facing minority communities.' The double 'real real' is a typo but the factual content is supported.",
+          "evidence_quote": "they can't actually appeal to the community unless they have a real commitment to the issues facing minority communities."
+        },
+        {
+          "quote": "made clear his previous comments on the Civil Rights Act, the Department of Education, women's rights, and DREAMers' protection",
+          "status": "supported",
+          "reason": "The evidence discusses Paul's positions on all four of these topics.",
+          "evidence_quote": "when we were debating the Civil Rights Act -- which Paul has done since landing on the national stage; when there was no Department of Education -- a department he thinks \"should be done away with;\" when women didn't have choices -- choices Paul seeks to limit in Washington; when DREAMers weren't protected from deportation -- protections Paul currently opposes."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [],
+      "other_issues": [
+        "The original response cannot omit its own supported targets. Every target must actually be expressed in the original response and supported by the evidence; do not create targets only from source information absent from the original. Recheck targets and retention for every candidate. This does not require the original's factual claims to be supported."
+      ]
+    }
+  ]
+}

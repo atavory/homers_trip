@@ -1,0 +1,394 @@
+{
+  "id": "10194",
+  "source_id": "13992",
+  "stratum": "Data2txt_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "top20",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Kogilicious is located at 956 Embarcadero Del Norte in Isla Vista, California."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Kogilicious is a Korean cuisine restaurant."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The restaurant is open every day from 10:00 AM to 11:00 PM."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The restaurant does not offer WiFi."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The restaurant does not offer validated parking."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The restaurant provides street parking."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The restaurant offers outdoor seating."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The restaurant is good for groups."
+    },
+    {
+      "target_id": "T9",
+      "claim": "The restaurant has a casual ambience."
+    },
+    {
+      "target_id": "T10",
+      "claim": "The restaurant offers take-out service."
+    },
+    {
+      "target_id": "T11",
+      "claim": "The restaurant has a 4-star average rating."
+    },
+    {
+      "target_id": "T12",
+      "claim": "The half and half beef ribs and pork are described as the best some customers have ever had."
+    },
+    {
+      "target_id": "T13",
+      "claim": "The Kogilicious spicy chicken burrito is a crowd favorite."
+    },
+    {
+      "target_id": "T14",
+      "claim": "Beef, spicy pork, and tofu are available protein options."
+    },
+    {
+      "target_id": "T15",
+      "claim": "Customers have praised the restaurant for its reasonable prices, especially when paying cash."
+    },
+    {
+      "target_id": "T16",
+      "claim": "Using a card may attract additional charges."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Kogilicious, located at 956 Embarcadero Del Norte in Isla Vista, California",
+          "status": "supported",
+          "reason": "The evidence confirms the address as 956 Embarcadero Del Norte, city as Isla Vista, state as CA.",
+          "evidence_quote": "\"address\": \"956 Embarcadero Del Norte\", \"city\": \"Isla Vista\", \"state\": \"CA\""
+        },
+        {
+          "quote": "is a local favorite for Korean cuisine",
+          "status": "supported",
+          "reason": "The evidence lists the category as Korean, Restaurants. 'Local favorite' is a reasonable characterization given the 4-star rating and positive reviews, and the Korean category is directly supported.",
+          "evidence_quote": "\"categories\": \"Korean, Restaurants\""
+        },
+        {
+          "quote": "The restaurant is open every day from 10:00 AM to 11:00 PM",
+          "status": "supported",
+          "reason": "The evidence shows hours of 10:0-23:0 for every day of the week, which corresponds to 10:00 AM to 11:00 PM.",
+          "evidence_quote": "\"Monday\": \"10:0-23:0\", \"Tuesday\": \"10:0-23:0\", \"Wednesday\": \"10:0-23:0\", \"Thursday\": \"10:0-23:0\", \"Friday\": \"10:0-23:0\", \"Saturday\": \"10:0-23:0\", \"Sunday\": \"10:0-23:0\""
+        },
+        {
+          "quote": "it does not offer WiFi",
+          "status": "supported",
+          "reason": "The evidence explicitly states WiFi is 'no'.",
+          "evidence_quote": "\"WiFi\": \"no\""
+        },
+        {
+          "quote": "or validated parking",
+          "status": "supported",
+          "reason": "The evidence shows validated parking is false.",
+          "evidence_quote": "\"validated\": false"
+        },
+        {
+          "quote": "it does provide street parking",
+          "status": "supported",
+          "reason": "The evidence shows street parking is true.",
+          "evidence_quote": "\"street\": true"
+        },
+        {
+          "quote": "and outdoor seating",
+          "status": "supported",
+          "reason": "The evidence shows OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "Catering to groups",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "it offers a casual ambience",
+          "status": "supported",
+          "reason": "The evidence shows casual ambience is true.",
+          "evidence_quote": "\"casual\": true"
+        },
+        {
+          "quote": "is noted for its take-out service",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "The restaurant has a 4-star average rating",
+          "status": "supported",
+          "reason": "The evidence shows business_stars is 4.0.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        },
+        {
+          "quote": "the half and half beef ribs and pork are described as the best some customers have ever had",
+          "status": "supported",
+          "reason": "A review states 'Half and half beef ribs and pork FTW. Best I've *ever* had, and I've had a lot of good Korean food.'",
+          "evidence_quote": "\"Half and half beef ribs and pork FTW.  Best I've *ever* had, and I've had a lot of good Korean food.\""
+        },
+        {
+          "quote": "The Kogilicious spicy chicken burrito is also a crowd favorite",
+          "status": "supported",
+          "reason": "A review states 'A Kogilicious spicy chicken burrito is one of my favorite foods in the world.'",
+          "evidence_quote": "\"A Kogilicious spicy chicken burrito is one of my favorite foods in the world.\""
+        },
+        {
+          "quote": "along with the beef, spicy pork, and tofu options",
+          "status": "supported",
+          "reason": "A review mentions 'all of the proteins are fantastic- beef, spicy pork, tofu; can't go wrong.'",
+          "evidence_quote": "\"all of the proteins are fantastic- beef, spicy pork, tofu; can't go wrong.\""
+        },
+        {
+          "quote": "Customers have praised the restaurant for its reasonable prices, especially when paying cash",
+          "status": "supported",
+          "reason": "A review states 'And so reasonably priced! Pay cash; you'll get a giant burrito for less than $7'.",
+          "evidence_quote": "\"And so reasonably priced! Pay cash; you'll get a giant burrito for less than $7, which is unheard of elsewhere in IV.\""
+        },
+        {
+          "quote": "it is noted that the use of a card may attract additional charges",
+          "status": "supported",
+          "reason": "A review states 'Bring cash, they charge more if you use a card.'",
+          "evidence_quote": "\"Bring cash, they charge more if you use a card.\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Kogilicious, located at 956 Embarcadero Del Norte in Isla Vista, California",
+          "status": "supported",
+          "reason": "The evidence confirms the address as 956 Embarcadero Del Norte, city as Isla Vista, state as CA.",
+          "evidence_quote": "\"address\": \"956 Embarcadero Del Norte\", \"city\": \"Isla Vista\", \"state\": \"CA\""
+        },
+        {
+          "quote": "is a restaurant specializing in Korean Korean food",
+          "status": "supported",
+          "reason": "The evidence lists the category as Korean, Restaurants. The duplication of 'Korean' is a typo/formatting issue, not a factual error; the underlying claim that it is a Korean restaurant is supported.",
+          "evidence_quote": "\"categories\": \"Korean, Restaurants\""
+        },
+        {
+          "quote": "restaurant is open daily from 10:00 to 23:00",
+          "status": "supported",
+          "reason": "The evidence shows hours of 10:0-23:0 for every day of the week.",
+          "evidence_quote": "\"Monday\": \"10:0-23:0\", \"Tuesday\": \"10:0-23:0\", \"Wednesday\": \"10:0-23:0\", \"Thursday\": \"10:0-23:0\", \"Friday\": \"10:0-23:0\", \"Saturday\": \"10:0-23:0\", \"Sunday\": \"10:0-23:0\""
+        },
+        {
+          "quote": "it does not offer WiFi",
+          "status": "supported",
+          "reason": "The evidence explicitly states WiFi is 'no'.",
+          "evidence_quote": "\"WiFi\": \"no\""
+        },
+        {
+          "quote": "or validated parking",
+          "status": "supported",
+          "reason": "The evidence shows validated parking is false.",
+          "evidence_quote": "\"validated\": false"
+        },
+        {
+          "quote": "it does provide street parking",
+          "status": "supported",
+          "reason": "The evidence shows street parking is true.",
+          "evidence_quote": "\"street\": true"
+        },
+        {
+          "quote": "and outdoor seating",
+          "status": "supported",
+          "reason": "The evidence shows OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "Catering to groups",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "it offers a casual ambience",
+          "status": "supported",
+          "reason": "The evidence shows casual ambience is true.",
+          "evidence_quote": "\"casual\": true"
+        },
+        {
+          "quote": "is noted for its take-out service",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "The restaurant has a 4.0 star rating",
+          "status": "supported",
+          "reason": "The evidence shows business_stars is 4.0.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        },
+        {
+          "quote": "the half and half beef ribs and pork are described as the best some customers have ever had",
+          "status": "supported",
+          "reason": "A review states 'Half and half beef ribs and pork FTW. Best I've *ever* had, and I've had a lot of good Korean food.'",
+          "evidence_quote": "\"Half and half beef ribs and pork FTW.  Best I've *ever* had, and I've had a lot of good Korean food.\""
+        },
+        {
+          "quote": "The Kogilicious spicy chicken burrito is also a crowd favorite",
+          "status": "supported",
+          "reason": "A review states 'A Kogilicious spicy chicken burrito is one of my favorite foods in the world.'",
+          "evidence_quote": "\"A Kogilicious spicy chicken burrito is one of my favorite foods in the world.\""
+        },
+        {
+          "quote": "along with the beef, spicy pork, and tofu options",
+          "status": "supported",
+          "reason": "A review mentions 'all of the proteins are fantastic- beef, spicy pork, tofu; can't go wrong.'",
+          "evidence_quote": "\"all of the proteins are fantastic- beef, spicy pork, tofu; can't go wrong.\""
+        },
+        {
+          "quote": "Customers have praised the restaurant for its reasonable prices, especially when paying cash",
+          "status": "supported",
+          "reason": "A review states 'And so reasonably priced! Pay cash; you'll get a giant burrito for less than $7'.",
+          "evidence_quote": "\"And so reasonably priced! Pay cash; you'll get a giant burrito for less than $7, which is unheard of elsewhere in IV.\""
+        },
+        {
+          "quote": "it is noted that the use of a card may attract additional charges",
+          "status": "supported",
+          "reason": "A review states 'Bring cash, they charge more if you use a card.'",
+          "evidence_quote": "\"Bring cash, they charge more if you use a card.\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Kogilicious, located at 956 Embarcadero Del Norte in Isla Vista, California",
+          "status": "supported",
+          "reason": "The evidence confirms the address as 956 Embarcadero Del Norte, city as Isla Vista, state as CA.",
+          "evidence_quote": "\"address\": \"956 Embarcadero Del Norte\", \"city\": \"Isla Vista\", \"state\": \"CA\""
+        },
+        {
+          "quote": "is a local favorite for Korean cuisine",
+          "status": "supported",
+          "reason": "The evidence lists the category as Korean, Restaurants, and the restaurant has a 4-star rating with positive reviews.",
+          "evidence_quote": "\"categories\": \"Korean, Restaurants\""
+        },
+        {
+          "quote": "The restaurant is open every day from 10:00 AM to 11:00 PM",
+          "status": "supported",
+          "reason": "The evidence shows hours of 10:0-23:0 for every day of the week, which corresponds to 10:00 AM to 11:00 PM.",
+          "evidence_quote": "\"Monday\": \"10:0-23:0\", \"Tuesday\": \"10:0-23:0\", \"Wednesday\": \"10:0-23:0\", \"Thursday\": \"10:0-23:0\", \"Friday\": \"10:0-23:0\", \"Saturday\": \"10:0-23:0\", \"Sunday\": \"10:0-23:0\""
+        },
+        {
+          "quote": "it does not offer WiFi",
+          "status": "supported",
+          "reason": "The evidence explicitly states WiFi is 'no'.",
+          "evidence_quote": "\"WiFi\": \"no\""
+        },
+        {
+          "quote": "or validated parking",
+          "status": "supported",
+          "reason": "The evidence shows validated parking is false.",
+          "evidence_quote": "\"validated\": false"
+        },
+        {
+          "quote": "it does provide street parking",
+          "status": "supported",
+          "reason": "The evidence shows street parking is true.",
+          "evidence_quote": "\"street\": true"
+        },
+        {
+          "quote": "and outdoor seating",
+          "status": "supported",
+          "reason": "The evidence shows OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "Catering to groups",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "it offers a casual ambience",
+          "status": "supported",
+          "reason": "The evidence shows casual ambience is true.",
+          "evidence_quote": "\"casual\": true"
+        },
+        {
+          "quote": "is noted for its take-out service",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "The restaurant has a 4-star average rating",
+          "status": "supported",
+          "reason": "The evidence shows business_stars is 4.0.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        },
+        {
+          "quote": "the half and half beef ribs and pork are described as the best some customers have ever had",
+          "status": "supported",
+          "reason": "A review states 'Half and half beef ribs and pork FTW. Best I've *ever* had, and I've had a lot of good Korean food.'",
+          "evidence_quote": "\"Half and half beef ribs and pork FTW.  Best I've *ever* had, and I've had a lot of good Korean food.\""
+        },
+        {
+          "quote": "The Kogilicious spicy chicken burrito is also a crowd favorite",
+          "status": "supported",
+          "reason": "A review states 'A Kogilicious spicy chicken burrito is one of my favorite foods in the world.'",
+          "evidence_quote": "\"A Kogilicious spicy chicken burrito is one of my favorite foods in the world.\""
+        },
+        {
+          "quote": "along with the beef, spicy pork, and tofu options",
+          "status": "supported",
+          "reason": "A review mentions 'all of the proteins are fantastic- beef, spicy pork, tofu; can't go wrong.'",
+          "evidence_quote": "\"all of the proteins are fantastic- beef, spicy pork, tofu; can't go wrong.\""
+        },
+        {
+          "quote": "Customers have praised the restaurant for its reasonable prices, especially when paying cash",
+          "status": "supported",
+          "reason": "A review states 'And so reasonably priced! Pay cash; you'll get a giant burrito for less than $7'.",
+          "evidence_quote": "\"And so reasonably priced! Pay cash; you'll get a giant burrito for less than $7, which is unheard of elsewhere in IV.\""
+        },
+        {
+          "quote": "it is noted that the use of a card may attract additional charges",
+          "status": "supported",
+          "reason": "A review states 'Bring cash, they charge more if you use a card.'",
+          "evidence_quote": "\"Bring cash, they charge more if you use a card.\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

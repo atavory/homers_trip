@@ -1,0 +1,40 @@
+{
+  "id": "10883",
+  "policy": "top20",
+  "response": "Fernando's Churros is a popular dessert business in Santa Barbara, CA, praised for its hot, fluffy, and crispy churros, which customers describe as the best they've ever had. Located behind Rosale's Mexican Restaurant and Auto Zone, the bright orange food truck is located in a vacant parking lot behind Rosale's Mexican Restaurant and Auto Zone. The churros with toppings such as chocolate and caramel sauce, and offers catering churros with a variety of toppings such as chocolate and caramel sauce, as well as catering options for large events. The business is described as family-owned, and the owner, Fernando, is described as friendly and easy going for being friendly and easy going. Customers rave about the quality and generous portion sizes of the churros, with many stating that they are the best they've ever had. According to a customer review, Fernando's Churros is in Santa Barbara on Sundays, Tuesday, Wednesday, Thursday, and Friday from 16:00 to 19:00 (8:00 to 19:00 on Sundays), based on posted hours. Fernando's Churros is a must-try for anyone with a sweet tooth and looking for a unique and delicious dessert experience.",
+  "replacements": [
+    {
+      "replacement": "business",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "praised for its hot, fluffy, and crispy churros, which customers describe as the best they've ever had.",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "the bright orange food truck is located in a vacant parking lot behind Rosale's Mexican Restaurant and Auto Zone.",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "churros with toppings such as chocolate and caramel sauce, and offers catering",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "The business is described as family-owned, and the owner, Fernando,",
+      "span_id": "s4"
+    },
+    {
+      "replacement": "described as friendly and easy going",
+      "span_id": "s5"
+    },
+    {
+      "replacement": "easy going.",
+      "span_id": "s6"
+    },
+    {
+      "replacement": "had. According to a customer review, Fernando's Churros is in Santa Barbara on Sundays, Tuesday, Wednesday, Thursday, and Friday from 16:00 to 19:00 (8:00 to 19:00 on Sundays), based on posted hours.",
+      "span_id": "s7"
+    }
+  ],
+  "model_called": true
+}

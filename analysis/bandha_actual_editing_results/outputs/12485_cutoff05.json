@@ -1,0 +1,12 @@
+{
+  "id": "12485",
+  "policy": "cutoff05",
+  "response": "  Based on the given passages, the typical weather in Indiana can be described as follows:\n\n* Summer: Long, warm, humid, and wet\n* Winter: Chilly and windy\n* Year-round: Partly cloudy\n* Temperature range: 22°F to 85°F (rarely below 3°F or above 92°F)\n* Precipitation: Record high of 57.65 inches in 1876 and a record low of 24.97 inches in 1934. with a record high of 57.65 inches in 1876 and a record low of 24.97 inches in 1934.\n* Snowfall: Averages around 20-30 inches per year, with a record high of 74.5 inches in 1979.\n\nTherefore, the typical weather in Indiana is characterized by mild summers, cold winters, and moderate precipitation throughout the year, with occasional heavy snowfall.",
+  "replacements": [
+    {
+      "replacement": "Record high of 57.65 inches in 1876 and a record low of 24.97 inches in 1934.",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

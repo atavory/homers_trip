@@ -1,0 +1,32 @@
+{
+  "id": "695",
+  "policy": "top20",
+  "response": "The French prosecutor leading the investigation into the Germanwings Flight 9525 crash has denied knowledge of any video footage from the plane, despite reports of a cell phone video showing the final moments before the crash. The video is said to show screams of 'My God' in several languages screaming and metallic banging metallic banging can be heard possibly from the pilot trying to open the cockpit door. The crash killed all 150 people on board and investigators are still searching for clues as to why the plane went down. The co-pilot, Andreas Lubitz, has been found to have had a history of depression and suicidal suicidal tendencies at some point before his aviation career and investigators are looking into whether he deliberately brought down the plane. Recovery efforts are ongoing and personal personal belongings of the the 144 passengers and six crew on board cell phones, may be among the items recovered.",
+  "replacements": [
+    {
+      "replacement": "screams of 'My God' in several languages",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "metallic banging can be heard",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "suicidal tendencies at some point before his aviation career",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "personal belongings",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "the 144 passengers and six crew on board",
+      "span_id": "s4"
+    },
+    {
+      "replacement": "phones, may be among the items recovered.",
+      "span_id": "s5"
+    }
+  ],
+  "model_called": true
+}

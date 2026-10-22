@@ -1,0 +1,12 @@
+{
+  "id": "12464",
+  "policy": "top20",
+  "response": " To prepare a blood slide, follow these steps:\n\n1. Sterilize a needle with a flame.\n2. Put a drop of blood toward one end of a clean glass slide.\n3. Hold another clean slide at an angle of about 45 degrees, and touch the blood with one end of the slide. Run the blood along the edge of the slide using capillary action.\n4. Push carefully along the length of the first slide to produce a thin smear of blood.\n5. Repeat the process, making two smears and allowing them to air dry.\n6. Label the smears clearly, then place them in the provided slide transport containers.",
+  "replacements": [
+    {
+      "replacement": "4. Push carefully along the length of the first slide to produce a thin",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

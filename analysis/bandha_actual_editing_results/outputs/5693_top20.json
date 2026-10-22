@@ -1,0 +1,44 @@
+{
+  "id": "5693",
+  "policy": "top20",
+  "response": "Tinker's Burgers is a highly-rated burger burger restaurant in the small beach town of Summerland, CA. Based on to reviews, the restaurant receives praise for its burgers, including with a Sourdough Bacon Cheeseburger and a double cheeseburger with an egg being popular items. The menu also includes fries, corn dogs, and malts. While the food is delicious, some customers have reported long wait times for orders orders, and the service can be slow and slow and passive aggressive at times. However, the outdoor seating area is available, and the restaurant has a divey and classy ambience. Overall, Tinker's Burgers is a great spot for burger lovers looking for a tasty meal in a laid-back setting.",
+  "replacements": [
+    {
+      "replacement": "burger restaurant",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "CA. Based on",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "reviews,",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "restaurant receives praise for its burgers, including",
+      "span_id": "s4"
+    },
+    {
+      "replacement": "items.",
+      "span_id": "s5"
+    },
+    {
+      "replacement": "and malts.",
+      "span_id": "s6"
+    },
+    {
+      "replacement": "orders",
+      "span_id": "s7"
+    },
+    {
+      "replacement": "slow and passive aggressive at times.",
+      "span_id": "s8"
+    },
+    {
+      "replacement": "the outdoor seating area is available, and the restaurant has a divey and classy ambience.",
+      "span_id": "s9"
+    }
+  ],
+  "model_called": true
+}

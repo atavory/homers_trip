@@ -1,0 +1,90 @@
+{
+  "id": "14246",
+  "source_id": "12358",
+  "stratum": "QA_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "original",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Watching Snapchat stories does not directly increase one's Snapchat score."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Sending and receiving more snaps can help increase the Snapchat score."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Opening all received snaps can help increase the Snapchat score."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Watching Snapchat stories does not increase your Snapchat score.",
+          "status": "supported",
+          "reason": "The evidence states the score is a sum of snaps sent and received, with no mention of stories contributing to the score, supporting the claim that watching stories does not increase it. The candidate states this more definitively than the original ('does not' vs 'does not seem like'), but the factual content is supported by the evidence.",
+          "evidence_quote": "The score is a sum of the number of snaps sent and snaps received."
+        },
+        {
+          "quote": "sending and receiving more snaps, including opening all received snaps, can help increase the score",
+          "status": "supported",
+          "reason": "The evidence explicitly states that sending snaps to everyone on your friends list and opening every snap you receive increases your score, and that the score is a sum of snaps sent and received.",
+          "evidence_quote": "To increase your score quickly, users can send snaps to everyone on your friends list and open every snap that you receive."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "it does not seem like watching Snapchat stories directly increases one's score",
+          "status": "supported",
+          "reason": "The evidence states the score is a sum of snaps sent and received, with no mention of stories contributing to the score, supporting the claim that watching stories does not directly increase it.",
+          "evidence_quote": "The score is a sum of the number of snaps sent and snaps received."
+        },
+        {
+          "quote": "sending and receiving more snaps, including opening all received snaps, can help increase the score",
+          "status": "supported",
+          "reason": "The evidence explicitly states that sending snaps to everyone on your friends list and opening every snap you receive increases your score, and that the score is a sum of snaps sent and received.",
+          "evidence_quote": "To increase your score quickly, users can send snaps to everyone on your friends list and open every snap that you receive."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "it does not seem like watching Snapchat stories directly increases one's score",
+          "status": "supported",
+          "reason": "The evidence states the score is a sum of snaps sent and received, with no mention of stories contributing to the score, supporting the claim that watching stories does not directly increase it.",
+          "evidence_quote": "The score is a sum of the number of snaps sent and snaps received."
+        },
+        {
+          "quote": "sending and receiving more snaps, including opening all received snaps, can help increase the score",
+          "status": "supported",
+          "reason": "The evidence explicitly states that sending snaps to everyone on your friends list and opening every snap you receive increases your score, and that the score is a sum of snaps sent and received.",
+          "evidence_quote": "To increase your score quickly, users can send snaps to everyone on your friends list and open every snap that you receive."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "id": "16666",
+  "source_id": "15397",
+  "stratum": "QA_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "cutoff05",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "To breed a Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Breeding the monsters left or right does not matter."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 6,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 6,
+      "claims": [
+        {
+          "quote": "To breed a Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure.",
+          "status": "supported",
+          "reason": "Passage 2 explicitly states: 'To breed the Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure to get this monster.'",
+          "evidence_quote": "To breed the Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure to get this monster."
+        },
+        {
+          "quote": "Specifically, you need to combine the Shugabush and Furcorn in the breeding structure to get this monster.",
+          "status": "supported",
+          "reason": "This is a restatement of the same supported claim from passage 2.",
+          "evidence_quote": "To breed the Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure to get this monster."
+        },
+        {
+          "quote": "breeding the monsters left or right does not matter",
+          "status": "supported",
+          "reason": "Passage 2 explicitly states: 'Keep in mind that breeding the monsters left or right does not matter.'",
+          "evidence_quote": "BREEDING NOTES: Keep in mind that breeding the monsters left or right does not matter."
+        },
+        {
+          "quote": "breeding is not not a guaranteed process, so you may need to try multiple times to successfully breed the Shugabeats",
+          "status": "unsupported",
+          "reason": "Passage 3 states breeding is not 100% guaranteed for Generation 2 monsters generally, but the evidence does not specifically apply this to Shugabeats breeding. Additionally, the evidence does not confirm Shugabeats is a Generation 2 monster, so the specific application is unsupported.",
+          "evidence_quote": "Either breeding method is not 100% guarantee. Simply keep on trying if you fail to get the breed that you are looking for."
+        },
+        {
+          "quote": "the Shugabeats is a Generation 2 monster",
+          "status": "unsupported",
+          "reason": "No evidence in the passages classifies Shugabeats as a Generation 2 monster.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "you will need to have both a Generation 1 monster and another monster of any level to create it",
+          "status": "unsupported",
+          "reason": "The evidence does not state this requirement for Shugabeats specifically, and the Generation 2 classification of Shugabeats is itself unsupported.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "you can use a basic monster and a Generation 1 monster to create a Generation 2 monster",
+          "status": "supported",
+          "reason": "Passage 3 states: 'Generation 2 monsters can be created by breeding two Generation 1 monsters or combination of a basic and a Generation 1 monster.' This is a general claim about Generation 2 monsters, supported by the evidence.",
+          "evidence_quote": "Generation 2 monsters can be created by breeding two Generation 1 monsters or combination of a basic and a Generation 1 monster."
+        },
+        {
+          "quote": "the breeding process can be affected by the elements of the monsters being bred",
+          "status": "unsupported",
+          "reason": "The evidence does not state that elements affect breeding outcomes or probabilities in this way.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "the Shugabeats possesses the Water element",
+          "status": "unsupported",
+          "reason": "No evidence in the passages mentions the Shugabeats having a Water element.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "breeding it with a monster that has the Water element will increase the chances of getting a Shugabeats as an offspring",
+          "status": "unsupported",
+          "reason": "No evidence supports this claim about element-based probability increases.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 6,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 6,
+      "claims": [
+        {
+          "quote": "To breed a Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure.",
+          "status": "supported",
+          "reason": "Passage 2 explicitly states: 'To breed the Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure to get this monster.'",
+          "evidence_quote": "To breed the Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure to get this monster."
+        },
+        {
+          "quote": "Specifically, you need to combine the Shugabush and Furcorn in the breeding structure to get this monster.",
+          "status": "supported",
+          "reason": "This is a restatement of the same supported claim from passage 2.",
+          "evidence_quote": "To breed the Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure to get this monster."
+        },
+        {
+          "quote": "breeding the monsters left or right does not matter",
+          "status": "supported",
+          "reason": "Passage 2 explicitly states: 'Keep in mind that breeding the monsters left or right does not matter.'",
+          "evidence_quote": "BREEDING NOTES: Keep in mind that breeding the monsters left or right does not matter."
+        },
+        {
+          "quote": "breeding is not a guaranteed process, and you may need to try multiple times to successfully breed the Shugabeats",
+          "status": "unsupported",
+          "reason": "Passage 3 mentions breeding is not 100% guaranteed for Generation 2 monsters generally, but does not specifically apply this to Shugabeats, and Shugabeats is not confirmed as a Generation 2 monster in the evidence.",
+          "evidence_quote": "Either breeding method is not 100% guarantee. Simply keep on trying if you fail to get the breed that you are looking for."
+        },
+        {
+          "quote": "the Shugabeats is a Generation 2 monster",
+          "status": "unsupported",
+          "reason": "No evidence in the passages classifies Shugabeats as a Generation 2 monster.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "you will need to have both a Generation 1 monster and another monster of any level to create it",
+          "status": "unsupported",
+          "reason": "The evidence does not state this requirement for Shugabeats specifically, and the Generation 2 classification of Shugabeats is itself unsupported.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "you can use a basic monster and a Generation 1 monster to create a Generation 2 monster",
+          "status": "supported",
+          "reason": "Passage 3 states: 'Generation 2 monsters can be created by breeding two Generation 1 monsters or combination of a basic and a Generation 1 monster.'",
+          "evidence_quote": "Generation 2 monsters can be created by breeding two Generation 1 monsters or combination of a basic and a Generation 1 monster."
+        },
+        {
+          "quote": "the breeding process can be affected by the elements of the monsters being bred",
+          "status": "unsupported",
+          "reason": "The evidence does not state that elements affect breeding outcomes or probabilities.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "the Shugabeats possesses the Water element",
+          "status": "unsupported",
+          "reason": "No evidence in the passages mentions the Shugabeats having a Water element.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "breeding it with a monster that has the Water element will increase the chances of getting a Shugabeats as an offspring",
+          "status": "unsupported",
+          "reason": "No evidence supports this claim about element-based probability increases.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 6,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 6,
+      "claims": [
+        {
+          "quote": "To breed a Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure.",
+          "status": "supported",
+          "reason": "Passage 2 explicitly states: 'To breed the Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure to get this monster.'",
+          "evidence_quote": "To breed the Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure to get this monster."
+        },
+        {
+          "quote": "Specifically, you need to combine the Shugabush and Furcorn in the breeding structure to get this monster.",
+          "status": "supported",
+          "reason": "This is a restatement of the same supported claim from passage 2.",
+          "evidence_quote": "To breed the Shugabeats, you need to use the Shugabush and the Furcorn in the Shugabush Island breeding structure to get this monster."
+        },
+        {
+          "quote": "breeding the monsters left or right does not matter",
+          "status": "supported",
+          "reason": "Passage 2 explicitly states: 'Keep in mind that breeding the monsters left or right does not matter.'",
+          "evidence_quote": "BREEDING NOTES: Keep in mind that breeding the monsters left or right does not matter."
+        },
+        {
+          "quote": "breeding is not a guaranteed process, and you may need to try multiple times to successfully breed the Shugabeats",
+          "status": "unsupported",
+          "reason": "Passage 3 mentions breeding is not 100% guaranteed for Generation 2 monsters generally, but does not specifically apply this to Shugabeats, and Shugabeats is not confirmed as a Generation 2 monster in the evidence.",
+          "evidence_quote": "Either breeding method is not 100% guarantee. Simply keep on trying if you fail to get the breed that you are looking for."
+        },
+        {
+          "quote": "the Shugabeats is a Generation 2 monster",
+          "status": "unsupported",
+          "reason": "No evidence in the passages classifies Shugabeats as a Generation 2 monster.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "you will need to have both a Generation 1 monster and another monster of any level to create it",
+          "status": "unsupported",
+          "reason": "The evidence does not state this requirement for Shugabeats specifically, and the Generation 2 classification of Shugabeats is itself unsupported.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "you can use a basic monster and a Generation 1 monster to create a Generation 2 monster",
+          "status": "supported",
+          "reason": "Passage 3 states: 'Generation 2 monsters can be created by breeding two Generation 1 monsters or combination of a basic and a Generation 1 monster.'",
+          "evidence_quote": "Generation 2 monsters can be created by breeding two Generation 1 monsters or combination of a basic and a Generation 1 monster."
+        },
+        {
+          "quote": "the breeding process can be affected by the elements of the monsters being bred",
+          "status": "unsupported",
+          "reason": "The evidence does not state that elements affect breeding outcomes or probabilities.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "the Shugabeats possesses the Water element",
+          "status": "unsupported",
+          "reason": "No evidence in the passages mentions the Shugabeats having a Water element.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "breeding it with a monster that has the Water element will increase the chances of getting a Shugabeats as an offspring",
+          "status": "unsupported",
+          "reason": "No evidence supports this claim about element-based probability increases.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

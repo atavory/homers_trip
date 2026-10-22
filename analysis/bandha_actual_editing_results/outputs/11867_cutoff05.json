@@ -1,0 +1,28 @@
+{
+  "id": "11867",
+  "policy": "cutoff05",
+  "response": "Las Aves Cafe is a Mexican restaurant located in Santa Barbara, CA, There is no evidence in the provided data that Las Aves Cafe is located near the beach. It has a 3.5-star rating and offers a variety of dishes, including The provided data does not specify the menu items such as tacos, burritos, or salads. and The evidence does not mention breakfast items being served. items. The cafe is open daily from 7am to 9pm and has outdoor seating, takeout, and good options for groups. While some reviewers have had positive experiences, others have found the food to be underwhelming or overpriced. The cafe does not have a garage or validated parking, but there is a parking lot and Street parking is not available according to the provided data; only a parking lot is offered. Wi-Fi is not available, but the atmosphere is casual and suitable for families. The reviews do not mention slow service. but the staff is friendly. Overall, Las Aves Cafe seems to be a convenient option for those staying at the nearby hotel or looking for a quick, affordable meal in the area.",
+  "replacements": [
+    {
+      "replacement": "There is no evidence in the provided data that Las Aves Cafe is located near the beach.",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "The provided data does not specify the menu items such as tacos, burritos, or salads.",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "The evidence does not mention breakfast items being served.",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "Street parking is not available according to the provided data; only a parking lot is offered.",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "The reviews do not mention slow service.",
+      "span_id": "s4"
+    }
+  ],
+  "model_called": true
+}

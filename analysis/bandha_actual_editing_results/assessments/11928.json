@@ -1,0 +1,174 @@
+{
+  "id": "11928",
+  "source_id": "14300",
+  "stratum": "QA_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "original",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Automotive technicians can be paid in various ways depending on factors such as where they work, whether they are paid commission, how much they earn, and the state in which they work."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Some automotive technicians may be entitled to overtime under certain conditions."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Automotive technicians can be paid based on different combinations of hourly and commission rates, which can vary depending on their specialization."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The amount automotive technicians earn can vary depending on geographical location."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Automotive technicians in Alaska have the highest average pay of about $23.70 per hour or $49,400 per year."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Automotive technicians that work in aerospace products and parts manufacturing can earn about $32 per hour or $66,300 per year on average."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Automotive technicians can be paid in various ways depending on factors such as where they work, whether they are paid commission, how much they earn, and the state in which they work.",
+          "status": "supported",
+          "reason": "Passage 1 explicitly states that pay entitlement depends on where they work, how they are paid (commission or not), how much they make, and the state in which they work.",
+          "evidence_quote": "whether mechanics and technicians are entitled to overtime wages depends on (a) where they work (auto dealer or repair shop), (b) how they are paid (commission or not), (c) how much they make (regular hourly rate and commissions), and (d) the state in which they work."
+        },
+        {
+          "quote": "Some may be entitled to overtime under certain conditions.",
+          "status": "supported",
+          "reason": "Passage 1 discusses conditions under which mechanics and technicians are entitled to overtime wages, including under the FLSA.",
+          "evidence_quote": "whether mechanics and technicians are entitled to overtime wages depends on (a) where they work... certain automotive mechanics and technicians paid on a flat-rate or flag-rate are entitled to overtime under the FLSA."
+        },
+        {
+          "quote": "They can be paid based on different combinations of hourly and commission rates, which can vary depending on their specialization.",
+          "status": "supported",
+          "reason": "Passage 3 states there are various combinations of hourly and commission pay rates, which depending on what type of work you specialize in can vary your bottom line considerably.",
+          "evidence_quote": "There are various combinations of hourly and commission pay rates, which depending on what type of work you specialize in can vary your bottom line considerably."
+        },
+        {
+          "quote": "The amount they earn can also vary depending on geographical location.",
+          "status": "supported",
+          "reason": "Passage 2 provides geographic pay comparisons (Alaska, Connecticut, Maryland, etc.), clearly supporting geographic variation in pay.",
+          "evidence_quote": "Automotive technicians in Alaska have the highest average pay in regard to geography, at about $23.70 per hour or $49,400 per year. Techs in Connecticut, Maryland, Massachusetts and Washington D.C. average $20.50 to $21.50 per hour."
+        },
+        {
+          "quote": "automotive technicians in Alaska have the highest average pay of about $23.70 per hour or $49,400 per year.",
+          "status": "supported",
+          "reason": "Passage 2 directly states this figure for Alaska.",
+          "evidence_quote": "Automotive technicians in Alaska have the highest average pay in regard to geography, at about $23.70 per hour or $49,400 per year."
+        },
+        {
+          "quote": "Some automotive technicians that work in aerospace products and parts manufacturing can earn about $32 per hour or $66,300 per year on average.",
+          "status": "supported",
+          "reason": "Passage 2 directly states this figure for automotive techs in aerospace products and parts manufacturing.",
+          "evidence_quote": "Automotive techs in this industry earn about $32 per hour or $66,300 per year on average."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Automotive technicians can be paid in various ways depending on factors such as where they work, whether they are paid commission, how much they earn, and the state in which they work.",
+          "status": "supported",
+          "reason": "Passage 1 explicitly states that pay entitlement depends on where they work, how they are paid (commission or not), how much they make, and the state in which they work.",
+          "evidence_quote": "whether mechanics and technicians are entitled to overtime wages depends on (a) where they work (auto dealer or repair shop), (b) how they are paid (commission or not), (c) how much they make (regular hourly rate and commissions), and (d) the state in which they work."
+        },
+        {
+          "quote": "Some may be entitled to overtime under certain conditions.",
+          "status": "supported",
+          "reason": "Passage 1 discusses conditions under which mechanics and technicians are entitled to overtime wages, including under the FLSA.",
+          "evidence_quote": "whether mechanics and technicians are entitled to overtime wages depends on (a) where they work... certain automotive mechanics and technicians paid on a flat-rate or flag-rate are entitled to overtime under the FLSA."
+        },
+        {
+          "quote": "They can be paid based on different combinations of hourly and commission rates, which can vary depending on their specialization.",
+          "status": "supported",
+          "reason": "Passage 3 states there are various combinations of hourly and commission pay rates, which depending on what type of work you specialize in can vary your bottom line considerably.",
+          "evidence_quote": "There are various combinations of hourly and commission pay rates, which depending on what type of work you specialize in can vary your bottom line considerably."
+        },
+        {
+          "quote": "The amount they earn can also vary depending on geographical location.",
+          "status": "supported",
+          "reason": "Passage 2 provides geographic pay comparisons, clearly supporting geographic variation in pay.",
+          "evidence_quote": "Automotive technicians in Alaska have the highest average pay in regard to geography, at about $23.70 per hour or $49,400 per year. Techs in Connecticut, Maryland, Massachusetts and Washington D.C. average $20.50 to $21.50 per hour."
+        },
+        {
+          "quote": "automotive technicians in Alaska have the highest average pay of about $23.70 per hour or $49,400 per year.",
+          "status": "supported",
+          "reason": "Passage 2 directly states this figure for Alaska.",
+          "evidence_quote": "Automotive technicians in Alaska have the highest average pay in regard to geography, at about $23.70 per hour or $49,400 per year."
+        },
+        {
+          "quote": "Some automotive technicians that work in aerospace products and parts manufacturing can earn about $32 per hour or $66,300 per year on average.",
+          "status": "supported",
+          "reason": "Passage 2 directly states this figure for automotive techs in aerospace products and parts manufacturing.",
+          "evidence_quote": "Automotive techs in this industry earn about $32 per hour or $66,300 per year on average."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Automotive technicians can be paid in various ways depending on factors such as where they work, whether they are paid commission, how much they earn, and the state in which they work.",
+          "status": "supported",
+          "reason": "Passage 1 explicitly states that pay entitlement depends on where they work, how they are paid (commission or not), how much they make, and the state in which they work.",
+          "evidence_quote": "whether mechanics and technicians are entitled to overtime wages depends on (a) where they work (auto dealer or repair shop), (b) how they are paid (commission or not), (c) how much they make (regular hourly rate and commissions), and (d) the state in which they work."
+        },
+        {
+          "quote": "Some may be entitled to overtime under certain conditions.",
+          "status": "supported",
+          "reason": "Passage 1 discusses conditions under which mechanics and technicians are entitled to overtime wages, including under the FLSA.",
+          "evidence_quote": "whether mechanics and technicians are entitled to overtime wages depends on (a) where they work... certain automotive mechanics and technicians paid on a flat-rate or flag-rate are entitled to overtime under the FLSA."
+        },
+        {
+          "quote": "They can be paid based on different combinations of hourly and commission rates, which can vary depending on their specialization.",
+          "status": "supported",
+          "reason": "Passage 3 states there are various combinations of hourly and commission pay rates, which depending on what type of work you specialize in can vary your bottom line considerably.",
+          "evidence_quote": "There are various combinations of hourly and commission pay rates, which depending on what type of work you specialize in can vary your bottom line considerably."
+        },
+        {
+          "quote": "The amount they earn can also vary depending on geographical location.",
+          "status": "supported",
+          "reason": "Passage 2 provides geographic pay comparisons, clearly supporting geographic variation in pay.",
+          "evidence_quote": "Automotive technicians in Alaska have the highest average pay in regard to geography, at about $23.70 per hour or $49,400 per year. Techs in Connecticut, Maryland, Massachusetts and Washington D.C. average $20.50 to $21.50 per hour."
+        },
+        {
+          "quote": "automotive technicians in Alaska have the highest average pay of about $23.70 per hour or $49,400 per year.",
+          "status": "supported",
+          "reason": "Passage 2 directly states this figure for Alaska.",
+          "evidence_quote": "Automotive technicians in Alaska have the highest average pay in regard to geography, at about $23.70 per hour or $49,400 per year."
+        },
+        {
+          "quote": "Some automotive technicians that work in aerospace products and parts manufacturing can earn about $32 per hour or $66,300 per year on average.",
+          "status": "supported",
+          "reason": "Passage 2 directly states this figure for automotive techs in aerospace products and parts manufacturing.",
+          "evidence_quote": "Automotive techs in this industry earn about $32 per hour or $66,300 per year on average."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

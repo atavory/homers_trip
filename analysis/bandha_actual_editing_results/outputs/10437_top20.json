@@ -1,0 +1,24 @@
+{
+  "id": "10437",
+  "policy": "top20",
+  "response": "Peebee & Jays is a local sandwich restaurant located in Carpinteria, California, with a rating of 4.0 stars. The restaurant offers a variety of sandwich options, such as peanut butter with honey and Nutella peanut butter with marshmallow fluff, as well as sandwiches like Bacon Went on a Date with turkey. Reviewers note that the cauliflower flatbread is not recommended due to its flimsiness. and offers outdoor seating. However, some customers have reported issues with the restaurant's rewards system, including confusion and difficulty with redeeming points. Some reviews praise the quality of the sandwiches, while others have had negative experiences with the staff and service. Specifically, one reviewer found the crust of their sandwich to be rubbery and difficult to eat, while another had a frustrating experience with a pickup order being drenched in mayonnaise despite requesting it to be on the side. A third reviewer had a particularly poor experience with a rude manager who lacked basic customer service skills. Despite these issues, many reviewers have praised the quality of the sandwiches and the value for money.",
+  "replacements": [
+    {
+      "replacement": "restaurant",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "stars. The restaurant offers a variety of sandwich options, such as peanut butter with honey and Nutella peanut butter with marshmallow fluff, as well as sandwiches like Bacon Went on a Date with turkey. Reviewers note that the cauliflower flatbread is not recommended due to its flimsiness.",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "offers outdoor seating.",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "the restaurant's rewards system,",
+      "span_id": "s4"
+    }
+  ],
+  "model_called": true
+}

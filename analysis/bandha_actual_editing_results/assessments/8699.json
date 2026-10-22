@@ -1,0 +1,268 @@
+{
+  "id": "8699",
+  "source_id": "14830",
+  "stratum": "Data2txt_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "cutoff05",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "The Good Bar is located inside the Kimpton Hotel."
+    },
+    {
+      "target_id": "T2",
+      "claim": "The Good Bar is located in Goleta, CA."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The bar has a decent size space with plenty of seating."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The bar has an area for playing pool."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The bar is well-stocked with a variety of liquors."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The bar offers cocktails."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The service is generally good."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The bar is known for its hipster vibe and decor scheme."
+    },
+    {
+      "target_id": "T9",
+      "claim": "The hipster vibe is a welcome change from the usual style in the area."
+    },
+    {
+      "target_id": "T10",
+      "claim": "The bar offers a happy hour menu with discounted drinks and food."
+    },
+    {
+      "target_id": "T11",
+      "claim": "The bar can get quite busy during peak times."
+    },
+    {
+      "target_id": "T12",
+      "claim": "Some customers have reported issues with staffing and service during busy periods."
+    },
+    {
+      "target_id": "T13",
+      "claim": "A customer had a negative experience with a manager named Tyrell."
+    },
+    {
+      "target_id": "T14",
+      "claim": "Tyrell was reportedly rude and unprofessional."
+    },
+    {
+      "target_id": "T15",
+      "claim": "The bar has an overall rating of 4 stars."
+    },
+    {
+      "target_id": "T16",
+      "claim": "The bar is a popular spot for both hotel guests and locals."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "The Good Bar is a full bar located inside the Kimpton Hotel in Goleta, CA.",
+          "status": "supported",
+          "reason": "The evidence confirms The Good Bar is inside the Kimpton Hotel in Goleta, CA. 'Full bar' is supported by the review: 'A nice full bar located inside of the Kimpton Hotel.'",
+          "evidence_quote": "A nice full bar located inside of the Kimpton Hotel."
+        },
+        {
+          "quote": "It has a decent size space with plenty of seating and an area for playing pool.",
+          "status": "supported",
+          "reason": "Directly supported by the first review.",
+          "evidence_quote": "It is decently sized with plenty of seating and an area to play pool."
+        },
+        {
+          "quote": "The bar is well-stocked with a variety of liquors and offers an eclectic selection of cocktails.",
+          "status": "supported",
+          "reason": "Well-stocked with liquors is supported by the first review; 'eclectic selection of cocktails' is supported by the second review.",
+          "evidence_quote": "They are fully stocked with all of the yummy basic liquors to make your cocktail of choice. I enjoy the eclectic cocktail selection on their menu."
+        },
+        {
+          "quote": "The atmosphere is pleasant, and the service is generally good.",
+          "status": "supported",
+          "reason": "Supported by the first review mentioning good service and nice atmosphere.",
+          "evidence_quote": "the service is good and atmosphere is nice while staying at the hotel."
+        },
+        {
+          "quote": "The bar is known for its hipster vibe and decor scheme, which is a welcome change from the usual style in the area.",
+          "status": "supported",
+          "reason": "Directly supported by the second review.",
+          "evidence_quote": "I dig the hipster vibe and decor scheme, which is a welcomed change to nearly everywhere else in our little town."
+        },
+        {
+          "quote": "The bar offers a happy hour menu with discounted drinks and food, and it can get quite busy during peak times.",
+          "status": "supported",
+          "reason": "Both claims are supported by the second review.",
+          "evidence_quote": "There are also a select few happy hour drinks and food items at slightly discounted rates... This place can get pretty busy during peak times."
+        },
+        {
+          "quote": "However, some customers have reported issues with the staffing and service during busy periods.",
+          "status": "supported",
+          "reason": "Supported by the second review discussing staffing issues during peak times.",
+          "evidence_quote": "My main gripe would be on the bar's staffing during these periods. There have been times I've ordered food and was forgotten about."
+        },
+        {
+          "quote": "One customer had a negative experience with the manager, Tyrell, who was reportedly rude and unprofessional.",
+          "status": "supported",
+          "reason": "Supported by the third review describing Tyrell as unprofessional and rude.",
+          "evidence_quote": "Tyrell the food/beverage manager kicked us out... He was very unprofessional and rude."
+        },
+        {
+          "quote": "Despite these issues, the bar has an overall rating of 4 stars and is a popular spot for both hotel guests and locals.",
+          "status": "supported",
+          "reason": "4-star rating is confirmed by the evidence (business_stars: 4.0). Popularity with hotel guests and locals is supported by the second review.",
+          "evidence_quote": "\"business_stars\": 4.0 ... This place can get pretty busy during peak times, with hotel guests and locals alike."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "The Good Bar is a stylish and comfortable bar located inside the Kimpton Hotel in Goleta, CA.",
+          "status": "unsupported",
+          "reason": "'Stylish and comfortable' are not terms used in the evidence. The evidence confirms location inside the Kimpton Hotel in Goleta, CA, but does not describe the bar as 'stylish and comfortable.' The ambience attributes show 'classy: true' and 'casual: true' but not 'stylish' or 'comfortable' explicitly.",
+          "evidence_quote": "A nice full bar located inside of the Kimpton Hotel."
+        },
+        {
+          "quote": "It has a decent size space with plenty of seating and an area for playing pool.",
+          "status": "supported",
+          "reason": "Directly supported by the first review.",
+          "evidence_quote": "It is decently sized with plenty of seating and an area to play pool."
+        },
+        {
+          "quote": "The bar is well-stocked with a variety of liquors and offers a diverse range of cocktails.",
+          "status": "supported",
+          "reason": "Well-stocked with liquors is supported by the first review; cocktail offerings are supported by both reviews.",
+          "evidence_quote": "They are fully stocked with all of the yummy basic liquors to make your cocktail of choice. I enjoy the eclectic cocktail selection on their menu."
+        },
+        {
+          "quote": "The atmosphere is pleasant, and the service is generally good.",
+          "status": "supported",
+          "reason": "Supported by the first review.",
+          "evidence_quote": "the service is good and atmosphere is nice while staying at the hotel."
+        },
+        {
+          "quote": "The bar is known for its hipster vibe and decor scheme, which is a welcome change from the usual style in the area.",
+          "status": "supported",
+          "reason": "Directly supported by the second review.",
+          "evidence_quote": "I dig the hipster vibe and decor scheme, which is a welcomed change to nearly everywhere else in our little town."
+        },
+        {
+          "quote": "The bar offers a happy hour menu with discounted drinks and food, and it can get quite busy during peak times.",
+          "status": "supported",
+          "reason": "Both claims are supported by the second review.",
+          "evidence_quote": "There are also a select few happy hour drinks and food items at slightly discounted rates... This place can get pretty busy during peak times."
+        },
+        {
+          "quote": "However, some customers have reported issues with the staffing and service during busy periods.",
+          "status": "supported",
+          "reason": "Supported by the second review.",
+          "evidence_quote": "My main gripe would be on the bar's staffing during these periods. There have been times I've ordered food and was forgotten about."
+        },
+        {
+          "quote": "One customer had a negative experience with the manager, Tyrell, who was reportedly rude and unprofessional.",
+          "status": "supported",
+          "reason": "Supported by the third review.",
+          "evidence_quote": "Tyrell the food/beverage manager kicked us out... He was very unprofessional and rude."
+        },
+        {
+          "quote": "Despite these issues, the bar has an overall rating of 4 stars and is a popular spot for both hotel guests and locals.",
+          "status": "supported",
+          "reason": "4-star rating confirmed by business_stars: 4.0; popularity with hotel guests and locals supported by the second review.",
+          "evidence_quote": "\"business_stars\": 4.0 ... This place can get pretty busy during peak times, with hotel guests and locals alike."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "The Good Bar is a stylish and comfortable bar located inside the Kimpton Hotel in Goleta, CA.",
+          "status": "unsupported",
+          "reason": "'Stylish and comfortable' are not terms used in the evidence. The evidence confirms location inside the Kimpton Hotel in Goleta, CA, but does not describe the bar as 'stylish and comfortable.'",
+          "evidence_quote": "A nice full bar located inside of the Kimpton Hotel."
+        },
+        {
+          "quote": "It has a decent size space with plenty of seating and an area for playing pool.",
+          "status": "supported",
+          "reason": "Directly supported by the first review.",
+          "evidence_quote": "It is decently sized with plenty of seating and an area to play pool."
+        },
+        {
+          "quote": "The bar is well-stocked with a variety of liquors and offers a diverse range of cocktails.",
+          "status": "supported",
+          "reason": "Well-stocked with liquors is supported by the first review; cocktail offerings are supported by both reviews.",
+          "evidence_quote": "They are fully stocked with all of the yummy basic liquors to make your cocktail of choice. I enjoy the eclectic cocktail selection on their menu."
+        },
+        {
+          "quote": "The atmosphere is pleasant, and the service is generally good.",
+          "status": "supported",
+          "reason": "Supported by the first review.",
+          "evidence_quote": "the service is good and atmosphere is nice while staying at the hotel."
+        },
+        {
+          "quote": "The bar is known for its hipster vibe and decor scheme, which is a welcome change from the usual style in the area.",
+          "status": "supported",
+          "reason": "Directly supported by the second review.",
+          "evidence_quote": "I dig the hipster vibe and decor scheme, which is a welcomed change to nearly everywhere else in our little town."
+        },
+        {
+          "quote": "The bar offers a happy hour menu with discounted drinks and food, and it can get quite busy during peak times.",
+          "status": "supported",
+          "reason": "Both claims are supported by the second review.",
+          "evidence_quote": "There are also a select few happy hour drinks and food items at slightly discounted rates... This place can get pretty busy during peak times."
+        },
+        {
+          "quote": "However, some customers have reported issues with the staffing and service during busy periods.",
+          "status": "supported",
+          "reason": "Supported by the second review.",
+          "evidence_quote": "My main gripe would be on the bar's staffing during these periods. There have been times I've ordered food and was forgotten about."
+        },
+        {
+          "quote": "One customer had a negative experience with the manager, Tyrell, who was reportedly rude and unprofessional.",
+          "status": "supported",
+          "reason": "Supported by the third review.",
+          "evidence_quote": "Tyrell the food/beverage manager kicked us out... He was very unprofessional and rude."
+        },
+        {
+          "quote": "Despite these issues, the bar has an overall rating of 4 stars and is a popular spot for both hotel guests and locals.",
+          "status": "supported",
+          "reason": "4-star rating confirmed by business_stars: 4.0; popularity with hotel guests and locals supported by the second review.",
+          "evidence_quote": "\"business_stars\": 4.0 ... This place can get pretty busy during peak times, with hotel guests and locals alike."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

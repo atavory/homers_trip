@@ -1,0 +1,360 @@
+{
+  "id": "9520",
+  "source_id": "14972",
+  "stratum": "Data2txt_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "cutoff05",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Due Lune Cucina is an Italian restaurant."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Due Lune Cucina is located in Santa Barbara, California."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Due Lune Cucina has an average rating of 4.0 stars."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The restaurant has been praised for its delicious pasta dishes."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The restaurant has been praised for its friendly service."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The restaurant offers outdoor seating."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The restaurant offers free WiFi."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Due Lune Cucina accepts reservations."
+    },
+    {
+      "target_id": "T9",
+      "claim": "Due Lune Cucina provides takeout options."
+    },
+    {
+      "target_id": "T10",
+      "claim": "Some reviewers have noted that the restaurant is no longer open for business."
+    },
+    {
+      "target_id": "T11",
+      "claim": "The restaurant offers valet parking."
+    },
+    {
+      "target_id": "T12",
+      "claim": "The restaurant offers street parking."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 1,
+      "preservation_errors": 2,
+      "errors": 3,
+      "claims": [
+        {
+          "quote": "Due Lune Cucina is a highly-rated Italian restaurant",
+          "status": "supported",
+          "reason": "The evidence lists the restaurant under categories 'Restaurants, Italian' and shows a business_stars of 4.0.",
+          "evidence_quote": "\"categories\": \"Restaurants, Italian\", ... \"business_stars\": 4.0"
+        },
+        {
+          "quote": "located in the heart of Santa Barbara, California",
+          "status": "supported",
+          "reason": "The evidence confirms the city is Santa Barbara and state is CA. 'Heart of' is a mild editorial flourish but the location claim is accurate.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "With an average rating of 4.0 stars out of 5.0",
+          "status": "supported",
+          "reason": "The evidence shows business_stars of 4.0.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        },
+        {
+          "quote": "praised for its delicious pasta dishes",
+          "status": "supported",
+          "reason": "A reviewer explicitly praises the pasta dishes.",
+          "evidence_quote": "\"the pastas were each delicious and compared with some of the best Italian restaurants in NY / SF / LA etc.\""
+        },
+        {
+          "quote": "friendly service",
+          "status": "supported",
+          "reason": "Multiple reviews mention friendly staff and great service.",
+          "evidence_quote": "\"friendly staff are awaiting you\" / \"Food and service was great\""
+        },
+        {
+          "quote": "inviting ambiance",
+          "status": "uncertain",
+          "reason": "The ambience attribute marks 'classy' as true, but 'inviting' is not directly stated in the evidence; it is a reasonable but not directly evidenced characterization.",
+          "evidence_quote": "\"Ambience\": {\"classy\": true}"
+        },
+        {
+          "quote": "The restaurant offers both indoor and outdoor street and valet parking",
+          "status": "supported",
+          "reason": "The evidence confirms both street parking (true) and valet parking (true). The phrasing conflates seating and parking but the parking claim itself is accurate.",
+          "evidence_quote": "\"BusinessParking\": {\"street\": true, \"valet\": true}"
+        },
+        {
+          "quote": "Due Lune Cucina accepts reservations",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsReservations: true.",
+          "evidence_quote": "\"RestaurantsReservations\": true"
+        },
+        {
+          "quote": "provides takeout options for diners on-the-go",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsTakeOut: true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "with a mix of positive and negative feedback",
+          "status": "supported",
+          "reason": "Reviews include 5-star, 4-star, and 1-star ratings, confirming mixed feedback.",
+          "evidence_quote": "\"review_stars\": 4.0 ... \"review_stars\": 1.0 ... \"review_stars\": 5.0"
+        },
+        {
+          "quote": "Some reviewers have praised the food and service",
+          "status": "supported",
+          "reason": "Multiple reviews praise food and service.",
+          "evidence_quote": "\"Food and service was great\" / \"Food and service is solid 5 stars\""
+        },
+        {
+          "quote": "others have noted that the restaurant is no longer open for business",
+          "status": "supported",
+          "reason": "One reviewer explicitly states the restaurant is no longer open.",
+          "evidence_quote": "\"this restaurant is no longer open for business\""
+        },
+        {
+          "quote": "it appears that Due Lune Cucina is currently no longer open for business",
+          "status": "unsupported",
+          "reason": "The evidence is ambiguous: one review says it is closed, but the structured data still lists hours and attributes as if active. The evidence does not definitively confirm closure; this is a stronger claim than the evidence supports and contradicts the structured data still showing operating hours.",
+          "evidence_quote": "\"hours\": {\"Monday\": \"11:0-21:0\", ...}"
+        },
+        {
+          "quote": "offering high-quality Italian cuisine in a charming setting",
+          "status": "supported",
+          "reason": "Reviews praise the quality of the Italian food, and the ambience is described as classy.",
+          "evidence_quote": "\"the pastas were each delicious\" / \"Ambience\": {\"classy\": true}"
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T6",
+        "T7"
+      ]
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 3,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Due Lune Cucina is a highly-rated Italian restaurant",
+          "status": "supported",
+          "reason": "The evidence lists the restaurant under categories 'Restaurants, Italian' and shows a business_stars of 4.0.",
+          "evidence_quote": "\"categories\": \"Restaurants, Italian\", ... \"business_stars\": 4.0"
+        },
+        {
+          "quote": "located in the heart of Santa Barbara, California",
+          "status": "supported",
+          "reason": "The evidence confirms the city is Santa Barbara and state is CA.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "With an average rating of 4.0 stars out of 5.0",
+          "status": "supported",
+          "reason": "The evidence shows business_stars of 4.0.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        },
+        {
+          "quote": "praised for its delicious pasta dishes",
+          "status": "supported",
+          "reason": "A reviewer explicitly praises the pasta dishes.",
+          "evidence_quote": "\"the pastas were each delicious\""
+        },
+        {
+          "quote": "friendly service",
+          "status": "supported",
+          "reason": "Multiple reviews mention friendly staff and great service.",
+          "evidence_quote": "\"friendly staff are awaiting you\" / \"Food and service was great\""
+        },
+        {
+          "quote": "inviting ambiance",
+          "status": "uncertain",
+          "reason": "The ambience attribute marks 'classy' as true, but 'inviting' is not directly stated in the evidence.",
+          "evidence_quote": "\"Ambience\": {\"classy\": true}"
+        },
+        {
+          "quote": "The restaurant offers both indoor and outdoor seating",
+          "status": "uncertain",
+          "reason": "The evidence confirms outdoor seating (OutdoorSeating: true) but does not explicitly confirm indoor seating as a distinct attribute.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "free WiFi",
+          "status": "supported",
+          "reason": "The evidence shows WiFi: 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "valet parking and street parking",
+          "status": "supported",
+          "reason": "The evidence confirms both valet and street parking are available.",
+          "evidence_quote": "\"BusinessParking\": {\"street\": true, \"valet\": true}"
+        },
+        {
+          "quote": "Due Lune Cucina accepts reservations",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsReservations: true.",
+          "evidence_quote": "\"RestaurantsReservations\": true"
+        },
+        {
+          "quote": "provides takeout options for diners on-the-go",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsTakeOut: true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "with a mix of positive and negative feedback",
+          "status": "supported",
+          "reason": "Reviews include 5-star, 4-star, and 1-star ratings.",
+          "evidence_quote": "\"review_stars\": 4.0 ... \"review_stars\": 1.0 ... \"review_stars\": 5.0"
+        },
+        {
+          "quote": "Some reviewers have praised the food and service",
+          "status": "supported",
+          "reason": "Multiple reviews praise food and service.",
+          "evidence_quote": "\"Food and service was great\" / \"Food and service is solid 5 stars\""
+        },
+        {
+          "quote": "others have noted that the restaurant is no longer open for business",
+          "status": "supported",
+          "reason": "One reviewer explicitly states the restaurant is no longer open.",
+          "evidence_quote": "\"this restaurant is no longer open for business\""
+        },
+        {
+          "quote": "it appears that Due Lune Cucina is currently operating and offering high-quality Italian cuisine in a charming setting",
+          "status": "uncertain",
+          "reason": "The structured data lists hours and attributes suggesting operation, but one review explicitly says it is closed. The evidence is ambiguous on current operating status.",
+          "evidence_quote": "\"this restaurant is no longer open for business\" vs. \"hours\": {\"Monday\": \"11:0-21:0\", ...}"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 3,
+      "preservation_errors": 2,
+      "errors": 3,
+      "claims": [
+        {
+          "quote": "Due Lune Cucina is a highly-rated Italian restaurant",
+          "status": "supported",
+          "reason": "The evidence lists the restaurant under categories 'Restaurants, Italian' and shows a business_stars of 4.0.",
+          "evidence_quote": "\"categories\": \"Restaurants, Italian\", ... \"business_stars\": 4.0"
+        },
+        {
+          "quote": "located in the heart of Santa Barbara, California",
+          "status": "supported",
+          "reason": "The evidence confirms the city is Santa Barbara and state is CA.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "With an average rating of 4.0 stars out of 5.0",
+          "status": "supported",
+          "reason": "The evidence shows business_stars of 4.0.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        },
+        {
+          "quote": "praised for its delicious pasta dishes",
+          "status": "supported",
+          "reason": "A reviewer explicitly praises the pasta dishes.",
+          "evidence_quote": "\"the pastas were each delicious\""
+        },
+        {
+          "quote": "friendly service",
+          "status": "supported",
+          "reason": "Multiple reviews mention friendly staff and great service.",
+          "evidence_quote": "\"friendly staff are awaiting you\" / \"Food and service was great\""
+        },
+        {
+          "quote": "inviting ambiance",
+          "status": "uncertain",
+          "reason": "The ambience attribute marks 'classy' as true, but 'inviting' is not directly stated in the evidence.",
+          "evidence_quote": "\"Ambience\": {\"classy\": true}"
+        },
+        {
+          "quote": "The restaurant offers both indoor and outdoor seating",
+          "status": "uncertain",
+          "reason": "The evidence confirms outdoor seating (OutdoorSeating: true) but does not explicitly confirm indoor seating as a distinct attribute.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "free WiFi",
+          "status": "supported",
+          "reason": "The evidence shows WiFi: 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "validated parking",
+          "status": "unsupported",
+          "reason": "The evidence explicitly shows validated parking is false.",
+          "evidence_quote": "\"BusinessParking\": {\"validated\": false}"
+        },
+        {
+          "quote": "Due Lune Cucina accepts reservations",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsReservations: true.",
+          "evidence_quote": "\"RestaurantsReservations\": true"
+        },
+        {
+          "quote": "provides takeout options for diners on-the-go",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsTakeOut: true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "with a mix of positive and negative feedback",
+          "status": "supported",
+          "reason": "Reviews include 5-star, 4-star, and 1-star ratings.",
+          "evidence_quote": "\"review_stars\": 4.0 ... \"review_stars\": 1.0 ... \"review_stars\": 5.0"
+        },
+        {
+          "quote": "Some reviewers have praised the food and service",
+          "status": "supported",
+          "reason": "Multiple reviews praise food and service.",
+          "evidence_quote": "\"Food and service was great\" / \"Food and service is solid 5 stars\""
+        },
+        {
+          "quote": "others have noted that the restaurant is no longer open for business",
+          "status": "supported",
+          "reason": "One reviewer explicitly states the restaurant is no longer open.",
+          "evidence_quote": "\"this restaurant is no longer open for business\""
+        },
+        {
+          "quote": "it appears that Due Lune Cucina is currently operating and offering high-quality Italian cuisine in a charming setting",
+          "status": "uncertain",
+          "reason": "The structured data lists hours and attributes suggesting operation, but one review explicitly says it is closed. The evidence is ambiguous on current operating status.",
+          "evidence_quote": "\"this restaurant is no longer open for business\" vs. \"hours\": {\"Monday\": \"11:0-21:0\", ...}"
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T11",
+        "T12"
+      ]
+    }
+  }
+}

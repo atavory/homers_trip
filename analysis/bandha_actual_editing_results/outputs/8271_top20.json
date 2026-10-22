@@ -1,0 +1,36 @@
+{
+  "id": "8271",
+  "policy": "top20",
+  "response": "Based on the provided structured data, here is an objective overview of Cafe Lido:\n\nCafe Lido is an Italian, Mediterranean, and cafe-style restaurant located in Santa Barbara, California. With a rating of 3.5 stars, the cafe offers outdoor seating and takeout, but does not provide Business Parking, Restaurant Reservations, or WiFi. Reviews mention positive experiences with the servers, with a reviewer noting that their server was good and and efficient However, another reviewer criticized the cafe's policy of adding a 20% service fee to bills without notice, which they felt was unfair. Additionally, some customers have complained about long wait times for service. Despite these issues, the Cafe Lido's breakfast options, including crispy Yukon grilled potatoes and a breakfast sandwich, with the potatoes in particular noted for their generous portions and taste.",
+  "replacements": [
+    {
+      "replacement": "an Italian, Mediterranean, and cafe-style restaurant",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "the cafe offers outdoor seating and takeout, but does not provide Business Parking, Restaurant Reservations, or WiFi. Reviews mention positive experiences with the servers,",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "a",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "good",
+      "span_id": "s4"
+    },
+    {
+      "replacement": "and efficient",
+      "span_id": "s5"
+    },
+    {
+      "replacement": "Cafe Lido's",
+      "span_id": "s6"
+    },
+    {
+      "replacement": "sandwich, with the potatoes in particular noted for their generous portions and taste.",
+      "span_id": "s7"
+    }
+  ],
+  "model_called": true
+}

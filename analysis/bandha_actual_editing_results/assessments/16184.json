@@ -1,0 +1,280 @@
+{
+  "id": "16184",
+  "source_id": "15317",
+  "stratum": "QA_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Preheat a gas or charcoal grill to medium temperature (350°F to 450°F)."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Remove the ribs from their foil wrap and place them meaty-side up on the grill."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Brush the ribs with some sauce and cover the grill."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Cook for 5 minutes, then flip and brush again before cooking for an additional 5 minutes."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Continue this process until the sauce has thickened and the ribs have grill marks."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The total grilling time will be 20 minutes."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Remove the membrane from the bottom of the ribs using a knife."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Start at the narrow end and pull off the membrane in one piece."
+    },
+    {
+      "target_id": "T9",
+      "claim": "Place the ribs in a resealable bag and add enough BBQ sauce to cover them."
+    },
+    {
+      "target_id": "T10",
+      "claim": "Line a baking pan with heavy-duty foil, making sure there is plenty of overlapping foil to create a tent around the ribs."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Preheat a gas or charcoal grill to medium temperature (350°F to 450°F).",
+          "status": "supported",
+          "reason": "The evidence explicitly states to heat a gas or charcoal grill to medium (350°F to 450°F).",
+          "evidence_quote": "Heat a gas or charcoal grill to medium (350°F to 450°F)."
+        },
+        {
+          "quote": "Remove the ribs from their foil wrap, and place them meaty-side up on the grill.",
+          "status": "supported",
+          "reason": "The evidence states to remove the ribs from the foil and place them meaty-side up on the grill.",
+          "evidence_quote": "Remove the ribs from the foil, place them meaty-side up on the grill"
+        },
+        {
+          "quote": "Brush the ribs with some sauce and cover the grill.",
+          "status": "supported",
+          "reason": "The evidence states to brush them with some of the sauce and cover the grill.",
+          "evidence_quote": "brush them with some of the sauce. Cover the grill"
+        },
+        {
+          "quote": "Cook for 5 minutes, then flip and brush again before cooking for an additional 5 minutes.",
+          "status": "supported",
+          "reason": "The evidence states to cook for 5 minutes, then flip and brush the ribs and cook another 5 minutes.",
+          "evidence_quote": "cook for 5 minutes. Flip and brush the ribs and cook another 5 minutes."
+        },
+        {
+          "quote": "Continue this process until the sauce has thickened and the ribs have grill marks.",
+          "status": "supported",
+          "reason": "The evidence states to continue flipping and brushing until the sauce has thickened and the ribs have grill marks.",
+          "evidence_quote": "Continue to cook, flipping and brushing every 5 minutes, until the sauce has thickened and the ribs are heated through and have grill marks"
+        },
+        {
+          "quote": "The total grilling time will be 20 minutes.",
+          "status": "supported",
+          "reason": "The evidence explicitly states a total grilling time of 20 minutes.",
+          "evidence_quote": "for a total grilling time of 20 minutes."
+        },
+        {
+          "quote": "remove the membrane from the bottom of the ribs using a knife.",
+          "status": "supported",
+          "reason": "The evidence states to remove the membrane from the bottom of the ribs using a knife.",
+          "evidence_quote": "Remove the membrane from the bottom of the ribs. Use a knife to start it near the narrow end"
+        },
+        {
+          "quote": "Start at the narrow end and pull off the membrane in one piece.",
+          "status": "supported",
+          "reason": "The evidence states to use a knife to start near the narrow end and pull off in one piece.",
+          "evidence_quote": "Use a knife to start it near the narrow end, and pull off in one piece."
+        },
+        {
+          "quote": "Place the ribs in a resealable bag and add enough BBQ sauce to cover them.",
+          "status": "supported",
+          "reason": "The evidence states to put the ribs in a resealable bag and add sufficient BBQ sauce to cover.",
+          "evidence_quote": "Put the ribs in a resealable bag. Add sufficient BBQ sauce to cover."
+        },
+        {
+          "quote": "Line a baking pan with heavy-duty foil, making sure there is plenty of overlapping foil to create a tent around the ribs.",
+          "status": "supported",
+          "reason": "The evidence states to line the baking pan with heavy duty foil and use plenty of overlapping foil to make a tent.",
+          "evidence_quote": "Line the baking pan with heavy duty foil. Use plenty of overlapping foil to make a tent."
+        },
+        {
+          "quote": "Bake in the preheated oven at 275°F for 2 hours.",
+          "status": "unsupported",
+          "reason": "No evidence in the passages mentions baking at 275°F for 2 hours.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "After 2 hours, increase the temperature to 375°F and bake for an additional 15 minutes.",
+          "status": "unsupported",
+          "reason": "No evidence in the passages mentions increasing the temperature to 375°F or baking for an additional 15 minutes.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Preheat a gas or charcoal grill to medium temperature (350°F to 450°F).",
+          "status": "supported",
+          "reason": "The evidence explicitly states to heat a gas or charcoal grill to medium (350°F to 450°F).",
+          "evidence_quote": "Heat a gas or charcoal grill to medium (350°F to 450°F)."
+        },
+        {
+          "quote": "Remove the ribs from their foil wrap, and place them meaty-side up on the grill.",
+          "status": "supported",
+          "reason": "The evidence states to remove the ribs from the foil and place them meaty-side up on the grill.",
+          "evidence_quote": "Remove the ribs from the foil, place them meaty-side up on the grill"
+        },
+        {
+          "quote": "Brush the ribs with some sauce and cover the grill.",
+          "status": "supported",
+          "reason": "The evidence states to brush them with some of the sauce and cover the grill.",
+          "evidence_quote": "brush them with some of the sauce. Cover the grill"
+        },
+        {
+          "quote": "Cook for 5 minutes, then flip and brush again before cooking for an additional 5 minutes.",
+          "status": "supported",
+          "reason": "The evidence states to cook for 5 minutes, then flip and brush the ribs and cook another 5 minutes.",
+          "evidence_quote": "cook for 5 minutes. Flip and brush the ribs and cook another 5 minutes."
+        },
+        {
+          "quote": "Continue this process until the sauce has thickened and the ribs have grill marks.",
+          "status": "supported",
+          "reason": "The evidence states to continue flipping and brushing until the sauce has thickened and the ribs have grill marks.",
+          "evidence_quote": "Continue to cook, flipping and brushing every 5 minutes, until the sauce has thickened and the ribs are heated through and have grill marks"
+        },
+        {
+          "quote": "The total grilling time will be 20 minutes.",
+          "status": "supported",
+          "reason": "The evidence explicitly states a total grilling time of 20 minutes.",
+          "evidence_quote": "for a total grilling time of 20 minutes."
+        },
+        {
+          "quote": "remove the membrane from the bottom of the ribs using a knife.",
+          "status": "supported",
+          "reason": "The evidence states to remove the membrane from the bottom of the ribs using a knife.",
+          "evidence_quote": "Remove the membrane from the bottom of the ribs. Use a knife to start it near the narrow end"
+        },
+        {
+          "quote": "Start at the narrow end and pull off the membrane in one piece.",
+          "status": "supported",
+          "reason": "The evidence states to use a knife to start near the narrow end and pull off in one piece.",
+          "evidence_quote": "Use a knife to start it near the narrow end, and pull off in one piece."
+        },
+        {
+          "quote": "Place the ribs in a resealable bag and add enough BBQ sauce to cover them.",
+          "status": "supported",
+          "reason": "The evidence states to put the ribs in a resealable bag and add sufficient BBQ sauce to cover.",
+          "evidence_quote": "Put the ribs in a resealable bag. Add sufficient BBQ sauce to cover."
+        },
+        {
+          "quote": "Line a baking pan with heavy-duty foil, making sure there is plenty of overlapping foil to make a tent.",
+          "status": "supported",
+          "reason": "The evidence states to line the baking pan with heavy duty foil and use plenty of overlapping foil to make a tent.",
+          "evidence_quote": "Line the baking pan with heavy duty foil. Use plenty of overlapping foil to make a tent."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Preheat a gas or charcoal grill to medium temperature (350°F to 450°F).",
+          "status": "supported",
+          "reason": "The evidence explicitly states to heat a gas or charcoal grill to medium (350°F to 450°F).",
+          "evidence_quote": "Heat a gas or charcoal grill to medium (350°F to 450°F)."
+        },
+        {
+          "quote": "Remove the ribs from their foil wrap, and place them meaty-side up on the grill.",
+          "status": "supported",
+          "reason": "The evidence states to remove the ribs from the foil and place them meaty-side up on the grill.",
+          "evidence_quote": "Remove the ribs from the foil, place them meaty-side up on the grill"
+        },
+        {
+          "quote": "Brush the ribs with some sauce and cover the grill.",
+          "status": "supported",
+          "reason": "The evidence states to brush them with some of the sauce and cover the grill.",
+          "evidence_quote": "brush them with some of the sauce. Cover the grill"
+        },
+        {
+          "quote": "Cook for 5 minutes, then flip and brush again before cooking for an additional 5 minutes.",
+          "status": "supported",
+          "reason": "The evidence states to cook for 5 minutes, then flip and brush the ribs and cook another 5 minutes.",
+          "evidence_quote": "cook for 5 minutes. Flip and brush the ribs and cook another 5 minutes."
+        },
+        {
+          "quote": "Continue this process until the sauce has thickened and the ribs have grill marks.",
+          "status": "supported",
+          "reason": "The evidence states to continue flipping and brushing until the sauce has thickened and the ribs have grill marks.",
+          "evidence_quote": "Continue to cook, flipping and brushing every 5 minutes, until the sauce has thickened and the ribs are heated through and have grill marks"
+        },
+        {
+          "quote": "The total grilling time will be 20 minutes.",
+          "status": "supported",
+          "reason": "The evidence explicitly states a total grilling time of 20 minutes.",
+          "evidence_quote": "for a total grilling time of 20 minutes."
+        },
+        {
+          "quote": "remove the membrane from the bottom of the ribs using a knife.",
+          "status": "supported",
+          "reason": "The evidence states to remove the membrane from the bottom of the ribs using a knife.",
+          "evidence_quote": "Remove the membrane from the bottom of the ribs. Use a knife to start it near the narrow end"
+        },
+        {
+          "quote": "Start at the narrow end and pull off the membrane in one piece.",
+          "status": "supported",
+          "reason": "The evidence states to use a knife to start near the narrow end and pull off in one piece.",
+          "evidence_quote": "Use a knife to start it near the narrow end, and pull off in one piece."
+        },
+        {
+          "quote": "Place the ribs in a resealable bag and add enough BBQ sauce to cover them.",
+          "status": "supported",
+          "reason": "The evidence states to put the ribs in a resealable bag and add sufficient BBQ sauce to cover.",
+          "evidence_quote": "Put the ribs in a resealable bag. Add sufficient BBQ sauce to cover."
+        },
+        {
+          "quote": "Line a baking pan with heavy-duty foil, making sure there is plenty of overlapping foil to create a tent around the ribs.",
+          "status": "supported",
+          "reason": "The evidence states to line the baking pan with heavy duty foil and use plenty of overlapping foil to make a tent.",
+          "evidence_quote": "Line the baking pan with heavy duty foil. Use plenty of overlapping foil to make a tent."
+        },
+        {
+          "quote": "Unable to answer based on given passages.",
+          "status": "unsupported",
+          "reason": "This is a meta-statement appended to the candidate text. It is factually incorrect as a claim about the passages, since the passages do provide substantial information about making ribs. It is not a factual claim about ribs and is unsupported as a factual assertion.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

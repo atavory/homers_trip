@@ -1,0 +1,32 @@
+{
+  "id": "68",
+  "policy": "top20",
+  "response": "When I was elected to the Kentucky State Senate in 1967, I became the first woman and the first person of color to serve in the body has responded to Rand Paul's decision to run for president by stating that she finds it \"almost unfathomable\" that a politician from her own state is attempting to launch his campaign on a record that includes questioning landmark voting rights and civil rights legislation. She noted that those listening to his message of inclusion heard nothing more than hype and pointed out his past actions that have undermined the rights of marginalized communities. She urged Republicans to have real real commitment to the issues facing minority communities and made clear his previous comments on the Civil Rights Act, the Department of Education, women's rights, and DREAMers' protection.",
+  "replacements": [
+    {
+      "replacement": "When I was elected to the Kentucky State Senate in 1967, I became the first woman and the first person of color to serve in the body",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "She noted that those listening to his message of inclusion heard nothing more than hype",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "pointed out",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "She urged Republicans",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "real",
+      "span_id": "s4"
+    },
+    {
+      "replacement": "and made clear",
+      "span_id": "s5"
+    }
+  ],
+  "model_called": true
+}

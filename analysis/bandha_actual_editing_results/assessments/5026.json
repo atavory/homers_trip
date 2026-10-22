@@ -1,0 +1,130 @@
+{
+  "id": "5026",
+  "source_id": "13492",
+  "stratum": "Summary_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Texas Attorney General Ken Paxton filed a lawsuit against the Biden administration to stop federal agents from cutting razor wire at the border."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Paxton claims the Biden administration's actions undermine the state's efforts to ensure security."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Environmental and immigration advocates have raised concerns about the wire's impact on the environment and human safety."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The Department of Justice sued Texas in July over the state's installation of buoys to block migrants from crossing the U.S.-Mexico border."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Texas Attorney General Ken Paxton filed a lawsuit against the Biden administration to stop federal agents from cutting razor wire at the border",
+          "status": "supported",
+          "reason": "The evidence states Paxton filed suit against the Biden administration to stop federal agents from cutting razor wire at the border.",
+          "evidence_quote": "Texas Attorney General Ken Paxton is back in action, filing suit against the Biden administration Tuesday, hoping to stop federal agents from cutting razor wire at the border."
+        },
+        {
+          "quote": "which he claims undermines the state's efforts to ensure security",
+          "status": "supported",
+          "reason": "The evidence states Paxton alleges the White House is 'undermining' efforts by the state to ensure security.",
+          "evidence_quote": "Paxton alleges that the White House is \"undermining\" efforts by the state to ensure security amid record numbers of immigrants coming to the Texas border."
+        },
+        {
+          "quote": "Environmental and immigration advocates have raised concerns about the wire's impact on the environment and human safety",
+          "status": "supported",
+          "reason": "The evidence confirms environmental and immigration advocates raised concerns about the razor wire's implications for the environment and human safety.",
+          "evidence_quote": "Environmental and immigration advocates have raised concerns about the razor wire at the border and its implications for the environment and human safety."
+        },
+        {
+          "quote": "the Department of Justice sued Texas in July over the state's installation of buoys to block migrants from crossing the U.S.-Mexico border",
+          "status": "supported",
+          "reason": "The evidence confirms the DOJ sued Texas in July to force removal of buoys meant to block migrants from crossing the U.S.-Mexico border.",
+          "evidence_quote": "The Department of Justice sued Texas in July to try to force Gov. Greg Abbott to remove buoys meant to block migrants from crossing the U.S.-Mexico border."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Texas Attorney General Ken Paxton filed a lawsuit against the Biden administration to stop federal agents from cutting razor wire at the border",
+          "status": "supported",
+          "reason": "The evidence states Paxton filed suit against the Biden administration to stop federal agents from cutting razor wire at the border.",
+          "evidence_quote": "Texas Attorney General Ken Paxton is back in action, filing suit against the Biden administration Tuesday, hoping to stop federal agents from cutting razor wire at the border."
+        },
+        {
+          "quote": "which he claims undermines the state's efforts to ensure security",
+          "status": "supported",
+          "reason": "The evidence states Paxton alleges the White House is 'undermining' efforts by the state to ensure security.",
+          "evidence_quote": "Paxton alleges that the White House is \"undermining\" efforts by the state to ensure security amid record numbers of immigrants coming to the Texas border."
+        },
+        {
+          "quote": "Environmental and immigration advocates have raised concerns about the wire's impact on the environment and human safety",
+          "status": "supported",
+          "reason": "The evidence confirms environmental and immigration advocates raised concerns about the razor wire's implications for the environment and human safety.",
+          "evidence_quote": "Environmental and immigration advocates have raised concerns about the razor wire at the border and its implications for the environment and human safety."
+        },
+        {
+          "quote": "the Department of Justice sued Texas in July over the state's installation of buoys to block migrants from crossing the U.S.-Mexico border",
+          "status": "supported",
+          "reason": "The evidence confirms the DOJ sued Texas in July to force removal of buoys meant to block migrants from crossing the U.S.-Mexico border.",
+          "evidence_quote": "The Department of Justice sued Texas in July to try to force Gov. Greg Abbott to remove buoys meant to block migrants from crossing the U.S.-Mexico border."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Texas Attorney General Ken Paxton filed a lawsuit against the Biden administration to stop federal agents from cutting razor wire at the border",
+          "status": "supported",
+          "reason": "The evidence states Paxton filed suit against the Biden administration to stop federal agents from cutting razor wire at the border.",
+          "evidence_quote": "Texas Attorney General Ken Paxton is back in action, filing suit against the Biden administration Tuesday, hoping to stop federal agents from cutting razor wire at the border."
+        },
+        {
+          "quote": "which he claims undermines the state's efforts to ensure security",
+          "status": "supported",
+          "reason": "The evidence states Paxton alleges the White House is 'undermining' efforts by the state to ensure security.",
+          "evidence_quote": "Paxton alleges that the White House is \"undermining\" efforts by the state to ensure security amid record numbers of immigrants coming to the Texas border."
+        },
+        {
+          "quote": "Environmental and immigration advocates have raised concerns about the wire's impact on the environment and human safety",
+          "status": "supported",
+          "reason": "The evidence confirms environmental and immigration advocates raised concerns about the razor wire's implications for the environment and human safety.",
+          "evidence_quote": "Environmental and immigration advocates have raised concerns about the razor wire at the border and its implications for the environment and human safety."
+        },
+        {
+          "quote": "the Department of Justice sued Texas in July over the state's installation of buoys to block migrants from crossing the U.S.-Mexico border",
+          "status": "supported",
+          "reason": "The evidence confirms the DOJ sued Texas in July to force removal of buoys meant to block migrants from crossing the U.S.-Mexico border.",
+          "evidence_quote": "The Department of Justice sued Texas in July to try to force Gov. Greg Abbott to remove buoys meant to block migrants from crossing the U.S.-Mexico border."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

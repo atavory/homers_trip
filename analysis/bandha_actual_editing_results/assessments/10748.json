@@ -1,0 +1,244 @@
+{
+  "id": "10748",
+  "source_id": "14090",
+  "stratum": "Data2txt_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "original",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Brasil Arts Cafe is a restaurant located in Santa Barbara, CA."
+    },
+    {
+      "target_id": "T2",
+      "claim": "The restaurant serves juice bars, smoothies, breakfast and brunch, Brazilian food, salads, and acai bowls."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The restaurant has free WiFi."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Street parking is available."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Reservations are accepted."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The restaurant is known for its hospitality and great cooking skills."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Some customers have highly recommended the restaurant for its Brazilian cuisine, ambiance, and friendly service."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Brasilia Arts Cafe is a restaurant located in Santa Barbara, CA",
+          "status": "supported",
+          "reason": "The evidence lists the city as Santa Barbara and state as CA.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "serves juice bars, smoothies, breakfast and brunch, Brazilian, salads, and acai bowls",
+          "status": "supported",
+          "reason": "The evidence categories include all of these food types.",
+          "evidence_quote": "\"categories\": \"Juice Bars & Smoothies, Breakfast & Brunch, Brazilian, Restaurants, Food, Salad, Acai Bowls\""
+        },
+        {
+          "quote": "open Monday, Thursday, and Friday from 5:00pm to 8:30pm",
+          "status": "supported",
+          "reason": "The evidence shows Monday, Thursday, and Friday hours as 17:0-20:30, which is 5:00pm to 8:30pm.",
+          "evidence_quote": "\"Monday\": \"17:0-20:30\", \"Thursday\": \"17:0-20:30\", \"Friday\": \"17:0-20:30\""
+        },
+        {
+          "quote": "Saturday from 10:00am to 9:00pm",
+          "status": "supported",
+          "reason": "The evidence shows Saturday hours as 10:0-21:0, which is 10:00am to 9:00pm.",
+          "evidence_quote": "\"Saturday\": \"10:0-21:0\""
+        },
+        {
+          "quote": "Sunday from 10:00am to 4:00pm",
+          "status": "supported",
+          "reason": "The evidence shows Sunday hours as 10:0-16:0, which is 10:00am to 4:00pm.",
+          "evidence_quote": "\"Sunday\": \"10:0-16:0\""
+        },
+        {
+          "quote": "has free WiFi",
+          "status": "supported",
+          "reason": "The evidence lists WiFi as 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "Customers can park on the street",
+          "status": "supported",
+          "reason": "The evidence shows street parking is true.",
+          "evidence_quote": "\"street\": true"
+        },
+        {
+          "quote": "valet parking is not available",
+          "status": "supported",
+          "reason": "The evidence shows valet parking is false.",
+          "evidence_quote": "\"valet\": false"
+        },
+        {
+          "quote": "reservations are accepted",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsReservations is true.",
+          "evidence_quote": "\"RestaurantsReservations\": true"
+        },
+        {
+          "quote": "The restaurant is known for its hospitality and great cooking skills",
+          "status": "supported",
+          "reason": "A reviewer mentions hospitality and great cooking skills.",
+          "evidence_quote": "\"They present their cuisine and culture with hospitality, nuance and great cooking skills.\""
+        },
+        {
+          "quote": "Some customers have highly recommended the restaurant for its Brazilian cuisine, ambiance, and friendly service",
+          "status": "supported",
+          "reason": "Multiple reviews praise the food, atmosphere, and friendly service, and one explicitly says #HighlyRecommended.",
+          "evidence_quote": "\"#HighlyRecommended\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Brasilia Arts Cafe is a restaurant located in Santa Barbara, CA",
+          "status": "supported",
+          "reason": "The evidence lists the city as Santa Barbara and state as CA.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "serves juice bars, smoothies, breakfast and brunch, Brazilian, salads, and acai bowls",
+          "status": "supported",
+          "reason": "The evidence categories include all of these food types.",
+          "evidence_quote": "\"categories\": \"Juice Bars & Smoothies, Breakfast & Brunch, Brazilian, Restaurants, Food, Salad, Acai Bowls\""
+        },
+        {
+          "quote": "open Monday through Sunday from 4pm to 9pm",
+          "status": "unsupported",
+          "reason": "The evidence shows the restaurant is not open every day (Tuesday and Wednesday are absent), and the hours vary significantly by day (e.g., 5pm–8:30pm on Mon/Thu/Fri, 10am–9pm Saturday, 10am–4pm Sunday). A single uniform window of 4pm–9pm is contradicted by the evidence.",
+          "evidence_quote": "\"Monday\": \"17:0-20:30\", \"Thursday\": \"17:0-20:30\", \"Friday\": \"17:0-20:30\", \"Saturday\": \"10:0-21:0\", \"Sunday\": \"10:0-16:0\""
+        },
+        {
+          "quote": "has free WiFi",
+          "status": "supported",
+          "reason": "The evidence lists WiFi as 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "Customers can park on the street",
+          "status": "supported",
+          "reason": "The evidence shows street parking is true.",
+          "evidence_quote": "\"street\": true"
+        },
+        {
+          "quote": "use valet parking",
+          "status": "unsupported",
+          "reason": "The evidence explicitly shows valet parking is false.",
+          "evidence_quote": "\"valet\": false"
+        },
+        {
+          "quote": "reservations are accepted",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsReservations is true.",
+          "evidence_quote": "\"RestaurantsReservations\": true"
+        },
+        {
+          "quote": "The restaurant is known for its hospitality and great cooking skills",
+          "status": "supported",
+          "reason": "A reviewer mentions hospitality and great cooking skills.",
+          "evidence_quote": "\"They present their cuisine and culture with hospitality, nuance and great cooking skills.\""
+        },
+        {
+          "quote": "Some customers have highly recommended the restaurant for its Brazilian cuisine, ambiance, and friendly service",
+          "status": "supported",
+          "reason": "Multiple reviews praise the food, atmosphere, and friendly service, and one explicitly says #HighlyRecommended.",
+          "evidence_quote": "\"#HighlyRecommended\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Brasilia Arts Cafe is a restaurant located in Santa Barbara, CA",
+          "status": "supported",
+          "reason": "The evidence lists the city as Santa Barbara and state as CA.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "serves juice bars, smoothies, breakfast and brunch, Brazilian, salads, and acai bowls",
+          "status": "supported",
+          "reason": "The evidence categories include all of these food types.",
+          "evidence_quote": "\"categories\": \"Juice Bars & Smoothies, Breakfast & Brunch, Brazilian, Restaurants, Food, Salad, Acai Bowls\""
+        },
+        {
+          "quote": "open with varying hours throughout the week, including evening hours on weekdays and extended hours on weekends",
+          "status": "supported",
+          "reason": "The evidence shows different hours on different days: weekdays (Mon/Thu/Fri) have evening hours (5pm–8:30pm), while Saturday has extended hours (10am–9pm) and Sunday has daytime hours (10am–4pm).",
+          "evidence_quote": "\"Monday\": \"17:0-20:30\", \"Thursday\": \"17:0-20:30\", \"Friday\": \"17:0-20:30\", \"Saturday\": \"10:0-21:0\", \"Sunday\": \"10:0-16:0\""
+        },
+        {
+          "quote": "9pm",
+          "status": "supported",
+          "reason": "Saturday closing time is 21:0, i.e., 9pm, so 9pm is a valid closing time for at least one day.",
+          "evidence_quote": "\"Saturday\": \"10:0-21:0\""
+        },
+        {
+          "quote": "has free WiFi",
+          "status": "supported",
+          "reason": "The evidence lists WiFi as 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "Customers can park on the street or or use street parking",
+          "status": "supported",
+          "reason": "The evidence shows street parking is true. The candidate redundantly mentions street parking twice but makes no false claim.",
+          "evidence_quote": "\"street\": true"
+        },
+        {
+          "quote": "reservations are accepted",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsReservations is true.",
+          "evidence_quote": "\"RestaurantsReservations\": true"
+        },
+        {
+          "quote": "The restaurant is known for its hospitality and great cooking skills",
+          "status": "supported",
+          "reason": "A reviewer mentions hospitality and great cooking skills.",
+          "evidence_quote": "\"They present their cuisine and culture with hospitality, nuance and great cooking skills.\""
+        },
+        {
+          "quote": "Some customers have highly recommended the restaurant for its Brazilian cuisine, ambiance, and friendly service",
+          "status": "supported",
+          "reason": "Multiple reviews praise the food, atmosphere, and friendly service, and one explicitly says #HighlyRecommended.",
+          "evidence_quote": "\"#HighlyRecommended\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

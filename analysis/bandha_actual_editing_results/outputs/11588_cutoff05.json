@@ -1,0 +1,12 @@
+{
+  "id": "11588",
+  "policy": "cutoff05",
+  "response": "Montecito Confections is a bakery located at 1150 Coast Village Road, Suite E in Montecito, California. The business offers a variety of baked goods, including cakes, pastries, and desserts. According to customer reviews, the business has excellent quality products, particularly their wedding cakes. The bakery's owner, Katie Teall, is highly regarded and praised for her attention to detail and willingness to help customers. The business is open Monday through Friday from 9:00 AM to 5:00 PM and has no information available about online ordering or delivery options.",
+  "replacements": [
+    {
+      "replacement": "has no information available about online ordering or delivery options.",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

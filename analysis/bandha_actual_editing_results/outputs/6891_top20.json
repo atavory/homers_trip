@@ -1,0 +1,16 @@
+{
+  "id": "6891",
+  "policy": "top20",
+  "response": "Based on the provided structured data, Our Daily Bread is a local bakery and restaurant located in Santa Barbara, Santa Barbara, CA. The business offers a variety of baked goods, sandwiches, and other dishes, including gluten-free options. Customers can enjoy their meals on site or take them to go. While the overall rating for the business is 3.5 stars, customer reviews suggest that the quality of the food and service can vary. Some patrons have praised the friendly service and delicious salads, while others have experienced long wait times and disappointing sandwiches. Despite these mixed reviews, Our Daily Bread appears to be a popular spot for casual lunches and There is outdoor seating available.",
+  "replacements": [
+    {
+      "replacement": "Santa Barbara, CA.",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "There is outdoor seating available.",
+      "span_id": "s13"
+    }
+  ],
+  "model_called": true
+}

@@ -1,3 +1,5 @@
+Executed correction pilot: see [the report](bandha_actual_editing.md) for actual outputs, capped factuality/workload reports and assessment limitations.
+
 **Current paper revision:** [Fixed-reference error evaluation with separate work](bandha_fixed_reference.md). The joint maximum is retained as a diagnostic, not the proposed benchmark ranking.
 
 ## Current unified error/work experiment

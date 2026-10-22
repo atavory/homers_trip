@@ -1,0 +1,168 @@
+{
+  "id": "140",
+  "source_id": "15616",
+  "stratum": "Summary_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "top20",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Kanye West settled a lawsuit with a paparazzi photographer he assaulted in 2013."
+    },
+    {
+      "target_id": "T2",
+      "claim": "The photographer's name is Daniel Ramos."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Ramos sued West for damages and accused him of interfering with his right to pursue a lawful occupation."
+    },
+    {
+      "target_id": "T4",
+      "claim": "West apologized to Ramos and the two shook hands, captured in a photo."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The photo of the handshake was released by Ramos' lawyer, Gloria Allred."
+    },
+    {
+      "target_id": "T6",
+      "claim": "West pleaded no contest to a misdemeanor count of battery."
+    },
+    {
+      "target_id": "T7",
+      "claim": "West received two years' probation and community service."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Allred stated the case sent an important message that celebrities are not above the law and cannot physically attack someone simply because they were asked a question."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted in 2013.",
+          "status": "supported",
+          "reason": "The evidence confirms West settled a civil lawsuit with photographer Daniel Ramos over an assault that occurred in July 2013.",
+          "evidence_quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted"
+        },
+        {
+          "quote": "The photographer, Daniel Ramos, had sued West for damages and accused him of interfering with his right to pursue a lawful occupation.",
+          "status": "supported",
+          "reason": "The evidence confirms Ramos filed a civil suit seeking general and punitive damages and alleging West interfered with his right to pursue a lawful occupation.",
+          "evidence_quote": "Ramos and his lawyer, Gloria Allred, sought general and punitive damages in the civil suit, saying that West had interfered with the photographer's rights to pursue a lawful occupation."
+        },
+        {
+          "quote": "Ramos accepted an apology from West and the two shook hands in a photo released by Ramos' lawyer, Gloria Allred.",
+          "status": "supported",
+          "reason": "The evidence confirms West apologized to Ramos, they shook hands, and Allred released a photo of the handshake.",
+          "evidence_quote": "one important aspect of it was an apology by Kanye West to our client, Daniel Ramos... Her statement included a picture of West and Ramos shaking hands, which she said happened after the apology."
+        },
+        {
+          "quote": "Ramos and West had previously reached a criminal settlement in which West pleaded no contest to a misdemeanor count of battery and received two years' probation and community service.",
+          "status": "unsupported",
+          "reason": "The evidence describes a criminal case where West pleaded no contest and was sentenced by a judge — not a 'criminal settlement.' The evidence does not characterize the criminal proceeding as a settlement.",
+          "evidence_quote": "West pleaded no contest last year to a misdemeanor count of battery over the scuffle. A judge sentenced him to two years' probation, as well as anger management sessions and community service."
+        },
+        {
+          "quote": "Allred stated that the case sent an important message that celebrities are not above the law and cannot physically attack someone simply because they were asked a question.",
+          "status": "supported",
+          "reason": "The evidence directly quotes Allred making this statement.",
+          "evidence_quote": "\"We believe that this case sent an important message,\" Allred said. \"Celebrities are not above the law, and they have no right to physically attack someone simply because they were asked a question.\""
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T7"
+      ]
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted in 2013.",
+          "status": "supported",
+          "reason": "The evidence confirms West settled a civil lawsuit with photographer Daniel Ramos over an assault that occurred in July 2013.",
+          "evidence_quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted"
+        },
+        {
+          "quote": "The photographer, Daniel Ramos, had sued West for damages and accused him of interfering with his right to pursue a lawful occupation.",
+          "status": "supported",
+          "reason": "The evidence confirms Ramos filed a civil suit seeking damages and alleging West interfered with his right to pursue a lawful occupation.",
+          "evidence_quote": "Ramos and his lawyer, Gloria Allred, sought general and punitive damages in the civil suit, saying that West had interfered with the photographer's rights to pursue a lawful occupation."
+        },
+        {
+          "quote": "One important aspect of the settlement was an apology by Kanye West to Ramos, and the two shook hands after the apology, as shown in a photo released by Ramos' lawyer, Gloria Allred.",
+          "status": "supported",
+          "reason": "The evidence confirms the apology was described as 'one important aspect' of the settlement, the handshake occurred after the apology, and Allred released a photo.",
+          "evidence_quote": "one important aspect of it was an apology by Kanye West to our client, Daniel Ramos... Her statement included a picture of West and Ramos shaking hands, which she said happened after the apology."
+        },
+        {
+          "quote": "West had previously pleaded no contest to a misdemeanor count of battery over the scuffle and was sentenced to two years' probation, anger management sessions, and community service.",
+          "status": "supported",
+          "reason": "The evidence confirms West pleaded no contest to misdemeanor battery and was sentenced to two years' probation, anger management sessions, and community service.",
+          "evidence_quote": "West pleaded no contest last year to a misdemeanor count of battery over the scuffle. A judge sentenced him to two years' probation, as well as anger management sessions and community service."
+        },
+        {
+          "quote": "Allred stated that the case sent an important message that celebrities are not above the law and cannot physically attack someone simply because they were asked a question.",
+          "status": "supported",
+          "reason": "The evidence directly quotes Allred making this statement.",
+          "evidence_quote": "\"We believe that this case sent an important message,\" Allred said. \"Celebrities are not above the law, and they have no right to physically attack someone simply because they were asked a question.\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted in 2013.",
+          "status": "supported",
+          "reason": "The evidence confirms West settled a civil lawsuit with photographer Daniel Ramos over an assault that occurred in July 2013.",
+          "evidence_quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted"
+        },
+        {
+          "quote": "The photographer, Daniel Ramos, had sued West for damages and accused him of interfering with his right to pursue a lawful occupation.",
+          "status": "supported",
+          "reason": "The evidence confirms Ramos filed a civil suit seeking damages and alleging West interfered with his right to pursue a lawful occupation.",
+          "evidence_quote": "Ramos and his lawyer, Gloria Allred, sought general and punitive damages in the civil suit, saying that West had interfered with the photographer's rights to pursue a lawful occupation."
+        },
+        {
+          "quote": "Ramos accepted an apology from West and the two shook hands in a photo released by Ramos' lawyer, Gloria Allred.",
+          "status": "supported",
+          "reason": "The evidence confirms West apologized to Ramos, they shook hands, and Allred released a photo of the handshake.",
+          "evidence_quote": "one important aspect of it was an apology by Kanye West to our client, Daniel Ramos... Her statement included a picture of West and Ramos shaking hands, which she said happened after the apology."
+        },
+        {
+          "quote": "Ramos and West had previously reached a criminal settlement in which West pleaded no contest to a misdemeanor count of battery and received two years' probation and community service.",
+          "status": "unsupported",
+          "reason": "The evidence describes a criminal case where West pleaded no contest and was sentenced by a judge — not a 'criminal settlement.' The evidence does not characterize the criminal proceeding as a settlement.",
+          "evidence_quote": "West pleaded no contest last year to a misdemeanor count of battery over the scuffle. A judge sentenced him to two years' probation, as well as anger management sessions and community service."
+        },
+        {
+          "quote": "Allred stated that the case sent an important message that celebrities are not above the law and cannot physically attack someone simply because they were asked a question.",
+          "status": "supported",
+          "reason": "The evidence directly quotes Allred making this statement.",
+          "evidence_quote": "\"We believe that this case sent an important message,\" Allred said. \"Celebrities are not above the law, and they have no right to physically attack someone simply because they were asked a question.\""
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T7"
+      ]
+    }
+  }
+}

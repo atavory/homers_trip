@@ -1,0 +1,7 @@
+{
+  "id": "13819",
+  "policy": "cutoff05",
+  "response": "The nervous system and endocrine system have both similarities and differences. \n\nSimilarities:\n1. Both systems are dedicated to maintaining homeostasis and coordinating the activities of cells, tissues, organs, and systems.\n2. Both systems are regulated by negative feedback mechanisms.\n3. Chemical messengers play a crucial role in both systems.\n\nDifferences:\n1. The nervous system is composed of neuron cells, while the endocrine system is made up of glands.\n2. Transmission in the nervous system occurs through electrochemical pulses, while chemical hormones are responsible for signal transmission in the endocrine system.\n3. The nervous system utilizes interconnected cells to transmit signals, whereas the organs of the endocrine system are discrete and not physically connected.\n4. The nervous system transmits signals through neurons, while the endocrine system uses the circulatory system to transmit signals.",
+  "replacements": [],
+  "model_called": false
+}

@@ -1,0 +1,12 @@
+{
+  "id": "4065",
+  "policy": "cutoff05",
+  "response": "The Miami Dolphins are considering trading for Washington Commanders defensive end Chase Young to bolster their struggling defensive line. Young has 5 sacks this season, while the Dolphins' current defensive ends have combined for only 7.5 sacks. Trading for Young would provide an immediate upgrade and give them more flexibility in extending his contract. However, it would also add to the team's already strained cap situation.",
+  "replacements": [
+    {
+      "replacement": "defensive",
+      "span_id": "s1"
+    }
+  ],
+  "model_called": true
+}

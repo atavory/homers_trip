@@ -1,0 +1,268 @@
+{
+  "id": "10449",
+  "source_id": "14037",
+  "stratum": "Data2txt_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "original",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Eladio's Restaurant is located in Santa Barbara, California."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Eladio's Restaurant offers cuisines including seafood, sandwiches, breakfast, and brunch."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Eladio's Restaurant has a rating of 3.5 stars."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The restaurant has received positive reviews for its food quality, atmosphere, and service."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Customers have praised the friendly staff."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Some reviewers noted that the interior could be improved."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Window/outdoor seating offers great views of the waterfront/pier."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The restaurant offers takeout options."
+    },
+    {
+      "target_id": "T9",
+      "claim": "The restaurant has a happy hour menu."
+    },
+    {
+      "target_id": "T10",
+      "claim": "The restaurant has a casual ambience."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 1,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Eladio's Restaurant is a popular dining spot in Santa Barbara, California",
+          "status": "supported",
+          "reason": "The evidence confirms the restaurant is in Santa Barbara, CA. 'Popular' is a mild editorial claim not directly contradicted.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "offering a variety of cuisines including seafood, sandwiches, breakfast, and brunch",
+          "status": "supported",
+          "reason": "The evidence lists categories: Sandwiches, Breakfast & Brunch, Seafood.",
+          "evidence_quote": "\"categories\": \"Restaurants, Sandwiches, Breakfast & Brunch, Seafood, American (New)\""
+        },
+        {
+          "quote": "With a rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars: 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "the restaurant has received positive reviews for its food quality, atmosphere, and service",
+          "status": "supported",
+          "reason": "Multiple 4- and 5-star reviews praise food, atmosphere, and service.",
+          "evidence_quote": "\"Die Auswahl auf der Karte, das Essen selbst, Service und Ambiente waren allesamt gut.\""
+        },
+        {
+          "quote": "Customers have praised the restaurant's use of fresh ingredients, creative dishes, and friendly staff",
+          "status": "uncertain",
+          "reason": "'Friendly staff' is supported by reviews. 'Fresh ingredients' and 'creative dishes' are reasonable inferences from review content (e.g., individual recipes, flavorful dishes) but not stated verbatim in the evidence.",
+          "evidence_quote": "\"JP was so friendly and suggested their happy hour menu\""
+        },
+        {
+          "quote": "some have noted that the interior could be improved",
+          "status": "supported",
+          "reason": "One reviewer described the interior as 'run-of-the-mill', implying it could be improved.",
+          "evidence_quote": "\"Interior atmosphere is run-of-the-mill\""
+        },
+        {
+          "quote": "the outdoor seating area offers great views of the surrounding waterfront",
+          "status": "supported",
+          "reason": "The evidence mentions outdoor seating and window tables with great views of the pier and waterfront.",
+          "evidence_quote": "\"window tables have great views of the pier and waterfront\""
+        },
+        {
+          "quote": "The restaurant also offers takeout options",
+          "status": "supported",
+          "reason": "The evidence lists RestaurantsTakeOut: true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "has a happy hour menu",
+          "status": "supported",
+          "reason": "A reviewer mentions the happy hour menu.",
+          "evidence_quote": "\"suggested their happy hour menu which was perfect and tasty\""
+        },
+        {
+          "quote": "Eladio's Restaurant is a great choice for those looking for a casual dining experience",
+          "status": "supported",
+          "reason": "The evidence lists the ambience as casual.",
+          "evidence_quote": "\"casual\": true"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 1,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Eladio's Restaurant is a popular dining spot in Santa Barbara, California",
+          "status": "supported",
+          "reason": "The evidence confirms the restaurant is in Santa Barbara, CA.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "offering a variety of cuisines including seafood, sandwiches, breakfast, and brunch",
+          "status": "supported",
+          "reason": "The evidence lists categories: Sandwiches, Breakfast & Brunch, Seafood.",
+          "evidence_quote": "\"categories\": \"Restaurants, Sandwiches, Breakfast & Brunch, Seafood, American (New)\""
+        },
+        {
+          "quote": "With a rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars: 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "the restaurant has received positive reviews for its food quality, atmosphere, and service",
+          "status": "supported",
+          "reason": "Multiple 4- and 5-star reviews praise food, atmosphere, and service.",
+          "evidence_quote": "\"Die Auswahl auf der Karte, das Essen selbst, Service und Ambiente waren allesamt gut.\""
+        },
+        {
+          "quote": "Customers have praised the restaurant's use of fresh ingredients, creative dishes, and friendly staff",
+          "status": "uncertain",
+          "reason": "'Friendly staff' is supported. 'Fresh ingredients' and 'creative dishes' are reasonable inferences but not stated verbatim.",
+          "evidence_quote": "\"JP was so friendly and suggested their happy hour menu\""
+        },
+        {
+          "quote": "some have noted that the interior could be improved",
+          "status": "supported",
+          "reason": "One reviewer described the interior as 'run-of-the-mill'.",
+          "evidence_quote": "\"Interior atmosphere is run-of-the-mill\""
+        },
+        {
+          "quote": "the outdoor seating area offers great views of the surrounding waterfront",
+          "status": "supported",
+          "reason": "The evidence mentions outdoor seating and window tables with great views of the pier and waterfront.",
+          "evidence_quote": "\"window tables have great views of the pier and waterfront\""
+        },
+        {
+          "quote": "The restaurant also offers takeout options",
+          "status": "supported",
+          "reason": "The evidence lists RestaurantsTakeOut: true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "has a happy hour menu",
+          "status": "supported",
+          "reason": "A reviewer mentions the happy hour menu.",
+          "evidence_quote": "\"suggested their happy hour menu which was perfect and tasty\""
+        },
+        {
+          "quote": "Eladio's Restaurant is a great choice for those looking for a casual dining experience",
+          "status": "supported",
+          "reason": "The evidence lists the ambience as casual.",
+          "evidence_quote": "\"casual\": true"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Eladio's Eladio's Restaurant is located at 1 State St in Santa Barbara, California",
+          "status": "supported",
+          "reason": "The address, city, and state all match the evidence exactly.",
+          "evidence_quote": "\"address\": \"1 State St\", \"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "offering a variety of cuisines including seafood, sandwiches, breakfast, and Breakfast & Brunch, Seafood, American (New)",
+          "status": "supported",
+          "reason": "The listed categories match the evidence, despite the awkward repetition in the candidate text.",
+          "evidence_quote": "\"categories\": \"Restaurants, Sandwiches, Breakfast & Brunch, Seafood, American (New)\""
+        },
+        {
+          "quote": "With a rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars: 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "the restaurant has received mixed reviews for its food and service, and service",
+          "status": "unsupported",
+          "reason": "The evidence shows only 4- and 5-star reviews with uniformly positive sentiments; there is no evidence of mixed reviews.",
+          "evidence_quote": "\"review_stars\": 5.0 ... \"review_stars\": 4.0 ... \"review_stars\": 5.0"
+        },
+        {
+          "quote": "Reviewers have praised the the restaurant's flavorful dishes and friendly and friendly staff",
+          "status": "supported",
+          "reason": "Reviewers do praise flavorful dishes and friendly staff, despite the garbled repetition in the candidate text.",
+          "evidence_quote": "\"JP was so friendly\" ... \"had SO many flavors that mixed really well together\""
+        },
+        {
+          "quote": "the interior could improved, window tables improved, the window tables provide great views views of the pier and waterfront",
+          "status": "supported",
+          "reason": "The interior being run-of-the-mill and window tables having great views of the pier and waterfront are both supported, despite the garbled phrasing.",
+          "evidence_quote": "\"Interior atmosphere is run-of-the-mill, but window tables have great views of the pier and waterfront\""
+        },
+        {
+          "quote": "The restaurant also offers takeout options",
+          "status": "supported",
+          "reason": "The evidence lists RestaurantsTakeOut: true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "offers a happy hour hour menu, which has been praised by guests",
+          "status": "supported",
+          "reason": "A reviewer explicitly praises the happy hour menu as 'perfect and tasty'.",
+          "evidence_quote": "\"suggested their happy hour menu which was perfect and tasty!!\""
+        },
+        {
+          "quote": "Eladio's Restaurant is a great choice for those looking for a casual dining experience",
+          "status": "supported",
+          "reason": "The evidence lists the ambience as casual.",
+          "evidence_quote": "\"casual\": true"
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T8"
+      ]
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [
+        "Reviewers have praised the restaurant's flavorful dishes and friendly staff",
+        "the window tables provide great views of the pier and waterfront",
+        "offers a happy hour menu, which has been praised by guests"
+      ]
+    }
+  ]
+}

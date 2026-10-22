@@ -1,0 +1,12 @@
+{
+  "id": "10437",
+  "policy": "cutoff05",
+  "response": "Peebee & Jays is a local sandwich shop located in Carpinteria, California, with a rating of 4.0 stars. The restaurant offers a variety of sandwich options,  and has outdoor seating available. However, some customers have reported issues with the restaurant's online ordering system, including confusion and difficulty with redeeming points. Some reviews praise the quality of the sandwiches, while others have had negative experiences with the staff and service. Specifically, one reviewer found the crust of their sandwich to be rubbery and difficult to eat, while another had a frustrating experience with a pickup order being drenched in mayonnaise despite requesting it to be on the side. A third reviewer had a particularly poor experience with a rude manager who lacked basic customer service skills. Despite these issues, many reviewers have praised the quality of the sandwiches and the value for money.",
+  "replacements": [
+    {
+      "replacement": "",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

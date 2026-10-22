@@ -1,0 +1,24 @@
+{
+  "id": "8244",
+  "policy": "top20",
+  "response": "Choppa Poke, located at 7000 Hollister Ave, Ste 102, Goleta, CA, is a restaurant that specializes in Asian Fusion, Poke, Hawaiian, and Seafood dishes. The restaurant is open Monday through Friday with extended hours, and shorter hours on Saturday hours, and offers free WiFi. It caters to groups and offers a trendy and casual ambiance. The restaurant provides parking in a lot in a lot. and makes take-out service available for patrons. Reviews highlight the generous portion size and fresh ingredients, particularly noting the quality of the protein scoops in the poke bowls. Some customers have raised concerns about the restaurant's pricing and service, but overall, Choppa Poke maintains a 4-star rating.",
+  "replacements": [
+    {
+      "replacement": "is open Monday through Friday with extended hours, and shorter hours on Saturday",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "trendy and",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "parking in a lot",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "lot.",
+      "span_id": "s3"
+    }
+  ],
+  "model_called": true
+}

@@ -1,0 +1,12 @@
+{
+  "id": "14246",
+  "policy": "top20",
+  "response": " No, based on the given passages, Watching Snapchat stories does not increase your Snapchat score. However, sending and receiving more snaps, including opening all received snaps, can help increase the score.",
+  "replacements": [
+    {
+      "replacement": "Watching Snapchat stories does not increase your Snapchat score.",
+      "span_id": "s1"
+    }
+  ],
+  "model_called": true
+}

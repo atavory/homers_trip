@@ -1,0 +1,482 @@
+{
+  "id": "11867",
+  "source_id": "14289",
+  "stratum": "Data2txt_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Las Aves Cafe is a Mexican restaurant."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Las Aves Cafe is located in Santa Barbara, CA."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Las Aves Cafe has a 3.5-star rating."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The cafe is open daily from 7am to 9pm."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The cafe has outdoor seating."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The cafe offers takeout."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The cafe is good for groups."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Some reviewers have had positive experiences."
+    },
+    {
+      "target_id": "T9",
+      "claim": "Some reviewers have found the food to be underwhelming or overpriced."
+    },
+    {
+      "target_id": "T10",
+      "claim": "The cafe does not have garage parking."
+    },
+    {
+      "target_id": "T11",
+      "claim": "The cafe does not have validated parking."
+    },
+    {
+      "target_id": "T12",
+      "claim": "There is a parking lot available."
+    },
+    {
+      "target_id": "T13",
+      "claim": "Wi-Fi is not available."
+    },
+    {
+      "target_id": "T14",
+      "claim": "The atmosphere is casual."
+    },
+    {
+      "target_id": "T15",
+      "claim": "The staff is friendly."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 6,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 6,
+      "claims": [
+        {
+          "quote": "Las Aves Cafe is a Mexican restaurant",
+          "status": "supported",
+          "reason": "Evidence lists categories as 'Mexican, Restaurants'.",
+          "evidence_quote": "\"categories\": \"Mexican, Restaurants\""
+        },
+        {
+          "quote": "located in Santa Barbara, CA",
+          "status": "supported",
+          "reason": "Evidence confirms city and state.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "near the beach",
+          "status": "unsupported",
+          "reason": "No evidence mentions proximity to a beach.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "It has a 3.5-star rating",
+          "status": "supported",
+          "reason": "Evidence states business_stars is 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "offers a variety of dishes, including tacos, burritos, salads, and breakfast items",
+          "status": "unsupported",
+          "reason": "No menu items are listed in the evidence.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "open daily from 7am to 9pm",
+          "status": "supported",
+          "reason": "Evidence shows hours of 7:0-21:0 every day of the week.",
+          "evidence_quote": "\"Monday\": \"7:0-21:0\", \"Tuesday\": \"7:0-21:0\", \"Wednesday\": \"7:0-21:0\", \"Thursday\": \"7:0-21:0\", \"Friday\": \"7:0-21:0\", \"Saturday\": \"7:0-21:0\", \"Sunday\": \"7:0-21:0\""
+        },
+        {
+          "quote": "has outdoor seating",
+          "status": "supported",
+          "reason": "Evidence shows OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "takeout",
+          "status": "supported",
+          "reason": "Evidence shows RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "good options for groups",
+          "status": "supported",
+          "reason": "Evidence shows RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "some reviewers have had positive experiences",
+          "status": "supported",
+          "reason": "A 5-star review praises the place and staff.",
+          "evidence_quote": "\"review_stars\": 5.0 ... \"We loved this place!\""
+        },
+        {
+          "quote": "others have found the food to be underwhelming or overpriced",
+          "status": "supported",
+          "reason": "A 2-star review calls the flavor underwhelming and a 1-star review calls it a rip-off.",
+          "evidence_quote": "\"the flavor is underwhelming\" ... \"What a rip off.\""
+        },
+        {
+          "quote": "The cafe does not have a garage or validated parking",
+          "status": "supported",
+          "reason": "Evidence shows garage and validated parking are both false.",
+          "evidence_quote": "\"garage\": false ... \"validated\": false"
+        },
+        {
+          "quote": "there is a parking lot",
+          "status": "supported",
+          "reason": "Evidence shows lot parking is true.",
+          "evidence_quote": "\"lot\": true"
+        },
+        {
+          "quote": "street parking available",
+          "status": "unsupported",
+          "reason": "Evidence shows street parking is false.",
+          "evidence_quote": "\"street\": false"
+        },
+        {
+          "quote": "Wi-Fi is not available",
+          "status": "supported",
+          "reason": "Evidence shows WiFi is 'no'.",
+          "evidence_quote": "\"WiFi\": \"no\""
+        },
+        {
+          "quote": "the atmosphere is casual",
+          "status": "supported",
+          "reason": "Evidence shows Ambience casual is true.",
+          "evidence_quote": "\"casual\": true"
+        },
+        {
+          "quote": "suitable for families",
+          "status": "unsupported",
+          "reason": "No family-friendly attribute is listed in the evidence.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Some reviewers have noted that the service can be slow",
+          "status": "unsupported",
+          "reason": "No review mentions slow service.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "the staff is friendly",
+          "status": "supported",
+          "reason": "The 5-star review praises the staff.",
+          "evidence_quote": "\"The staff was great as well as the owner who is really a great guy.\""
+        },
+        {
+          "quote": "a convenient option for those staying at the nearby hotel",
+          "status": "supported",
+          "reason": "Multiple reviews mention staying at the hotel in the same parking area.",
+          "evidence_quote": "\"This place is really convenient if you're staying at the hotel in the same parking area.\""
+        },
+        {
+          "quote": "looking for a quick, affordable meal in the area",
+          "status": "unsupported",
+          "reason": "No evidence characterizes the cafe as quick or affordable; one review calls it a rip-off.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Las Aves Cafe is a Mexican restaurant",
+          "status": "supported",
+          "reason": "Evidence lists categories as 'Mexican, Restaurants'.",
+          "evidence_quote": "\"categories\": \"Mexican, Restaurants\""
+        },
+        {
+          "quote": "located in Santa Barbara, CA",
+          "status": "supported",
+          "reason": "Evidence confirms city and state.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "at 2220 Bath St",
+          "status": "supported",
+          "reason": "Evidence confirms the address.",
+          "evidence_quote": "\"address\": \"2220 Bath St\""
+        },
+        {
+          "quote": "It has a 3.5-star rating",
+          "status": "supported",
+          "reason": "Evidence states business_stars is 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "is open daily from 7:00 am to 9:00 pm",
+          "status": "supported",
+          "reason": "Evidence shows hours of 7:0-21:0 every day of the week.",
+          "evidence_quote": "\"Monday\": \"7:0-21:0\", \"Tuesday\": \"7:0-21:0\", \"Wednesday\": \"7:0-21:0\", \"Thursday\": \"7:0-21:0\", \"Friday\": \"7:0-21:0\", \"Saturday\": \"7:0-21:0\", \"Sunday\": \"7:0-21:0\""
+        },
+        {
+          "quote": "has outdoor seating",
+          "status": "supported",
+          "reason": "Evidence shows OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "takeout",
+          "status": "supported",
+          "reason": "Evidence shows RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "good options for groups",
+          "status": "supported",
+          "reason": "Evidence shows RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "some reviewers have had positive experiences",
+          "status": "supported",
+          "reason": "A 5-star review praises the place.",
+          "evidence_quote": "\"review_stars\": 5.0 ... \"We loved this place!\""
+        },
+        {
+          "quote": "others have reported the the food to be average in quality or lacking in portion size",
+          "status": "supported",
+          "reason": "A 2-star review calls the food average coffee shop quality, and a 1-star review complains about barely any food and very small portions.",
+          "evidence_quote": "\"It's more like average coffee shop quality\" ... \"$20 plate of barely any food\" ... \"there were literally 4 green beans and 3 carrot slices in each container\""
+        },
+        {
+          "quote": "The cafe does not have a garage or validated parking",
+          "status": "supported",
+          "reason": "Evidence shows garage and validated parking are both false.",
+          "evidence_quote": "\"garage\": false ... \"validated\": false"
+        },
+        {
+          "quote": "there is a parking lot available",
+          "status": "supported",
+          "reason": "Evidence shows lot parking is true.",
+          "evidence_quote": "\"lot\": true"
+        },
+        {
+          "quote": "Wi-Fi is not available",
+          "status": "supported",
+          "reason": "Evidence shows WiFi is 'no'.",
+          "evidence_quote": "\"WiFi\": \"no\""
+        },
+        {
+          "quote": "the atmosphere is casual",
+          "status": "supported",
+          "reason": "Evidence shows Ambience casual is true.",
+          "evidence_quote": "\"casual\": true"
+        },
+        {
+          "quote": "Reviewers mention friendly staff",
+          "status": "supported",
+          "reason": "The 5-star review praises the staff.",
+          "evidence_quote": "\"The staff was great as well as the owner who is really a great guy.\""
+        },
+        {
+          "quote": "mixed experiences with food quality and value",
+          "status": "supported",
+          "reason": "Reviews range from 1 to 5 stars with varying opinions on food quality and value.",
+          "evidence_quote": "\"the flavor is underwhelming\" ... \"What a rip off.\" ... \"We loved this place!\""
+        },
+        {
+          "quote": "a convenient option for those staying at the hotel",
+          "status": "supported",
+          "reason": "A review explicitly calls it convenient for hotel guests.",
+          "evidence_quote": "\"This place is really convenient if you're staying at the hotel in the same parking area.\""
+        },
+        {
+          "quote": "looking for a quick, affordable meal in the area",
+          "status": "unsupported",
+          "reason": "No evidence characterizes the cafe as quick or affordable; one review calls it a rip-off.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T9"
+      ]
+    },
+    "cutoff05": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Las Aves Cafe is a Mexican restaurant located in Santa Barbara, CA",
+          "status": "supported",
+          "reason": "Evidence confirms both the category and location.",
+          "evidence_quote": "\"categories\": \"Mexican, Restaurants\", \"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "There is no evidence in the provided data that Las Aves Cafe is located near the beach.",
+          "status": "supported",
+          "reason": "The evidence contains no mention of proximity to a beach, so this disclaimer is accurate.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "It has a 3.5-star rating",
+          "status": "supported",
+          "reason": "Evidence states business_stars is 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "The provided data does not specify the menu items such as tacos, burritos, or salads.",
+          "status": "supported",
+          "reason": "No menu items appear in the evidence.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "The evidence does not mention breakfast items being served.",
+          "status": "supported",
+          "reason": "No mention of breakfast items in the evidence.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "The cafe is open daily from 7am to 9pm",
+          "status": "supported",
+          "reason": "Evidence shows hours of 7:0-21:0 every day of the week.",
+          "evidence_quote": "\"Monday\": \"7:0-21:0\", \"Tuesday\": \"7:0-21:0\", \"Wednesday\": \"7:0-21:0\", \"Thursday\": \"7:0-21:0\", \"Friday\": \"7:0-21:0\", \"Saturday\": \"7:0-21:0\", \"Sunday\": \"7:0-21:0\""
+        },
+        {
+          "quote": "has outdoor seating",
+          "status": "supported",
+          "reason": "Evidence shows OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "takeout",
+          "status": "supported",
+          "reason": "Evidence shows RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "good options for groups",
+          "status": "supported",
+          "reason": "Evidence shows RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "some reviewers have had positive experiences",
+          "status": "supported",
+          "reason": "A 5-star review praises the place.",
+          "evidence_quote": "\"review_stars\": 5.0 ... \"We loved this place!\""
+        },
+        {
+          "quote": "others have found the food to be underwhelming or overpriced",
+          "status": "supported",
+          "reason": "A 2-star review calls the flavor underwhelming and a 1-star review calls it a rip-off.",
+          "evidence_quote": "\"the flavor is underwhelming\" ... \"What a rip off.\""
+        },
+        {
+          "quote": "The cafe does not have a garage or validated parking",
+          "status": "supported",
+          "reason": "Evidence shows garage and validated parking are both false.",
+          "evidence_quote": "\"garage\": false ... \"validated\": false"
+        },
+        {
+          "quote": "there is a parking lot",
+          "status": "supported",
+          "reason": "Evidence shows lot parking is true.",
+          "evidence_quote": "\"lot\": true"
+        },
+        {
+          "quote": "Street parking is not available according to the provided data; only a parking lot is offered.",
+          "status": "supported",
+          "reason": "Evidence shows street parking is false and lot is true.",
+          "evidence_quote": "\"street\": false, \"lot\": true"
+        },
+        {
+          "quote": "Wi-Fi is not available",
+          "status": "supported",
+          "reason": "Evidence shows WiFi is 'no'.",
+          "evidence_quote": "\"WiFi\": \"no\""
+        },
+        {
+          "quote": "the atmosphere is casual",
+          "status": "supported",
+          "reason": "Evidence shows Ambience casual is true.",
+          "evidence_quote": "\"casual\": true"
+        },
+        {
+          "quote": "suitable for families",
+          "status": "unsupported",
+          "reason": "No family-friendly attribute is listed in the evidence.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "The reviews do not mention slow service.",
+          "status": "supported",
+          "reason": "None of the three reviews mention slow service.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "the staff is friendly",
+          "status": "supported",
+          "reason": "The 5-star review praises the staff.",
+          "evidence_quote": "\"The staff was great as well as the owner who is really a great guy.\""
+        },
+        {
+          "quote": "a convenient option for those staying at the nearby hotel",
+          "status": "supported",
+          "reason": "A review explicitly calls it convenient for hotel guests.",
+          "evidence_quote": "\"This place is really convenient if you're staying at the hotel in the same parking area.\""
+        },
+        {
+          "quote": "looking for a quick, affordable meal in the area",
+          "status": "unsupported",
+          "reason": "No evidence characterizes the cafe as quick or affordable; one review calls it a rip-off.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [
+        "others have reported the food to be average in quality or lacking in portion size"
+      ],
+      "other_issues": [
+        "The original response cannot omit its own supported targets. Every target must actually be expressed in the original response and supported by the evidence; do not create targets only from source information absent from the original. Recheck targets and retention for every candidate. This does not require the original's factual claims to be supported."
+      ]
+    },
+    {
+      "attempt": 1,
+      "nonverbatim_quotes": [],
+      "other_issues": [
+        "The original response cannot omit its own supported targets. Every target must actually be expressed in the original response and supported by the evidence; do not create targets only from source information absent from the original. Recheck targets and retention for every candidate. This does not require the original's factual claims to be supported."
+      ]
+    }
+  ]
+}

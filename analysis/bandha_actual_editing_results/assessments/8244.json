@@ -1,0 +1,286 @@
+{
+  "id": "8244",
+  "source_id": "14752",
+  "stratum": "Data2txt_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Choppa Poke is located at 7000 Hollister Ave, Ste 102, Goleta, CA."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Choppa Poke specializes in Asian Fusion, Poke, Hawaiian, and Seafood dishes."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The restaurant is open every day of the week with varying hours."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Choppa Poke offers free WiFi."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Choppa Poke caters to groups (good for groups)."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Choppa Poke has a trendy, casual ambiance."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The restaurant provides parking in a lot."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Choppa Poke offers take-out service."
+    },
+    {
+      "target_id": "T9",
+      "claim": "Reviews highlight generous portion size and fresh ingredients, particularly the quality of protein scoops in poke bowls."
+    },
+    {
+      "target_id": "T10",
+      "claim": "Some customers have raised concerns about pricing and service."
+    },
+    {
+      "target_id": "T11",
+      "claim": "Choppa Poke maintains a 4-star rating."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Choppa Poke, located at 7000 Hollister Ave, Ste 102, Goleta, CA",
+          "status": "supported",
+          "reason": "The evidence explicitly states the address as '7000 Hollister Ave, Ste 102', city 'Goleta', state 'CA'.",
+          "evidence_quote": "\"address\": \"7000 Hollister Ave, Ste 102\", \"city\": \"Goleta\", \"state\": \"CA\""
+        },
+        {
+          "quote": "is a restaurant that specializes in Asian Fusion, Poke, Hawaiian, and Seafood dishes",
+          "status": "supported",
+          "reason": "The evidence lists categories including Asian Fusion, Poke, Hawaiian, and Seafood.",
+          "evidence_quote": "\"categories\": \"Restaurants, Asian Fusion, Food, Poke, Hawaiian, Seafood\""
+        },
+        {
+          "quote": "The restaurant is open every day of the week, with varying hours",
+          "status": "supported",
+          "reason": "The hours object lists all seven days (Monday through Sunday), each with different open/close times.",
+          "evidence_quote": "\"hours\": {\"Monday\": \"11:0-21:0\", \"Tuesday\": \"11:0-21:0\", \"Wednesday\": \"11:0-21:0\", \"Thursday\": \"11:0-21:0\", \"Friday\": \"11:0-22:0\", \"Saturday\": \"11:0-15:0\", \"Sunday\": \"11:0-22:0\"}"
+        },
+        {
+          "quote": "offers free WiFi",
+          "status": "supported",
+          "reason": "The evidence states WiFi is 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "It caters to groups",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "offers a trendy, casual ambiance",
+          "status": "supported",
+          "reason": "The evidence shows Ambience has trendy: true and casual: true.",
+          "evidence_quote": "\"Ambience\": {\"trendy\": true, ... \"casual\": true}"
+        },
+        {
+          "quote": "The restaurant provides ample parking space in a lot",
+          "status": "supported",
+          "reason": "The evidence shows lot parking is true. 'Ample' is a mild characterization consistent with a review mentioning 'a big parking lot'.",
+          "evidence_quote": "\"BusinessParking\": {\"lot\": true}"
+        },
+        {
+          "quote": "makes take-out service available for patrons",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "Reviews highlight the generous portion size and fresh ingredients, particularly noting the quality of the protein scoops in the poke bowls",
+          "status": "supported",
+          "reason": "A 5-star review explicitly mentions generous portions and fresh fish, and specifically calls out protein scoops.",
+          "evidence_quote": "\"They are extremely generous with the portion size and especially the protein scoops... The fish and all the toppings were fresh\""
+        },
+        {
+          "quote": "Some customers have raised concerns about the restaurant's pricing and service",
+          "status": "supported",
+          "reason": "One review docks a star for high prices (~$20 for a medium), and a 1-star review describes a very negative service experience.",
+          "evidence_quote": "\"I do feel compelled to dock a star for the prices. A medium will run you $20 with tax.\" / \"WORST experience ever. If you wish to be humiliated, do check them out.\""
+        },
+        {
+          "quote": "Choppa Poke maintains a 4-star rating",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars is 4.0.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Choppa Poke, located at 7000 Hollister Ave, Ste 102, Goleta, CA",
+          "status": "supported",
+          "reason": "The evidence explicitly states the address as '7000 Hollister Ave, Ste 102', city 'Goleta', state 'CA'.",
+          "evidence_quote": "\"address\": \"7000 Hollister Ave, Ste 102\", \"city\": \"Goleta\", \"state\": \"CA\""
+        },
+        {
+          "quote": "is a restaurant that specializes in Asian Fusion, Poke, Hawaiian, and Seafood dishes",
+          "status": "supported",
+          "reason": "The evidence lists categories including Asian Fusion, Poke, Hawaiian, and Seafood.",
+          "evidence_quote": "\"categories\": \"Restaurants, Asian Fusion, Food, Poke, Hawaiian, Seafood\""
+        },
+        {
+          "quote": "The restaurant is open Monday through Friday with extended hours, and shorter hours on Saturday hours",
+          "status": "unsupported",
+          "reason": "The restaurant is also open on Sunday (11:00–22:00), so saying it is open 'Monday through Friday' (with Saturday having shorter hours) omits Sunday entirely. Sunday actually has the same extended hours as Friday (11:0-22:0), making the characterization of Friday as having uniquely 'extended hours' misleading and the omission of Sunday a factual error.",
+          "evidence_quote": "\"hours\": {\"Monday\": \"11:0-21:0\", ..., \"Friday\": \"11:0-22:0\", \"Saturday\": \"11:0-15:0\", \"Sunday\": \"11:0-22:0\"}"
+        },
+        {
+          "quote": "offers free WiFi",
+          "status": "supported",
+          "reason": "The evidence states WiFi is 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "It caters to groups",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "offers a trendy and casual ambiance",
+          "status": "supported",
+          "reason": "The evidence shows Ambience has trendy: true and casual: true.",
+          "evidence_quote": "\"Ambience\": {\"trendy\": true, ... \"casual\": true}"
+        },
+        {
+          "quote": "The restaurant provides parking in a lot in a lot",
+          "status": "supported",
+          "reason": "Despite the apparent duplication ('in a lot in a lot'), the factual claim that parking is available in a lot is supported by the evidence. The duplication appears to be a formatting error, not a factual error.",
+          "evidence_quote": "\"BusinessParking\": {\"lot\": true}"
+        },
+        {
+          "quote": "makes take-out service available for patrons",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "Reviews highlight the generous portion size and fresh ingredients, particularly noting the quality of the protein scoops in the poke bowls",
+          "status": "supported",
+          "reason": "A 5-star review explicitly mentions generous portions and fresh fish, and specifically calls out protein scoops.",
+          "evidence_quote": "\"They are extremely generous with the portion size and especially the protein scoops... The fish and all the toppings were fresh\""
+        },
+        {
+          "quote": "Some customers have raised concerns about the restaurant's pricing and service",
+          "status": "supported",
+          "reason": "One review docks a star for high prices, and a 1-star review describes a very negative service experience.",
+          "evidence_quote": "\"I do feel compelled to dock a star for the prices.\" / \"WORST experience ever.\""
+        },
+        {
+          "quote": "Choppa Poke maintains a 4-star rating",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars is 4.0.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T3"
+      ]
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Choppa Poke, located at 7000 Hollister Ave, Ste 102, Goleta, CA",
+          "status": "supported",
+          "reason": "The evidence explicitly states the address as '7000 Hollister Ave, Ste 102', city 'Goleta', state 'CA'.",
+          "evidence_quote": "\"address\": \"7000 Hollister Ave, Ste 102\", \"city\": \"Goleta\", \"state\": \"CA\""
+        },
+        {
+          "quote": "is a restaurant that specializes in Asian Fusion, Poke, Hawaiian, and Seafood dishes",
+          "status": "supported",
+          "reason": "The evidence lists categories including Asian Fusion, Poke, Hawaiian, and Seafood.",
+          "evidence_quote": "\"categories\": \"Restaurants, Asian Fusion, Food, Poke, Hawaiian, Seafood\""
+        },
+        {
+          "quote": "The restaurant is open every day of the week, with varying hours",
+          "status": "supported",
+          "reason": "The hours object lists all seven days (Monday through Sunday), each with different open/close times.",
+          "evidence_quote": "\"hours\": {\"Monday\": \"11:0-21:0\", \"Tuesday\": \"11:0-21:0\", \"Wednesday\": \"11:0-21:0\", \"Thursday\": \"11:0-21:0\", \"Friday\": \"11:0-22:0\", \"Saturday\": \"11:0-15:0\", \"Sunday\": \"11:0-22:0\"}"
+        },
+        {
+          "quote": "offers free WiFi",
+          "status": "supported",
+          "reason": "The evidence states WiFi is 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "It caters to groups",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsGoodForGroups is true.",
+          "evidence_quote": "\"RestaurantsGoodForGroups\": true"
+        },
+        {
+          "quote": "offers a trendy, casual ambiance",
+          "status": "supported",
+          "reason": "The evidence shows Ambience has trendy: true and casual: true.",
+          "evidence_quote": "\"Ambience\": {\"trendy\": true, ... \"casual\": true}"
+        },
+        {
+          "quote": "The restaurant provides ample parking space in a lot",
+          "status": "supported",
+          "reason": "The evidence shows lot parking is true, and a review mentions 'a big parking lot'.",
+          "evidence_quote": "\"BusinessParking\": {\"lot\": true}"
+        },
+        {
+          "quote": "makes take-out service available for patrons",
+          "status": "supported",
+          "reason": "The evidence shows RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "Reviews highlight the generous portion size and fresh ingredients, particularly noting the quality of the protein scoops in the poke bowls",
+          "status": "supported",
+          "reason": "A 5-star review explicitly mentions generous portions and fresh fish, and specifically calls out protein scoops.",
+          "evidence_quote": "\"They are extremely generous with the portion size and especially the protein scoops... The fish and all the toppings were fresh\""
+        },
+        {
+          "quote": "Some customers have raised concerns about the restaurant's pricing and service",
+          "status": "supported",
+          "reason": "One review docks a star for high prices, and a 1-star review describes a very negative service experience.",
+          "evidence_quote": "\"I do feel compelled to dock a star for the prices.\" / \"WORST experience ever.\""
+        },
+        {
+          "quote": "Choppa Poke maintains a 4-star rating",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars is 4.0.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

@@ -1,0 +1,196 @@
+{
+  "id": "13819",
+  "source_id": "12287",
+  "stratum": "QA_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "original",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Both systems are dedicated to maintaining homeostasis and coordinating the activities of cells, tissues, organs, and systems."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Both systems are regulated by negative feedback mechanisms."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Chemical messengers play a crucial role in both systems."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The nervous system is composed of neuron cells, while the endocrine system is made up of glands."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Transmission in the nervous system occurs through electrochemical pulses, while chemical hormones are responsible for signal transmission in the endocrine system."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The nervous system utilizes interconnected cells to transmit signals, whereas the organs of the endocrine system are discrete and not physically connected."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The nervous system transmits signals through neurons, while the endocrine system uses the circulatory system to transmit signals."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Both systems are dedicated to maintaining homeostasis and coordinating the activities of cells, tissues, organs, and systems.",
+          "status": "supported",
+          "reason": "Passage 3 directly states both systems are devoted to maintaining homeostasis by coordinating and regulating the activities of other cells, tissues, organs, and systems.",
+          "evidence_quote": "Both the nervous system and endocrine system are devoted to maintaining homeostasis by coordinating and regulating the activities of other cells, tissues, organs, and systems."
+        },
+        {
+          "quote": "Both systems are regulated by negative feedback mechanisms.",
+          "status": "supported",
+          "reason": "Passage 3 explicitly states both systems are regulated by negative feedback mechanisms.",
+          "evidence_quote": "Both systems are regulated by negative feedback mechanisms."
+        },
+        {
+          "quote": "Chemical messengers play a crucial role in both systems.",
+          "status": "supported",
+          "reason": "Passage 3 states chemical messengers are important in both systems.",
+          "evidence_quote": "Chemical messengers are important in both systems, although their method of transmission and release differs in the two systems."
+        },
+        {
+          "quote": "The nervous system is composed of neuron cells, while the endocrine system is made up of glands.",
+          "status": "supported",
+          "reason": "Passage 1 states the nervous system is made of neuron cells while the endocrine system is made of glands.",
+          "evidence_quote": "The nervous system is made of neuron cells while the Endocrine System is made of glands."
+        },
+        {
+          "quote": "Transmission in the nervous system occurs through electrochemical pulses, while chemical hormones are responsible for signal transmission in the endocrine system.",
+          "status": "supported",
+          "reason": "Passage 1 states transmission is performed by electrochemical pulses in the nervous system, and chemicals known as hormones are responsible for signal transmission in the endocrine system.",
+          "evidence_quote": "Transmission is performed by the electrochemical pulses in nervous system. On the contrary, the Chemicals known as hormones are responsible for signal transmission in Endocrine System."
+        },
+        {
+          "quote": "The nervous system utilizes interconnected cells to transmit signals, whereas the organs of the endocrine system are discrete and not physically connected.",
+          "status": "supported",
+          "reason": "Passage 2 states the nervous system is continuous with interconnected cells, while the organs of the endocrine system are not physically connected and are discrete in nature.",
+          "evidence_quote": "The nervous system is continuous in which the cells are interconnected. In contrast, the organs of the Endocrine System are not physically connected as they are discrete in nature."
+        },
+        {
+          "quote": "The nervous system transmits signals through neurons, while the endocrine system uses the circulatory system to transmit signals.",
+          "status": "supported",
+          "reason": "Passage 2 states the nervous system utilizes neurons to transmit signals, while the circulatory system is used by the endocrine system to transmit signals.",
+          "evidence_quote": "The nervous system utilizes the neurons to transmit the signal. On the other hand, the circulatory system is used by the Endocrine System to transmit the signals."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Both systems are dedicated to maintaining homeostasis and coordinating the activities of cells, tissues, organs, and systems.",
+          "status": "supported",
+          "reason": "Passage 3 directly states both systems are devoted to maintaining homeostasis by coordinating and regulating the activities of other cells, tissues, organs, and systems.",
+          "evidence_quote": "Both the nervous system and endocrine system are devoted to maintaining homeostasis by coordinating and regulating the activities of other cells, tissues, organs, and systems."
+        },
+        {
+          "quote": "Both systems are regulated by negative feedback mechanisms.",
+          "status": "supported",
+          "reason": "Passage 3 explicitly states both systems are regulated by negative feedback mechanisms.",
+          "evidence_quote": "Both systems are regulated by negative feedback mechanisms."
+        },
+        {
+          "quote": "Chemical messengers play a crucial role in both systems.",
+          "status": "supported",
+          "reason": "Passage 3 states chemical messengers are important in both systems.",
+          "evidence_quote": "Chemical messengers are important in both systems, although their method of transmission and release differs in the two systems."
+        },
+        {
+          "quote": "The nervous system is composed of neuron cells, while the endocrine system is made up of glands.",
+          "status": "supported",
+          "reason": "Passage 1 states the nervous system is made of neuron cells while the endocrine system is made of glands.",
+          "evidence_quote": "The nervous system is made of neuron cells while the Endocrine System is made of glands."
+        },
+        {
+          "quote": "Transmission in the nervous system occurs through electrochemical pulses, while chemical hormones are responsible for signal transmission in the endocrine system.",
+          "status": "supported",
+          "reason": "Passage 1 states transmission is performed by electrochemical pulses in the nervous system, and chemicals known as hormones are responsible for signal transmission in the endocrine system.",
+          "evidence_quote": "Transmission is performed by the electrochemical pulses in nervous system. On the contrary, the Chemicals known as hormones are responsible for signal transmission in Endocrine System."
+        },
+        {
+          "quote": "The nervous system utilizes interconnected cells to transmit signals, whereas the organs of the endocrine system are discrete and not physically connected.",
+          "status": "supported",
+          "reason": "Passage 2 states the nervous system is continuous with interconnected cells, while the organs of the endocrine system are not physically connected and are discrete in nature.",
+          "evidence_quote": "The nervous system is continuous in which the cells are interconnected. In contrast, the organs of the Endocrine System are not physically connected as they are discrete in nature."
+        },
+        {
+          "quote": "The nervous system transmits signals through neurons, while the endocrine system uses the circulatory system to transmit signals.",
+          "status": "supported",
+          "reason": "Passage 2 states the nervous system utilizes neurons to transmit signals, while the circulatory system is used by the endocrine system to transmit signals.",
+          "evidence_quote": "The nervous system utilizes the neurons to transmit the signal. On the other hand, the circulatory system is used by the Endocrine System to transmit the signals."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Both systems are dedicated to maintaining homeostasis and coordinating the activities of cells, tissues, organs, and systems.",
+          "status": "supported",
+          "reason": "Passage 3 directly states both systems are devoted to maintaining homeostasis by coordinating and regulating the activities of other cells, tissues, organs, and systems.",
+          "evidence_quote": "Both the nervous system and endocrine system are devoted to maintaining homeostasis by coordinating and regulating the activities of other cells, tissues, organs, and systems."
+        },
+        {
+          "quote": "Both systems are regulated by negative feedback mechanisms.",
+          "status": "supported",
+          "reason": "Passage 3 explicitly states both systems are regulated by negative feedback mechanisms.",
+          "evidence_quote": "Both systems are regulated by negative feedback mechanisms."
+        },
+        {
+          "quote": "Chemical messengers play a crucial role in both systems.",
+          "status": "supported",
+          "reason": "Passage 3 states chemical messengers are important in both systems.",
+          "evidence_quote": "Chemical messengers are important in both systems, although their method of transmission and release differs in the two systems."
+        },
+        {
+          "quote": "The nervous system is composed of neuron cells, while the endocrine system is made up of glands.",
+          "status": "supported",
+          "reason": "Passage 1 states the nervous system is made of neuron cells while the endocrine system is made of glands.",
+          "evidence_quote": "The nervous system is made of neuron cells while the Endocrine System is made of glands."
+        },
+        {
+          "quote": "Transmission in the nervous system occurs through electrochemical pulses, while chemical hormones are responsible for signal transmission in the endocrine system.",
+          "status": "supported",
+          "reason": "Passage 1 states transmission is performed by electrochemical pulses in the nervous system, and chemicals known as hormones are responsible for signal transmission in the endocrine system.",
+          "evidence_quote": "Transmission is performed by the electrochemical pulses in nervous system. On the contrary, the Chemicals known as hormones are responsible for signal transmission in Endocrine System."
+        },
+        {
+          "quote": "The nervous system utilizes interconnected cells to transmit signals, whereas the organs of the endocrine system are discrete and not physically connected.",
+          "status": "supported",
+          "reason": "Passage 2 states the nervous system is continuous with interconnected cells, while the organs of the endocrine system are not physically connected and are discrete in nature.",
+          "evidence_quote": "The nervous system is continuous in which the cells are interconnected. In contrast, the organs of the Endocrine System are not physically connected as they are discrete in nature."
+        },
+        {
+          "quote": "The nervous system transmits signals through neurons, while the endocrine system uses the circulatory system to transmit signals.",
+          "status": "supported",
+          "reason": "Passage 2 states the nervous system utilizes neurons to transmit signals, while the circulatory system is used by the endocrine system to transmit signals.",
+          "evidence_quote": "The nervous system utilizes the neurons to transmit the signal. On the other hand, the circulatory system is used by the Endocrine System to transmit the signals."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

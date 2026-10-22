@@ -1,0 +1,20 @@
+{
+  "id": "212",
+  "policy": "top20",
+  "response": "An Alaska Airlines Flight 448 made an emergency landing on Monday after a ramp agent from a contractor handling loading the luggage fell asleep in the cargo hold, prompting the pilot to return to Seattle-Tacoma International Airport after hearing banging noises. The worker was taken to a hospital as a precaution but passed a drug test and was later discharged. The plane was only in the air for 14 minutes before returning, and the passengers were spooked by the incident. Alaska Airlines is investigating the incident and has stated that all ramp employees have security badges and undergo full criminal background checks before being hired.",
+  "replacements": [
+    {
+      "replacement": "a ramp agent",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "contractor handling loading the luggage fell asleep in the cargo hold, prompting the pilot to return to Seattle-Tacoma International Airport after hearing banging noises.",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "discharged. The plane was only in the air for 14 minutes before returning, and",
+      "span_id": "s2"
+    }
+  ],
+  "model_called": true
+}

@@ -1,0 +1,240 @@
+{
+  "id": "646",
+  "source_id": "15700",
+  "stratum": "Summary_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "cutoff05",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Aaron Hernandez was a former New England Patriots tight end."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Aaron Hernandez was found guilty of first-degree murder in the 2013 slaying of Odin Lloyd."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Hernandez walked into court with an air of bravado / showed no remorse."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The jury carefully considered the circumstantial evidence against Hernandez."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Hernandez was sentenced to life without the possibility of parole."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Hernandez's arrogance in court was seen (by many covering the trial) as his biggest crime."
+    },
+    {
+      "target_id": "T7",
+      "claim": "The waste of life for both Lloyd and Hernandez is described as senseless and tragic."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The NFL (and the Patriots) did everything right in handling the Hernandez case."
+    },
+    {
+      "target_id": "T9",
+      "claim": "Hernandez is an anomaly in the league, where the overwhelming majority of players are upstanding, law-abiding citizens."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Former New England Patriots tight end Aaron Hernandez",
+          "status": "supported",
+          "reason": "The evidence explicitly identifies Hernandez as 'the former New England Patriots tight end.'",
+          "evidence_quote": "Aaron Hernandez, the former New England Patriots tight end and now convicted murderer"
+        },
+        {
+          "quote": "was found guilty of first-degree murder in the 2013 slaying of Odin Lloyd",
+          "status": "supported",
+          "reason": "The evidence states the jury found him guilty of first-degree murder in the 2013 slaying of Odin Lloyd.",
+          "evidence_quote": "guilty of first-degree murder in the 2013 slaying of Odin Lloyd"
+        },
+        {
+          "quote": "showing no remorse and walking into court with an air of bravado",
+          "status": "supported",
+          "reason": "The evidence states Hernandez 'walked into court with an air of bravado' and 'never wept' and did not look 'ashamed or remorseful.'",
+          "evidence_quote": "He walked into court with an air of bravado... He didn't look ashamed or remorseful. He never wept."
+        },
+        {
+          "quote": "the jury carefully considered the mounting circumstantial evidence against him",
+          "status": "supported",
+          "reason": "The evidence states 'the jury carefully considered the damning mountain of circumstantial evidence against this defendant.'",
+          "evidence_quote": "the jury carefully considered the damning mountain of circumstantial evidence against this defendant"
+        },
+        {
+          "quote": "delivered the right verdict: life without parole",
+          "status": "supported",
+          "reason": "The evidence states 'It was the right decision' and 'Hernandez, 25, was sentenced to life without the possibility of parole.'",
+          "evidence_quote": "Hernandez, 25, was sentenced to life without the possibility of parole... It was the right decision."
+        },
+        {
+          "quote": "Hernandez's arrogance in court was seen as his biggest crime",
+          "status": "supported",
+          "reason": "The evidence states 'audacity seemed to be the defendant's biggest crime' and references 'The Arrogance of Aaron Hernandez' headline.",
+          "evidence_quote": "for many -- at least those covering the trial -- audacity seemed to be the defendant's biggest crime"
+        },
+        {
+          "quote": "it's his senseless waste of life that is truly tragic",
+          "status": "supported",
+          "reason": "The evidence describes 'such a senseless waste of life for both Lloyd and now Hernandez.'",
+          "evidence_quote": "it's hard not to feel sadness over such a senseless waste of life for both Lloyd and now Hernandez"
+        },
+        {
+          "quote": "The NFL did everything right in handling the case, and there's no reason to second-guess how they handled it",
+          "status": "supported",
+          "reason": "The evidence states 'neither the Patriots nor the NFL has anything to be ashamed of in how they handled the Hernandez case. They did everything right this time' and 'There's no reason to second-guess what went wrong.'",
+          "evidence_quote": "neither the Patriots nor the NFL has anything to be ashamed of in how they handled the Hernandez case. They did everything right this time... There's no reason to second-guess what went wrong"
+        },
+        {
+          "quote": "Despite the league's efforts to vet its players, sometimes even the best can go wrong, and Hernandez is an anomaly in the otherwise law-abiding league",
+          "status": "supported",
+          "reason": "The evidence states 'The NFL for the most part does a great job vetting its players, and certainly Hernandez is an anomaly in the league, where despite the ugly headlines, the overwhelming majority of players are upstanding, law-abiding citizens.'",
+          "evidence_quote": "The NFL for the most part does a great job vetting its players, and certainly Hernandez is an anomaly in the league, where despite the ugly headlines, the overwhelming majority of players are upstanding, law-abiding citizens."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Former New England Patriots tight end Aaron Hernandez",
+          "status": "supported",
+          "reason": "The evidence explicitly identifies Hernandez as 'the former New England Patriots tight end.'",
+          "evidence_quote": "Aaron Hernandez, the former New England Patriots tight end and now convicted murderer"
+        },
+        {
+          "quote": "was found guilty of first-degree murder in the 2013 slaying of Odin Lloyd",
+          "status": "supported",
+          "reason": "The evidence states the jury found him guilty of first-degree murder in the 2013 slaying of Odin Lloyd.",
+          "evidence_quote": "guilty of first-degree murder in the 2013 slaying of Odin Lloyd"
+        },
+        {
+          "quote": "showing no remorse and walking into court with an air of bravado",
+          "status": "supported",
+          "reason": "The evidence states Hernandez 'walked into court with an air of bravado' and 'never wept' and did not look 'ashamed or remorseful.'",
+          "evidence_quote": "He walked into court with an air of bravado... He didn't look ashamed or remorseful. He never wept."
+        },
+        {
+          "quote": "the jury carefully considered the mounting circumstantial evidence against him",
+          "status": "supported",
+          "reason": "The evidence states 'the jury carefully considered the damning mountain of circumstantial evidence against this defendant.'",
+          "evidence_quote": "the jury carefully considered the damning mountain of circumstantial evidence against this defendant"
+        },
+        {
+          "quote": "delivered the right verdict: life without parole",
+          "status": "supported",
+          "reason": "The evidence states 'It was the right decision' and 'Hernandez, 25, was sentenced to life without the possibility of parole.'",
+          "evidence_quote": "Hernandez, 25, was sentenced to life without the possibility of parole... It was the right decision."
+        },
+        {
+          "quote": "Hernandez's arrogance in court was seen as his biggest crime",
+          "status": "supported",
+          "reason": "The evidence states 'audacity seemed to be the defendant's biggest crime' and references 'The Arrogance of Aaron Hernandez' headline.",
+          "evidence_quote": "for many -- at least those covering the trial -- audacity seemed to be the defendant's biggest crime"
+        },
+        {
+          "quote": "it's his senseless waste of life that is truly tragic",
+          "status": "supported",
+          "reason": "The evidence describes 'such a senseless waste of life for both Lloyd and now Hernandez.'",
+          "evidence_quote": "it's hard not to feel sadness over such a senseless waste of life for both Lloyd and now Hernandez"
+        },
+        {
+          "quote": "The NFL did everything right in handling the case, and there's no reason to second-guess how they handled it",
+          "status": "supported",
+          "reason": "The evidence states 'neither the Patriots nor the NFL has anything to be ashamed of in how they handled the Hernandez case. They did everything right this time' and 'There's no reason to second-guess what went wrong.'",
+          "evidence_quote": "neither the Patriots nor the NFL has anything to be ashamed of in how they handled the Hernandez case. They did everything right this time... There's no reason to second-guess what went wrong"
+        },
+        {
+          "quote": "Despite the league's efforts to vet its players, sometimes even the best can go wrong, and Hernandez is an anomaly in the otherwise law-abiding league",
+          "status": "supported",
+          "reason": "The evidence states 'The NFL for the most part does a great job vetting its players, and certainly Hernandez is an anomaly in the league, where despite the ugly headlines, the overwhelming majority of players are upstanding, law-abiding citizens.'",
+          "evidence_quote": "The NFL for the most part does a great job vetting its players, and certainly Hernandez is an anomaly in the league, where despite the ugly headlines, the overwhelming majority of players are upstanding, law-abiding citizens."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Former New England Patriots tight end Aaron Hernandez",
+          "status": "supported",
+          "reason": "The evidence explicitly identifies Hernandez as 'the former New England Patriots tight end.'",
+          "evidence_quote": "Aaron Hernandez, the former New England Patriots tight end and now convicted murderer"
+        },
+        {
+          "quote": "was found guilty of first-degree murder in the 2013 slaying of Odin Lloyd",
+          "status": "supported",
+          "reason": "The evidence states the jury found him guilty of first-degree murder in the 2013 slaying of Odin Lloyd.",
+          "evidence_quote": "guilty of first-degree murder in the 2013 slaying of Odin Lloyd"
+        },
+        {
+          "quote": "showing no remorse and walking into court with an air of bravado",
+          "status": "supported",
+          "reason": "The evidence states Hernandez 'walked into court with an air of bravado' and 'never wept' and did not look 'ashamed or remorseful.'",
+          "evidence_quote": "He walked into court with an air of bravado... He didn't look ashamed or remorseful. He never wept."
+        },
+        {
+          "quote": "the jury carefully considered the mounting circumstantial evidence against him",
+          "status": "supported",
+          "reason": "The evidence states 'the jury carefully considered the damning mountain of circumstantial evidence against this defendant.'",
+          "evidence_quote": "the jury carefully considered the damning mountain of circumstantial evidence against this defendant"
+        },
+        {
+          "quote": "delivered the right verdict: life without parole",
+          "status": "supported",
+          "reason": "The evidence states 'It was the right decision' and 'Hernandez, 25, was sentenced to life without the possibility of parole.'",
+          "evidence_quote": "Hernandez, 25, was sentenced to life without the possibility of parole... It was the right decision."
+        },
+        {
+          "quote": "Hernandez's arrogance in court was seen as his biggest crime",
+          "status": "supported",
+          "reason": "The evidence states 'audacity seemed to be the defendant's biggest crime' and references 'The Arrogance of Aaron Hernandez' headline.",
+          "evidence_quote": "for many -- at least those covering the trial -- audacity seemed to be the defendant's biggest crime"
+        },
+        {
+          "quote": "it's his senseless waste of life that is truly tragic",
+          "status": "supported",
+          "reason": "The evidence describes 'such a senseless waste of life for both Lloyd and now Hernandez.'",
+          "evidence_quote": "it's hard not to feel sadness over such a senseless waste of life for both Lloyd and now Hernandez"
+        },
+        {
+          "quote": "The NFL did everything right in handling the case, and there's no reason to second-guess how they handled it",
+          "status": "supported",
+          "reason": "The evidence states 'neither the Patriots nor the NFL has anything to be ashamed of in how they handled the Hernandez case. They did everything right this time' and 'There's no reason to second-guess what went wrong.'",
+          "evidence_quote": "neither the Patriots nor the NFL has anything to be ashamed of in how they handled the Hernandez case. They did everything right this time... There's no reason to second-guess what went wrong"
+        },
+        {
+          "quote": "Despite the league's efforts to vet its players, sometimes even the best can go wrong, and Hernandez is an anomaly in the otherwise law-abiding league",
+          "status": "supported",
+          "reason": "The evidence states 'The NFL for the most part does a great job vetting its players, and certainly Hernandez is an anomaly in the league, where despite the ugly headlines, the overwhelming majority of players are upstanding, law-abiding citizens.'",
+          "evidence_quote": "The NFL for the most part does a great job vetting its players, and certainly Hernandez is an anomaly in the league, where despite the ugly headlines, the overwhelming majority of players are upstanding, law-abiding citizens."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

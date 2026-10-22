@@ -1,0 +1,16 @@
+{
+  "id": "140",
+  "policy": "top20",
+  "response": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted in 2013. The photographer, Daniel Ramos, had sued West for damages and accused him of interfering with his right to pursue a lawful occupation. One important aspect of the settlement was an apology by Kanye West to Ramos, and the two shook hands after the apology, as shown in a photo released by Ramos' lawyer, Gloria Allred. and the two shook hands after the apology, as shown in a photo released by Ramos' lawyer, Gloria Allred. West had previously pleaded no contest to a misdemeanor count of battery over the scuffle and was sentenced to two years' probation, anger management sessions, and community service. and received two years' probation and community service. Allred stated that the case sent an important message that celebrities are not above the law and cannot physically attack someone simply because they were asked a question.",
+  "replacements": [
+    {
+      "replacement": "One important aspect of the settlement was an apology by Kanye West to Ramos, and the two shook hands after the apology, as shown in a photo released by Ramos' lawyer, Gloria Allred.",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "the two shook hands after the apology, as shown in a photo released by Ramos' lawyer, Gloria Allred. West had previously pleaded no contest to a misdemeanor count of battery over the scuffle and was sentenced to two years' probation, anger management sessions, and community service.",
+      "span_id": "s1"
+    }
+  ],
+  "model_called": true
+}

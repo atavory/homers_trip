@@ -1,0 +1,158 @@
+{
+  "id": "1623",
+  "source_id": "11366",
+  "stratum": "Summary_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "cutoff05",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "At least five people were killed in the explosion."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Over a dozen people were injured in the explosion."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The explosion occurred outside a bus station in Gombe, Nigeria."
+    },
+    {
+      "target_id": "T4",
+      "claim": "A woman left her explosives-laden handbag near a bus, setting it on fire."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Boko Haram is the main suspect for the attack."
+    },
+    {
+      "target_id": "T6",
+      "claim": "There have been recent offensives against Boko Haram."
+    },
+    {
+      "target_id": "T7",
+      "claim": "This was the first attack since Nigeria's presidential election."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The presidential election was won by opposition candidate Muhammadu Buhari."
+    },
+    {
+      "target_id": "T9",
+      "claim": "Buhari vowed to crush/end Boko Haram."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "At least five people were killed and over a dozen injured in an explosion outside a bus station in Gombe, Nigeria.",
+          "status": "supported",
+          "reason": "The evidence states five people were killed and more than 12 others were seriously injured in an explosion outside the Bauchi Motor Park in Gombe.",
+          "evidence_quote": "killed at least five people and injured more than a dozen others"
+        },
+        {
+          "quote": "A woman left her explosives-laden handbag near a bus filled with passengers, setting it on fire.",
+          "status": "supported",
+          "reason": "The evidence confirms a woman left her explosives-laden handbag near a bus and the bag exploded, setting the bus on fire. The bus was waiting to fill up with passengers, not necessarily already filled.",
+          "evidence_quote": "a woman left her explosives-laden handbag near a bus filling up with passengers"
+        },
+        {
+          "quote": "Boko Haram is the main suspect, as the group has repeatedly carried out similar attacks Haram is main suspect, as the group has repeatedly carried out similar attacks to carried out similar attacks despite recent offensives against the group.",
+          "status": "supported",
+          "reason": "Despite the garbled/duplicated text, the factual content — that Boko Haram is the main suspect and has repeatedly carried out similar attacks despite recent offensives — is supported by the evidence.",
+          "evidence_quote": "making the group the main suspect ... Boko Haram has in recent months been under sustained pressure from sweeping offensives"
+        },
+        {
+          "quote": "This is the first attack since Nigeria's presidential election, which was won by opposition candidate Muhammadu Buhari, who vowed to end Boko Haram's reign of terror.",
+          "status": "supported",
+          "reason": "The evidence confirms this was the first attack since the presidential election, won by opposition candidate Muhammadu Buhari, who vowed to crush Boko Haram. 'End Boko Haram's reign of terror' is a reasonable paraphrase of 'vowed to crush Boko Haram.'",
+          "evidence_quote": "The explosion was the first attack since Nigeria held its presidential election at the weekend, which was won by opposition candidate Muhammadu Buhari, who vowed to crush Boko Haram when he assumes office in late May."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "At least five people were killed and over a dozen injured in an explosion outside a bus station in Gombe, Nigeria.",
+          "status": "supported",
+          "reason": "The evidence states five people were killed and more than 12 others were seriously injured in an explosion outside the Bauchi Motor Park in Gombe.",
+          "evidence_quote": "killed at least five people and injured more than a dozen others"
+        },
+        {
+          "quote": "A woman left her explosives-laden handbag near a bus filled with passengers, setting it on fire.",
+          "status": "supported",
+          "reason": "The evidence confirms a woman left her explosives-laden handbag near a bus and the bag exploded, setting the bus on fire. The bus was waiting to fill up with passengers, not necessarily already filled.",
+          "evidence_quote": "a woman left her explosives-laden handbag near a bus filling up with passengers"
+        },
+        {
+          "quote": "Boko Haram is believed to be responsible, despite recent offensives against the group.",
+          "status": "supported",
+          "reason": "The evidence states Boko Haram is the main suspect and has been under sustained pressure from recent regional offensives.",
+          "evidence_quote": "making the group the main suspect ... Boko Haram has in recent months been under sustained pressure from sweeping offensives"
+        },
+        {
+          "quote": "This is the first attack since Nigeria's presidential election, which was won by opposition candidate Muhammadu Buhari, who vowed to end Boko Haram's reign of terror.",
+          "status": "supported",
+          "reason": "The evidence confirms this was the first attack since the presidential election, won by opposition candidate Muhammadu Buhari, who vowed to crush Boko Haram.",
+          "evidence_quote": "The explosion was the first attack since Nigeria held its presidential election at the weekend, which was won by opposition candidate Muhammadu Buhari, who vowed to crush Boko Haram when he assumes office in late May."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "At least five people were killed and over a dozen injured in an explosion outside a bus station in Gombe, Nigeria.",
+          "status": "supported",
+          "reason": "The evidence states five people were killed and more than 12 others were seriously injured in an explosion outside the Bauchi Motor Park in Gombe.",
+          "evidence_quote": "killed at least five people and injured more than a dozen others"
+        },
+        {
+          "quote": "A woman left her explosives-laden handbag near a bus filled with passengers, setting it on fire.",
+          "status": "supported",
+          "reason": "The evidence confirms a woman left her explosives-laden handbag near a bus and the bag exploded, setting the bus on fire. The bus was waiting to fill up with passengers, not necessarily already filled.",
+          "evidence_quote": "a woman left her explosives-laden handbag near a bus filling up with passengers"
+        },
+        {
+          "quote": "Boko Haram is believed to be responsible, despite recent offensives against the group.",
+          "status": "supported",
+          "reason": "The evidence states Boko Haram is the main suspect and has been under sustained pressure from recent regional offensives.",
+          "evidence_quote": "making the group the main suspect ... Boko Haram has in recent months been under sustained pressure from sweeping offensives"
+        },
+        {
+          "quote": "This is the first attack since Nigeria's presidential election, which was won by opposition candidate Muhammadu Buhari, who vowed to end Boko Haram's reign of terror.",
+          "status": "supported",
+          "reason": "The evidence confirms this was the first attack since the presidential election, won by opposition candidate Muhammadu Buhari, who vowed to crush Boko Haram.",
+          "evidence_quote": "The explosion was the first attack since Nigeria held its presidential election at the weekend, which was won by opposition candidate Muhammadu Buhari, who vowed to crush Boko Haram when he assumes office in late May."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [
+        "Boko Haram is the main suspect, as the group has repeatedly carried out similar attacks despite recent offensives against the group."
+      ]
+    }
+  ]
+}

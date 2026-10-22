@@ -1,0 +1,146 @@
+{
+  "id": "4211",
+  "source_id": "13872",
+  "stratum": "Summary_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "USCIS will continue processing work permits for migrants even if the federal government shuts down."
+    },
+    {
+      "target_id": "T2",
+      "claim": "USCIS has taken steps to expedite the work permit application process, including offering education sessions."
+    },
+    {
+      "target_id": "T3",
+      "claim": "USCIS has taken steps to expedite the work permit application process, including issuing alerts (email and SMS)."
+    },
+    {
+      "target_id": "T4",
+      "claim": "USCIS has taken steps to expedite the work permit application process, including providing mobile biometric services."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Additional funding from Congress is needed to process more applications."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "The US Citizenship and Immigration Services (USCIS) will continue processing work permits for migrants even if the federal government shuts down.",
+          "status": "supported",
+          "reason": "The evidence explicitly states that USCIS will continue its work even if the federal government shuts down, funded by filing fees.",
+          "evidence_quote": "Even if the federal government shuts down this weekend, the federal agency in charge of handling work permits and other applications from asylum seekers will continue its work."
+        },
+        {
+          "quote": "The agency has taken steps to expedite the process, including offering education sessions, issuing alerts, and providing mobile biometric services.",
+          "status": "supported",
+          "reason": "The evidence confirms all three measures: education sessions at libraries, email/SMS alerts, and mobile biometric services including fingerprinting.",
+          "evidence_quote": "the organization has taken steps to speed up the work permit application process, is providing education sessions for immigrants at libraries, and has issued email and SMS alerts to migrants about their eligibility for work permission. Additionally, the organization provides mobile biometric services including fingerprinting."
+        },
+        {
+          "quote": "additional funding from Congress is needed to process more applications",
+          "status": "supported",
+          "reason": "The evidence confirms Jaddou stated Congress should give the organization more funding to process more work permits and TPS applications.",
+          "evidence_quote": "Jaddou claimed Congress should give the organization more funding so it can process more work permits and TPS applications."
+        },
+        {
+          "quote": "reduce the current 30-day processing time",
+          "status": "unsupported",
+          "reason": "The evidence states USCIS is committed to completing work permit applications in a 30-day window on average, meaning 30 days is the target/goal, not a current processing time that needs to be reduced. The claim misrepresents the 30-day figure.",
+          "evidence_quote": "Jaddou asserts that USCIS is \"committed\" to completing work permit applications in a 30-day window on average."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "The US Citizenship and Immigration Services (USCIS) will continue processing work permits for migrants even if the federal government shuts down.",
+          "status": "supported",
+          "reason": "The evidence explicitly states that USCIS will continue its work even if the federal government shuts down.",
+          "evidence_quote": "Even if the federal government shuts down this weekend, the federal agency in charge of handling work permits and other applications from asylum seekers will continue its work."
+        },
+        {
+          "quote": "offering education education sessions for immigrants at libraries",
+          "status": "supported",
+          "reason": "The evidence confirms education sessions for immigrants at libraries (the word 'education' is duplicated in the candidate text, but this is a formatting/spelling issue, not a factual one).",
+          "evidence_quote": "is providing education sessions for immigrants at libraries"
+        },
+        {
+          "quote": "issuing alerts",
+          "status": "supported",
+          "reason": "The evidence confirms email and SMS alerts were issued to migrants.",
+          "evidence_quote": "has issued email and SMS alerts to migrants about their eligibility for work permission"
+        },
+        {
+          "quote": "providing mobile biometric services",
+          "status": "supported",
+          "reason": "The evidence confirms mobile biometric services including fingerprinting are provided.",
+          "evidence_quote": "the organization provides mobile biometric services including fingerprinting"
+        },
+        {
+          "quote": "additional funding from Congress is needed to process more applications",
+          "status": "supported",
+          "reason": "The evidence confirms Jaddou stated Congress should give the organization more funding to process more work permits and TPS applications.",
+          "evidence_quote": "Jaddou claimed Congress should give the organization more funding so it can process more work permits and TPS applications."
+        },
+        {
+          "quote": "reduce the current 30-day processing time",
+          "status": "unsupported",
+          "reason": "The evidence states USCIS is committed to completing work permit applications in a 30-day window on average as a target, not that 30 days is a current processing time that needs to be reduced.",
+          "evidence_quote": "Jaddou asserts that USCIS is \"committed\" to completing work permit applications in a 30-day window on average."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "The US Citizenship and Immigration Services (USCIS) will continue processing work permits for migrants even if the federal government shuts down.",
+          "status": "supported",
+          "reason": "The evidence explicitly states that USCIS will continue its work even if the federal government shuts down.",
+          "evidence_quote": "Even if the federal government shuts down this weekend, the federal agency in charge of handling work permits and other applications from asylum seekers will continue its work."
+        },
+        {
+          "quote": "The agency has taken steps to expedite the process, including offering education sessions, issuing alerts, and providing mobile biometric services.",
+          "status": "supported",
+          "reason": "The evidence confirms all three measures: education sessions at libraries, email/SMS alerts, and mobile biometric services including fingerprinting.",
+          "evidence_quote": "the organization has taken steps to speed up the work permit application process, is providing education sessions for immigrants at libraries, and has issued email and SMS alerts to migrants about their eligibility for work permission. Additionally, the organization provides mobile biometric services including fingerprinting."
+        },
+        {
+          "quote": "additional funding from Congress is needed to process more applications",
+          "status": "supported",
+          "reason": "The evidence confirms Jaddou stated Congress should give the organization more funding to process more work permits and TPS applications.",
+          "evidence_quote": "Jaddou claimed Congress should give the organization more funding so it can process more work permits and TPS applications."
+        },
+        {
+          "quote": "reduce the current 30-day processing time",
+          "status": "unsupported",
+          "reason": "The evidence states USCIS is committed to completing work permit applications in a 30-day window on average as a goal, not that 30 days is a current processing time that needs to be reduced.",
+          "evidence_quote": "Jaddou asserts that USCIS is \"committed\" to completing work permit applications in a 30-day window on average."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

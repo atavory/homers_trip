@@ -1,0 +1,214 @@
+{
+  "id": "695",
+  "source_id": "15708",
+  "stratum": "Summary_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "cutoff05",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "The French prosecutor leading the investigation into the Germanwings Flight 9525 crash denied knowledge of any video footage from the plane."
+    },
+    {
+      "target_id": "T2",
+      "claim": "There were reports of a cell phone video showing the final moments before the crash."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The video is said to show passengers screaming and metallic banging sounds, possibly from the pilot trying to open the cockpit door."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The crash killed all 150 people on board."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The co-pilot, Andreas Lubitz, has been found to have had a history of depression and suicidal tendencies."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Investigators are looking into whether Lubitz deliberately brought down the plane."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Recovery efforts are ongoing and personal belongings of the victims, including cell phones, are being collected/recovered."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "The French prosecutor leading the investigation into the Germanwings Flight 9525 crash has denied knowledge of any video footage from the plane",
+          "status": "supported",
+          "reason": "Marseille prosecutor Brice Robin told CNN he was not aware of any video footage from on board the plane.",
+          "evidence_quote": "The French prosecutor leading an investigation into the crash of Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane."
+        },
+        {
+          "quote": "despite reports of a cell phone video showing the final moments before the crash",
+          "status": "supported",
+          "reason": "Two magazines, Bild and Paris Match, reported a cell phone video showing the harrowing final seconds from on board the plane.",
+          "evidence_quote": "claims by two magazines, German daily Bild and French Paris Match, of a cell phone video showing the harrowing final seconds from on board Germanwings Flight 9525 as it crashed into the French Alps."
+        },
+        {
+          "quote": "The video is said to show passengers screaming and metallic banging sounds, possibly from the pilot trying to open the cockpit door",
+          "status": "supported",
+          "reason": "Paris Match reported cries of 'My God' in several languages and metallic banging, possibly from the pilot trying to open the cockpit door with a heavy object.",
+          "evidence_quote": "\"One can hear cries of 'My God' in several languages,\" Paris Match reported. \"Metallic banging can also be heard more than three times, perhaps of the pilot trying to open the cockpit door with a heavy object.\""
+        },
+        {
+          "quote": "The crash killed all 150 people on board",
+          "status": "supported",
+          "reason": "The evidence explicitly states all 150 on board were killed.",
+          "evidence_quote": "All 150 on board were killed."
+        },
+        {
+          "quote": "investigators are still searching for clues as to why the plane went down",
+          "status": "supported",
+          "reason": "The evidence states investigators continued to delve into what caused the crash and Lubitz's possible motive.",
+          "evidence_quote": "investigators continued to delve into what caused the crash and Lubitz's possible motive for downing the jet."
+        },
+        {
+          "quote": "The co-pilot, Andreas Lubitz, has been found to have had a history of depression and suicidal tendencies",
+          "status": "supported",
+          "reason": "The evidence confirms Lubitz had battled depression and suffered from suicidal tendencies at some point before his aviation career.",
+          "evidence_quote": "co-pilot Andreas Lubitz had battled depression years before he took the controls... medical records reveal Lubitz suffered from suicidal tendencies at some point before his aviation career."
+        },
+        {
+          "quote": "investigators are looking into whether he deliberately brought down the plane",
+          "status": "supported",
+          "reason": "The evidence states Lubitz is accused of deliberately crashing the plane and investigators are looking into his motive.",
+          "evidence_quote": "co-pilot Andreas Lubitz had battled depression years before he took the controls of Germanwings Flight 9525, which he's accused of deliberately crashing last week in the French Alps."
+        },
+        {
+          "quote": "Recovery efforts are ongoing and personal belongings of the victims, including cell phones, are being returned to their families",
+          "status": "unsupported",
+          "reason": "The evidence says recovery of personal belongings will start Wednesday and cell phones have been collected at the site but not yet analyzed or returned. There is no mention of belongings being returned to families.",
+          "evidence_quote": "the recovery of the victims' personal belongings will start Wednesday, Menichini said. Among those personal belongings could be more cell phones belonging to the 144 passengers and six crew on board."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "The French prosecutor leading the investigation into the Germanwings Flight 9525 crash has denied knowledge of any video footage from the plane",
+          "status": "supported",
+          "reason": "Marseille prosecutor Brice Robin told CNN he was not aware of any video footage from on board the plane.",
+          "evidence_quote": "The French prosecutor leading an investigation into the crash of Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane."
+        },
+        {
+          "quote": "despite reports of a cell phone video showing the final moments before the crash",
+          "status": "supported",
+          "reason": "Two magazines, Bild and Paris Match, reported a cell phone video showing the harrowing final seconds from on board the plane.",
+          "evidence_quote": "claims by two magazines, German daily Bild and French Paris Match, of a cell phone video showing the harrowing final seconds from on board Germanwings Flight 9525 as it crashed into the French Alps."
+        },
+        {
+          "quote": "The video is said to show passengers screaming and metallic banging sounds, possibly from the pilot trying to open the cockpit door",
+          "status": "supported",
+          "reason": "Paris Match reported cries of 'My God' in several languages and metallic banging, possibly from the pilot trying to open the cockpit door with a heavy object.",
+          "evidence_quote": "\"One can hear cries of 'My God' in several languages,\" Paris Match reported. \"Metallic banging can also be heard more than three times, perhaps of the pilot trying to open the cockpit door with a heavy object.\""
+        },
+        {
+          "quote": "The crash killed all 150 people on board",
+          "status": "supported",
+          "reason": "The evidence explicitly states all 150 on board were killed.",
+          "evidence_quote": "All 150 on board were killed."
+        },
+        {
+          "quote": "investigators are still searching for clues as to why the plane went down",
+          "status": "supported",
+          "reason": "The evidence states investigators continued to delve into what caused the crash and Lubitz's possible motive.",
+          "evidence_quote": "investigators continued to delve into what caused the crash and Lubitz's possible motive for downing the jet."
+        },
+        {
+          "quote": "The co-pilot, Andreas Lubitz, has been found to have had a history of depression and suicidal tendencies",
+          "status": "supported",
+          "reason": "The evidence confirms Lubitz had battled depression and suffered from suicidal tendencies at some point before his aviation career.",
+          "evidence_quote": "co-pilot Andreas Lubitz had battled depression years before he took the controls... medical records reveal Lubitz suffered from suicidal tendencies at some point before his aviation career."
+        },
+        {
+          "quote": "investigators are looking into whether he deliberately brought down the plane",
+          "status": "supported",
+          "reason": "The evidence states Lubitz is accused of deliberately crashing the plane and investigators are looking into his motive.",
+          "evidence_quote": "co-pilot Andreas Lubitz had battled depression years before he took the controls of Germanwings Flight 9525, which he's accused of deliberately crashing last week in the French Alps."
+        },
+        {
+          "quote": "Recovery efforts are ongoing and personal belongings of the victims, including cell phones, are being returned to their families",
+          "status": "unsupported",
+          "reason": "The evidence says recovery of personal belongings will start Wednesday and cell phones have been collected at the site but not yet analyzed or returned. There is no mention of belongings being returned to families.",
+          "evidence_quote": "the recovery of the victims' personal belongings will start Wednesday, Menichini said. Among those personal belongings could be more cell phones belonging to the 144 passengers and six crew on board."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "The French prosecutor leading the investigation into the Germanwings Flight 9525 crash has denied knowledge of any video footage from the plane",
+          "status": "supported",
+          "reason": "Marseille prosecutor Brice Robin told CNN he was not aware of any video footage from on board the plane.",
+          "evidence_quote": "The French prosecutor leading an investigation into the crash of Germanwings Flight 9525 insisted Wednesday that he was not aware of any video footage from on board the plane."
+        },
+        {
+          "quote": "despite reports of a cell phone video showing the final moments before the crash",
+          "status": "supported",
+          "reason": "Two magazines, Bild and Paris Match, reported a cell phone video showing the harrowing final seconds from on board the plane.",
+          "evidence_quote": "claims by two magazines, German daily Bild and French Paris Match, of a cell phone video showing the harrowing final seconds from on board Germanwings Flight 9525 as it crashed into the French Alps."
+        },
+        {
+          "quote": "The video is said to show screams of 'My God' in several languages screaming and metallic banging metallic banging can be heard possibly from the pilot trying to open the cockpit door",
+          "status": "supported",
+          "reason": "Paris Match reported cries of 'My God' in several languages and metallic banging more than three times, possibly from the pilot trying to open the cockpit door with a heavy object. The candidate's wording is garbled but the factual content matches.",
+          "evidence_quote": "\"One can hear cries of 'My God' in several languages,\" Paris Match reported. \"Metallic banging can also be heard more than three times, perhaps of the pilot trying to open the cockpit door with a heavy object.\""
+        },
+        {
+          "quote": "The crash killed all 150 people on board",
+          "status": "supported",
+          "reason": "The evidence explicitly states all 150 on board were killed.",
+          "evidence_quote": "All 150 on board were killed."
+        },
+        {
+          "quote": "investigators are still searching for clues as to why the plane went down",
+          "status": "supported",
+          "reason": "The evidence states investigators continued to delve into what caused the crash and Lubitz's possible motive.",
+          "evidence_quote": "investigators continued to delve into what caused the crash and Lubitz's possible motive for downing the jet."
+        },
+        {
+          "quote": "The co-pilot, Andreas Lubitz, has been found to have had a history of depression and suicidal suicidal tendencies at some point before his aviation career",
+          "status": "supported",
+          "reason": "The evidence confirms Lubitz had battled depression and suffered from suicidal tendencies at some point before his aviation career.",
+          "evidence_quote": "co-pilot Andreas Lubitz had battled depression years before he took the controls... medical records reveal Lubitz suffered from suicidal tendencies at some point before his aviation career."
+        },
+        {
+          "quote": "investigators are looking into whether he deliberately brought down the plane",
+          "status": "supported",
+          "reason": "The evidence states Lubitz is accused of deliberately crashing the plane and investigators are looking into his motive.",
+          "evidence_quote": "co-pilot Andreas Lubitz had battled depression years before he took the controls of Germanwings Flight 9525, which he's accused of deliberately crashing last week in the French Alps."
+        },
+        {
+          "quote": "personal personal belongings of the the 144 passengers and six crew on board cell phones, may be among the items recovered",
+          "status": "supported",
+          "reason": "The evidence states recovery of personal belongings will start Wednesday and that among those belongings could be more cell phones belonging to the 144 passengers and six crew on board.",
+          "evidence_quote": "the recovery of the victims' personal belongings will start Wednesday... Among those personal belongings could be more cell phones belonging to the 144 passengers and six crew on board."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

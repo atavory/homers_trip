@@ -1,0 +1,23 @@
+{
+  "id": "4065",
+  "reason": "The automatic target extraction repeatedly included supported source facts absent from the original response. These three exact original substrings are supported by the source. Factuality verdicts are still assessed independently.",
+  "supported_original_targets": [
+    {
+      "target_id": "T1",
+      "claim": "struggling defensive line"
+    },
+    {
+      "target_id": "T2",
+      "claim": "Young has 5 sacks this season"
+    },
+    {
+      "target_id": "T3",
+      "claim": "Trading for Young would provide an immediate upgrade"
+    }
+  ],
+  "source_support": [
+    "the struggles of the defensive line in getting consistent pressure with their front four",
+    "Young, who is five years younger and has 5 sacks this season",
+    "Trading for Young, who is five years younger and has 5 sacks this season, would be a massive upgrade for the Dolphins."
+  ]
+}

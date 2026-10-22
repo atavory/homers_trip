@@ -1,0 +1,248 @@
+{
+  "id": "5693",
+  "source_id": "13603",
+  "stratum": "Data2txt_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Tinker's Burgers is located in the small beach town of Summerland, CA."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Tinker's Burgers is highly rated (4.0 stars)."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The Sourdough Bacon Cheeseburger is a menu item that customers have ordered."
+    },
+    {
+      "target_id": "T4",
+      "claim": "A double cheeseburger with an egg is a menu item that customers have ordered."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The menu includes fries."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The menu includes corn dogs."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Some customers have reported long wait times (approximately 30 minutes for two burgers, fries, and a corn dog)."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The service has been described as slow and unfriendly/passive aggressive."
+    },
+    {
+      "target_id": "T9",
+      "claim": "The restaurant has outdoor seating."
+    },
+    {
+      "target_id": "T10",
+      "claim": "The restaurant's ambience is described as divey and classy."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 3,
+      "claims": [
+        {
+          "quote": "Tinker's Burgers is a highly-rated burger joint",
+          "status": "supported",
+          "reason": "The business has 4.0 stars and multiple 5-star reviews, supporting 'highly-rated'.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        },
+        {
+          "quote": "located in the small beach town of Summerland, CA",
+          "status": "supported",
+          "reason": "A reviewer calls it 'a hidden gem in the small beach town of Summerland' and the address confirms Summerland, CA.",
+          "evidence_quote": "this is definitively a hidden gem in the small beach town of Summerland"
+        },
+        {
+          "quote": "the restaurant serves some of the best burgers in the area",
+          "status": "supported",
+          "reason": "Reviewers call the burgers 'Best burgers we've ever had' and 'EXCELLENT', supporting this characterization.",
+          "evidence_quote": "Best burgers we've ever had!!"
+        },
+        {
+          "quote": "a Sourdough Bacon Cheeseburger and a double cheeseburger with an egg being popular choices",
+          "status": "supported",
+          "reason": "A reviewer explicitly ordered both items.",
+          "evidence_quote": "Today we ordered a Sourdough Bacon Cheeseburger and a double cheeseburger with an egg."
+        },
+        {
+          "quote": "The menu also includes fries, corn dogs, and milkshakes.",
+          "status": "unsupported",
+          "reason": "Fries and corn dogs are mentioned in reviews. However, 'milkshakes' are not mentioned in the evidence; the evidence mentions 'freeze and malt', not milkshakes.",
+          "evidence_quote": "the freeze and malt"
+        },
+        {
+          "quote": "some customers have reported long wait times for their orders",
+          "status": "supported",
+          "reason": "A reviewer reported approximately 30 minutes to prepare two burgers, fries, and a corn dog.",
+          "evidence_quote": "it took approximately 30 minutes to prepare two burgers, fries and a corn dog"
+        },
+        {
+          "quote": "the service can be slow and unfriendly",
+          "status": "supported",
+          "reason": "A reviewer described passive-aggressive cashier behavior and excessive wait times.",
+          "evidence_quote": "The cashier just passive aggressively stared at me and blinked multiple times when I asked for extra ketchup."
+        },
+        {
+          "quote": "the outdoor seating area is a nice feature",
+          "status": "supported",
+          "reason": "The attributes confirm outdoor seating is available.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "the restaurant has a casual, relaxed atmosphere",
+          "status": "unsupported",
+          "reason": "The ambience attributes list 'divey' and 'classy' as true, and 'casual' as false. 'Casual' is explicitly false in the evidence.",
+          "evidence_quote": "\"Ambience\": {\"touristy\": false, \"hipster\": false, \"romantic\": false, \"divey\": true, \"intimate\": false, \"trendy\": false, \"upscale\": false, \"classy\": true, \"casual\": false}"
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T10"
+      ]
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Tinker's Burgers is a highly-rated burger burger restaurant",
+          "status": "supported",
+          "reason": "The business has 4.0 stars and multiple 5-star reviews, supporting 'highly-rated'.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        },
+        {
+          "quote": "in the small beach town of Summerland, CA",
+          "status": "supported",
+          "reason": "A reviewer calls it 'a hidden gem in the small beach town of Summerland' and the address confirms Summerland, CA.",
+          "evidence_quote": "this is definitively a hidden gem in the small beach town of Summerland"
+        },
+        {
+          "quote": "the restaurant receives praise for its burgers, including with a Sourdough Bacon Cheeseburger and a double cheeseburger with an egg being popular items",
+          "status": "supported",
+          "reason": "A reviewer explicitly ordered both items and praised them.",
+          "evidence_quote": "Today we ordered a Sourdough Bacon Cheeseburger and a double cheeseburger with an egg. Best burgers we've ever had!!"
+        },
+        {
+          "quote": "The menu also includes fries, corn dogs, and malts.",
+          "status": "supported",
+          "reason": "Fries and corn dogs are mentioned in reviews. Malts are mentioned as 'malt' in a review.",
+          "evidence_quote": "two burgers, fries and a corn dog ... the freeze and malt"
+        },
+        {
+          "quote": "some customers have reported long wait times for orders",
+          "status": "supported",
+          "reason": "A reviewer reported approximately 30 minutes to prepare two burgers, fries, and a corn dog.",
+          "evidence_quote": "it took approximately 30 minutes to prepare two burgers, fries and a corn dog"
+        },
+        {
+          "quote": "the service can be slow and slow and passive aggressive at times",
+          "status": "supported",
+          "reason": "A reviewer described passive-aggressive cashier behavior and excessive wait times. Note: the candidate text contains a repetition ('slow and slow') but the factual content is supported.",
+          "evidence_quote": "The cashier just passive aggressively stared at me and blinked multiple times when I asked for extra ketchup."
+        },
+        {
+          "quote": "the outdoor seating area is available",
+          "status": "supported",
+          "reason": "The attributes confirm outdoor seating is available.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "the restaurant has a divey and classy ambience",
+          "status": "supported",
+          "reason": "The ambience attributes list both 'divey' and 'classy' as true.",
+          "evidence_quote": "\"divey\": true ... \"classy\": true"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Tinker's Burgers is a highly-rated burger joint",
+          "status": "supported",
+          "reason": "The business has 4.0 stars and multiple 5-star reviews, supporting 'highly-rated'.",
+          "evidence_quote": "\"business_stars\": 4.0"
+        },
+        {
+          "quote": "located in the small beach town of Summerland, CA",
+          "status": "supported",
+          "reason": "A reviewer calls it 'a hidden gem in the small beach town of Summerland' and the address confirms Summerland, CA.",
+          "evidence_quote": "this is definitively a hidden gem in the small beach town of Summerland"
+        },
+        {
+          "quote": "the restaurant serves some of the best burgers in the area",
+          "status": "supported",
+          "reason": "Reviewers call the burgers 'Best burgers we've ever had' and 'EXCELLENT'.",
+          "evidence_quote": "Best burgers we've ever had!!"
+        },
+        {
+          "quote": "a Sourdough Bacon Cheeseburger and a double cheeseburger with an egg being popular choices",
+          "status": "supported",
+          "reason": "A reviewer explicitly ordered both items.",
+          "evidence_quote": "Today we ordered a Sourdough Bacon Cheeseburger and a double cheeseburger with an egg."
+        },
+        {
+          "quote": "The menu also includes fries, corn dogs, and freeze and malt.",
+          "status": "supported",
+          "reason": "Fries and corn dogs are mentioned in one review; freeze and malt are mentioned in another review.",
+          "evidence_quote": "two burgers, fries and a corn dog ... the freeze and malt"
+        },
+        {
+          "quote": "some customers have reported long wait times for their orders",
+          "status": "supported",
+          "reason": "A reviewer reported approximately 30 minutes to prepare two burgers, fries, and a corn dog.",
+          "evidence_quote": "it took approximately 30 minutes to prepare two burgers, fries and a corn dog"
+        },
+        {
+          "quote": "the service can be slow and unfriendly",
+          "status": "supported",
+          "reason": "A reviewer described passive-aggressive cashier behavior and excessive wait times.",
+          "evidence_quote": "The cashier just passive aggressively stared at me and blinked multiple times when I asked for extra ketchup."
+        },
+        {
+          "quote": "the outdoor seating area is a nice feature",
+          "status": "supported",
+          "reason": "The attributes confirm outdoor seating is available.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "the restaurant has a divey and classy ambience",
+          "status": "supported",
+          "reason": "The ambience attributes list both 'divey' and 'classy' as true.",
+          "evidence_quote": "\"divey\": true ... \"classy\": true"
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [
+        "the service can be slow and passive aggressive at times."
+      ]
+    }
+  ]
+}

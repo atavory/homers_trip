@@ -1,0 +1,185 @@
+{
+  "id": "140",
+  "source_id": "15616",
+  "stratum": "Summary_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "top20",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Kanye West settled a lawsuit with a paparazzi photographer he assaulted in 2013."
+    },
+    {
+      "target_id": "T2",
+      "claim": "The photographer's name is Daniel Ramos."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Ramos sued West for damages and accused him of interfering with his right to pursue a lawful occupation."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Ramos accepted an apology from West."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Ramos and West shook hands in a photo released by Ramos' lawyer, Gloria Allred."
+    },
+    {
+      "target_id": "T6",
+      "claim": "West pleaded no contest to a misdemeanor count of battery."
+    },
+    {
+      "target_id": "T7",
+      "claim": "West received two years' probation and community service."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Allred stated that the case sent an important message that celebrities are not above the law and cannot physically attack someone simply because they were asked a question."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted in 2013.",
+          "status": "supported",
+          "reason": "The evidence confirms West settled a civil lawsuit with photographer Daniel Ramos over an assault that occurred in July 2013.",
+          "evidence_quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted"
+        },
+        {
+          "quote": "The photographer, Daniel Ramos, had sued West for damages and accused him of interfering with his right to pursue a lawful occupation.",
+          "status": "supported",
+          "reason": "The evidence confirms Ramos filed a civil suit seeking general and punitive damages and alleging West interfered with the photographer's rights to pursue a lawful occupation.",
+          "evidence_quote": "Ramos and his lawyer, Gloria Allred, sought general and punitive damages in the civil suit, saying that West had interfered with the photographer's rights to pursue a lawful occupation."
+        },
+        {
+          "quote": "Ramos accepted an apology from West and the two shook hands in a photo released by Ramos' lawyer, Gloria Allred.",
+          "status": "supported",
+          "reason": "The evidence confirms West apologized to Ramos and the two shook hands, with Allred releasing a photo of the handshake.",
+          "evidence_quote": "one important aspect of it was an apology by Kanye West to our client, Daniel Ramos. Her statement included a picture of West and Ramos shaking hands"
+        },
+        {
+          "quote": "Ramos and West had previously reached a criminal settlement in which West pleaded no contest to a misdemeanor count of battery and received two years' probation and community service.",
+          "status": "unsupported",
+          "reason": "The evidence describes a criminal case (not a 'criminal settlement') in which West pleaded no contest and was sentenced by a judge. The phrase 'criminal settlement' mischaracterizes the criminal proceeding. Additionally, the evidence also mentions anger management sessions as part of the sentence, which the candidate omits, but the core issue is the inaccurate characterization as a 'criminal settlement.'",
+          "evidence_quote": "West pleaded no contest last year to a misdemeanor count of battery over the scuffle. A judge sentenced him to two years' probation, as well as anger management sessions and community service."
+        },
+        {
+          "quote": "Allred stated that the case sent an important message that celebrities are not above the law and cannot physically attack someone simply because they were asked a question.",
+          "status": "supported",
+          "reason": "The evidence contains Allred's quote to this effect.",
+          "evidence_quote": "We believe that this case sent an important message, Celebrities are not above the law, and they have no right to physically attack someone simply because they were asked a question."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted in 2013.",
+          "status": "supported",
+          "reason": "The evidence confirms West settled a civil lawsuit with photographer Daniel Ramos over an assault that occurred in July 2013.",
+          "evidence_quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted"
+        },
+        {
+          "quote": "The photographer, Daniel Ramos, had sued West for damages and accused him of interfering with his right to pursue a lawful occupation.",
+          "status": "supported",
+          "reason": "The evidence confirms Ramos filed a civil suit seeking damages and alleging West interfered with the photographer's rights to pursue a lawful occupation.",
+          "evidence_quote": "Ramos and his lawyer, Gloria Allred, sought general and punitive damages in the civil suit, saying that West had interfered with the photographer's rights to pursue a lawful occupation."
+        },
+        {
+          "quote": "One important aspect of the settlement was an apology by Kanye West to Ramos, and the two shook hands after the apology, as shown in a photo released by Ramos' lawyer, Gloria Allred.",
+          "status": "supported",
+          "reason": "The evidence confirms the apology was described as 'one important aspect' of the settlement, and that the handshake photo was released by Allred.",
+          "evidence_quote": "one important aspect of it was an apology by Kanye West to our client, Daniel Ramos. Her statement included a picture of West and Ramos shaking hands, which she said happened after the apology."
+        },
+        {
+          "quote": "and the two shook hands after the apology, as shown in a photo released by Ramos' lawyer, Gloria Allred.",
+          "status": "supported",
+          "reason": "Duplicate of the claim above; same content is supported by the evidence.",
+          "evidence_quote": "Her statement included a picture of West and Ramos shaking hands, which she said happened after the apology."
+        },
+        {
+          "quote": "West had previously pleaded no contest to a misdemeanor count of battery over the scuffle and was sentenced to two years' probation, anger management sessions, and community service.",
+          "status": "supported",
+          "reason": "The evidence confirms West pleaded no contest to a misdemeanor battery charge and was sentenced to two years' probation, anger management sessions, and community service.",
+          "evidence_quote": "West pleaded no contest last year to a misdemeanor count of battery over the scuffle. A judge sentenced him to two years' probation, as well as anger management sessions and community service."
+        },
+        {
+          "quote": "and received two years' probation and community service.",
+          "status": "supported",
+          "reason": "Duplicate/partial restatement of the sentence; supported by the evidence.",
+          "evidence_quote": "A judge sentenced him to two years' probation, as well as anger management sessions and community service."
+        },
+        {
+          "quote": "Allred stated that the case sent an important message that celebrities are not above the law and cannot physically attack someone simply because they were asked a question.",
+          "status": "supported",
+          "reason": "The evidence contains Allred's quote to this effect.",
+          "evidence_quote": "We believe that this case sent an important message, Celebrities are not above the law, and they have no right to physically attack someone simply because they were asked a question."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted in 2013.",
+          "status": "supported",
+          "reason": "The evidence confirms West settled a civil lawsuit with photographer Daniel Ramos over an assault that occurred in July 2013.",
+          "evidence_quote": "Kanye West has settled a lawsuit with a paparazzi photographer he assaulted"
+        },
+        {
+          "quote": "The photographer, Daniel Ramos, had sued West for damages and accused him of interfering with his right to pursue a lawful occupation.",
+          "status": "supported",
+          "reason": "The evidence confirms Ramos filed a civil suit seeking damages and alleging West interfered with the photographer's rights to pursue a lawful occupation.",
+          "evidence_quote": "Ramos and his lawyer, Gloria Allred, sought general and punitive damages in the civil suit, saying that West had interfered with the photographer's rights to pursue a lawful occupation."
+        },
+        {
+          "quote": "Ramos accepted an apology from West and the two shook hands in a photo released by Ramos' lawyer, Gloria Allred.",
+          "status": "supported",
+          "reason": "The evidence confirms West apologized to Ramos and the two shook hands, with Allred releasing a photo of the handshake.",
+          "evidence_quote": "one important aspect of it was an apology by Kanye West to our client, Daniel Ramos. Her statement included a picture of West and Ramos shaking hands"
+        },
+        {
+          "quote": "Ramos and West had previously reached a criminal settlement in which West pleaded no contest to a misdemeanor count of battery and received two years' probation and community service.",
+          "status": "unsupported",
+          "reason": "The evidence describes a criminal case (not a 'criminal settlement') in which West pleaded no contest and was sentenced by a judge. The phrase 'criminal settlement' mischaracterizes the criminal proceeding. The evidence also mentions anger management sessions as part of the sentence, which the candidate omits.",
+          "evidence_quote": "West pleaded no contest last year to a misdemeanor count of battery over the scuffle. A judge sentenced him to two years' probation, as well as anger management sessions and community service."
+        },
+        {
+          "quote": "Allred stated that the case sent an important message that celebrities are not above the law and cannot physically attack someone simply because they were asked a question.",
+          "status": "supported",
+          "reason": "The evidence contains Allred's quote to this effect.",
+          "evidence_quote": "We believe that this case sent an important message, Celebrities are not above the law, and they have no right to physically attack someone simply because they were asked a question."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [],
+      "other_issues": [
+        "The original response cannot omit its own supported targets. Every target must actually be expressed in the original response and supported by the evidence; do not create targets only from source information absent from the original. Recheck targets and retention for every candidate. This does not require the original's factual claims to be supported."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "id": "2467",
+  "source_id": "11877",
+  "stratum": "Summary_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "cutoff05",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Ambush attacks on police officers have been the leading cause of felonious deaths of law enforcement officers for the past five years."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Google continues to promote a smartphone app called Waze that allows criminals to track the location of police officers."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Waze is a popular real-time traffic app that uses GPS navigation and crowdsourcing to alert users about traffic jams, accidents, and the presence of law enforcement."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Most users likely use the app to avoid traffic tickets, but it poses a significant risk to police officers."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The man who killed two New York police officers used Waze to monitor the movements of police officers."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Google acquired Waze in 2013."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Google claims the app contributes to the 'common good' on the road."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The risks far outweigh any potential benefits."
+    },
+    {
+      "target_id": "T9",
+      "claim": "It only takes a few clicks for users to identify the location of police officers, making them vulnerable targets."
+    },
+    {
+      "target_id": "T10",
+      "claim": "The app can also be used by perpetrators of domestic violence, gang members, narcotics dealers, and potential terrorists."
+    },
+    {
+      "target_id": "T11",
+      "claim": "Despite Google's reputation for corporate social responsibility, the company has refused to discuss the issue with organizations representing law enforcement."
+    },
+    {
+      "target_id": "T12",
+      "claim": "The National Sheriffs' Association has called on Google to prioritize the safety of both motorists and police officers."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Ambush attacks on police officers have been the leading cause of felonious deaths of law enforcement officers for the past five years.",
+          "status": "supported",
+          "reason": "The evidence states 'For the fifth year in a row in 2014, ambush attacks on police officers were the No. 1 cause of felonious deaths of law enforcement officers in the line of duty.'",
+          "evidence_quote": "For the fifth year in a row in 2014, ambush attacks on police officers were the No. 1 cause of felonious deaths of law enforcement officers in the line of duty."
+        },
+        {
+          "quote": "Google continues to promote a smartphone app called Waze that allows criminals to track the location of police officers.",
+          "status": "supported",
+          "reason": "The evidence confirms Google markets Waze, which lets lawbreakers pinpoint the location of police officers.",
+          "evidence_quote": "Google continues to market a smartphone application that lets lawbreakers pinpoint the location of police officers in the field."
+        },
+        {
+          "quote": "Waze is a popular real-time traffic app that uses GPS navigation and crowdsourcing to alert users about traffic jams, accidents, and the presence of law enforcement.",
+          "status": "supported",
+          "reason": "The evidence describes Waze as a popular real-time traffic app using GPS navigation and crowdsourcing to alert users to traffic jams, automobile accidents, and the presence of law enforcement.",
+          "evidence_quote": "Google's popular real-time traffic app, Waze, uses GPS navigation and crowdsourcing to alert users to traffic jams, automobile accidents, stalled cars, and through its \"traffic cop\" feature, the presence of law enforcement."
+        },
+        {
+          "quote": "While most users likely use the app to avoid traffic tickets, it poses a significant risk to police officers.",
+          "status": "supported",
+          "reason": "The evidence states most people use Waze's police-finding feature to avoid traffic tickets but that the app poses an enormous risk to deputies and police officers.",
+          "evidence_quote": "Most people undoubtedly use Waze's police-finding feature to avoid traffic tickets, but the app poses an enormous risk to deputies and police officers."
+        },
+        {
+          "quote": "In the days before he assassinated two New York police officers in December 2014, Ismaaiyl Brinsley is known to have used Waze to monitor the movements of police officers.",
+          "status": "supported",
+          "reason": "The evidence confirms Brinsley used Waze to monitor police movements in the days before assassinating New York police officers Rafael Ramos and Wenjian Liu last December (December 2014). The candidate correctly names Brinsley and specifies December 2014.",
+          "evidence_quote": "In the days before he assassinated New York police officers Rafael Ramos and Wenjian Liu at point blank range while they sat in their patrol car last December, Ismaaiyl Brinsley is known to have used the Waze application to monitor the movements of police officers."
+        },
+        {
+          "quote": "Google, which acquired Waze in 2013, claims that the app contributes to the \"common good\" on the road.",
+          "status": "supported",
+          "reason": "The evidence confirms Google acquired Waze in 2013 and claims the app is about contributing to the 'common good' out there on the road.",
+          "evidence_quote": "Google (which acquired Waze in 2013 for a reported $1.1 billion) claims the app \"is all about contributing to the 'common good' out there on the road.\""
+        },
+        {
+          "quote": "However, the risks far outweigh any potential benefits.",
+          "status": "supported",
+          "reason": "The evidence explicitly states 'the risks far outweigh the potential benefits.'",
+          "evidence_quote": "the risks far outweigh the potential benefits."
+        },
+        {
+          "quote": "It only takes a few clicks for users to identify the location of police officers, making them vulnerable targets.",
+          "status": "supported",
+          "reason": "The evidence states it takes just a couple of clicks on Waze's 'traffic cop' icon to identify their locations, making the officer an identifiable target.",
+          "evidence_quote": "It takes just a couple of clicks on Waze's \"traffic cop\" icon to identify their locations and indicate whether -- in the opinion of the anonymous user -- the officer is \"visible\" or \"invisible.\" At that moment, the officer or deputy becomes an identifiable target."
+        },
+        {
+          "quote": "Furthermore, the app can also be used by perpetrators of domestic violence, gang members, narcotics dealers, and potential terrorists.",
+          "status": "supported",
+          "reason": "The evidence explicitly mentions perpetrators of domestic violence, gang members, narcotics dealers, and those intent on perpetrating an act of terror as having access to Waze's 'traffic cop' feature.",
+          "evidence_quote": "Perpetrators of domestic violence can use it to find out about the presence of law enforcement in a spouse's neighborhood; gang members, narcotics dealers, even those intent on perpetrating an act of terror, all have access to Waze's \"traffic cop\" feature."
+        },
+        {
+          "quote": "Despite Google's reputation for corporate social responsibility, the company has refused to discuss the issue with organizations representing law enforcement.",
+          "status": "supported",
+          "reason": "The evidence confirms Google tied for first in a 2013 corporate social responsibility study and that its executives refused to discuss the subject with law enforcement representatives.",
+          "evidence_quote": "Google has built a solid reputation as a good corporate neighbor, tying for first place in a 2013 study by the Reputation Institute measuring companies' reputations for corporate social responsibility... The company's executives flat out refused to discuss the subject with representatives of the National Sheriffs' Association."
+        },
+        {
+          "quote": "The National Sheriffs' Association has called on Google to prioritize the safety of both motorists and police officers.",
+          "status": "supported",
+          "reason": "The evidence indicates the National Sheriffs' Association (whose representatives were refused a meeting) called on Google to work to ensure the safety of both motorists and police officers.",
+          "evidence_quote": "If Google's real objective is the \"common good out there on the road,\" it will work with us to ensure the safety of both motorists and police officers."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Ambush attacks on police officers have been the leading cause of felonious deaths of law enforcement officers for the past five years.",
+          "status": "supported",
+          "reason": "The evidence states 'For the fifth year in a row in 2014, ambush attacks on police officers were the No. 1 cause of felonious deaths of law enforcement officers in the line of duty.'",
+          "evidence_quote": "For the fifth year in a row in 2014, ambush attacks on police officers were the No. 1 cause of felonious deaths of law enforcement officers in the line of duty."
+        },
+        {
+          "quote": "Google continues to promote a smartphone app called Waze that allows criminals to track the location of police officers.",
+          "status": "supported",
+          "reason": "The evidence confirms Google markets Waze, which lets lawbreakers pinpoint the location of police officers.",
+          "evidence_quote": "Google continues to market a smartphone application that lets lawbreakers pinpoint the location of police officers in the field."
+        },
+        {
+          "quote": "Waze is a popular real-time traffic app that uses GPS navigation and crowdsourcing to alert users about traffic jams, accidents, and the presence of law enforcement.",
+          "status": "supported",
+          "reason": "The evidence describes Waze exactly this way.",
+          "evidence_quote": "Google's popular real-time traffic app, Waze, uses GPS navigation and crowdsourcing to alert users to traffic jams, automobile accidents, stalled cars, and through its \"traffic cop\" feature, the presence of law enforcement."
+        },
+        {
+          "quote": "While most users likely use the app to avoid traffic tickets, it poses a significant risk to police officers.",
+          "status": "supported",
+          "reason": "The evidence supports this claim directly.",
+          "evidence_quote": "Most people undoubtedly use Waze's police-finding feature to avoid traffic tickets, but the app poses an enormous risk to deputies and police officers."
+        },
+        {
+          "quote": "In fact, the man who killed two New York police officers in 2014 used Waze to monitor the movements of police officers.",
+          "status": "supported",
+          "reason": "The evidence confirms Ismaaiyl Brinsley used Waze to monitor police movements before assassinating two New York police officers. The candidate does not name the killer or the victims but the factual content is supported. The killing occurred in December (last December relative to the 2014 context), consistent with '2014'.",
+          "evidence_quote": "In the days before he assassinated New York police officers Rafael Ramos and Wenjian Liu at point blank range while they sat in their patrol car last December, Ismaaiyl Brinsley is known to have used the Waze application to monitor the movements of police officers."
+        },
+        {
+          "quote": "Google, which acquired Waze in 2013, claims that the app contributes to the \"common good\" on the road.",
+          "status": "supported",
+          "reason": "The evidence confirms both the 2013 acquisition and the 'common good' claim.",
+          "evidence_quote": "Google (which acquired Waze in 2013 for a reported $1.1 billion) claims the app \"is all about contributing to the 'common good' out there on the road.\""
+        },
+        {
+          "quote": "However, the risks far outweigh any potential benefits.",
+          "status": "supported",
+          "reason": "The evidence explicitly states this.",
+          "evidence_quote": "the risks far outweigh the potential benefits."
+        },
+        {
+          "quote": "It only takes a few clicks for users to identify the location of police officers, making them vulnerable targets.",
+          "status": "supported",
+          "reason": "The evidence supports this with 'a couple of clicks' and 'identifiable target'.",
+          "evidence_quote": "It takes just a couple of clicks on Waze's \"traffic cop\" icon to identify their locations... the officer or deputy becomes an identifiable target."
+        },
+        {
+          "quote": "Furthermore, the app can also be used by perpetrators of domestic violence, gang members, narcotics dealers, and potential terrorists.",
+          "status": "supported",
+          "reason": "The evidence explicitly lists these groups.",
+          "evidence_quote": "Perpetrators of domestic violence can use it to find out about the presence of law enforcement in a spouse's neighborhood; gang members, narcotics dealers, even those intent on perpetrating an act of terror, all have access to Waze's \"traffic cop\" feature."
+        },
+        {
+          "quote": "Despite Google's reputation for corporate social responsibility, the company has refused to discuss the issue with organizations representing law enforcement.",
+          "status": "supported",
+          "reason": "The evidence confirms Google's CSR reputation and its refusal to meet with law enforcement representatives.",
+          "evidence_quote": "Google has built a solid reputation as a good corporate neighbor, tying for first place in a 2013 study by the Reputation Institute measuring companies' reputations for corporate social responsibility... The company's executives flat out refused to discuss the subject with representatives of the National Sheriffs' Association."
+        },
+        {
+          "quote": "The National Sheriffs' Association has called on Google to prioritize the safety of both motorists and police officers.",
+          "status": "supported",
+          "reason": "The evidence supports this through the NSA's call for Google to ensure the safety of both motorists and police officers.",
+          "evidence_quote": "If Google's real objective is the \"common good out there on the road,\" it will work with us to ensure the safety of both motorists and police officers."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Ambush attacks on police officers have been the leading cause of felonious deaths of law enforcement officers for the past five years.",
+          "status": "supported",
+          "reason": "The evidence states 'For the fifth year in a row in 2014, ambush attacks on police officers were the No. 1 cause of felonious deaths of law enforcement officers in the line of duty.'",
+          "evidence_quote": "For the fifth year in a row in 2014, ambush attacks on police officers were the No. 1 cause of felonious deaths of law enforcement officers in the line of duty."
+        },
+        {
+          "quote": "Google continues to promote a smartphone app called Waze that allows criminals to track the location of police officers.",
+          "status": "supported",
+          "reason": "The evidence confirms Google markets Waze, which lets lawbreakers pinpoint the location of police officers.",
+          "evidence_quote": "Google continues to market a smartphone application that lets lawbreakers pinpoint the location of police officers in the field."
+        },
+        {
+          "quote": "Waze is a popular real-time traffic app that uses GPS navigation and crowdsourcing to alert users about traffic jams, accidents, and the presence of law enforcement.",
+          "status": "supported",
+          "reason": "The evidence describes Waze exactly this way.",
+          "evidence_quote": "Google's popular real-time traffic app, Waze, uses GPS navigation and crowdsourcing to alert users to traffic jams, automobile accidents, stalled cars, and through its \"traffic cop\" feature, the presence of law enforcement."
+        },
+        {
+          "quote": "While most users likely use the app to avoid traffic tickets, it poses a significant risk to police officers.",
+          "status": "supported",
+          "reason": "The evidence supports this claim directly.",
+          "evidence_quote": "Most people undoubtedly use Waze's police-finding feature to avoid traffic tickets, but the app poses an enormous risk to deputies and police officers."
+        },
+        {
+          "quote": "In fact, the man who killed two New York police officers in 2014 used Waze to monitor the movements of police officers.",
+          "status": "supported",
+          "reason": "The evidence confirms Ismaaiyl Brinsley used Waze to monitor police movements before assassinating two New York police officers in December (consistent with 2014).",
+          "evidence_quote": "In the days before he assassinated New York police officers Rafael Ramos and Wenjian Liu at point blank range while they sat in their patrol car last December, Ismaaiyl Brinsley is known to have used the Waze application to monitor the movements of police officers."
+        },
+        {
+          "quote": "Google, which acquired Waze in 2013, claims that the app contributes to the \"common good\" on the road.",
+          "status": "supported",
+          "reason": "The evidence confirms both the 2013 acquisition and the 'common good' claim.",
+          "evidence_quote": "Google (which acquired Waze in 2013 for a reported $1.1 billion) claims the app \"is all about contributing to the 'common good' out there on the road.\""
+        },
+        {
+          "quote": "However, the risks far outweigh any potential benefits.",
+          "status": "supported",
+          "reason": "The evidence explicitly states this.",
+          "evidence_quote": "the risks far outweigh the potential benefits."
+        },
+        {
+          "quote": "It only takes a few clicks for users to identify the location of police officers, making them vulnerable targets.",
+          "status": "supported",
+          "reason": "The evidence supports this with 'a couple of clicks' and 'identifiable target'.",
+          "evidence_quote": "It takes just a couple of clicks on Waze's \"traffic cop\" icon to identify their locations... the officer or deputy becomes an identifiable target."
+        },
+        {
+          "quote": "Furthermore, the app can also be used by perpetrators of domestic violence, gang members, narcotics dealers, and potential terrorists.",
+          "status": "supported",
+          "reason": "The evidence explicitly lists these groups.",
+          "evidence_quote": "Perpetrators of domestic violence can use it to find out about the presence of law enforcement in a spouse's neighborhood; gang members, narcotics dealers, even those intent on perpetrating an act of terror, all have access to Waze's \"traffic cop\" feature."
+        },
+        {
+          "quote": "Despite Google's reputation for corporate social responsibility, the company has refused to discuss the issue with organizations representing law enforcement.",
+          "status": "supported",
+          "reason": "The evidence confirms Google's CSR reputation and its refusal to meet with law enforcement representatives.",
+          "evidence_quote": "Google has built a solid reputation as a good corporate neighbor, tying for first place in a 2013 study by the Reputation Institute measuring companies' reputations for corporate social responsibility... The company's executives flat out refused to discuss the subject with representatives of the National Sheriffs' Association."
+        },
+        {
+          "quote": "The National Sheriffs' Association has called on Google to prioritize the safety of both motorists and police officers.",
+          "status": "supported",
+          "reason": "The evidence supports this through the NSA's call for Google to ensure the safety of both motorists and police officers.",
+          "evidence_quote": "If Google's real objective is the \"common good out there on the road,\" it will work with us to ensure the safety of both motorists and police officers."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

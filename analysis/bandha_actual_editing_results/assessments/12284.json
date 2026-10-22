@@ -1,0 +1,198 @@
+{
+  "id": "12284",
+  "source_id": "14360",
+  "stratum": "QA_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "original",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "To set Mozilla Firefox as your default Windows browser, open your Firefox browser."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Click on the Firefox menu button, represented by three horizontal lines and located in the upper right hand corner of the browser window."
+    },
+    {
+      "target_id": "T3",
+      "claim": "When the pop-out menu appears, select Options."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 4,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 4,
+      "claims": [
+        {
+          "quote": "To set Mozilla Firefox as your default Windows browser",
+          "status": "supported",
+          "reason": "Passage 3 explicitly describes steps to set Mozilla Firefox as your default Windows browser.",
+          "evidence_quote": "To set Mozilla Firefox as your default Windows browser, take the following steps."
+        },
+        {
+          "quote": "Open your Firefox browser.",
+          "status": "supported",
+          "reason": "Passage 3 lists this as step 1.",
+          "evidence_quote": "1 Open your Firefox browser."
+        },
+        {
+          "quote": "Click on the Firefox menu button, represented by three horizontal lines and located in the upper right hand corner of the browser window.",
+          "status": "supported",
+          "reason": "Passage 3 describes the Firefox menu button exactly this way.",
+          "evidence_quote": "Click on the Firefox menu button, represented by three horizontal lines and located in the upper right hand corner of the browser window."
+        },
+        {
+          "quote": "When the pop-out menu appears, select Options.",
+          "status": "supported",
+          "reason": "Passage 3 states this as step 3.",
+          "evidence_quote": "When the pop-out menu appears, select Options."
+        },
+        {
+          "quote": "Unable to answer based on given passages.",
+          "status": "unsupported",
+          "reason": "This is a meta-statement inserted in place of step 4 (Click on the Application tab). It is not a factual claim supported by the evidence; it is an abstention placeholder.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Scroll down to the Default browser section.",
+          "status": "unsupported",
+          "reason": "No evidence in any passage mentions scrolling to a 'Default browser section' within Firefox's Options.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Select Firefox from the list of installed browsers.",
+          "status": "unsupported",
+          "reason": "No evidence mentions a list of installed browsers within Firefox's Options from which to select Firefox.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Click the Set as default button.",
+          "status": "unsupported",
+          "reason": "No evidence mentions a 'Set as default' button within Firefox's Options.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 4,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 4,
+      "claims": [
+        {
+          "quote": "To set Mozilla Firefox as your default Windows browser",
+          "status": "supported",
+          "reason": "Passage 3 explicitly describes steps to set Mozilla Firefox as your default Windows browser.",
+          "evidence_quote": "To set Mozilla Firefox as your default Windows browser, take the following steps."
+        },
+        {
+          "quote": "Open your Firefox browser.",
+          "status": "supported",
+          "reason": "Passage 3 lists this as step 1.",
+          "evidence_quote": "1 Open your Firefox browser."
+        },
+        {
+          "quote": "Click on the Firefox menu button, represented by three horizontal lines and located in the upper right hand corner of the browser window.",
+          "status": "supported",
+          "reason": "Passage 3 describes the Firefox menu button exactly this way.",
+          "evidence_quote": "Click on the Firefox menu button, represented by three horizontal lines and located in the upper right hand corner of the browser window."
+        },
+        {
+          "quote": "When the pop-out menu appears, select Options.",
+          "status": "supported",
+          "reason": "Passage 3 states this as step 3.",
+          "evidence_quote": "When the pop-out menu appears, select Options."
+        },
+        {
+          "quote": "Click on the Application tab.",
+          "status": "unsupported",
+          "reason": "No evidence mentions an 'Application tab' within Firefox's Options.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Scroll down to the Default browser section.",
+          "status": "unsupported",
+          "reason": "No evidence in any passage mentions scrolling to a 'Default browser section' within Firefox's Options.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Select Firefox from the list of installed browsers.",
+          "status": "unsupported",
+          "reason": "No evidence mentions a list of installed browsers within Firefox's Options from which to select Firefox.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Click the Set as default button.",
+          "status": "unsupported",
+          "reason": "No evidence mentions a 'Set as default' button within Firefox's Options.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 4,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 4,
+      "claims": [
+        {
+          "quote": "To set Mozilla Firefox as your default Windows browser",
+          "status": "supported",
+          "reason": "Passage 3 explicitly describes steps to set Mozilla Firefox as your default Windows browser.",
+          "evidence_quote": "To set Mozilla Firefox as your default Windows browser, take the following steps."
+        },
+        {
+          "quote": "Open your Firefox browser.",
+          "status": "supported",
+          "reason": "Passage 3 lists this as step 1.",
+          "evidence_quote": "1 Open your Firefox browser."
+        },
+        {
+          "quote": "Click on the Firefox menu button, represented by three horizontal lines and located in the upper right hand corner of the browser window.",
+          "status": "supported",
+          "reason": "Passage 3 describes the Firefox menu button exactly this way.",
+          "evidence_quote": "Click on the Firefox menu button, represented by three horizontal lines and located in the upper right hand corner of the browser window."
+        },
+        {
+          "quote": "When the pop-out menu appears, select Options.",
+          "status": "supported",
+          "reason": "Passage 3 states this as step 3.",
+          "evidence_quote": "When the pop-out menu appears, select Options."
+        },
+        {
+          "quote": "When the Options menu opens, look for the Default browser section.",
+          "status": "unsupported",
+          "reason": "No evidence mentions a 'Default browser section' within Firefox's Options menu.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Scroll down to the Default browser section.",
+          "status": "unsupported",
+          "reason": "No evidence in any passage mentions scrolling to a 'Default browser section' within Firefox's Options.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Select Firefox from the list of installed browsers.",
+          "status": "unsupported",
+          "reason": "No evidence mentions a list of installed browsers within Firefox's Options from which to select Firefox.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "Click the Set as default button.",
+          "status": "unsupported",
+          "reason": "No evidence mentions a 'Set as default' button within Firefox's Options.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

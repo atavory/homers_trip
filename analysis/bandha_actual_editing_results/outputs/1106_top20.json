@@ -1,0 +1,44 @@
+{
+  "id": "1106",
+  "policy": "top20",
+  "response": "The Shariya refugee camp in Iraqi Kurdistan houses thousands of Yazidis who were displaced by ISIS attacks. Many of the camp's inhabitants, most from Sinjar, were captured by ISIS and taken to prisons in Tal Afar, where they were moved from village to village and forced to work. Ahlam's in-laws and other elderly residents of the house were also taken prisoners. Despite the danger, Ahlam and and her family escaped captivity and were reunited with her husband. However, Ahlam's parents remain with ISIL and are still being held as captives. The Yazidis are being held captive by ISIL in several prisons and detention centers across Iraq. ISIL has separated the young women and girls, some as young as eight years old, from their families and sold them as slaves to be used as concubines by their masters. The men were given a choice - convert to Islam or be shot. Many Yazidis have fled their homes in order to escape ISIS's persecution.",
+  "replacements": [
+    {
+      "replacement": "were displaced by ISIS attacks.",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "inhabitants, most from Sinjar,",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "ISIS",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "where they were moved from village to village and forced to work. Ahlam's in-laws",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "prisoners.",
+      "span_id": "s4"
+    },
+    {
+      "replacement": "Ahlam and",
+      "span_id": "s5"
+    },
+    {
+      "replacement": "her family escaped captivity",
+      "span_id": "s6"
+    },
+    {
+      "replacement": "reunited with her husband.",
+      "span_id": "s7"
+    },
+    {
+      "replacement": "ISIS's persecution.",
+      "span_id": "s8"
+    }
+  ],
+  "model_called": true
+}

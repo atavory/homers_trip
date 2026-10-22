@@ -1,0 +1,163 @@
+{
+  "id": "2655",
+  "source_id": "11908",
+  "stratum": "Summary_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "top20",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "New Belgium Brewery and Ben & Jerry's are collaborating on a beer."
+    },
+    {
+      "target_id": "T2",
+      "claim": "The beer is inspired by Ben & Jerry's salted caramel brownie ice cream."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Both companies share a commitment to sustainability / are socially conscious."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The companies will announce the details of their campaign later this year."
+    },
+    {
+      "target_id": "T5",
+      "claim": "The beer is set to hit shelves in the fall."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "New Belgium Brewery and Ben & Jerry's are collaborating on a beer inspired by the ice cream maker's salted caramel brownie flavor.",
+          "status": "supported",
+          "reason": "The evidence confirms New Belgium and Ben & Jerry's are collaborating on a beer inspired by salted caramel brownie ice cream.",
+          "evidence_quote": "Colorado's New Belgium Brewery and the folks at Ben & Jerry's are teaming up on a beer inspired by ice cream -- salted caramel brownie ice cream, to be precise."
+        },
+        {
+          "quote": "The two socially conscious companies, who share a commitment to sustainability",
+          "status": "supported",
+          "reason": "Both companies have a history of social activism and both are B Corporations supporting sustainability and environmental initiatives.",
+          "evidence_quote": "Both companies have a history of social activism, and the new project will be no different, they say."
+        },
+        {
+          "quote": "will announce the details of their campaign later this year.",
+          "status": "supported",
+          "reason": "The evidence states the companies will announce details later this year.",
+          "evidence_quote": "The companies will announce the details later this year"
+        },
+        {
+          "quote": "The beer is set to hit shelves in the fall,",
+          "status": "supported",
+          "reason": "The evidence explicitly states the beer is set to hit shelves in the fall.",
+          "evidence_quote": "the beer is set to hit shelves in the fall."
+        },
+        {
+          "quote": "with proceeds going towards various social and environmental initiatives.",
+          "status": "unsupported",
+          "reason": "The evidence does not mention proceeds from the beer going towards social or environmental initiatives. It mentions the campaign will raise awareness around issues they are passionate about, but says nothing about proceeds.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "New Belgium Brewery and Ben & Jerry's are collaborating on a beer inspired on a beer inspired by Ben & Jerry's salted caramel brownie ice cream.",
+          "status": "supported",
+          "reason": "The evidence confirms the collaboration on a beer inspired by salted caramel brownie ice cream, despite the garbled phrasing.",
+          "evidence_quote": "Colorado's New Belgium Brewery and the folks at Ben & Jerry's are teaming up on a beer inspired by ice cream -- salted caramel brownie ice cream, to be precise."
+        },
+        {
+          "quote": "Both conscious companies, both have a history of to sustainability,",
+          "status": "supported",
+          "reason": "Both companies have a history of social activism and commitment to sustainability, though the phrasing is garbled.",
+          "evidence_quote": "Both companies have a history of social activism, and the new project will be no different, they say."
+        },
+        {
+          "quote": "will announce the details of their campaign later this year.",
+          "status": "supported",
+          "reason": "The evidence states the companies will announce details later this year.",
+          "evidence_quote": "The companies will announce the details later this year"
+        },
+        {
+          "quote": "The beer is set to hit shelves in the fall,",
+          "status": "supported",
+          "reason": "The evidence explicitly states the beer is set to hit shelves in the fall.",
+          "evidence_quote": "the beer is set to hit shelves in the fall."
+        },
+        {
+          "quote": "with proceeds going towards various social and environmental initiatives.",
+          "status": "unsupported",
+          "reason": "The evidence does not mention proceeds from the beer going towards social or environmental initiatives.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "New Belgium Brewery and Ben & Jerry's are collaborating on a beer inspired by the ice cream maker's salted caramel brownie flavor.",
+          "status": "supported",
+          "reason": "The evidence confirms the collaboration on a beer inspired by salted caramel brownie ice cream.",
+          "evidence_quote": "Colorado's New Belgium Brewery and the folks at Ben & Jerry's are teaming up on a beer inspired by ice cream -- salted caramel brownie ice cream, to be precise."
+        },
+        {
+          "quote": "The two socially conscious companies, who share a commitment to sustainability",
+          "status": "supported",
+          "reason": "Both companies have a history of social activism and are B Corporations supporting sustainability.",
+          "evidence_quote": "Both companies have a history of social activism, and the new project will be no different, they say."
+        },
+        {
+          "quote": "will announce the details of their campaign later this year.",
+          "status": "supported",
+          "reason": "The evidence states the companies will announce details later this year.",
+          "evidence_quote": "The companies will announce the details later this year"
+        },
+        {
+          "quote": "The beer is set to hit shelves in the fall,",
+          "status": "supported",
+          "reason": "The evidence explicitly states the beer is set to hit shelves in the fall.",
+          "evidence_quote": "the beer is set to hit shelves in the fall."
+        },
+        {
+          "quote": "with proceeds going towards various social and environmental initiatives.",
+          "status": "unsupported",
+          "reason": "The evidence does not mention proceeds from the beer going towards social or environmental initiatives.",
+          "evidence_quote": ""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [
+        "The beer is set to hit shelves in the fall.",
+        "The beer is set to hit shelves in the fall.",
+        "The beer is set to hit shelves in the fall."
+      ],
+      "other_issues": []
+    }
+  ]
+}

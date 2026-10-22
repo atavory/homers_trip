@@ -1,0 +1,258 @@
+{
+  "id": "8271",
+  "source_id": "14756",
+  "stratum": "Data2txt_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Cafe Lido is located in Santa Barbara, California."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Cafe Lido has a rating of 3.5 stars."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Cafe Lido offers outdoor seating."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Cafe Lido offers takeout."
+    },
+    {
+      "target_id": "T5",
+      "claim": "A reviewer noted that servers were friendly and efficient."
+    },
+    {
+      "target_id": "T6",
+      "claim": "A reviewer criticized the cafe's policy of adding a 20% service fee to bills without notice."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Some customers complained about long wait times for service."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Cafe Lido's breakfast options include crispy Yukon grilled potatoes and a breakfast sandwich."
+    },
+    {
+      "target_id": "T9",
+      "claim": "The crispy Yukon grilled potatoes were praised for their taste and generous portions."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 4,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 5,
+      "claims": [
+        {
+          "quote": "Cafe Lido is an Italian, Mediterranean, and American restaurant located in Santa Barbara, California.",
+          "status": "unsupported",
+          "reason": "The evidence lists Cafe Lido's categories as 'Italian, Cafes, Mediterranean, Restaurants' — 'American' is not among them. The Santa Barbara, CA location is supported.",
+          "evidence_quote": "\"categories\": \"Italian, Cafes, Mediterranean, Restaurants\", \"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "With a rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars is 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "the cafe offers outdoor seating",
+          "status": "supported",
+          "reason": "The evidence shows OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "WiFi",
+          "status": "unsupported",
+          "reason": "The evidence shows WiFi is null (unknown/not listed), not confirmed as offered.",
+          "evidence_quote": "\"WiFi\": null"
+        },
+        {
+          "quote": "does not provide Business Parking or Restaurant Reservations",
+          "status": "unsupported",
+          "reason": "Both BusinessParking and RestaurantsReservations are null in the evidence, meaning unknown — not confirmed as unavailable.",
+          "evidence_quote": "\"BusinessParking\": null, \"RestaurantsReservations\": null"
+        },
+        {
+          "quote": "Customers have praised the cafe's ambiance and service",
+          "status": "unsupported",
+          "reason": "No review in the evidence praises the ambiance. The evidence does not support a claim about praised ambiance.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "one reviewer noting that their server was friendly and efficient",
+          "status": "supported",
+          "reason": "A reviewer states 'All servers are consistently good, friendly, and efficient!'",
+          "evidence_quote": "All servers are consistently good, friendly, and efficient!"
+        },
+        {
+          "quote": "another reviewer criticized the cafe's policy of adding a 20% service fee to bills without notice, which they felt was unfair",
+          "status": "supported",
+          "reason": "Two reviewers mention the 20% service fee added without notice and express dissatisfaction.",
+          "evidence_quote": "the 20% service fee that is automatically added to your bill. It's not stated anywhere on the menu, or by the servers."
+        },
+        {
+          "quote": "some customers have complained about long wait times for service",
+          "status": "supported",
+          "reason": "One reviewer states 'it took forever for the waiter to come to the table.'",
+          "evidence_quote": "it took forever for the waiter to come to the table"
+        },
+        {
+          "quote": "the cafe's breakfast options, including crispy Yukon grilled potatoes and a breakfast sandwich, have been praised for their taste and generous portions",
+          "status": "supported",
+          "reason": "A reviewer mentions both items and praises the potatoes for taste and generous serving; the sandwich is mentioned but not specifically praised.",
+          "evidence_quote": "I had both the Crispy Yukon grilled potatoes, and the Lido's breakfast sandwich. The potatoes were delicious, and I found them to be more delicious than the sandwich. The potatoes also had a very generous serving."
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T4"
+      ]
+    },
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Cafe Lido is an Italian, Mediterranean, and cafe-style restaurant located in Santa Barbara, California.",
+          "status": "supported",
+          "reason": "The evidence lists categories as 'Italian, Cafes, Mediterranean, Restaurants' and the location as Santa Barbara, CA. 'Cafe-style' is a reasonable characterization of the 'Cafes' category.",
+          "evidence_quote": "\"categories\": \"Italian, Cafes, Mediterranean, Restaurants\", \"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "With a rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars is 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "the cafe offers outdoor seating and takeout",
+          "status": "supported",
+          "reason": "OutdoorSeating is true and RestaurantsTakeOut is true in the evidence.",
+          "evidence_quote": "\"OutdoorSeating\": true, \"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "does not provide Business Parking, Restaurant Reservations, or WiFi",
+          "status": "unsupported",
+          "reason": "BusinessParking, RestaurantsReservations, and WiFi are all null in the evidence — unknown, not confirmed unavailable.",
+          "evidence_quote": "\"BusinessParking\": null, \"RestaurantsReservations\": null, \"WiFi\": null"
+        },
+        {
+          "quote": "Reviews mention positive experiences with the servers, with a reviewer noting that their server was good and and efficient",
+          "status": "supported",
+          "reason": "A reviewer states 'All servers are consistently good, friendly, and efficient!' supporting the claim of positive server experiences.",
+          "evidence_quote": "All servers are consistently good, friendly, and efficient!"
+        },
+        {
+          "quote": "another reviewer criticized the cafe's policy of adding a 20% service fee to bills without notice, which they felt was unfair",
+          "status": "supported",
+          "reason": "Multiple reviewers criticize the undisclosed 20% service fee.",
+          "evidence_quote": "the 20% service fee that is automatically added to your bill. It's not stated anywhere on the menu, or by the servers."
+        },
+        {
+          "quote": "some customers have complained about long wait times for service",
+          "status": "supported",
+          "reason": "One reviewer states 'it took forever for the waiter to come to the table.'",
+          "evidence_quote": "it took forever for the waiter to come to the table"
+        },
+        {
+          "quote": "the Cafe Lido's breakfast options, including crispy Yukon grilled potatoes and a breakfast sandwich, with the potatoes in particular noted for their generous portions and taste",
+          "status": "supported",
+          "reason": "A reviewer mentions both items and specifically praises the potatoes for taste and generous serving.",
+          "evidence_quote": "The potatoes were delicious, and I found them to be more delicious than the sandwich. The potatoes also had a very generous serving."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 3,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 4,
+      "claims": [
+        {
+          "quote": "Cafe Lido is an Italian, Mediterranean, and American restaurant located in Santa Barbara, California.",
+          "status": "unsupported",
+          "reason": "The evidence lists categories as 'Italian, Cafes, Mediterranean, Restaurants' — 'American' is not among them. The Santa Barbara, CA location is supported.",
+          "evidence_quote": "\"categories\": \"Italian, Cafes, Mediterranean, Restaurants\", \"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "With a rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars is 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "the cafe offers outdoor seating",
+          "status": "supported",
+          "reason": "The evidence shows OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "WiFi is not listed",
+          "status": "supported",
+          "reason": "WiFi is null in the evidence, meaning it is not listed/confirmed.",
+          "evidence_quote": "\"WiFi\": null"
+        },
+        {
+          "quote": "does not provide Business Parking or Restaurant Reservations",
+          "status": "unsupported",
+          "reason": "Both are null in the evidence — unknown, not confirmed as unavailable.",
+          "evidence_quote": "\"BusinessParking\": null, \"RestaurantsReservations\": null"
+        },
+        {
+          "quote": "Customers have praised the cafe's ambiance and service",
+          "status": "unsupported",
+          "reason": "No review in the evidence praises the ambiance specifically.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "one reviewer noting that their server was friendly and efficient",
+          "status": "supported",
+          "reason": "A reviewer states 'All servers are consistently good, friendly, and efficient!'",
+          "evidence_quote": "All servers are consistently good, friendly, and efficient!"
+        },
+        {
+          "quote": "another reviewer criticized the cafe's policy of adding a 20% service fee to bills without notice, which they felt was unfair",
+          "status": "supported",
+          "reason": "Multiple reviewers criticize the undisclosed 20% service fee.",
+          "evidence_quote": "the 20% service fee that is automatically added to your bill. It's not stated anywhere on the menu, or by the servers."
+        },
+        {
+          "quote": "some customers have complained about long wait times for service",
+          "status": "supported",
+          "reason": "One reviewer states 'it took forever for the waiter to come to the table.'",
+          "evidence_quote": "it took forever for the waiter to come to the table"
+        },
+        {
+          "quote": "the cafe's breakfast options, including crispy Yukon grilled potatoes and a breakfast sandwich, have been praised for their taste and generous portions",
+          "status": "supported",
+          "reason": "A reviewer mentions both items and praises the potatoes for taste and generous serving.",
+          "evidence_quote": "The potatoes were delicious, and I found them to be more delicious than the sandwich. The potatoes also had a very generous serving."
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T4"
+      ]
+    }
+  },
+  "validation_retries": [
+    {
+      "attempt": 0,
+      "nonverbatim_quotes": [
+        "Reviews mention positive experiences with the servers, with a reviewer noting that their server was good and efficient"
+      ]
+    }
+  ]
+}

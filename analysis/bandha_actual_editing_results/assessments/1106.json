@@ -1,0 +1,252 @@
+{
+  "id": "1106",
+  "source_id": "15778",
+  "stratum": "Summary_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "original",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "The Shariya refugee camp is located in Iraqi Kurdistan."
+    },
+    {
+      "target_id": "T2",
+      "claim": "The Shariya refugee camp houses thousands of Yazidis displaced by ISIS/ISIL attacks."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Ahlam and her family were captured by ISIS/ISIL and taken to a prison in Tal Afar."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Ahlam's in-laws and other elderly residents of the house were taken captive (taken away by ISIS fighters)."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Ahlam and her family escaped captivity and were reunited with Mahmoud (her husband/father of the children)."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Ahlam's parents remain with ISIS/ISIL and are still being held as captives."
+    },
+    {
+      "target_id": "T7",
+      "claim": "ISIS/ISIL separated young women and girls, some as young as eight years old, from their families and sold them as slaves to be used as concubines by their masters."
+    },
+    {
+      "target_id": "T8",
+      "claim": "The men were given a choice: convert to Islam or be shot."
+    },
+    {
+      "target_id": "T9",
+      "claim": "Many Yazidis fled their homes to escape ISIS/ISIL persecution."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "The Shariya refugee camp in Iraqi Kurdistan houses thousands of Yazidis who were displaced by ISIS attacks.",
+          "status": "supported",
+          "reason": "The evidence confirms the Shariya camp is in Iraqi Kurdistan and that thousands of Yazidis live there after fleeing ISIS.",
+          "evidence_quote": "The Shariya refugee camp opened around six months ago, made up of some 4,000 tents and counting. Thousands of Yazidis now call this corner of Iraqi Kurdistan home"
+        },
+        {
+          "quote": "most from Sinjar",
+          "status": "supported",
+          "reason": "The evidence states the vast majority of the camp's occupants are from the town of Sinjar.",
+          "evidence_quote": "The vast majority of the camp's occupants are from the town of Sinjar"
+        },
+        {
+          "quote": "were captured by ISIS and taken to prisons in Tal Afar",
+          "status": "supported",
+          "reason": "The evidence confirms Ahlam and her family were taken to a school turned prison in Tal Afar.",
+          "evidence_quote": "They were taken to a school turned prison in Tal Afar."
+        },
+        {
+          "quote": "where they were moved from village to village and forced to work",
+          "status": "supported",
+          "reason": "The evidence confirms they were moved from village to village and asked to choose work (fields, cleaners, herders).",
+          "evidence_quote": "the family was moved from village to village... they asked where we want to work, in the fields, as cleaners or as herders"
+        },
+        {
+          "quote": "Ahlam's in-laws and other elderly residents of the house were also taken prisoners.",
+          "status": "supported",
+          "reason": "The evidence confirms ISIS fighters came and took away her in-laws and other elderly people living in the house.",
+          "evidence_quote": "ISIS fighters came by and took away her in-laws and the other elderly people living in the house."
+        },
+        {
+          "quote": "Despite the danger, Ahlam and and her family escaped captivity and were reunited with her husband.",
+          "status": "supported",
+          "reason": "The evidence confirms Ahlam and her group escaped and she was reunited with Mahmoud, her husband.",
+          "evidence_quote": "The group made it into Iraqi Kurdistan. The couple can't put into words their emotions when they were reunited."
+        },
+        {
+          "quote": "However, Ahlam's parents remain with ISIL and are still being held as captives.",
+          "status": "supported",
+          "reason": "The evidence explicitly states Ahlam's parents are still with ISIS.",
+          "evidence_quote": "But Ahlam's parents are still with ISIS."
+        },
+        {
+          "quote": "The Yazidis are being held captive by ISIL in several prisons and detention centers across Iraq.",
+          "status": "unsupported",
+          "reason": "The evidence describes movement between locations but does not characterize these as 'several prisons and detention centers across Iraq' in a general sense; this is an overgeneralization not directly supported.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "ISIL has separated the young women and girls, some as young as eight years old, from their families and sold them as slaves to be used as concubines by their masters.",
+          "status": "supported",
+          "reason": "The evidence explicitly states ISIS separated young women and girls, some as young as 8, to be sold as slaves and used as concubines.",
+          "evidence_quote": "ISIS took thousands of Yazidis captive. The fighters separated the young women and girls, some as young as 8 years old, to be sold as slaves, for their \"masters\" to use as concubines."
+        },
+        {
+          "quote": "The men were given a choice - convert to Islam or be shot.",
+          "status": "supported",
+          "reason": "The evidence directly states men faced a choice: convert to Islam or be shot.",
+          "evidence_quote": "Men faced a choice: Convert to Islam or be shot."
+        },
+        {
+          "quote": "Many Yazidis have fled their homes in order to escape ISIS's persecution.",
+          "status": "supported",
+          "reason": "The evidence describes thousands of Yazidis fleeing ISIS and living in the refugee camp.",
+          "evidence_quote": "Thousands of Yazidis now call this corner of Iraqi Kurdistan home"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "The Shariya refugee camp in Iraqi Kurdistan houses thousands of Yazidis who were displaced by Islamic State of Iraq and the Levant (ISIL) attacks.",
+          "status": "supported",
+          "reason": "The evidence confirms the camp is in Iraqi Kurdistan and houses thousands of Yazidis displaced by ISIS.",
+          "evidence_quote": "The Shariya refugee camp opened around six months ago, made up of some 4,000 tents and counting. Thousands of Yazidis now call this corner of Iraqi Kurdistan home"
+        },
+        {
+          "quote": "Many of the camp's inhabitants, including Ahlam and her family, were captured by ISIL and taken to prisons in Tal Afar, where they were tortured and forced into labor.",
+          "status": "unsupported",
+          "reason": "The evidence confirms capture and being taken to Tal Afar and forced to work, but does not mention torture. 'Tortured' is not supported by the evidence.",
+          "evidence_quote": "They were taken to a school turned prison in Tal Afar... they asked where we want to work, in the fields, as cleaners or as herders"
+        },
+        {
+          "quote": "Ahlam's in-laws and other elderly residents of the house were also taken captive.",
+          "status": "supported",
+          "reason": "The evidence confirms ISIS took away her in-laws and other elderly people from the house.",
+          "evidence_quote": "ISIS fighters came by and took away her in-laws and the other elderly people living in the house."
+        },
+        {
+          "quote": "Despite the danger, Ahlam and her family escaped the prison and were reunited with their husband and father.",
+          "status": "supported",
+          "reason": "The evidence confirms Ahlam and her group escaped and were reunited with Mahmoud.",
+          "evidence_quote": "The group made it into Iraqi Kurdistan. The couple can't put into words their emotions when they were reunited."
+        },
+        {
+          "quote": "However, Ahlam's parents remain with ISIL and are still being held as captives.",
+          "status": "supported",
+          "reason": "The evidence explicitly states Ahlam's parents are still with ISIS.",
+          "evidence_quote": "But Ahlam's parents are still with ISIS."
+        },
+        {
+          "quote": "The Yazidis are being held captive by ISIL in several prisons and detention centers across Iraq.",
+          "status": "unsupported",
+          "reason": "The evidence describes movement between locations for one family but does not characterize these as 'several prisons and detention centers across Iraq' in a general, systematic sense.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "ISIL has separated the young women and girls, some as young as eight years old, from their families and sold them as slaves to be used as concubines by their masters.",
+          "status": "supported",
+          "reason": "The evidence explicitly states this.",
+          "evidence_quote": "The fighters separated the young women and girls, some as young as 8 years old, to be sold as slaves, for their \"masters\" to use as concubines."
+        },
+        {
+          "quote": "The men were given a choice - convert to Islam or be shot.",
+          "status": "supported",
+          "reason": "The evidence directly states this.",
+          "evidence_quote": "Men faced a choice: Convert to Islam or be shot."
+        },
+        {
+          "quote": "Many Yazidis have fled their homes in order to escape ISIL's persecution.",
+          "status": "supported",
+          "reason": "The evidence describes thousands of Yazidis fleeing ISIS and living in the refugee camp.",
+          "evidence_quote": "Thousands of Yazidis now call this corner of Iraqi Kurdistan home"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "The Shariya refugee camp in Iraqi Kurdistan houses thousands of Yazidis who were displaced by Islamic ISIS and the ISIS (ISIL) attacks.",
+          "status": "supported",
+          "reason": "Despite the garbled phrasing ('Islamic ISIS and the ISIS (ISIL)'), the factual content — that the camp in Iraqi Kurdistan houses thousands of Yazidis displaced by ISIS/ISIL — is supported by the evidence.",
+          "evidence_quote": "The Shariya refugee camp opened around six months ago, made up of some 4,000 tents and counting. Thousands of Yazidis now call this corner of Iraqi Kurdistan home"
+        },
+        {
+          "quote": "Many of the camp's inhabitants, including Ahlam and her family, were captured by ISIL and taken to prisons in Tal Afar, where they were tortured and forced into labor.",
+          "status": "unsupported",
+          "reason": "The evidence confirms capture, Tal Afar, and forced labor, but does not mention torture. 'Tortured' is not supported.",
+          "evidence_quote": "They were taken to a school turned prison in Tal Afar... they asked where we want to work, in the fields, as cleaners or as herders"
+        },
+        {
+          "quote": "Ahlam's in-laws and other elderly residents of the house were also taken captive.",
+          "status": "supported",
+          "reason": "The evidence confirms ISIS took away her in-laws and other elderly people from the house.",
+          "evidence_quote": "ISIS fighters came by and took away her in-laws and the other elderly people living in the house."
+        },
+        {
+          "quote": "Despite the danger, Ahlam and her family escaped the prison and were reunited with their husband and father.",
+          "status": "supported",
+          "reason": "The evidence confirms Ahlam and her group escaped and were reunited with Mahmoud.",
+          "evidence_quote": "The group made it into Iraqi Kurdistan. The couple can't put into words their emotions when they were reunited."
+        },
+        {
+          "quote": "However, Ahlam's parents remain with ISIL and are still being held as captives.",
+          "status": "supported",
+          "reason": "The evidence explicitly states Ahlam's parents are still with ISIS.",
+          "evidence_quote": "But Ahlam's parents are still with ISIS."
+        },
+        {
+          "quote": "The Yazidis are being held captive by ISIL in several prisons and detention centers across Iraq.",
+          "status": "unsupported",
+          "reason": "The evidence describes movement between locations for one family but does not characterize these as 'several prisons and detention centers across Iraq' in a general, systematic sense.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "ISIL has separated the young women and girls, some as young as eight years old, from their families and sold them as slaves to be used as concubines by their masters.",
+          "status": "supported",
+          "reason": "The evidence explicitly states this.",
+          "evidence_quote": "The fighters separated the young women and girls, some as young as 8 years old, to be sold as slaves, for their \"masters\" to use as concubines."
+        },
+        {
+          "quote": "The men were given a choice - convert to Islam or be shot.",
+          "status": "supported",
+          "reason": "The evidence directly states this.",
+          "evidence_quote": "Men faced a choice: Convert to Islam or be shot."
+        },
+        {
+          "quote": "Many Yazidis have fled their homes in order to escape ISIL's persecution.",
+          "status": "supported",
+          "reason": "The evidence describes thousands of Yazidis fleeing ISIS and living in the refugee camp.",
+          "evidence_quote": "Thousands of Yazidis now call this corner of Iraqi Kurdistan home"
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

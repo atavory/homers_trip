@@ -1,0 +1,60 @@
+{
+  "id": "10449",
+  "policy": "top20",
+  "response": "Eladio's Eladio's Restaurant is located at 1 State St in Santa Barbara, California, offering a variety of cuisines including seafood, sandwiches, breakfast, and Breakfast & Brunch, Seafood, American (New). With a rating of 3.5 stars, the restaurant has received mixed reviews for its food and service, and service. Reviewers have praised the the restaurant's flavorful dishes and friendly and friendly staff While some have mentioned that the interior could improved, window tables improved, the window tables provide great views views of the pier and waterfront. The restaurant also offers takeout options and offers a happy hour hour menu, which has been praised by guests. Overall, Eladio's Restaurant is a great choice for those looking for a casual dining experience with good food and service.",
+  "replacements": [
+    {
+      "replacement": "Eladio's Restaurant is located at 1 State St in Santa Barbara, California,",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "Breakfast & Brunch, Seafood, American (New).",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "mixed",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "for its food and service,",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "Reviewers",
+      "span_id": "s4"
+    },
+    {
+      "replacement": "the restaurant's flavorful dishes and friendly",
+      "span_id": "s5"
+    },
+    {
+      "replacement": "staff",
+      "span_id": "s6"
+    },
+    {
+      "replacement": "have mentioned",
+      "span_id": "s7"
+    },
+    {
+      "replacement": "improved, window tables",
+      "span_id": "s8"
+    },
+    {
+      "replacement": "window tables provide",
+      "span_id": "s9"
+    },
+    {
+      "replacement": "views of the pier and waterfront.",
+      "span_id": "s10"
+    },
+    {
+      "replacement": "offers a happy hour",
+      "span_id": "s11"
+    },
+    {
+      "replacement": "menu, which has been praised by guests.",
+      "span_id": "s12"
+    }
+  ],
+  "model_called": true
+}

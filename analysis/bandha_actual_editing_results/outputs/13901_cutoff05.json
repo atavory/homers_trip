@@ -1,0 +1,12 @@
+{
+  "id": "13901",
+  "policy": "cutoff05",
+  "response": "  Based on the given passages, here are the differences and similarities between red and white blood cells:\n\nDifferences:\n\n* Function: Red blood cells are responsible for delivering oxygen from the lungs to the body's tissues, while white blood cells are part of the immune system and help combat diseases and infections.\nUnable to answer based on given passages.\n\nSimilarities:\n\n* Formation: Both red and white blood cells are formed from pluripotent stem cells in the red bone marrow.\n* Presence in circulatory system: Both red and white blood cells are found in the circulatory system and can be carried by blood from one part of the body to another.\n* Cellular components: Both red and white blood cells have a cell membrane and cytoplasm.\n\nTherefore, while red and white blood cells have some similarities in terms of their formation and presence in the circulatory system, they differ in their function and structure.",
+  "replacements": [
+    {
+      "replacement": "Unable to answer based on given passages.",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

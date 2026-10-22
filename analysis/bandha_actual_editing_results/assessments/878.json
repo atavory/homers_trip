@@ -1,0 +1,196 @@
+{
+  "id": "878",
+  "source_id": "15739",
+  "stratum": "Summary_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "original",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "A gastrointestinal illness has affected about 100 people on the Celebrity Infinity cruise ship."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Both passengers and crew members have been affected."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The CDC has yet to determine the cause of the illness."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Two CDC staffers will meet the ship in San Diego on Monday to investigate further."
+    },
+    {
+      "target_id": "T5",
+      "claim": "This is the third time the Celebrity Infinity has experienced such an outbreak."
+    },
+    {
+      "target_id": "T6",
+      "claim": "The outbreak has led to increased cleaning and disinfection procedures."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Specimens have been taken from those afflicted for CDC testing."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "A gastrointestinal illness has affected about 100 people on the Celebrity Infinity cruise ship",
+          "status": "supported",
+          "reason": "The evidence states 'Gastrointestinal illness has gripped 100 people on the cruise ship Celebrity Infinity' (95 passengers + 5 crew = 100 total).",
+          "evidence_quote": "Gastrointestinal illness has gripped 100 people on the cruise ship Celebrity Infinity"
+        },
+        {
+          "quote": "including both passengers and crew members",
+          "status": "supported",
+          "reason": "The evidence confirms 95 passengers and 5 crew members were affected.",
+          "evidence_quote": "95 have suffered from vomiting, diarrhea and other symptoms, the CDC said. The illness has also affected five members of the 964-person crew."
+        },
+        {
+          "quote": "The Centers for Disease Control and Prevention (CDC) has yet to determine the cause of the illness",
+          "status": "supported",
+          "reason": "The evidence explicitly states the CDC has yet to determine what is causing the ailments.",
+          "evidence_quote": "The CDC has yet to determine what's causing the ailments."
+        },
+        {
+          "quote": "two CDC staffers will meet the ship in San Diego on Monday to investigate further",
+          "status": "supported",
+          "reason": "The evidence confirms two CDC staffers are scheduled to meet the ship in San Diego on Monday.",
+          "evidence_quote": "Two staffers from the agency are scheduled to meet the West Coast-based ship in San Diego on Monday."
+        },
+        {
+          "quote": "This is the third time the Celebrity Infinity has experienced such an outbreak",
+          "status": "supported",
+          "reason": "The evidence states this is the third time the Celebrity Infinity has suffered an outbreak of gastrointestinal illness.",
+          "evidence_quote": "this is the third time the Celebrity Infinity has suffered an outbreak of gastrointestinal illness, with others occurring in 2006 and 2013."
+        },
+        {
+          "quote": "which has led to increased cleaning and disinfection procedures",
+          "status": "supported",
+          "reason": "The evidence confirms Celebrity Cruises has been increasing cleaning and disinfection procedures since the outbreak began.",
+          "evidence_quote": "including increasing cleaning and disinfection procedures"
+        },
+        {
+          "quote": "specimens being taken from those afflicted for CDC testing",
+          "status": "supported",
+          "reason": "The evidence confirms specimens are being taken from the afflicted for testing by the CDC.",
+          "evidence_quote": "taking specimens from the afflicted for testing by the CDC"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "A gastrointestinal illness has affected about 100 people on the Celebrity Infinity cruise ship",
+          "status": "supported",
+          "reason": "The evidence states 'Gastrointestinal illness has gripped 100 people on the cruise ship Celebrity Infinity' (95 passengers + 5 crew = 100 total).",
+          "evidence_quote": "Gastrointestinal illness has gripped 100 people on the cruise ship Celebrity Infinity"
+        },
+        {
+          "quote": "including both passengers and crew members",
+          "status": "supported",
+          "reason": "The evidence confirms 95 passengers and 5 crew members were affected.",
+          "evidence_quote": "95 have suffered from vomiting, diarrhea and other symptoms, the CDC said. The illness has also affected five members of the 964-person crew."
+        },
+        {
+          "quote": "The Centers for Disease Control and Prevention (CDC) has yet to determine the cause of the illness",
+          "status": "supported",
+          "reason": "The evidence explicitly states the CDC has yet to determine what is causing the ailments.",
+          "evidence_quote": "The CDC has yet to determine what's causing the ailments."
+        },
+        {
+          "quote": "two CDC staffers will meet the ship in San Diego on Monday to investigate further",
+          "status": "supported",
+          "reason": "The evidence confirms two CDC staffers are scheduled to meet the ship in San Diego on Monday.",
+          "evidence_quote": "Two staffers from the agency are scheduled to meet the West Coast-based ship in San Diego on Monday."
+        },
+        {
+          "quote": "This is the third time the Celebrity Infinity has experienced such an outbreak",
+          "status": "supported",
+          "reason": "The evidence states this is the third time the Celebrity Infinity has suffered an outbreak of gastrointestinal illness.",
+          "evidence_quote": "this is the third time the Celebrity Infinity has suffered an outbreak of gastrointestinal illness, with others occurring in 2006 and 2013."
+        },
+        {
+          "quote": "which has led to increased cleaning and disinfection procedures",
+          "status": "supported",
+          "reason": "The evidence confirms Celebrity Cruises has been increasing cleaning and disinfection procedures since the outbreak began.",
+          "evidence_quote": "including increasing cleaning and disinfection procedures"
+        },
+        {
+          "quote": "specimen collection for testing",
+          "status": "supported",
+          "reason": "The evidence confirms specimens are being taken from the afflicted for testing by the CDC.",
+          "evidence_quote": "taking specimens from the afflicted for testing by the CDC"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "A gastrointestinal illness has affected about 100 people on the Celebrity Infinity cruise ship",
+          "status": "supported",
+          "reason": "The evidence states 'Gastrointestinal illness has gripped 100 people on the cruise ship Celebrity Infinity' (95 passengers + 5 crew = 100 total).",
+          "evidence_quote": "Gastrointestinal illness has gripped 100 people on the cruise ship Celebrity Infinity"
+        },
+        {
+          "quote": "including both passengers and crew members",
+          "status": "supported",
+          "reason": "The evidence confirms 95 passengers and 5 crew members were affected.",
+          "evidence_quote": "95 have suffered from vomiting, diarrhea and other symptoms, the CDC said. The illness has also affected five members of the 964-person crew."
+        },
+        {
+          "quote": "The Centers for Disease Control and Prevention (CDC) has yet to determine the cause of the illness",
+          "status": "supported",
+          "reason": "The evidence explicitly states the CDC has yet to determine what is causing the ailments.",
+          "evidence_quote": "The CDC has yet to determine what's causing the ailments."
+        },
+        {
+          "quote": "two CDC staffers will meet the ship in San Diego on Monday to investigate further",
+          "status": "supported",
+          "reason": "The evidence confirms two CDC staffers are scheduled to meet the ship in San Diego on Monday.",
+          "evidence_quote": "Two staffers from the agency are scheduled to meet the West Coast-based ship in San Diego on Monday."
+        },
+        {
+          "quote": "This is the third time the Celebrity Infinity has experienced such an outbreak",
+          "status": "supported",
+          "reason": "The evidence states this is the third time the Celebrity Infinity has suffered an outbreak of gastrointestinal illness.",
+          "evidence_quote": "this is the third time the Celebrity Infinity has suffered an outbreak of gastrointestinal illness, with others occurring in 2006 and 2013."
+        },
+        {
+          "quote": "which has led to increased cleaning and disinfection procedures",
+          "status": "supported",
+          "reason": "The evidence confirms Celebrity Cruises has been increasing cleaning and disinfection procedures since the outbreak began.",
+          "evidence_quote": "including increasing cleaning and disinfection procedures"
+        },
+        {
+          "quote": "specimen collection for testing",
+          "status": "supported",
+          "reason": "The evidence confirms specimens are being taken from the afflicted for testing by the CDC.",
+          "evidence_quote": "taking specimens from the afflicted for testing by the CDC"
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

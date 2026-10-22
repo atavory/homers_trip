@@ -1,0 +1,181 @@
+{
+  "id": "4065",
+  "source_id": "13848",
+  "stratum": "Summary_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "cutoff05",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "struggling defensive line"
+    },
+    {
+      "target_id": "T2",
+      "claim": "Young has 5 sacks this season"
+    },
+    {
+      "target_id": "T3",
+      "claim": "Trading for Young would provide an immediate upgrade"
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "The Miami Dolphins are considering trading for Chase Young from the Commanders",
+          "status": "supported",
+          "reason": "The evidence states that 'several identifiable teams' are prepared to trade for Young from the Commanders, and that it is 'something that should be, at the very least, explored' by Miami, supporting that the Dolphins are considering such a trade.",
+          "evidence_quote": "CBS Sports' Josina Anderson reports that 'several identifiable teams' are prepared to pull off a trade for Young or Montez Sweat from the Commanders, and while it may seem unlikely that Young will land in Miami, it's certainly something that should be, at the very least, explored."
+        },
+        {
+          "quote": "to bolster their struggling defensive line",
+          "status": "supported",
+          "reason": "The evidence explicitly discusses the Dolphins' defensive line struggling to generate consistent pressure and sacks throughout the season.",
+          "evidence_quote": "the struggles of the defensive line in getting consistent pressure with their front four has been a talking point all season."
+        },
+        {
+          "quote": "Young has 5 sacks this season",
+          "status": "supported",
+          "reason": "The evidence directly states Young has 5 sacks this season.",
+          "evidence_quote": "Trading for Young, who is five years younger and has 5 sacks this season, would be a massive upgrade for the Dolphins."
+        },
+        {
+          "quote": "the Dolphins' current starting defensive ends have combined for only 7.5 sacks",
+          "status": "unsupported",
+          "reason": "The evidence mentions Emmanuel Ogbah has 2.5 sacks but does not provide a combined sack total for all starting defensive ends, nor does it confirm the 7.5 figure.",
+          "evidence_quote": "Emmanuel Ogbah has been ineffective this season, collecting just 2.5 sacks on the season"
+        },
+        {
+          "quote": "Trading for Young would provide an immediate upgrade",
+          "status": "supported",
+          "reason": "The evidence explicitly describes trading for Young as 'a massive upgrade for the Dolphins.'",
+          "evidence_quote": "Trading for Young, who is five years younger and has 5 sacks this season, would be a massive upgrade for the Dolphins."
+        },
+        {
+          "quote": "give them more flexibility in extending his contract",
+          "status": "unsupported",
+          "reason": "The evidence discusses the need to sign Young to a long-term extension and cap considerations, but does not mention that trading for him would give the Dolphins more flexibility in extending his contract.",
+          "evidence_quote": "trading for Young would lead to an immediate need to sign him to a long-term extension."
+        },
+        {
+          "quote": "it would also add to the team's already strained cap situation",
+          "status": "supported",
+          "reason": "The evidence references 'serious questions and decisions to make regarding their cap situation in the future,' supporting that the cap situation is a concern, though 'strained' is a reasonable characterization.",
+          "evidence_quote": "Miami is certainly going to have some serious questions and decisions to make regarding their cap situation in the future"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "The Miami Dolphins are considering trading for Washington Commanders defensive end Chase Young",
+          "status": "supported",
+          "reason": "The evidence confirms Young plays for the Commanders and that Miami is exploring a potential trade for him.",
+          "evidence_quote": "CBS Sports' Josina Anderson reports that 'several identifiable teams' are prepared to pull off a trade for Young or Montez Sweat from the Commanders, and while it may seem unlikely that Young will land in Miami, it's certainly something that should be, at the very least, explored."
+        },
+        {
+          "quote": "to bolster their struggling defensive line",
+          "status": "supported",
+          "reason": "The evidence explicitly discusses the Dolphins' defensive line struggling to generate consistent pressure throughout the season.",
+          "evidence_quote": "the struggles of the defensive line in getting consistent pressure with their front four has been a talking point all season."
+        },
+        {
+          "quote": "Young has 5 sacks this season",
+          "status": "supported",
+          "reason": "The evidence directly states Young has 5 sacks this season.",
+          "evidence_quote": "Trading for Young, who is five years younger and has 5 sacks this season, would be a massive upgrade for the Dolphins."
+        },
+        {
+          "quote": "the Dolphins' current defensive ends have combined for only 7.5 sacks",
+          "status": "unsupported",
+          "reason": "The evidence mentions Ogbah's 2.5 sacks but does not provide a combined total for all defensive ends, nor does it confirm the 7.5 figure. The omission of 'starting' does not resolve the evidentiary gap.",
+          "evidence_quote": "Emmanuel Ogbah has been ineffective this season, collecting just 2.5 sacks on the season"
+        },
+        {
+          "quote": "Trading for Young would provide an immediate upgrade",
+          "status": "supported",
+          "reason": "The evidence explicitly calls trading for Young 'a massive upgrade for the Dolphins.'",
+          "evidence_quote": "Trading for Young, who is five years younger and has 5 sacks this season, would be a massive upgrade for the Dolphins."
+        },
+        {
+          "quote": "give them more flexibility in extending his contract",
+          "status": "unsupported",
+          "reason": "The evidence discusses the need to extend Young and cap concerns but does not state that trading for him would give the Dolphins more flexibility in extending his contract.",
+          "evidence_quote": "trading for Young would lead to an immediate need to sign him to a long-term extension."
+        },
+        {
+          "quote": "it would also add to the team's already strained cap situation",
+          "status": "supported",
+          "reason": "The evidence references serious future cap questions for Miami, supporting the characterization of a strained cap situation.",
+          "evidence_quote": "Miami is certainly going to have some serious questions and decisions to make regarding their cap situation in the future"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "The Miami Dolphins are considering trading for Washington Commanders defensive end Chase Young",
+          "status": "supported",
+          "reason": "The evidence confirms Young plays for the Commanders and that Miami is exploring a potential trade for him.",
+          "evidence_quote": "CBS Sports' Josina Anderson reports that 'several identifiable teams' are prepared to pull off a trade for Young or Montez Sweat from the Commanders, and while it may seem unlikely that Young will land in Miami, it's certainly something that should be, at the very least, explored."
+        },
+        {
+          "quote": "to bolster their struggling defensive line",
+          "status": "supported",
+          "reason": "The evidence explicitly discusses the Dolphins' defensive line struggling to generate consistent pressure throughout the season.",
+          "evidence_quote": "the struggles of the defensive line in getting consistent pressure with their front four has been a talking point all season."
+        },
+        {
+          "quote": "Young has 5 sacks this season",
+          "status": "supported",
+          "reason": "The evidence directly states Young has 5 sacks this season.",
+          "evidence_quote": "Trading for Young, who is five years younger and has 5 sacks this season, would be a massive upgrade for the Dolphins."
+        },
+        {
+          "quote": "the Dolphins' current starting defensive ends have combined for only 7.5 sacks",
+          "status": "unsupported",
+          "reason": "The evidence mentions Ogbah's 2.5 sacks but does not provide a combined sack total for all starting defensive ends, nor does it confirm the 7.5 figure.",
+          "evidence_quote": "Emmanuel Ogbah has been ineffective this season, collecting just 2.5 sacks on the season"
+        },
+        {
+          "quote": "Trading for Young would provide an immediate upgrade",
+          "status": "supported",
+          "reason": "The evidence explicitly calls trading for Young 'a massive upgrade for the Dolphins.'",
+          "evidence_quote": "Trading for Young, who is five years younger and has 5 sacks this season, would be a massive upgrade for the Dolphins."
+        },
+        {
+          "quote": "give them more flexibility in extending his contract",
+          "status": "unsupported",
+          "reason": "The evidence discusses the need to extend Young and cap concerns but does not state that trading for him would give the Dolphins more flexibility in extending his contract.",
+          "evidence_quote": "trading for Young would lead to an immediate need to sign him to a long-term extension."
+        },
+        {
+          "quote": "it would also add to the team's already strained cap situation",
+          "status": "supported",
+          "reason": "The evidence references serious future cap questions for Miami, supporting the characterization of a strained cap situation.",
+          "evidence_quote": "Miami is certainly going to have some serious questions and decisions to make regarding their cap situation in the future"
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  },
+  "source_audited_target_override": true
+}

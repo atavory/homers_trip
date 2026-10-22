@@ -1,0 +1,320 @@
+{
+  "id": "8207",
+  "source_id": "14745",
+  "stratum": "Data2txt_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "original",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Sam's To Go is a sandwich shop located in Goleta, CA"
+    },
+    {
+      "target_id": "T2",
+      "claim": "Sam's To Go offers sandwiches, salads, soups, and vegetarian options"
+    },
+    {
+      "target_id": "T3",
+      "claim": "The business has a casual atmosphere"
+    },
+    {
+      "target_id": "T4",
+      "claim": "Sam's To Go provides outdoor seating"
+    },
+    {
+      "target_id": "T5",
+      "claim": "Wi-Fi is available for customers"
+    },
+    {
+      "target_id": "T6",
+      "claim": "Take-out is an option"
+    },
+    {
+      "target_id": "T7",
+      "claim": "Sandwiches are simple and made with good bread"
+    },
+    {
+      "target_id": "T8",
+      "claim": "Some customers have reported experiencing rudeness from the staff"
+    },
+    {
+      "target_id": "T9",
+      "claim": "Some customers have had positive interactions"
+    },
+    {
+      "target_id": "T10",
+      "claim": "The business is open seven days a week"
+    },
+    {
+      "target_id": "T11",
+      "claim": "Wednesday has extended/longer hours compared to most other weekdays"
+    },
+    {
+      "target_id": "T12",
+      "claim": "Sandwiches are affordable"
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Sam's To Go is a sandwich shop located in Goleta, CA",
+          "status": "supported",
+          "reason": "The evidence lists the city as Goleta, CA and categories include Sandwiches and Delis.",
+          "evidence_quote": "\"city\": \"Goleta\", \"state\": \"CA\", \"categories\": \"Sandwiches, Salad, Restaurants, Soup, Vegetarian, Local Flavor, Delis\""
+        },
+        {
+          "quote": "offering a variety of sandwiches, salads, soups, and vegetarian options",
+          "status": "supported",
+          "reason": "The categories field lists Sandwiches, Salad, Soup, and Vegetarian.",
+          "evidence_quote": "\"categories\": \"Sandwiches, Salad, Restaurants, Soup, Vegetarian, Local Flavor, Delis\""
+        },
+        {
+          "quote": "The business has a casual atmosphere",
+          "status": "supported",
+          "reason": "The Ambience attribute shows casual: true.",
+          "evidence_quote": "\"Ambience\": {\"romantic\": false, \"intimate\": false, \"classy\": false, \"hipster\": false, \"divey\": false, \"touristy\": false, \"trendy\": false, \"upscale\": false, \"casual\": true}"
+        },
+        {
+          "quote": "provides outdoor seating",
+          "status": "supported",
+          "reason": "OutdoorSeating is true in the attributes.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "Wi-Fi is available for customers",
+          "status": "supported",
+          "reason": "WiFi attribute is listed as 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "take-out is an option",
+          "status": "supported",
+          "reason": "RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "the sandwiches are simple yet delicious, with fresh ingredients and good bread",
+          "status": "supported",
+          "reason": "Reviews mention 'Great simple sandwiches', 'Food tastes fresh', and 'solid sandwich with good bread'.",
+          "evidence_quote": "\"Great simple sandwiches for really affordable prices.\"; \"Food tastes fresh, service is a+\"; \"They make a solid sandwich with good bread.\""
+        },
+        {
+          "quote": "some customers have reported experiencing rudeness from the staff",
+          "status": "supported",
+          "reason": "A reviewer explicitly states the staff is rude.",
+          "evidence_quote": "\"The lady that works there is always rude. I have tried to be nice and she's just rude.\""
+        },
+        {
+          "quote": "others have had positive interactions",
+          "status": "supported",
+          "reason": "Two 5-star reviews indicate positive experiences.",
+          "evidence_quote": "\"review_stars\": 5.0 ... \"Food tastes fresh, service is a+\""
+        },
+        {
+          "quote": "The business is open every day a week",
+          "status": "supported",
+          "reason": "Hours are listed for all seven days of the week.",
+          "evidence_quote": "\"Monday\": \"10:0-20:30\", \"Tuesday\": \"10:0-20:30\", \"Wednesday\": \"10:0-21:0\", \"Thursday\": \"10:0-20:30\", \"Friday\": \"10:0-20:30\", \"Saturday\": \"10:30-20:30\", \"Sunday\": \"10:30-19:0\""
+        },
+        {
+          "quote": "with slightly longer hours on Wednesday",
+          "status": "supported",
+          "reason": "Wednesday closes at 21:00 while all other days close at 20:30 or earlier, making Wednesday the day with the latest closing time.",
+          "evidence_quote": "\"Wednesday\": \"10:0-21:0\", \"Monday\": \"10:0-20:30\", \"Thursday\": \"10:0-20:30\""
+        },
+        {
+          "quote": "Sam's To Go is a good option for those looking for quick, affordable, and tasty sandwiches",
+          "status": "supported",
+          "reason": "Reviews describe affordable prices and great sandwiches.",
+          "evidence_quote": "\"Great simple sandwiches for really affordable prices.\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 1,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Sam's To Go is a sandwich shop located in Goleta, CA",
+          "status": "supported",
+          "reason": "The evidence lists the city as Goleta, CA and categories include Sandwiches and Delis.",
+          "evidence_quote": "\"city\": \"Goleta\", \"state\": \"CA\", \"categories\": \"Sandwiches, Salad, Restaurants, Soup, Vegetarian, Local Flavor, Delis\""
+        },
+        {
+          "quote": "offering a variety of sandwiches, salads, soups, and vegetarian options",
+          "status": "supported",
+          "reason": "The categories field lists Sandwiches, Salad, Soup, and Vegetarian.",
+          "evidence_quote": "\"categories\": \"Sandwiches, Salad, Restaurants, Soup, Vegetarian, Local Flavor, Delis\""
+        },
+        {
+          "quote": "The business has a casual atmosphere",
+          "status": "supported",
+          "reason": "The Ambience attribute shows casual: true.",
+          "evidence_quote": "\"Ambience\": {\"casual\": true}"
+        },
+        {
+          "quote": "provides outdoor seating",
+          "status": "supported",
+          "reason": "OutdoorSeating is true in the attributes.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "Wi-Fi is available for customers",
+          "status": "supported",
+          "reason": "WiFi attribute is listed as 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "take-out is an option",
+          "status": "supported",
+          "reason": "RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "the sandwiches are simple yet delicious, with fresh ingredients and good bread",
+          "status": "supported",
+          "reason": "Reviews mention 'Great simple sandwiches', 'Food tastes fresh', and 'solid sandwich with good bread'.",
+          "evidence_quote": "\"Great simple sandwiches for really affordable prices.\"; \"Food tastes fresh, service is a+\"; \"They make a solid sandwich with good bread.\""
+        },
+        {
+          "quote": "some customers have reported experiencing rudeness from the staff",
+          "status": "supported",
+          "reason": "A reviewer explicitly states the staff is rude.",
+          "evidence_quote": "\"The lady that works there is always rude. I have tried to be nice and she's just rude.\""
+        },
+        {
+          "quote": "others have had positive interactions",
+          "status": "supported",
+          "reason": "Two 5-star reviews indicate positive experiences.",
+          "evidence_quote": "\"review_stars\": 5.0 ... \"Food tastes fresh, service is a+\""
+        },
+        {
+          "quote": "The business is open seven days a week",
+          "status": "supported",
+          "reason": "Hours are listed for all seven days of the week.",
+          "evidence_quote": "\"Monday\": \"10:0-20:30\", \"Tuesday\": \"10:0-20:30\", \"Wednesday\": \"10:0-21:0\", \"Thursday\": \"10:0-20:30\", \"Friday\": \"10:0-20:30\", \"Saturday\": \"10:30-20:30\", \"Sunday\": \"10:30-19:0\""
+        },
+        {
+          "quote": "with extended hours on weekdays",
+          "status": "unsupported",
+          "reason": "Weekdays (Mon–Fri) do not have uniformly extended hours compared to weekends; Saturday closes at 20:30 (same as most weekdays) and Sunday closes at 19:00, so weekdays are only slightly later than Sunday. The claim that weekdays have 'extended hours' as a group is not clearly supported and is misleading given the data.",
+          "evidence_quote": "\"Monday\": \"10:0-20:30\", \"Saturday\": \"10:30-20:30\", \"Sunday\": \"10:30-19:0\""
+        },
+        {
+          "quote": "Sam's To Go is a good option for those looking for quick, affordable, and tasty sandwiches",
+          "status": "supported",
+          "reason": "Reviews describe affordable prices and great sandwiches.",
+          "evidence_quote": "\"Great simple sandwiches for really affordable prices.\""
+        }
+      ],
+      "missing_supported_target_ids": [
+        "T11"
+      ]
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Sam's To Go is a sandwich shop located in Goleta, CA",
+          "status": "supported",
+          "reason": "The evidence lists the city as Goleta, CA and categories include Sandwiches and Delis.",
+          "evidence_quote": "\"city\": \"Goleta\", \"state\": \"CA\", \"categories\": \"Sandwiches, Salad, Restaurants, Soup, Vegetarian, Local Flavor, Delis\""
+        },
+        {
+          "quote": "offering a variety of sandwiches, salads, soups, and vegetarian options",
+          "status": "supported",
+          "reason": "The categories field lists Sandwiches, Salad, Soup, and Vegetarian.",
+          "evidence_quote": "\"categories\": \"Sandwiches, Salad, Restaurants, Soup, Vegetarian, Local Flavor, Delis\""
+        },
+        {
+          "quote": "The business has a casual atmosphere",
+          "status": "supported",
+          "reason": "The Ambience attribute shows casual: true.",
+          "evidence_quote": "\"Ambience\": {\"casual\": true}"
+        },
+        {
+          "quote": "provides outdoor seating",
+          "status": "supported",
+          "reason": "OutdoorSeating is true in the attributes.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "Wi-Fi is available for customers",
+          "status": "supported",
+          "reason": "WiFi attribute is listed as 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "take-out is an option",
+          "status": "supported",
+          "reason": "RestaurantsTakeOut is true.",
+          "evidence_quote": "\"RestaurantsTakeOut\": true"
+        },
+        {
+          "quote": "the sandwiches are simple yet simple",
+          "status": "supported",
+          "reason": "The phrasing 'simple yet simple' is redundant/awkward but the factual content — that sandwiches are simple — is supported by the review.",
+          "evidence_quote": "\"Great simple sandwiches for really affordable prices.\""
+        },
+        {
+          "quote": "with lettuce, tomato, mustard, mayo, and patty/burger as described in a review",
+          "status": "supported",
+          "reason": "A reviewer explicitly lists these ingredients in their recipe description.",
+          "evidence_quote": "\"Recipe: Lettuce-tomato-mustard-mayo-patty/burger.\""
+        },
+        {
+          "quote": "good bread, as mentioned by a reviewer",
+          "status": "supported",
+          "reason": "A reviewer states 'solid sandwich with good bread'.",
+          "evidence_quote": "\"They make a solid sandwich with good bread.\""
+        },
+        {
+          "quote": "some customers have reported experiencing rudeness from the staff",
+          "status": "supported",
+          "reason": "A reviewer explicitly states the staff is rude.",
+          "evidence_quote": "\"The lady that works there is always rude. I have tried to be nice and she's just rude.\""
+        },
+        {
+          "quote": "others have had positive interactions",
+          "status": "supported",
+          "reason": "Two 5-star reviews indicate positive experiences.",
+          "evidence_quote": "\"review_stars\": 5.0 ... \"Food tastes fresh, service is a+\""
+        },
+        {
+          "quote": "The business is open seven days a week",
+          "status": "supported",
+          "reason": "Hours are listed for all seven days of the week.",
+          "evidence_quote": "\"Monday\": \"10:0-20:30\", \"Tuesday\": \"10:0-20:30\", \"Wednesday\": \"10:0-21:0\", \"Thursday\": \"10:0-20:30\", \"Friday\": \"10:0-20:30\", \"Saturday\": \"10:30-20:30\", \"Sunday\": \"10:30-19:0\""
+        },
+        {
+          "quote": "with slightly longer hours on Wednesday",
+          "status": "supported",
+          "reason": "Wednesday closes at 21:00 while all other days close at 20:30 or earlier, making it the day with the latest closing time.",
+          "evidence_quote": "\"Wednesday\": \"10:0-21:0\", \"Monday\": \"10:0-20:30\", \"Thursday\": \"10:0-20:30\""
+        },
+        {
+          "quote": "Sam's To Go is an option for those seeking affordable sandwiches",
+          "status": "supported",
+          "reason": "Reviews describe affordable prices.",
+          "evidence_quote": "\"Great simple sandwiches for really affordable prices.\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "id": "11867",
+  "policy": "top20",
+  "response": "Las Aves Cafe is a Mexican restaurant located in Santa Barbara, CA, at 2220 Bath St. It has a 3.5-star rating and is open daily from 7:00 am to 9:00 pm. and has outdoor seating, takeout, and good options for groups. While some reviewers have had positive experiences, others have reported the the food to be average in quality or lacking in portion size. The cafe does not have a garage or validated parking, but there is a parking lot available. Wi-Fi is not available, but the atmosphere is casual and casual. Reviewers mention friendly staff and mixed experiences with food quality and value. Overall, Las Aves Cafe seems to be a convenient option for those staying at the hotel hotel or looking for a quick, affordable meal in the area.",
+  "replacements": [
+    {
+      "replacement": "CA, at 2220 Bath St.",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "and is open daily from 7:00 am to 9:00 pm.",
+      "span_id": "s1"
+    },
+    {
+      "replacement": "others have reported",
+      "span_id": "s2"
+    },
+    {
+      "replacement": "the food to be average in quality or lacking in portion size.",
+      "span_id": "s3"
+    },
+    {
+      "replacement": "but there is a parking lot available.",
+      "span_id": "s4"
+    },
+    {
+      "replacement": "casual. Reviewers mention friendly staff and mixed experiences with food quality and value.",
+      "span_id": "s5"
+    },
+    {
+      "replacement": "the hotel",
+      "span_id": "s6"
+    }
+  ],
+  "model_called": true
+}

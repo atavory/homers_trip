@@ -1,0 +1,200 @@
+{
+  "id": "12464",
+  "source_id": "14391",
+  "stratum": "QA_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "cutoff05",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Sterilize a needle with a flame."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Put a drop of blood toward one end of a clean glass slide."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Hold another clean slide at an angle of about 45 degrees."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Touch the blood with one end of the slide so the blood runs along the edge of the slide using capillary action."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Push the slide along the length of the first slide to produce a thin smear of blood."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Make two smears and allow them to air dry."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Label the smears clearly."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Place the smears in the provided slide transport containers."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Sterilize a needle with a flame.",
+          "status": "supported",
+          "reason": "Passage 1 and passage 3 (via passage 1) confirm sterilizing the needle with a flame.",
+          "evidence_quote": "First sterilize the needle with a flame."
+        },
+        {
+          "quote": "Put a drop of blood toward one end of a clean glass slide.",
+          "status": "supported",
+          "reason": "Passages 2 and 3 both confirm placing a drop of blood at one end of a slide.",
+          "evidence_quote": "Put a drop of blood toward one end of a slide."
+        },
+        {
+          "quote": "Hold another clean slide at an angle of about 45 degrees, and touch the blood with one end of the slide.",
+          "status": "supported",
+          "reason": "Passage 3 confirms holding a second slide at about 45 degrees and touching the blood with one end.",
+          "evidence_quote": "Take another clean slide, and holding at an angle of about 45 deg, touch the blood with one end of the slide"
+        },
+        {
+          "quote": "Run the blood along the edge of the slide using capillary action.",
+          "status": "supported",
+          "reason": "Passage 3 confirms the blood runs along the edge by capillary action.",
+          "evidence_quote": "so the blood runs along the edge of the slide by capillary action"
+        },
+        {
+          "quote": "Push carefully along the length of the first slide to produce a thin smear of blood.",
+          "status": "supported",
+          "reason": "Passage 3 explicitly states to push carefully along the length of the first slide to produce a thin smear.",
+          "evidence_quote": "Push carefully along the length of the first slide to produce a thin smear of blood."
+        },
+        {
+          "quote": "Repeat the process, making two smears and allowing them to air dry.",
+          "status": "supported",
+          "reason": "Passage 3 confirms making 2 smears and allowing them to air dry.",
+          "evidence_quote": "Make 2 smears, allow to air dry"
+        },
+        {
+          "quote": "Label the smears clearly, then place them in the provided slide transport containers.",
+          "status": "supported",
+          "reason": "Passage 3 confirms labeling clearly and placing in provided slide transport containers.",
+          "evidence_quote": "label clearly. Once dried place in the provided slide transport containers."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Sterilize a needle with a flame.",
+          "status": "supported",
+          "reason": "Passage 1 confirms sterilizing the needle with a flame.",
+          "evidence_quote": "First sterilize the needle with a flame."
+        },
+        {
+          "quote": "Put a drop of blood toward one end of a clean glass slide.",
+          "status": "supported",
+          "reason": "Passages 2 and 3 confirm placing a drop of blood at one end of a slide.",
+          "evidence_quote": "Put a drop of blood toward one end of a slide."
+        },
+        {
+          "quote": "Hold another clean slide at an angle of about 45 degrees, and touch the blood with one end of the slide.",
+          "status": "supported",
+          "reason": "Passage 3 confirms holding a second slide at about 45 degrees and touching the blood with one end.",
+          "evidence_quote": "Take another clean slide, and holding at an angle of about 45 deg, touch the blood with one end of the slide"
+        },
+        {
+          "quote": "Run the blood along the edge of the slide using capillary action.",
+          "status": "supported",
+          "reason": "Passage 3 confirms the blood runs along the edge by capillary action.",
+          "evidence_quote": "so the blood runs along the edge of the slide by capillary action"
+        },
+        {
+          "quote": "Gently push the slide to produce a thin smear of blood.",
+          "status": "supported",
+          "reason": "Passage 3 confirms pushing to produce a thin smear. The word 'gently' is not in the evidence (evidence says 'carefully'), but the core factual content—pushing to produce a thin smear—is supported. 'Gently' vs 'carefully' is a minor stylistic difference, not a factual contradiction.",
+          "evidence_quote": "Push carefully along the length of the first slide to produce a thin smear of blood."
+        },
+        {
+          "quote": "Repeat the process, making two smears and allowing them to air dry.",
+          "status": "supported",
+          "reason": "Passage 3 confirms making 2 smears and allowing them to air dry.",
+          "evidence_quote": "Make 2 smears, allow to air dry"
+        },
+        {
+          "quote": "Label the smears clearly, then place them in the provided slide transport containers.",
+          "status": "supported",
+          "reason": "Passage 3 confirms labeling clearly and placing in provided slide transport containers.",
+          "evidence_quote": "label clearly. Once dried place in the provided slide transport containers."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Sterilize a needle with a flame.",
+          "status": "supported",
+          "reason": "Passage 1 confirms sterilizing the needle with a flame.",
+          "evidence_quote": "First sterilize the needle with a flame."
+        },
+        {
+          "quote": "Put a drop of blood toward one end of a clean glass slide.",
+          "status": "supported",
+          "reason": "Passages 2 and 3 confirm placing a drop of blood at one end of a slide.",
+          "evidence_quote": "Put a drop of blood toward one end of a slide."
+        },
+        {
+          "quote": "Hold another clean slide at an angle of about 45 degrees, and touch the blood with one end of the slide.",
+          "status": "supported",
+          "reason": "Passage 3 confirms holding a second slide at about 45 degrees and touching the blood with one end.",
+          "evidence_quote": "Take another clean slide, and holding at an angle of about 45 deg, touch the blood with one end of the slide"
+        },
+        {
+          "quote": "Run the blood along the edge of the slide using capillary action.",
+          "status": "supported",
+          "reason": "Passage 3 confirms the blood runs along the edge by capillary action.",
+          "evidence_quote": "so the blood runs along the edge of the slide by capillary action"
+        },
+        {
+          "quote": "Gently push the slide to produce a thin smear of blood.",
+          "status": "supported",
+          "reason": "Passage 3 confirms pushing to produce a thin smear. 'Gently' vs 'carefully' is a minor stylistic difference, not a factual contradiction.",
+          "evidence_quote": "Push carefully along the length of the first slide to produce a thin smear of blood."
+        },
+        {
+          "quote": "Repeat the process, making two smears and allowing them to air dry.",
+          "status": "supported",
+          "reason": "Passage 3 confirms making 2 smears and allowing them to air dry.",
+          "evidence_quote": "Make 2 smears, allow to air dry"
+        },
+        {
+          "quote": "Label the smears clearly, then place them in the provided slide transport containers.",
+          "status": "supported",
+          "reason": "Passage 3 confirms labeling clearly and placing in provided slide transport containers.",
+          "evidence_quote": "label clearly. Once dried place in the provided slide transport containers."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

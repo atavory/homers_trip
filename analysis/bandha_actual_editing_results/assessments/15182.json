@@ -1,0 +1,210 @@
+{
+  "id": "15182",
+  "source_id": "15149",
+  "stratum": "QA_erroneous",
+  "gold_original_has_error": true,
+  "candidate_mapping": {
+    "candidate0": "cutoff05",
+    "candidate1": "original",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Place washed whole, unpeeled potatoes into a pot and cover with cold water."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Boil the potatoes for about 15 minutes."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Prepare a bowl of ice water after the potatoes are cooked."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Remove each potato from the boiling water and plunge it into the ice water."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Swish the potato around in the ice water for a few seconds until it's cool enough to handle."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Rub the potato with both hands to remove the skin."
+    }
+  ],
+  "outcomes": {
+    "cutoff05": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Place washed whole, unpeeled potatoes into a pot and cover with cold water.",
+          "status": "supported",
+          "reason": "Directly matches passage 1.",
+          "evidence_quote": "Place washed whole, unpeeled potatoes into a pot and cover with cold water."
+        },
+        {
+          "quote": "Boil the potatoes for about 15 minutes or until they are soft enough to peel.",
+          "status": "supported",
+          "reason": "Passage 2 states to boil for about 15 minutes.",
+          "evidence_quote": "Place your potatoes in the pot and boil for about 15 minutes or so."
+        },
+        {
+          "quote": "Once the potatoes are cooked, prepare a bowl of ice water.",
+          "status": "supported",
+          "reason": "Passage 2 and 3 both describe preparing ice water after boiling.",
+          "evidence_quote": "Prepare a bowl of ice water and place your potatoes in the water."
+        },
+        {
+          "quote": "Carefully remove each potato from the boiling water and plunge it into the ice water.",
+          "status": "supported",
+          "reason": "Passage 3 describes plunging the potato into ice water.",
+          "evidence_quote": "Plunge the potato in ice water for 10 seconds."
+        },
+        {
+          "quote": "Swish the potato around in the ice water for a few seconds until it's cool enough to handle.",
+          "status": "supported",
+          "reason": "Passage 2 describes swishing in ice water for a few seconds until cool enough to handle.",
+          "evidence_quote": "Swish it around for a few seconds just enough so that it's cool enough to handle."
+        },
+        {
+          "quote": "Gently rub the potato with both hands to remove the skin.",
+          "status": "supported",
+          "reason": "Passage 3 describes rubbing the potato with both hands to remove the skin.",
+          "evidence_quote": "Rub the potato with both hands and watch the skin fall right off."
+        },
+        {
+          "quote": "Repeat steps 4-6 for all the potatoes.",
+          "status": "unsupported",
+          "reason": "No evidence explicitly states to repeat the steps for all potatoes; this is an editorial addition not found in the passages.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "you can easily peel a large number of potatoes quickly and efficiently.",
+          "status": "supported",
+          "reason": "Passage 2 implies this method is suited for peeling a large quantity of potatoes.",
+          "evidence_quote": "Especially if you are peeling a crap load of potatoes. Here is the easiest way (or at least the easiest way I've discovered) to peel a cooked potato."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Place washed whole, unpeeled potatoes into a pot and cover with cold water.",
+          "status": "supported",
+          "reason": "Directly matches passage 1.",
+          "evidence_quote": "Place washed whole, unpeeled potatoes into a pot and cover with cold water."
+        },
+        {
+          "quote": "Boil the potatoes for about 15 minutes or until they are soft enough to peel.",
+          "status": "supported",
+          "reason": "Passage 2 states to boil for about 15 minutes.",
+          "evidence_quote": "Place your potatoes in the pot and boil for about 15 minutes or so."
+        },
+        {
+          "quote": "Once the potatoes are cooked, prepare a bowl of ice water.",
+          "status": "supported",
+          "reason": "Passage 2 and 3 both describe preparing ice water after boiling.",
+          "evidence_quote": "Prepare a bowl of ice water and place your potatoes in the water."
+        },
+        {
+          "quote": "Carefully remove each potato from the boiling water and plunge it into the ice water.",
+          "status": "supported",
+          "reason": "Passage 3 describes plunging the potato into ice water.",
+          "evidence_quote": "Plunge the potato in ice water for 10 seconds."
+        },
+        {
+          "quote": "Swish the potato around in the ice water for a few seconds until it's cool enough to handle.",
+          "status": "supported",
+          "reason": "Passage 2 describes swishing in ice water for a few seconds until cool enough to handle.",
+          "evidence_quote": "Swish it around for a few seconds just enough so that it's cool enough to handle."
+        },
+        {
+          "quote": "Gently rub the potato with both hands to remove the skin.",
+          "status": "supported",
+          "reason": "Passage 3 describes rubbing the potato with both hands to remove the skin.",
+          "evidence_quote": "Rub the potato with both hands and watch the skin fall right off."
+        },
+        {
+          "quote": "Repeat steps 4-6 for all the potatoes.",
+          "status": "unsupported",
+          "reason": "No evidence explicitly states to repeat the steps for all potatoes; this is an editorial addition not found in the passages.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "you can easily peel a large number of potatoes quickly and efficiently.",
+          "status": "supported",
+          "reason": "Passage 2 implies this method is suited for peeling a large quantity of potatoes.",
+          "evidence_quote": "Especially if you are peeling a crap load of potatoes. Here is the easiest way (or at least the easiest way I've discovered) to peel a cooked potato."
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 1,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 1,
+      "claims": [
+        {
+          "quote": "Place washed whole, unpeeled potatoes into a pot and cover with cold water.",
+          "status": "supported",
+          "reason": "Directly matches passage 1.",
+          "evidence_quote": "Place washed whole, unpeeled potatoes into a pot and cover with cold water."
+        },
+        {
+          "quote": "Boil the potatoes for about 15 minutes or until they are soft enough to peel.",
+          "status": "supported",
+          "reason": "Passage 2 states to boil for about 15 minutes.",
+          "evidence_quote": "Place your potatoes in the pot and boil for about 15 minutes or so."
+        },
+        {
+          "quote": "Once the potatoes are cooked, prepare a bowl of ice water.",
+          "status": "supported",
+          "reason": "Passage 2 and 3 both describe preparing ice water after boiling.",
+          "evidence_quote": "Prepare a bowl of ice water and place your potatoes in the water."
+        },
+        {
+          "quote": "Remove the potatoes remove potato potato from the boiling water and plunge it into the ice water.",
+          "status": "supported",
+          "reason": "Despite garbled wording, the factual content — removing potatoes from boiling water and plunging into ice water — is supported. The repetition is a formatting artifact, not a factual claim.",
+          "evidence_quote": "Plunge the potato in ice water for 10 seconds."
+        },
+        {
+          "quote": "Swish the potato around in the ice water for a few seconds until it's cool enough to handle.",
+          "status": "supported",
+          "reason": "Passage 2 describes swishing in ice water for a few seconds until cool enough to handle.",
+          "evidence_quote": "Swish it around for a few seconds just enough so that it's cool enough to handle."
+        },
+        {
+          "quote": "Rub rub the potato with both hands to remove the skin.",
+          "status": "supported",
+          "reason": "Despite the repeated word, the factual content — rubbing the potato with both hands to remove the skin — is supported by passage 3.",
+          "evidence_quote": "Rub the potato with both hands and watch the skin fall right off."
+        },
+        {
+          "quote": "Repeat steps 4-6 for all the potatoes.",
+          "status": "unsupported",
+          "reason": "No evidence explicitly states to repeat the steps for all potatoes; this is an editorial addition not found in the passages.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "you can easily peel a large number of potatoes quickly and efficiently.",
+          "status": "supported",
+          "reason": "Passage 2 implies this method is suited for peeling a large quantity of potatoes.",
+          "evidence_quote": "Especially if you are peeling a crap load of potatoes. Here is the easiest way (or at least the easiest way I've discovered) to peel a cooked potato."
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "id": "16612",
+  "policy": "top20",
+  "response": " Based on the provided passages, I can answer the following question:\n\nQuestion: What is the current temperature in Bucharest?\n\nUnable to answer based on given passages.",
+  "replacements": [
+    {
+      "replacement": "Unable to answer based on given passages.",
+      "span_id": "s0"
+    }
+  ],
+  "model_called": true
+}

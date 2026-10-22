@@ -1,0 +1,279 @@
+{
+  "id": "5835",
+  "source_id": "13633",
+  "stratum": "Data2txt_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "cutoff05",
+    "candidate2": "top20"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Viva Modern Mexican is located in Santa Barbara, California."
+    },
+    {
+      "target_id": "T2",
+      "claim": "Viva Modern Mexican offers Peruvian and Mexican cuisine (among other categories)."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Viva Modern Mexican has a rating of 3.5 stars."
+    },
+    {
+      "target_id": "T4",
+      "claim": "Viva Modern Mexican offers outdoor seating."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Viva Modern Mexican offers free WiFi."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Some customers have praised the restaurant's margaritas and salads."
+    },
+    {
+      "target_id": "T7",
+      "claim": "Some customers have had negative experiences with food poisoning."
+    },
+    {
+      "target_id": "T8",
+      "claim": "Viva Modern Mexican is used for private events such as rehearsal dinners and welcome parties."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 3,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 3,
+      "claims": [
+        {
+          "quote": "Viva Modern Mexican is a popular restaurant located in Santa Barbara, California",
+          "status": "supported",
+          "reason": "The evidence confirms the restaurant is located at 1114 State St, Santa Barbara, CA. 'Popular' is unsupported but not meaningfully informative/factual.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "offering a unique blend of Peruvian and Mexican cuisine",
+          "status": "supported",
+          "reason": "The evidence lists both 'Peruvian' and 'Mexican' among the restaurant's categories.",
+          "evidence_quote": "\"categories\": \"Breakfast & Brunch, Venues & Event Spaces, Peruvian, Event Planning & Services, Bars, Nightlife, Latin American, Restaurants, Cocktail Bars, Seafood, Tapas/Small Plates, Mexican\""
+        },
+        {
+          "quote": "With a rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars as 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "the business provides a warm and inviting atmosphere",
+          "status": "unsupported",
+          "reason": "The evidence describes the ambience as 'classy' but not 'warm and inviting'. No evidence supports this characterization.",
+          "evidence_quote": "\"Ambience\": {\"classy\": true}"
+        },
+        {
+          "quote": "including outdoor seating",
+          "status": "supported",
+          "reason": "The evidence confirms OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "and free WiFi",
+          "status": "supported",
+          "reason": "The evidence confirms WiFi is 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "some customers have praised the restaurant's margaritas and salads",
+          "status": "supported",
+          "reason": "A 5-star review praises the margarita flights and fresh salads.",
+          "evidence_quote": "\"Loved your margarita flights ( the best fresh margaritas I have ever had ) and light fresh,flavorful salads.\""
+        },
+        {
+          "quote": "others have had negative experiences with food poisoning",
+          "status": "supported",
+          "reason": "A 1-star review describes a husband getting bad food poisoning and ending up in the ER.",
+          "evidence_quote": "\"My husband got really bad food poisoning from this place.\""
+        },
+        {
+          "quote": "and poor service",
+          "status": "unsupported",
+          "reason": "The negative review mentions a dropped plate and glass cutting the reviewer's ankle, but does not explicitly describe 'poor service' as a general complaint. This is a stretch beyond what the evidence states.",
+          "evidence_quote": "\"they dropped a plate and glass flew everywhere and cut my ankle.\""
+        },
+        {
+          "quote": "Viva Modern Mexican remains a popular spot for both locals and visitors",
+          "status": "unsupported",
+          "reason": "There is no evidence distinguishing local vs. visitor patronage or characterizing the restaurant as broadly popular.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "particularly for private events such as rehearsal dinners and welcome parties",
+          "status": "supported",
+          "reason": "A review describes hosting a rehearsal dinner and welcome party at the restaurant.",
+          "evidence_quote": "\"We had our rehearsal dinner and welcome party here in July and it was so perfect!!\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 1,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Viva Modern Mexican is a popular restaurant located in Santa Barbara, California",
+          "status": "supported",
+          "reason": "The evidence confirms the restaurant is in Santa Barbara, CA.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "offering a unique blend of Peruvian and Mexican cuisine",
+          "status": "supported",
+          "reason": "Both Peruvian and Mexican are listed in the restaurant's categories.",
+          "evidence_quote": "\"categories\": \"Breakfast & Brunch, Venues & Event Spaces, Peruvian, Event Planning & Services, Bars, Nightlife, Latin American, Restaurants, Cocktail Bars, Seafood, Tapas/Small Plates, Mexican\""
+        },
+        {
+          "quote": "With a rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars as 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "the business provides a warm and classy atmosphere",
+          "status": "uncertain",
+          "reason": "The evidence confirms 'classy' ambience, but 'warm' is not supported by the evidence. The claim is partially supported (classy) and partially unsupported (warm).",
+          "evidence_quote": "\"Ambience\": {\"classy\": true}"
+        },
+        {
+          "quote": "including outdoor seating",
+          "status": "supported",
+          "reason": "The evidence confirms OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "and free WiFi",
+          "status": "supported",
+          "reason": "The evidence confirms WiFi is 'free'.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "some customers have praised the restaurant's margaritas and salads",
+          "status": "supported",
+          "reason": "A 5-star review praises the margarita flights and fresh salads.",
+          "evidence_quote": "\"Loved your margarita flights ( the best fresh margaritas I have ever had ) and light fresh,flavorful salads.\""
+        },
+        {
+          "quote": "others have had negative experiences with food poisoning",
+          "status": "supported",
+          "reason": "A 1-star review describes a husband getting bad food poisoning and ending up in the ER.",
+          "evidence_quote": "\"My husband got really bad food poisoning from this place.\""
+        },
+        {
+          "quote": "and poor service",
+          "status": "unsupported",
+          "reason": "The negative review mentions a dropped plate incident but does not explicitly characterize service as generally poor.",
+          "evidence_quote": "\"they dropped a plate and glass flew everywhere and cut my ankle.\""
+        },
+        {
+          "quote": "Viva Modern Mexican remains a popular spot for both locals and visitors",
+          "status": "unsupported",
+          "reason": "No evidence distinguishes local vs. visitor patronage or characterizes the restaurant as broadly popular.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "particularly for private events such as rehearsal dinners and welcome parties",
+          "status": "supported",
+          "reason": "A review describes hosting a rehearsal dinner and welcome party at the restaurant.",
+          "evidence_quote": "\"We had our rehearsal dinner and welcome party here in July and it was so perfect!!\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 2,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 2,
+      "claims": [
+        {
+          "quote": "Viva Modern Mexican is a restaurant located in Santa Barbara, California",
+          "status": "supported",
+          "reason": "The evidence confirms the restaurant is in Santa Barbara, CA.",
+          "evidence_quote": "\"city\": \"Santa Barbara\", \"state\": \"CA\""
+        },
+        {
+          "quote": "offering a variety of Latin American dishes, including Peruvian, Mexican, and seafood options",
+          "status": "supported",
+          "reason": "The categories include Latin American, Peruvian, Mexican, and Seafood.",
+          "evidence_quote": "\"categories\": \"Breakfast & Brunch, Venues & Event Spaces, Peruvian, Event Planning & Services, Bars, Nightlife, Latin American, Restaurants, Cocktail Bars, Seafood, Tapas/Small Plates, Mexican\""
+        },
+        {
+          "quote": "Peruvian and Mexican dishes",
+          "status": "supported",
+          "reason": "Both Peruvian and Mexican are listed in the restaurant's categories. (This appears to be a duplicate/fragment in the candidate text but is factually supported.)",
+          "evidence_quote": "\"categories\": \"... Peruvian ... Mexican\""
+        },
+        {
+          "quote": "With a rating of 3.5 stars",
+          "status": "supported",
+          "reason": "The evidence explicitly states business_stars as 3.5.",
+          "evidence_quote": "\"business_stars\": 3.5"
+        },
+        {
+          "quote": "the business features a classier ambience",
+          "status": "supported",
+          "reason": "The evidence confirms the ambience attribute 'classy' is true. 'Classier' is a reasonable paraphrase of 'classy'.",
+          "evidence_quote": "\"Ambience\": {\"classy\": true}"
+        },
+        {
+          "quote": "including outdoor seating",
+          "status": "supported",
+          "reason": "The evidence confirms OutdoorSeating is true.",
+          "evidence_quote": "\"OutdoorSeating\": true"
+        },
+        {
+          "quote": "and free free WiFi",
+          "status": "supported",
+          "reason": "The evidence confirms WiFi is 'free'. The duplication of 'free' is a formatting/typo issue, not a factual error.",
+          "evidence_quote": "\"WiFi\": \"free\""
+        },
+        {
+          "quote": "some customers have praised the margarita flights and salads",
+          "status": "supported",
+          "reason": "A 5-star review praises the margarita flights and fresh salads.",
+          "evidence_quote": "\"Loved your margarita flights ( the best fresh margaritas I have ever had ) and light fresh,flavorful salads.\""
+        },
+        {
+          "quote": "others have had negative experiences with food poisoning",
+          "status": "supported",
+          "reason": "A 1-star review describes a husband getting bad food poisoning and ending up in the ER.",
+          "evidence_quote": "\"My husband got really bad food poisoning from this place.\""
+        },
+        {
+          "quote": "and poor service",
+          "status": "unsupported",
+          "reason": "The negative review mentions a dropped plate incident but does not explicitly characterize service as generally poor.",
+          "evidence_quote": "\"they dropped a plate and glass flew everywhere and cut my ankle.\""
+        },
+        {
+          "quote": "Viva Modern Mexican remains a popular spot for both locals and visitors",
+          "status": "unsupported",
+          "reason": "No evidence distinguishes local vs. visitor patronage or characterizes the restaurant as broadly popular.",
+          "evidence_quote": ""
+        },
+        {
+          "quote": "particularly for private events such as rehearsal dinners and welcome parties",
+          "status": "supported",
+          "reason": "A review describes hosting a rehearsal dinner and welcome party at the restaurant.",
+          "evidence_quote": "\"We had our rehearsal dinner and welcome party here in July and it was so perfect!!\""
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  },
+  "validation_retries": []
+}

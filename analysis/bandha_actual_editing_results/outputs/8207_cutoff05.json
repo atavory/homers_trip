@@ -1,0 +1,16 @@
+{
+  "id": "8207",
+  "policy": "cutoff05",
+  "response": "Sam's To Go is a sandwich shop located in Goleta, CA, offering a variety of sandwiches, salads, soups, and vegetarian options. The business has a casual atmosphere and provides outdoor seating. Wi-Fi is available for customers, and take-out is an option. According to customer reviews, the sandwiches are simple yet delicious, with fresh ingredients and good bread. However, some customers have reported experiencing rudeness from the staff, while others have had positive interactions. The business is open every day a week, with slightly longer hours on Wednesday. Sam's To Go is a good option for those looking for quick, affordable, and tasty sandwiches.",
+  "replacements": [
+    {
+      "replacement": "open every day",
+      "span_id": "s0"
+    },
+    {
+      "replacement": "week, with slightly longer hours on Wednesday.",
+      "span_id": "s1"
+    }
+  ],
+  "model_called": true
+}

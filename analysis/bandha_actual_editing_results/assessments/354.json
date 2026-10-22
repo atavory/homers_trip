@@ -1,0 +1,192 @@
+{
+  "id": "354",
+  "source_id": "15652",
+  "stratum": "Summary_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "top20",
+    "candidate1": "cutoff05",
+    "candidate2": "original"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "The US National Park Service is waiving entrance fees on Saturday and Sunday."
+    },
+    {
+      "target_id": "T2",
+      "claim": "128 sites charge a fee (and are the ones receiving the waiver)."
+    },
+    {
+      "target_id": "T3",
+      "claim": "Yellowstone and Yosemite are among the fee-charging sites receiving the waiver."
+    },
+    {
+      "target_id": "T4",
+      "claim": "National Park Week runs from April 18 to April 26."
+    },
+    {
+      "target_id": "T5",
+      "claim": "Night-time astronomy parties are among the planned special events."
+    },
+    {
+      "target_id": "T6",
+      "claim": "Earth Day celebrations/parties are among the planned special events."
+    }
+  ],
+  "outcomes": {
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "The US National Park Service is waiving entrance fees",
+          "status": "supported",
+          "reason": "The evidence confirms that the 128 parks that charge a fee will be free on Saturday and Sunday.",
+          "evidence_quote": "the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "its 128 fee-charging sites",
+          "status": "supported",
+          "reason": "The evidence explicitly states there are 128 parks that charge a fee.",
+          "evidence_quote": "the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "including Yellowstone and Yosemite",
+          "status": "supported",
+          "reason": "The evidence explicitly names Yellowstone and Yosemite as examples of fee-charging parks.",
+          "evidence_quote": "the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "on Saturday and Sunday Saturday and Sunday",
+          "status": "supported",
+          "reason": "The duplicated phrasing is a formatting/typo issue, but the underlying factual claim — that the waiver applies on Saturday and Sunday — is supported by the evidence. The duplication itself is not a factual error.",
+          "evidence_quote": "they're also free. Though most of the National Park Service's 407 sites are free year-round, the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "to celebrate National Park Week from April 18 to April 26",
+          "status": "supported",
+          "reason": "The evidence confirms National Park Week runs April 18 through April 26.",
+          "evidence_quote": "It's all part of National Park Week, happening April 18 through April 26"
+        },
+        {
+          "quote": "Various special events are planned, including night-time astronomy parties",
+          "status": "supported",
+          "reason": "The evidence lists night-time astronomy parties as one of the planned events.",
+          "evidence_quote": "Check out night-time astronomy parties, daytime Revolutionary War programs, Earth Day parties and family-friendly Junior Ranger activities"
+        },
+        {
+          "quote": "Earth Day celebrations",
+          "status": "supported",
+          "reason": "The evidence mentions Earth Day parties as a planned event.",
+          "evidence_quote": "Earth Day parties"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "The US National Park Service is waiving entrance fees",
+          "status": "supported",
+          "reason": "The evidence confirms that the 128 parks that charge a fee will be free on Saturday and Sunday.",
+          "evidence_quote": "the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "its 128 fee-charging sites",
+          "status": "supported",
+          "reason": "The evidence explicitly states there are 128 parks that charge a fee.",
+          "evidence_quote": "the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "including Yellowstone and Yosemite",
+          "status": "supported",
+          "reason": "The evidence explicitly names Yellowstone and Yosemite as examples of fee-charging parks.",
+          "evidence_quote": "the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "on Saturday and Sunday",
+          "status": "supported",
+          "reason": "The evidence confirms the fee waiver applies on Saturday and Sunday.",
+          "evidence_quote": "for Saturday and Sunday, they're also free."
+        },
+        {
+          "quote": "to celebrate National Park Week from April 18 to April 26",
+          "status": "supported",
+          "reason": "The evidence confirms National Park Week runs April 18 through April 26.",
+          "evidence_quote": "It's all part of National Park Week, happening April 18 through April 26"
+        },
+        {
+          "quote": "Various special events are planned, including night-time astronomy parties",
+          "status": "supported",
+          "reason": "The evidence lists night-time astronomy parties as one of the planned events.",
+          "evidence_quote": "Check out night-time astronomy parties, daytime Revolutionary War programs, Earth Day parties and family-friendly Junior Ranger activities"
+        },
+        {
+          "quote": "Earth Day celebrations",
+          "status": "supported",
+          "reason": "The evidence mentions Earth Day parties as a planned event.",
+          "evidence_quote": "Earth Day parties"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "The US National Park Service is waiving entrance fees",
+          "status": "supported",
+          "reason": "The evidence confirms that the 128 parks that charge a fee will be free on Saturday and Sunday.",
+          "evidence_quote": "the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "its 128 fee-charging sites",
+          "status": "supported",
+          "reason": "The evidence explicitly states there are 128 parks that charge a fee.",
+          "evidence_quote": "the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "including Yellowstone and Yosemite",
+          "status": "supported",
+          "reason": "The evidence explicitly names Yellowstone and Yosemite as examples of fee-charging parks.",
+          "evidence_quote": "the 128 parks that charge a fee -- like Yellowstone and Yosemite -- will be free those two days."
+        },
+        {
+          "quote": "on Saturday and Sunday",
+          "status": "supported",
+          "reason": "The evidence confirms the fee waiver applies on Saturday and Sunday.",
+          "evidence_quote": "for Saturday and Sunday, they're also free."
+        },
+        {
+          "quote": "to celebrate National Park Week from April 18 to April 26",
+          "status": "supported",
+          "reason": "The evidence confirms National Park Week runs April 18 through April 26.",
+          "evidence_quote": "It's all part of National Park Week, happening April 18 through April 26"
+        },
+        {
+          "quote": "Various special events are planned, including night-time astronomy parties",
+          "status": "supported",
+          "reason": "The evidence lists night-time astronomy parties as one of the planned events.",
+          "evidence_quote": "Check out night-time astronomy parties, daytime Revolutionary War programs, Earth Day parties and family-friendly Junior Ranger activities"
+        },
+        {
+          "quote": "Earth Day celebrations",
+          "status": "supported",
+          "reason": "The evidence mentions Earth Day parties as a planned event.",
+          "evidence_quote": "Earth Day parties"
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}

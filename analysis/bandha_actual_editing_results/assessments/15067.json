@@ -1,0 +1,130 @@
+{
+  "id": "15067",
+  "source_id": "15130",
+  "stratum": "QA_clean",
+  "gold_original_has_error": false,
+  "candidate_mapping": {
+    "candidate0": "original",
+    "candidate1": "top20",
+    "candidate2": "cutoff05"
+  },
+  "targets": [
+    {
+      "target_id": "T1",
+      "claim": "Leasing is a process by which a firm obtains the use of fixed assets."
+    },
+    {
+      "target_id": "T2",
+      "claim": "The firm must make contractual, periodic, and tax-deductible payments."
+    },
+    {
+      "target_id": "T3",
+      "claim": "The lessee is the party receiving the services or assets under the lease contract."
+    },
+    {
+      "target_id": "T4",
+      "claim": "The lessor is the owner of the assets."
+    }
+  ],
+  "outcomes": {
+    "original": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Leasing refers to a process in which a firm obtains the use of fixed assets",
+          "status": "supported",
+          "reason": "The evidence explicitly states 'Leasing is a process by which a firm can obtain the use of a certain fixed assets.'",
+          "evidence_quote": "Leasing is a process by which a firm can obtain the use of a certain fixed assets"
+        },
+        {
+          "quote": "by making contractual, periodic, and tax-deductible payments to the owner of those assets",
+          "status": "supported",
+          "reason": "The evidence states the firm 'must pay a series of contractual, periodic, tax deductible payments,' and the lessor (owner) receives these payments.",
+          "evidence_quote": "it must pay a series of contractual, periodic, tax deductible payments"
+        },
+        {
+          "quote": "The lessee is the party receiving the services or assets under the lease contract",
+          "status": "supported",
+          "reason": "The evidence directly states 'The lessee is the receiver of the services or the assets under the lease contract.'",
+          "evidence_quote": "The lessee is the receiver of the services or the assets under the lease contract"
+        },
+        {
+          "quote": "the lessor is the owner of the assets",
+          "status": "supported",
+          "reason": "The evidence directly states 'the lessor is the owner of the assets.'",
+          "evidence_quote": "the lessor is the owner of the assets"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "top20": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Leasing refers to a process in which a firm obtains the use of fixed assets",
+          "status": "supported",
+          "reason": "The evidence explicitly states 'Leasing is a process by which a firm can obtain the use of a certain fixed assets.'",
+          "evidence_quote": "Leasing is a process by which a firm can obtain the use of a certain fixed assets"
+        },
+        {
+          "quote": "by making contractual, periodic, and tax-deductible payments to the owner of those assets",
+          "status": "supported",
+          "reason": "The evidence states the firm 'must pay a series of contractual, periodic, tax deductible payments,' and the lessor (owner) receives these payments.",
+          "evidence_quote": "it must pay a series of contractual, periodic, tax deductible payments"
+        },
+        {
+          "quote": "The lessee is the party receiving the services or assets under the lease contract",
+          "status": "supported",
+          "reason": "The evidence directly states 'The lessee is the receiver of the services or the assets under the lease contract.'",
+          "evidence_quote": "The lessee is the receiver of the services or the assets under the lease contract"
+        },
+        {
+          "quote": "the lessor is the owner of the assets",
+          "status": "supported",
+          "reason": "The evidence directly states 'the lessor is the owner of the assets.'",
+          "evidence_quote": "the lessor is the owner of the assets"
+        }
+      ],
+      "missing_supported_target_ids": []
+    },
+    "cutoff05": {
+      "unsupported_claims": 0,
+      "uncertain_claims": 0,
+      "preservation_errors": 0,
+      "errors": 0,
+      "claims": [
+        {
+          "quote": "Leasing refers to a process in which a firm obtains the use of fixed assets",
+          "status": "supported",
+          "reason": "The evidence explicitly states 'Leasing is a process by which a firm can obtain the use of a certain fixed assets.'",
+          "evidence_quote": "Leasing is a process by which a firm can obtain the use of a certain fixed assets"
+        },
+        {
+          "quote": "by making contractual, periodic, and tax-deductible payments to the owner of those assets",
+          "status": "supported",
+          "reason": "The evidence states the firm 'must pay a series of contractual, periodic, tax deductible payments,' and the lessor (owner) receives these payments.",
+          "evidence_quote": "it must pay a series of contractual, periodic, tax deductible payments"
+        },
+        {
+          "quote": "The lessee is the party receiving the services or assets under the lease contract",
+          "status": "supported",
+          "reason": "The evidence directly states 'The lessee is the receiver of the services or the assets under the lease contract.'",
+          "evidence_quote": "The lessee is the receiver of the services or the assets under the lease contract"
+        },
+        {
+          "quote": "the lessor is the owner of the assets",
+          "status": "supported",
+          "reason": "The evidence directly states 'the lessor is the owner of the assets.'",
+          "evidence_quote": "the lessor is the owner of the assets"
+        }
+      ],
+      "missing_supported_target_ids": []
+    }
+  }
+}
